@@ -362,3 +362,42 @@ Path B plan: redesign the top 2-3 backbones with
 - Binder sequences in `data/candidates/binder_sequences.fasta`.
 - Model numbering offset +27 vs UniProt (model His406 = EGFR His433,
   verified via LKEISDGDVI motif).
+
+### 2026-10-05 ~19:50 CEST — Path B complete: lambda sweep on 3 backbones (12 designs)
+
+**Status: DONE. `code/redesign_path_B.py` ran block descent (the production
+optimizer from `inference/design_ph.py`) on rank03, rank01 and rank02,
+lambdas 0.1 / 0.3 / 0.5 / 0.7, one design per lambda, protonated centres
+restricted to the interface (`placement_region=["interface"]`).**
+Outputs in `data/designs/pathB/<backbone>/` (sweep_designs.tsv, designs.json,
+designs.fasta).
+
+All three backbones show a clean lambda response: selective energy falls as
+lambda rises (more pH-selective), at a small Potts-energy (stability) cost.
+Each backbone pinned the same centres at every lambda:
+
+| backbone | centres (binder res) | sel at lam 0.1 | sel at lam 0.7 |
+|---|---|---|---|
+| rank03_cC5_01 | 17:ASP-P, 18:HIS-P, 36:GLU-P | +9.82 | -6.58 |
+| rank01_cC5_03 | 3:ASP-P, 5:GLU-P, 16:HIS-P | -3.32 | -13.72 |
+| rank02_cC5_13 | 4:GLU-P, 35:HIS-P, 39:ASP-P | +1.14 | -13.71 |
+
+(lower selective energy = protonated states more favored = stronger
+computational pH-switch signal; still a model prediction, not evidence)
+
+Design decision: **cC5_00 excluded from the sweep** despite the strongest
+Path A HIS-P signal (-3.26). Prior work documented a strong clash with the
+first EGFR-attached sugar in two alignments (docs/STATUS.md); the assay uses
+glycosylated HEK293 EGFR, and Proton-PottsMPNN is fixed-backbone, so
+redesign cannot move the binder away from the glycan. rank02 took its place.
+Revisit only if these three fail downstream.
+
+Pilot note: `redesign_path_B.py` initially passed atomworks `parse()`'s raw
+dict to the engine; fixed to `parse(... )["asym_unit"][0]` (same as Path A).
+
+Selected for Boltz-2 folding (most selective per backbone + one balanced):
+rank03 lam 0.7 (sel -6.58), rank03 lam 0.5 (sel +0.43, more stable),
+rank01 lam 0.7 (sel -13.72), rank02 lam 0.7 (sel -13.71).
+Folding needs GPU: plan is a Kaggle notebook driven via the Kaggle API
+(token being created through the signed-in browser), binder + 609-aa EGFR
+target, no MSA (same as the validated v2 batch setup).
