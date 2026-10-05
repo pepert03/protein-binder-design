@@ -418,3 +418,19 @@ target, no MSA (same as the validated v2 batch setup).
   mouse conservation) and build the ranked CSV for José's review.
 - DGX held as the second GPU lane (native-sequence controls or extra
   designs) if needed.
+
+### 2026-10-05 ~20:25 CEST — Kaggle kernel v1 failed, v2 relaunched (dm-tree fix)
+
+- Kernel v1 ERROR: `pip install boltz` failed building the `dm-tree==0.1.8`
+  wheel: no Python 3.13 wheels exist and the source build fails (Kaggle runs
+  3.13). `boltz` was never installed, so the fold cell died with
+  FileNotFoundError.
+- Root cause check: downloaded boltz 2.2.1 wheel, grepped its code: **zero
+  imports of dm_tree**. It is a vestigial pinned dependency.
+- Fix in kernel v2 (`code/kaggle_fold/fold.ipynb`): `pip install --no-deps
+  boltz==2.2.1`, then install every other declared dependency explicitly
+  (torch, numpy, hydra-core, pytorch-lightning, rdkit, pandas, einops,
+  einx, fairscale, mashumaro, modelcif, wandb, click, pyyaml, biopython,
+  scipy, numba, gemmi, scikit-learn, chembl_structure_pipeline, requests).
+  Smoke test imports boltz and confirms dm_tree absence is harmless.
+- Kernel v2 pushed and RUNNING. Same 4 designs, same no-MSA YAMLs.
