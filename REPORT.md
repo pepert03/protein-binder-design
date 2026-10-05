@@ -176,6 +176,17 @@ controls in score and position, but that is not independent validation.
 
 ## 4. Running log (newest first)
 
+### 2026-10-05 ~19:05 CEST — Structural pre-analysis of the 9 candidates
+- Binder chains: 54–74 aa (all within the 10–250 aa challenge range);
+  sequences in `data/candidates/binder_sequences.fasta`.
+- Numbering resolved: model His406 = UniProt P00533 His433 (model numbering
+  = UniProt − 27, verified via the LKEISDGDVI motif).
+- Closest binder-acid (Asp/Glu CA) to a target His (CA-CA):
+  rank03 5.7 A (Asp37–His406), rank06 6.7 A (Asp52–His406),
+  rank07 8.2 A (Glu12–His406), rank01 8.5 A (Glu19–His331).
+  rank03/rank06 already place a binder Asp near His433: prime starting
+  points for the Proton-PottsMPNN pH redesign (Path B).
+
 ### 2026-10-05 ~18:45 CEST — All 9 candidate complexes recovered
 - `data/candidates/`: rank01..rank08 CIFs (482–498 kB each) + cC5_00.cif.
   All verified as binder–target complexes (chains A+B, ~5.0–5.3k atoms).
