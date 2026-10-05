@@ -239,6 +239,14 @@ No candidate has any affinity, pH-selectivity, or mouse-binding evidence.
   `pip install --no-deps boltz==2.2.1` plus every other dependency installed
   explicitly, smoke test imports boltz. Same 4 designs, same no-MSA YAMLs.
   v2 RUNNING (checked 20:36 CEST, ~11 min in, no outputs yet).
+- ~21:00 CEST: kernel v2 ERROR. `pip install --no-deps boltz==2.2.1` failed with
+  "Requires-Python <3.13": boltz 2.2.x cannot be installed at all on Kaggle's
+  Python 3.13 (v1 had instead tried to build dm-tree, then failed; in any case
+  boltz never installed: `ModuleNotFoundError: No module named 'boltz'`).
+- Relaunched as v3: `boltz==2.0.3` (Requires-Python >=3.10, no upper bound; its
+  code also has zero dm_tree imports, so the --no-deps workaround stands; added
+  its extra Linux dep `trifast`). Same 4 designs, same no-MSA YAMLs. Kernel v3
+  pushed and RUNNING (status checked 21:05 CEST).
 
 ## 13. Notes on transcript reliability
 
