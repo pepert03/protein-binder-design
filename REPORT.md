@@ -449,3 +449,30 @@ target, no MSA (same as the validated v2 batch setup).
 - José asked for a guaranteed 30-min update even when brief: the cron body
   now always delivers a visible message instead of staying silent on
   no-change runs.
+
+### 2026-10-05 ~21:35 CEST — Kernel v3 COMPLETE but produced no predictions
+
+- `kaggle kernels status peperidruejo/egfr-pathb-boltz2-fold` returned
+  `KernelWorkerStatus.COMPLETE` (21:35 CEST check).
+- Downloaded kernel output `boltz2_pathB_folds.zip` (intact, `testzip`
+  clean). For all 4 designs (r03_l07, r03_l05, r01_l07, r02_l07) the zip
+  contains only the `processed/` input-prep files; `predictions/`, `msa/`,
+  `lightning_logs/` are empty directories. **No model outputs and no
+  confidence JSONs were produced**: the notebook ran to completion
+  (all 5 cells, incl. the zip cell) but the `boltz predict` subprocesses
+  produced nothing.
+- The exact return codes / stderr of the fold subprocesses are not in the
+  zip (the notebook printed only the last 3000 chars of stdout to the
+  kernel log). Log-page read attempted via browser task; the run-log
+  excerpts were not retrievable in this run (see open item below).
+- Raw outputs saved at `results/pathB_boltz2_fold/`; failed-download
+  scratch at `hidden_runs/fold_v3_logs/`. Note: `/tmp` is a 512 MB tmpfs
+  and filled up during the first download attempt (the 500 MB
+  `boltz_cache/boltz2_aff.ckpt` did not fit); download redone into the
+  workspace instead.
+- Next: read the kernel run log to get the fold subprocess return codes
+  and error text, then either fix the boltz 2.0.3 runtime error and push
+  v4, or switch the fold lane to the DGX.
+- Code fix prepared: the next kernel version should capture each fold's
+  full stdout/stderr/rc into a text file included in the output zip, so a
+  silent failure like this one is diagnosable without opening the log page.

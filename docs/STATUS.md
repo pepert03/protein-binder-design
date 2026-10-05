@@ -247,6 +247,15 @@ No candidate has any affinity, pH-selectivity, or mouse-binding evidence.
   code also has zero dm_tree imports, so the --no-deps workaround stands; added
   its extra Linux dep `trifast`). Same 4 designs, same no-MSA YAMLs. Kernel v3
   pushed and RUNNING (status checked 21:05 CEST).
+- ~21:35 CEST: kernel v3 COMPLETE, but the output zip (`boltz2_pathB_folds.zip`,
+  downloaded and zip-integrity-verified) contains NO model predictions for any
+  of the 4 designs: only the `processed/` input-prep files, with empty
+  `predictions/`, `msa/`, `lightning_logs/` dirs. The `boltz predict`
+  subprocesses produced nothing while the notebook ran all 5 cells to
+  completion. Exact return codes / stderr live only in the kernel run log,
+  not yet retrieved in this run. Outputs saved at
+  `results/pathB_boltz2_fold/`. /tmp (512 MB tmpfs) filled up on the first
+  download attempt (500 MB `boltz2_aff.ckpt`); redownloaded into the workspace.
 
 ## 13. Notes on transcript reliability
 
