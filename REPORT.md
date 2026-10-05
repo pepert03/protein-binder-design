@@ -288,3 +288,77 @@ controls in score and position, but that is not independent validation.
   filters; extensive cross-checks (Boltz-2, Chai-1, DockQ, disulfide controls,
   glycan and novelty analyses); pH-hypothesis literature research.
 - Full detail in `docs/STATUS.md`.
+
+### 2026-10-05 ~20:15 CEST — Path A complete: placement scan of all nine recovered candidates
+
+**Status: DONE. All nine candidates scanned; `data/candidates/placement_scan.json` saved and committed.**
+
+After a chain of environment fixes (below), the Proton-PottsMPNN placement
+scan ran end to end on the recovered C5 backbones. For each candidate it
+reports where the extended-vocab protonated states (HIS-P, ASP-P, GLU-P)
+fit best on the binder, split by structural class (interface / core /
+surface). Lower score = better fit. This is a **model prediction, not
+experimental evidence**: it ranks which backbones are most amenable to
+pH-switch redesign, it does not prove binding or pH selectivity.
+
+Results, best interface HIS-P placement per candidate (lower is better):
+
+| candidate | best iface HIS-P | residue | best iface ASP-P | residue |
+|---|---|---|---|---|
+| cC5_00 | -3.26 | 6 | -2.06 | 28 |
+| rank01_cC5_03 | -2.56 | 13 | -0.47 | 16 |
+| rank02_cC5_13 | -1.93 | 5 | -2.58 | 36 |
+| rank05_cC5_06 | -1.79 | 38 | +4.62 | 44 |
+| rank03_cC5_01 | -1.70 | 33 | -0.46 | 16 |
+| rank04_cC5_02 | -1.43 | 7 | +2.26 | 24 |
+| rank07_cC5_10 | -1.10 | 26 | +1.50 | 26 |
+| rank08_cC5_07 | -0.95 | 7 | +0.33 | 48 |
+| rank06_cC5_09 | -0.72 | 49 | -2.11 | 2 |
+
+Reading (two independent pH-switch mechanisms):
+- **Receptor-His mechanism** (from the earlier geometry): a binder acidic
+  residue facing EGFR His433 forms a salt bridge only when His433 is
+  protonated (pH 6.5), losing it at pH 7.4. rank03 leads here: Asp37 sits
+  5.7 A (C-alpha) from His433, followed by rank06 (Asp52, 6.7 A).
+- **Binder-His mechanism** (this scan): a binder histidine at the interface
+  that prefers protonation could pair with a receptor acid at pH 6.5.
+  cC5_00 leads here with the strongest interface HIS-P signal (res 6: -3.26,
+  res 28: -2.16), but it carries a strong glycan-clash warning from two
+  alignments and needs that filter before any redesign.
+- **rank03 combines both**: best H433 geometry (Asp37, 5.7 A) plus a
+  moderate HIS-P signal (-1.70 at res 33) and a mild GLU-P fit (-1.16 at
+  res 16). It is the leading Path B backbone.
+- rank06, second-best on H433 geometry, has the weakest binder HIS-P
+  signal (-0.72); the model does not favor protonated His at its interface.
+
+Path B plan: redesign the top 2-3 backbones with
+`inference/design_ph.py` (block descent, `combined_lambda` sweep across
+0.1 / 0.3 / 0.5 / 0.7, multiple seeds), starting with rank03 and cC5_00
+(pending its glycan recheck), then fold selected sequences with Boltz-2.
+
+### 2026-10-05 ~19:00–20:10 CEST — Proton-PottsMPNN install and Path A debugging
+
+- Compiled HBPLUS from the official EBI/GitHub source
+  (`~/workspace/ppmnn/hbplus/hbplus/hbplus`); the v6 featurization calls it
+  via `HBPLUS_PATH`. The earlier brief's claim that design needs no external
+  HBPLUS was wrong for this code snapshot; corrected in
+  `docs/proton_potts_mpnn.md`.
+- Reinstalled the venv CPU-only (torch 2.14.1+cpu, CUDA stack removed after
+  José asked about acceleration).
+- Installed undeclared runtime deps one by one as the scan's import chain
+  surfaced them: `ipdb`, `propka`, `flaml`, `scikit-learn`, `xgboost`,
+  `lightgbm`. Note: an early quiet `pip install xgboost lightgbm` failed
+  silently; verified with explicit output on retry.
+- `code/placement_scan_A.py`: Biotite API fix (PDBxFile -> CIFFile), Atomworks
+  parsing for charge annotations, finite-coordinate SASA split, HBPLUS_PATH
+  export. All nine candidates now complete without errors.
+
+### 2026-10-05 ~18:45 CEST — Candidate structures recovered
+
+- Recovered 9 structures from Kaggle notebook `notebook6198e9562d`
+  (C5 batch): `data/candidates/` rank01-08 plus cC5_00. Binder 54-74 aa.
+- C2/C3/C4 archives not found in any notebook version; cC_6, cC_12,
+  cC4_00, cC4_15 structures remain unrecovered.
+- Binder sequences in `data/candidates/binder_sequences.fasta`.
+- Model numbering offset +27 vs UniProt (model His406 = EGFR His433,
+  verified via LKEISDGDVI motif).

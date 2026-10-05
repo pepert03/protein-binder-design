@@ -55,7 +55,13 @@ Validated by the authors on PD-L1 (yeast display, pH 5.0 vs 7.4, flow cytometry)
 - **No GPU needed for design.** GPU is only needed if you use their packaged RF3
   folder (weights ~3 GB **not shipped**) — we skip that and fold with Boltz-2,
   which already works on the DGX (~3 min per EGF-sized fold).
-- **HBPLUS**: the *external C binary* is needed only for the standalone labeller
+- **HBPLUS**: CORRECTION 2026-10-05: the v6 featurization path used by the
+  design engine (`mpnn/transforms/bond_annotation.py`, `CalculateHbondsPlus`)
+  calls the HBPLUS executable directly; it is REQUIRED at design time, not
+  only for the standalone labeller. Set `HBPLUS_PATH` to the compiled binary
+  (built 2026-10-05 from the official EBI source at
+  `~/workspace/ppmnn/hbplus/hbplus/hbplus`). The earlier claim otherwise was
+  wrong for this code snapshot.
   script and fold scoring (`scoring/`). The design path uses foundry's built-in
   H-bond calculator, so **design runs without it**.
 - **Install**: needs Python 3.12 (`uv python install 3.12` works anywhere),
