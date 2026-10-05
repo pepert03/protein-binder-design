@@ -500,3 +500,18 @@ target, no MSA (same as the validated v2 batch setup).
   `TensorBoardLogger.log_hyperparams`/`log_metrics` to no-op before
   calling `boltz predict`, or set the lightning default logger off.
   Keep the per-fold stdout/stderr/rc capture added in the previous plan.
+
+### 2026-10-05 ~22:25 CEST — Kernel v3 post-mortem, v4 relaunched (logger fix)
+
+- Kernel v3 status COMPLETE but **zero predictions**: all four folds died
+  rc=1 inside pytorch_lightning's default TensorBoard logger
+  (ValueError "tried to log -1"). Weights downloaded fine; the crash was at
+  prediction time, not OOM/CUDA. Outputs contained only `processed/` inputs.
+- Root cause in boltz 2.0.3 (`boltz/main.py`): `predict()` builds its
+  `Trainer` with no `logger` argument, so PL attaches a TensorBoardLogger by
+  default, and the CLI exposes no switch to disable it.
+- Fix in v4 (`code/kaggle_fold/fold.ipynb`): run `predict` in-process via
+  click's CliRunner with `boltz.main.Trainer` monkeypatched to a subclass
+  forcing `logger=False`. Same install (boltz 2.0.3 --no-deps + deps), same
+  4 designs, same no-MSA YAMLs.
+- Kernel v4 pushed and RUNNING.

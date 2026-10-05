@@ -263,6 +263,8 @@ No candidate has any affinity, pH-selectivity, or mouse-binding evidence.
   exist (`r03_l07 -> []` etc.). Fix for v4: disable the TensorBoard logger
   (monkeypatch or logger-off) before calling `boltz predict`; add
   per-fold stdout/stderr/rc capture into the output zip.
+- ~22:05 CEST: v4 not relaunched yet; kernel status confirmed COMPLETE, no
+  active subagents/processes/browser tasks, nothing running.
 
 ## 13. Notes on transcript reliability
 
