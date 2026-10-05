@@ -263,8 +263,10 @@ No candidate has any affinity, pH-selectivity, or mouse-binding evidence.
   exist (`r03_l07 -> []` etc.). Fix for v4: disable the TensorBoard logger
   (monkeypatch or logger-off) before calling `boltz predict`; add
   per-fold stdout/stderr/rc capture into the output zip.
-- ~22:05 CEST: v4 not relaunched yet; kernel status confirmed COMPLETE, no
-  active subagents/processes/browser tasks, nothing running.
+- ~22:25 CEST: v4 relaunched (root-cause fix: run `predict` in-process via
+  click's CliRunner with `boltz.main.Trainer` monkeypatched to force
+  `logger=False`; kernel confirmed RUNNING via CLI). Kernel v3 was a silent
+  failure: COMPLETE status, zero predictions.
 
 ## 13. Notes on transcript reliability
 
