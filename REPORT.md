@@ -476,3 +476,27 @@ target, no MSA (same as the validated v2 batch setup).
 - Code fix prepared: the next kernel version should capture each fold's
   full stdout/stderr/rc into a text file included in the output zip, so a
   silent failure like this one is diagnosable without opening the log page.
+
+### 2026-10-05 ~21:55 CEST — Root cause of the v3 fold failure confirmed (kernel run log)
+
+- Read the kernel run log via the browser (Logs tab of the v3 run,
+  read-only): run finished "Successfully ran in 1914.3s", GPU T4 x2.
+- All four folds crashed with **rc=1** (not OOM, not CUDA): identical
+  `ValueError: you tried to log -1 which is currently not supported. Try a
+  dict or a scalar/tensor.` raised in pytorch_lightning's TensorBoard
+  logger (`log_metrics`) during hyperparameter logging. The notebook kept
+  going ("ALL DONE"), zipped the working dir, and the confidence cell
+  found no files: `r03_l07 -> []`, `r03_l05 -> []`, `r01_l07 -> []`,
+  `r02_l07 -> []`.
+- Times: r03_l07 387s (it downloaded CCD data + Boltz-2 weights +
+  affinity weights first), the other three ~45s each.
+- Environment details: torch 2.11.0+cu128, CUDA True (Tesla T4),
+  boltz 2.0.3, dm_tree 0.1.10 (pip resolver warnings: boltz 2.0.3 pins
+  dm-tree==0.1.8, but install was --no-deps so it never mattered).
+  YAMLs: binder 70/70/67/71 aa + 609-aa target, explicit empty MSA
+  ("single sequence mode" warning printed, as expected).
+- Fix for v4: disable the TensorBoard logger (the crash is in the
+  lightning logger, not in the model): e.g. monkeypatch
+  `TensorBoardLogger.log_hyperparams`/`log_metrics` to no-op before
+  calling `boltz predict`, or set the lightning default logger off.
+  Keep the per-fold stdout/stderr/rc capture added in the previous plan.

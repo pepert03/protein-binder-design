@@ -256,6 +256,13 @@ No candidate has any affinity, pH-selectivity, or mouse-binding evidence.
   not yet retrieved in this run. Outputs saved at
   `results/pathB_boltz2_fold/`. /tmp (512 MB tmpfs) filled up on the first
   download attempt (500 MB `boltz2_aff.ckpt`); redownloaded into the workspace.
+- ~21:55 CEST: run log read (read-only, Logs tab): ALL FOUR folds crashed
+  with rc=1 due to a pytorch_lightning TensorBoard logger ValueError
+  ("you tried to log -1 which is currently not supported"), not OOM/CUDA.
+  r03_l07 ran 387s (weights download), others ~45s. No confidence JSONs
+  exist (`r03_l07 -> []` etc.). Fix for v4: disable the TensorBoard logger
+  (monkeypatch or logger-off) before calling `boltz predict`; add
+  per-fold stdout/stderr/rc capture into the output zip.
 
 ## 13. Notes on transcript reliability
 
