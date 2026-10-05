@@ -176,6 +176,54 @@ controls in score and position, but that is not independent validation.
 
 ## 4. Running log (newest first)
 
+### 2026-10-05 ~18:30 CEST — First candidate structures recovered
+- Downloaded via time-limited signed GCS URLs (minted from the Kaggle output
+  file preview): `data/candidates/rank01_cC5_03.cif` (492 kB) and
+  `data/candidates/cC5_00.cif` (444 kB). Both verified as genuine mmCIF
+  binder–target complexes (chains A+B, ~5k atoms).
+- Remaining 6 final-8 CIFs being fetched the same way.
+
+### 2026-10-05 ~18:30 CEST — Kaggle batch archives located
+- Found in notebook `notebook6198e9562d`: `C5_all_outputs.zip` (19.11 MB,
+  version 1, scriptVersionId=354935690) containing
+  `oc_C5/final_ranked_designs/final_8_designs/` with 8 ranked candidate CIFs
+  (rank01_cC5_03 … rank08_cC5_07) plus `intermediate_designs/` with
+  cC5_00.cif … cC5_14.cif; and `DIII_all_outputs.zip` (19.07 MB, version 2).
+- **Not found**: no C2/C3/C4 archives in any of the 6 notebook versions, so
+  the cC_6 / cC_12 / cC4_00 / cC4_15 complex backbones may be unrecoverable
+  from Kaggle. If so, Proton-PottsMPNN Path B will start from C5 backbones
+  (cC5_00 passed filters; the final-8 are batch-ranked).
+- Browser zip-download clicks did not land on the VM; retrying with
+  individual small CIF downloads.
+- DGX driver-script downloads blocked: the portal's Files app triggers native
+  "Save As" dialogs the browser automation cannot capture. Parked: not on the
+  critical path. The RAM-workaround logic is documented from the survey; the
+  originals can be re-fetched via a quick user takeover when the Boltz-2
+  folding step needs them.
+
+### 2026-10-05 ~18:20 CEST — DGX history surveyed (user tip)
+- Portal survey (read-only): 4 batch-connect logs from Oct 4 evening
+  (jobs 426–429: inputs upload, EGF runs, Fab runs). All 5 driver scripts
+  intact, including the RAM-workaround variant `driver_dgx_phase.py`
+  (RSS guard at 5.5 GiB, malloc_trim, phase markers) — downloading it plus
+  the Fab provenance/log for reuse in the Boltz-2 folding step.
+- Run outputs all present: egf_dgx_out, egf_phase_notrim, egf_phase_trim
+  (with successful .npz/.cif predictions), fab_dgx_out, fab_phase_trim.
+- Important: the DGX never ran candidate generation — no candidate binder
+  structures there. Candidates live only in Kaggle notebook outputs.
+
+### 2026-10-05 ~18:15 CEST — Proton-PottsMPNN brief done; plan unlocked
+- Brief at `docs/proton_potts_mpnn.md` (code-grounded; paper PDF unfetchable).
+  Key result: **design is CPU-only** (21 MB checkpoint), no GPU needed.
+- Plan: **Path A** — rescore the 7 candidates with the placement scan
+  (CPU-minutes per backbone); **Path B** — pH-redesign 2–3 backbones
+  (prefer cC4_00/cC_12, avoid cC6 novelty risk) with λ sweep, fold top ~10 each
+  in Boltz-2 on the DGX, re-apply filters.
+- His433 mechanism confirmed exploitable: binder ASP-D/GLU-D vs target HIS-P =
+  salt bridge at pH 6.5, lost at 7.4 (matches PMC9703009 precedent).
+- Installing Proton-PottsMPNN locally now (uv + Python 3.12 + foundry);
+  recovering candidate complex structures from Kaggle in parallel.
+
 ### 2026-10-05 ~18:15 CEST — Draft of next (pH-switch) batch prepared
 - `code/generation/ph_switch_batch_DRAFT.py`: parameterized copy of the
   validated pipeline, targeting the H433 region. Patch residues and pH
