@@ -1,0 +1,25 @@
+{
+  "version": 6,
+  "url": "https://www.kaggle.com/code/peperidruejo/notebook6198e9562d?scriptVersionId=355161133",
+  "status_as_of": "2026-10-04T14:24:00+02:00",
+  "status": "launched_running_results_pending",
+  "samples_per_arm": 1,
+  "full_reference_tokens": {
+    "Fab_6ARU": 1058,
+    "EGF_1NQL": 677
+  },
+  "scientific_limits": [
+    "Actual model boundary checks and GPU feasibility pending.",
+    "One sample per explicit disulfide mode is not the earlier five sample benchmark.",
+    "No candidate binding or affinity conclusion."
+  ],
+  "files": {
+    "kaggle_version6.py": "7334e102c43c910fa83f76832139dc0b2cd5df1cdfededb2f864b0bddcc26861",
+    "driver.py": "6defa1bc6ba5be20e08a4a8d89e10085026b90446ccab4819a1a9e6ff3468862",
+    "fold_one_sample_SS_true_PREPARED.yaml": "2e2588ad8634bb2c95e03fc00518ba5f2c8f9d6db91358375ae821d27e4d5e02",
+    "expected_source_hashes.json": "084be34875c9333bc3456af7b462dbc74d71c4d809b74cbc53cc2fbb4b3c0965",
+    "fold_one_sample_SS_false_PREPARED.yaml": "acd8fcc54f4ffc351857c6400bbe764648dd9edde8a1e7f446c7b1213888f46d",
+    "boundary_assertions.py": "af3cb56dc445c84a549e3fe3007cced6a0bd6d43319d498708f30528462f2ea4",
+    "EJEMPLOS_DE_EJECUCION.md": "81537ef46cf2fee02e0dbf9fdd5510d382c86185e1303e194b2b50c47d69183c"
+  }
+}

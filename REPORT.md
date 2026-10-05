@@ -1,0 +1,219 @@
+# pH-Selective EGFR Binder Design — Research Report
+
+Design of a conditional (pH-selective) EGFR binder for the ProteinBase challenge
+(anthropic-adaptyv-2026, Challenge 01: EGFR).
+Repository: `ph-selective-egfr-binder`. Author: José Ridruejo.
+
+This is a living document. New findings are appended to the **Running log**
+(newest first) and the summary sections are updated accordingly.
+Companion files: `docs/STATUS.md` (reconstruction of Oct 2–4 work from the
+transcript), `code/kaggle_v6/` (recovered, hash-verified Version6 code).
+
+**Deadline: Tuesday 2026-10-06, 23:59 AoE = 2026-10-07 13:59 CEST (Madrid).**
+Nothing has been submitted. Nothing is submitted without José's explicit go-ahead.
+
+---
+
+## 1. The challenge
+
+- Official page: https://proteinbase.com/competitions/anthropic-adaptyv-2026/challenges/egfr
+- Task: design a **conditional EGFR binder** against the human EGFR extracellular
+  region. Domain III is the recommended functional epitope (targeted by
+  cetuximab/panitumumab).
+- Ranking of objectives (in this order):
+  1. **pH-selective binding**: binds at pH 6.5, no detectable binding at pH 7.4.
+  2. **Mouse cross-reactivity**: the same sequence binds human and mouse EGFR.
+  3. **Affinity** against human EGFR.
+- Submission: CSV ordered by the submitter's own ranking; columns `name`,
+  `sequence`, `molecule_class` (`protein` | `nanobody` | `scfv` | `fab_kappa` |
+  `fab_lambda`). De novo designs only, 10–250 aa. Up to 40 designs (Track 1) or
+  20 (Tracks 2/3). The methodology description is made **public** on submission.
+  Only one submission batch counts (the last, or the one explicitly designated).
+- Winners are announced per category; a weak but clearly pH-sensitive binder may
+  beat a strong non-selective one. Method novelty, diversity and quality are
+  valued over filling the quota.
+
+## 2. Key discoveries so far
+
+### 2.1 Assay conditions (Slack, Tudor/Adaptyv, Oct 4)
+
+- Binding measured primarily by **SPR**, with **BLI** to validate hits.
+  Our designs are immobilized; EGFR flows over them.
+- Human EGFR tested at **pH 6.5 and 7.4**; **mouse EGFR only at pH 6.5**.
+  Implication: a genuine pH-switch (off at 7.4) can still demonstrate mouse
+  cross-reactivity, since mouse is measured at the acidic pH.
+- Targets are full ectodomains, tethered: **Human Met 1–Ser 645**,
+  **Mouse Met 1–Ser 647**, supplied by Sino Biological
+  (human-egfr-10001-h08h, mouse-egfr-51091-m08h).
+- Receptors are produced in **HEK293 → glycosylated**. Glycan-clash alerts from
+  modeling are relevant to the real assay, not just the models.
+- Cross-reactivity is framed as KD(mouse)/KD(human) ≈ 1.
+- Sources: https://proteinbase.slack.com/archives/C0C4VEG57HU/p1791137831013399
+  (Tudor FAQ), earlier assay thread
+  https://proteinbase.slack.com/archives/C0C4VEG57HU/p1790724749287889?thread_ts=1790637669.096089
+
+### 2.2 Novelty requirement (Slack, Oct 2–5)
+
+- **Novelty Level 3** required, checked at submission; both sequence *and*
+  structural comparison against known proteins. Local similarity checks are not
+  a substitute. Reference: Adaptyv's novelty blog post (adaptyvbio.com).
+- The official novelty pipeline code was promised for Oct 5. As of Oct 5 ~18:05
+  CEST, **no verified publication** in the Slack workspace (checked read-only;
+  thread replies could not be opened). Still pending.
+- Affibodies do not get antibody-style novelty treatment in this challenge.
+
+### 2.3 Design pipeline and batches (Oct 2–4, previous AI "Instinct")
+
+Pipeline: **BoltzGen** (de novo generation + sequence design) → **Boltz 2**
+refolding (usually 5 samples; metrics ipTM, PAE, pLDDT) → **Chai-1** orthogonal
+pose check → official **DockQ** for interface comparison. Internal filters for a
+candidate: complex RMSD (refolded vs generated) ≤ 2.5 Å, contact with the target
+patch, no interface contacts < 2.5 Å (clashes), interface confidence judged per
+case, partial novelty checks.
+
+| Date | Batch | Designs | Passed | Note |
+|---|---|---|---|---|
+| Oct 2 | test + numbering fix + patch 2 | 10 | 0 | Low interface confidence; a residue-numbering bug was found and fixed |
+| Oct 2 | relaunch | 4 | 0 | 1 touched the patch (ipTM 0.665) but had a too-close contact |
+| Oct 2 | evening | 8 | 2 | Best ipTM 0.81 |
+| Oct 3 | 16-design | 16 | 2 | 1 convincing (ipTM 0.713, patch contacted, no clashes) |
+| Oct 3 | focused 16-design | 16 | 3 | 1 with better signals, 2 weaker |
+| Oct 3 | 2 fixed histidines | 16 | 0 | All failed RMSD; His conserved in sequence but not constrained to interface |
+| Oct 4 | new DIII patch | 16 | 0 | 15/16 passed the binding-site filter; all failed complex RMSD (80 refold samples checked) |
+
+**Total: 86 designs, 7 passed internal filters (~8%).** Only 4 of the 7 have the
+best interface signals. Naming in the transcript is inconsistent (cC_6/cC6);
+two passing designs are never named [uncertain].
+
+### 2.4 Candidate assessment (all still predictions, no wet-lab evidence)
+
+- **cC_6** (batch C2): most pose-consistent across Chai-1/Boltz-2; places a Glu
+  near receptor **H433** (pH hypothesis). **Risks: high structural-novelty risk**
+  (local match to part of a PDB protein); glycan clash is
+  conformation-dependent, unresolved.
+- **cC_12** (batch C3): Glu near H433 in Chai-1 models; pose consistent in only
+  1 of 3 Boltz-2 models.
+- **cC4_00**: better novelty signal than cC6; position varies between Chai-1 and
+  Boltz-2.
+- **cC4_15**: avoids the N352 glycan in the tested context; issues when full
+  EGFR domains are added.
+- **cC5_00**: strong clash with the first EGFR-attached glycan in two alignments.
+- **2 unnamed**: passed filters with weaker signals [uncertain].
+
+Cross-model caveats: Boltz-2 scores **shuffled-sequence controls** highly too
+(its score is not discriminative here); Chai-1 separates designs from shuffled
+controls in score and position, but that is not independent validation.
+**No candidate has any affinity, pH-selectivity, or mouse-binding evidence.**
+
+### 2.5 Controls: what the pipeline can and cannot do
+
+- **Fab (cetuximab mutant, PDB 6ARU)**: recovers 88–92% of native interface
+  contacts, interface RMSD ~0.61 Å, **DockQ 0.72–0.84**. The pipeline *can*
+  recover a real binder pose. (Full Fab + 5 simultaneous samples OOMs; 1 sample
+  fits.)
+- **EGF (PDB 1NQL)**: DockQ 0.048/0.014, complex RMSD 11.98–24.06 Å — but the
+  input prep had **dropped the 3 disulfide connectivities**, and 1NQL is an
+  autoinhibited low-affinity state crystallized at very acidic pH, not the
+  active DIII complex. Not a valid negative control of the pipeline.
+- EGF replicas show **high seed-to-seed variability** (2 of 5 seeds reach DockQ
+  0.43–0.46); one sample is not enough to judge. Recorded seeds do not control
+  all internal randomness.
+
+### 2.6 pH-selectivity hypothesis research
+
+- Literature lead: an engineered anti-EGFR antibody placing **Asp/Glu facing
+  receptor H433 (domain III)** gained binding in acidic medium —
+  https://pmc.ncbi.nlm.nih.gov/articles/PMC9703009/ — but the final construct
+  still bound at pH 7.4. Lead, not a solution.
+- Second lead: binder histidine facing a receptor Glu for acidic binding —
+  https://www.tandfonline.com/doi/full/10.1080/19420862.2019.1682866
+- In Chai-1 models, **cC_6 and cC_12 place a Glu near H433** (checked against the
+  active-state structure 1IVO). Weakened: shuffled controls also contact H433,
+  and contact positions differ between Chai-1 and Boltz-2.
+- **Proton-PottsMPNN** (Oct 4, flagged by Amir/organization as highly relevant
+  for pH-sensitive design): paper
+  https://www.biorxiv.org/content/10.64898/2026.09.30.755438v1.full.pdf, code
+  https://github.com/christian-creator/ProtonPottsMPNN. Under active evaluation
+  (see running log).
+- Caution from literature review: adding histidines can produce the *opposite*
+  pH effect to the one wanted; the mechanism needs grounding before more compute.
+
+### 2.7 Compute characterization
+
+- **Kaggle** (jridruejotunon@gmail.com): 2× Tesla T4 (15 GB each); design jobs
+  use ~9–10 GB/GPU; ~50 min per 4-design batch. Sessions can die and lose
+  unsaved results. Quota on Oct 5: 19:21/30 h used (~10.5 h left).
+- **Comillas DGX** (https://hpc.comillas.edu, Open OnDemand, no VPN):
+  student profile = **1× 16 GiB MIG slice of an H200, sessions up to 8 h**
+  (email said 24 h; portal shows 8 h). Measured: 4 CPU cores, **~5.86 GiB RAM
+  per job (binding limit — not GPU memory)**, Python 3.10.12, PyTorch 2.14.0,
+  CUDA 12.6, internet OK. EGF prediction 2:56 (DGX) vs 6:53 (Kaggle). Storage
+  is **not backed up (RAID 0)** — always copy results off.
+
+### 2.8 Code recovery and validation (Oct 5, Muse)
+
+- Recovered the private Kaggle dataset `proteinbase-codigo-version6`
+  (https://www.kaggle.com/datasets/peperidruejo/proteinbase-codigo-version6):
+  9 files, in `code/kaggle_v6/`.
+- **Version6 is hash-verified** (SHA256 match `expected_source_hashes.json`),
+  syntax-checked, synthetic assertion regression passes, embedded payload CRC
+  valid (Fab_6ARU + EGF_1NQL references, configs, driver).
+- **Limitation: Version6 covers only the corrected reference-folding controls**
+  (4 arms: Fab/EGF × disulfide on/off, 1 sample each). It does **not** include
+  the BoltzGen design-generation pipeline that produced the 86 designs —
+  recovery of the generation code from notebook history is in progress.
+
+## 3. Open questions
+
+1. No pH-selectivity evidence for any candidate (the #1 criterion).
+2. Official novelty pipeline code: promised Oct 5, not yet verified.
+3. Submission needs a Proteinbase login (account/method unconfirmed); track
+   unconfirmed (affects 40 vs 20 design cap).
+4. Glycan clash on cC6 unresolved; cC5_00 clashes.
+5. Mouse cross-reactivity cannot be confirmed computationally (but mouse is
+   tested at pH 6.5, so a pH-switch design is compatible with it).
+6. Design-generation code not yet recovered (notebook history in progress).
+
+## 4. Running log (newest first)
+
+### 2026-10-05 ~18:15 CEST — Draft of next (pH-switch) batch prepared
+- `code/generation/ph_switch_batch_DRAFT.py`: parameterized copy of the
+  validated pipeline, targeting the H433 region. Patch residues and pH
+  mechanism are explicit TODOs awaiting the Proton-PottsMPNN brief — not to be
+  run as-is. Goal: launch within minutes of the brief arriving.
+
+### 2026-10-05 ~18:10 CEST — Generation pipeline recovered
+- Recovered the BoltzGen **design-generation code** from Kaggle notebook
+  Version 2 (`scriptVersionId=355016993`, 2026-10-04): full pipeline in
+  `code/generation/diii_batch_v2.py` + `code/generation/README.md`.
+- Key parameters: 16 designs, binder 50–90 aa, 17-residue DIII patch
+  (369,395,397,400,402,403,406,407,408,427,428,431,446,447,449,451,452 in 6ARU
+  numbering), empty local MSA, filters rmsd ≤2.5 / iptm ≥0.6 / plddt ≥75 etc.
+  Original run: 2h48m on 2×T4, 0/16 passed filters.
+- This unblocks new design batches: retargeting = changing `LABELS` + output dir.
+- Still in progress: Proton-PottsMPNN deep dive (paper + code).
+
+### 2026-10-05 ~18:10 CEST — Report created; Slack assay details confirmed
+- Created this report; repo `ph-selective-egfr-binder` live on GitHub with the
+  workspace, STATUS.md, and the verified Version6 code.
+- Slack (read-only) findings: mouse EGFR tested **only at pH 6.5**; exact
+  constructs Human Met 1–Ser 645 / Mouse Met 1–Ser 647 (Sino Biological);
+  Proton-PottsMPNN flagged by the organization for pH-sensitive design;
+  novelty pipeline code still unverified.
+- 30-minute status updates scheduled until the deadline.
+- In progress: Proton-PottsMPNN deep dive (paper + code); recovery of the
+  BoltzGen generation code from Kaggle notebook history.
+
+### 2026-10-05 ~17:30–18:00 CEST — Access and recovery
+- Signed in (with José's approvals): Kaggle (dataset downloaded, code
+  validated), Comillas DGX (dashboard verified, 16 GiB / 8 h profile, nothing
+  launched), Proteinbase Slack (read-only; CAPTCHA solved by José).
+- GitHub repo created by José; connected via fine-grained token; SSH blocked by
+  the sandbox proxy, pushed via the GitHub git-database API.
+- Official challenge page re-read: deadline and ranking criteria confirmed.
+
+### 2026-10-02 → 2026-10-04 — Prior work by "Instinct" (from transcript)
+- 86 designs generated with BoltzGen across 9 batches; 7 passed internal
+  filters; extensive cross-checks (Boltz-2, Chai-1, DockQ, disulfide controls,
+  glycan and novelty analyses); pH-hypothesis literature research.
+- Full detail in `docs/STATUS.md`.
