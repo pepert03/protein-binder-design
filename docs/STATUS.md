@@ -233,6 +233,12 @@ No candidate has any affinity, pH-selectivity, or mouse-binding evidence.
   status, download outputs via `kaggle kernels output`, run internal filters.
 - Pilot note: `redesign_path_B.py` initially passed atomworks `parse()`'s raw
   dict to the engine; fixed to `parse(...)["asym_unit"][0]` (same as Path A).
+- ~20:25 CEST: kernel v1 failed (pip install of `dm-tree==0.1.8` has no
+  Python 3.13 wheel and the source build fails on Kaggle's 3.13; boltz 2.2.1
+  imports zero dm_tree, so it is vestigial). Relaunched as v2:
+  `pip install --no-deps boltz==2.2.1` plus every other dependency installed
+  explicitly, smoke test imports boltz. Same 4 designs, same no-MSA YAMLs.
+  v2 RUNNING (checked 20:36 CEST, ~11 min in, no outputs yet).
 
 ## 13. Notes on transcript reliability
 
