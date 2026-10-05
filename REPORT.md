@@ -176,6 +176,18 @@ controls in score and position, but that is not independent validation.
 
 ## 4. Running log (newest first)
 
+### 2026-10-05 ~18:45 CEST — All 9 candidate complexes recovered
+- `data/candidates/`: rank01..rank08 CIFs (482–498 kB each) + cC5_00.cif.
+  All verified as binder–target complexes (chains A+B, ~5.0–5.3k atoms).
+  Ready for Proton-PottsMPNN Path A (placement scan / selectivity gaps).
+
+### 2026-10-05 ~18:40 CEST — GitHub push fixed and verified
+- Fixed `gh_push.py` technical debt: commits now preserve history
+  (parent = previous tip, base_tree reuse) and accept `--message`.
+  Also excludes `__pycache__`/`.pyc` (a 551 kB `.pyc` was causing HTTP 400).
+- Pushed commit `83fe8e62` (parent `77eb506d`) with the Proton-PottsMPNN
+  brief, DGX survey, candidate recovery and the pH-switch batch draft.
+
 ### 2026-10-05 ~18:30 CEST — First candidate structures recovered
 - Downloaded via time-limited signed GCS URLs (minted from the Kaggle output
   file preview): `data/candidates/rank01_cC5_03.cif` (492 kB) and
