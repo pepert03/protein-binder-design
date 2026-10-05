@@ -1,0 +1,13 @@
+{
+  "id": "peperidruejo/egfr-pathb-boltz2-fold",
+  "title": "egfr-pathb-boltz2-fold",
+  "code_file": "fold.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_internet": "true",
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": []
+}

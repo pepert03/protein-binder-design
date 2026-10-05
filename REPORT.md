@@ -401,3 +401,20 @@ rank01 lam 0.7 (sel -13.72), rank02 lam 0.7 (sel -13.71).
 Folding needs GPU: plan is a Kaggle notebook driven via the Kaggle API
 (token being created through the signed-in browser), binder + 609-aa EGFR
 target, no MSA (same as the validated v2 batch setup).
+
+### 2026-10-05 ~19:45 CEST — Boltz-2 folding launched on Kaggle GPU
+
+**Status: RUNNING on Kaggle (kernel `peperidruejo/egfr-pathb-boltz2-fold`).**
+- Created a fresh Kaggle API token via the signed-in browser (old 2-year
+  legacy key expired in the process); CLI works (`kaggle kernels list` OK).
+- Kernel: `code/kaggle_fold/` (fold.ipynb + kernel-metadata.json), GPU on,
+  internet on. Installs `boltz`, writes 4 YAMLs (designed binder + 609-aa
+  EGFR target, `msa: empty` on both chains, same no-MSA setup as the
+  validated v2 batch), runs `boltz predict` per design, prints iptm/ptm,
+  zips outputs to `boltz2_pathB_folds.zip`.
+- 4 designs: r03_l07, r03_l05, r01_l07, r02_l07.
+- Next: poll kernel status, download outputs via `kaggle kernels output`,
+  then apply filters (iptm/plddt, glycan proximity, H433 center proximity,
+  mouse conservation) and build the ranked CSV for José's review.
+- DGX held as the second GPU lane (native-sequence controls or extra
+  designs) if needed.
