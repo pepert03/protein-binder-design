@@ -208,11 +208,31 @@ No candidate has any affinity, pH-selectivity, or mouse-binding evidence.
   receptor-His433 geometry (Asp37, 5.7 A) and combines both mechanisms
   (moderate HIS-P -1.70 at res 33). All scores are model predictions, not
   experimental evidence.
-- Path B plan: redesign top 2-3 backbones (rank03, cC5_00 pending glycan
-  recheck) with `inference/design_ph.py` block descent
-  (`combined_lambda` 0.1/0.3/0.5/0.7 sweep, multiple seeds), fold with Boltz-2.
-  Not yet started.
-- Draft pH-switch batch script `code/redesign_path_B.py` in repo (untracked).
+- Path B complete (~19:50 CEST): `code/redesign_path_B.py` ran block descent
+  (the production optimizer from `inference/design_ph.py`) on rank03, rank01,
+  rank02 backbones, lambdas 0.1/0.3/0.5/0.7, one design per lambda, protonated
+  centres restricted to the interface (`placement_region=["interface"]`).
+  12 designs in `data/designs/pathB/<backbone>/` (sweep_designs.tsv,
+  designs.json, designs.fasta). All three backbones show a clean lambda
+  response: selective energy falls as lambda rises (more pH-selective) at a
+  small Potts-energy (stability) cost; each pinned the same centres at every
+  lambda. cC5_00 excluded from the sweep despite the strongest Path A HIS-P
+  signal (-3.26): prior work documented a strong clash with the first
+  EGFR-attached sugar in two alignments, the assay uses glycosylated HEK293
+  EGFR, and Proton-PottsMPNN is fixed-backbone so redesign cannot move the
+  binder away from the glycan. rank02 took its place; revisit only if these
+  three fail downstream.
+- Boltz-2 folding launched ~19:45 CEST on Kaggle (kernel
+  `peperidruejo/egfr-pathb-boltz2-fold`, code in `code/kaggle_fold/`:
+  fold.ipynb + kernel-metadata.json, GPU + internet on). Fresh Kaggle API
+  token created via the signed-in browser (old 2-year legacy key expired);
+  CLI works, status poll OK. 4 designs: r03_l07, r03_l05, r01_l07, r02_l07
+  (most selective per backbone + one balanced rank03 lam 0.5). Binder +
+  609-aa EGFR target, `msa: empty` on both chains (same no-MSA setup as the
+  validated v2 batch). Status at ~20:10 CEST check: still RUNNING. Next: poll
+  status, download outputs via `kaggle kernels output`, run internal filters.
+- Pilot note: `redesign_path_B.py` initially passed atomworks `parse()`'s raw
+  dict to the engine; fixed to `parse(...)["asym_unit"][0]` (same as Path A).
 
 ## 13. Notes on transcript reliability
 
