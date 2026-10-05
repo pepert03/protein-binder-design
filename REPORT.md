@@ -434,3 +434,18 @@ target, no MSA (same as the validated v2 batch setup).
   scipy, numba, gemmi, scikit-learn, chembl_structure_pipeline, requests).
   Smoke test imports boltz and confirms dm_tree absence is harmless.
 - Kernel v2 pushed and RUNNING. Same 4 designs, same no-MSA YAMLs.
+
+### 2026-10-05 ~21:00 CEST — Kernel v2 failed, v3 relaunched (boltz 2.0.3)
+
+- Kernel v2 ERROR: `pip install --no-deps boltz==2.2.1` failed with
+  "Requires-Python <3.13": boltz 2.2.x cannot be installed at all on
+  Kaggle's Python 3.13 (v1 had instead tried to build dm-tree because pip
+  silently fell back to resolving 2.0.x deps... in any case boltz never
+  installed: `ModuleNotFoundError: No module named 'boltz'`).
+- Fix in v3: `boltz==2.0.3` (Requires-Python >=3.10, no upper bound; its
+  code also has zero dm_tree imports, so the --no-deps workaround stands;
+  added its extra Linux dep `trifast`). Same 4 designs, same no-MSA YAMLs.
+- Kernel v3 pushed and RUNNING.
+- José asked for a guaranteed 30-min update even when brief: the cron body
+  now always delivers a visible message instead of staying silent on
+  no-change runs.
