@@ -515,3 +515,21 @@ target, no MSA (same as the validated v2 batch setup).
   forcing `logger=False`. Same install (boltz 2.0.3 --no-deps + deps), same
   4 designs, same no-MSA YAMLs.
 - Kernel v4 pushed and RUNNING.
+
+### 2026-10-05 ~23:10 CEST — Kernel v4 post-mortem, v5 relaunched (numpy ABI fix)
+
+- Kernel v4 ERROR at `import boltz.main`: `ValueError: numpy.dtype size
+  changed, may indicate binary incompatibility (Expected 96 from C header,
+  got 88 from PyObject)`. Root cause: pip resolved torch 2.11.0+cu128
+  (whose C extensions are built against numpy 2.x; torch declares no numpy
+  dependency, so pip did not complain) while my pin forced numpy 1.26.
+  v3 had resolved an older torch, which is why it imported fine.
+- Fix in v5: numpy pin relaxed to `numpy>=1.26` (resolves to 2.x, matching
+  torch 2.11's ABI; avoids downgrading Kaggle's base numpy). boltz 2.0.3's
+  `numpy<2.0` declaration is bypassed via --no-deps as before; its pinned
+  deps (scipy 1.13.1, numba 0.61, sklearn 1.6.1, biopython 1.84, rdkit)
+  all support numpy 2.
+- Kernel v5 pushed and RUNNING. Same in-process predict with logger=False,
+  same 4 designs, same no-MSA YAMLs.
+- Housekeeping: /tmp (512M tmpfs) had filled with the v3 output download;
+  cleared (it was a duplicate of hidden_runs/fold_v3_logs/).
