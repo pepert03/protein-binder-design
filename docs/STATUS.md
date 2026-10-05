@@ -188,7 +188,33 @@ No candidate has any affinity, pH-selectivity, or mouse-binding evidence.
 8. Code/results recovery: Kaggle dataset "proteinbase-codigo-version6" (Version6
    code + execution examples); the tmpfiles ZIP is expired.
 
-## 11. Notes on transcript reliability
+## 12. Oct 5: work resumed by Muse
+
+- Recovered 9 candidate structures from Kaggle notebook `notebook6198e9562d`
+  (C5 batch): `data/candidates/` rank01-08 plus cC5_00 (binders 54-74 aa);
+  sequences in `data/candidates/binder_sequences.fasta`. C2/C3/C4 archives not
+  found: cC_6, cC_12, cC4_00, cC4_15 structures still unrecovered.
+- Model numbering offset +27 vs UniProt (model His406 = EGFR His433, verified
+  via LKEISDGDVI motif).
+- Installed Proton-PottsMPNN environment (CPU-only torch 2.14.1+cpu, compiled
+  HBPLUS from official EBI source at `~/workspace/ppmnn/hbplus/hbplus/hbplus`,
+  installed undeclared deps ipdb/propka/flaml/scikit-learn/xgboost/lightgbm).
+  Correction: the v6 featurization calls the HBPLUS executable directly, so it
+  IS required at design time (earlier brief was wrong for this code snapshot).
+- Path A complete (~20:15 CEST): protonated-state placement scan
+  (`code/placement_scan_A.py`) over all 9 candidates, results in
+  `data/candidates/placement_scan.json`. Best interface HIS-P: cC5_00
+  (-3.26, res 6), rank01 (-2.56), rank02 (-1.93). rank03 leads the
+  receptor-His433 geometry (Asp37, 5.7 A) and combines both mechanisms
+  (moderate HIS-P -1.70 at res 33). All scores are model predictions, not
+  experimental evidence.
+- Path B plan: redesign top 2-3 backbones (rank03, cC5_00 pending glycan
+  recheck) with `inference/design_ph.py` block descent
+  (`combined_lambda` 0.1/0.3/0.5/0.7 sweep, multiple seeds), fold with Boltz-2.
+  Not yet started.
+- Draft pH-switch batch script `code/redesign_path_B.py` in repo (untracked).
+
+## 13. Notes on transcript reliability
 
 - Candidate naming is inconsistent (cC_6 vs cC6); two passing designs unnamed.
 - "C2"/"C3" batch labels are used but never fully defined.
