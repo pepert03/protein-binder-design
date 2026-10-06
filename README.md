@@ -1,3 +1,5 @@
+> Current results: see [latest EGFR summary](docs/LATEST_EGFR_2026-10-06.md). Human20 and mouse9 completed; Lightning robustness dropped. Historical rankings and target statements below may be superseded. No validated binding or final submission.
+
 # protein-binder-design
 
 Design of a conditional EGFR binder for the ProteinBase challenge

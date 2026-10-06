@@ -1,3 +1,5 @@
+> Current results: see [latest EGFR summary](LATEST_EGFR_2026-10-06.md). Human20 and mouse9 completed; Lightning robustness dropped. Historical rankings and target statements below may be superseded. No validated binding or final submission.
+
 # ProteinBase EGFR Challenge, Status
 
 Source: WhatsApp export of Jose's conversation with a previous AI assistant ("Instinct"),

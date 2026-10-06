@@ -1,4 +1,4 @@
-9/9 exact binder and mouse623 sequences verified; all SHA256 checks passed. Diverse4 runtime37m02s. No valid combined winner; conditional groups, not submission order. New mouse poses have not undergone experimental-receptor/glycan overlay. No affinity/pH/novelty validation. Lightning robustness remains separate and pending.
+9/9 exact binder and mouse623 sequences verified; all SHA256 checks passed. Diverse4 runtime37m02s. No valid combined winner; conditional groups, not submission order. New mouse poses have not undergone experimental-receptor/glycan overlay. No affinity/pH/novelty validation. Lightning robustness dropped; no additional samples produced.
 [
   {
     "name": "r03_l07",

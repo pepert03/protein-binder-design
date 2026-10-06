@@ -1,0 +1,15 @@
+{
+  "boltz": "2.2.1",
+  "target": "human EGFR ECD, 621 aa",
+  "target_source": "https://proteinbase.com/competitions/anthropic-adaptyv-2026/challenges/egfr",
+  "input_sha256": "eec828742fe6c82904e804b90d99f0a1de0eac4e07c06ccc5a58736af3579feb",
+  "msa": "empty, no remote MSA",
+  "samples": 1,
+  "recycling_steps": 3,
+  "sampling_steps": 200,
+  "seed": 20261006,
+  "pH_prediction": false,
+  "affinity_prediction": false,
+  "mouse_prediction": false,
+  "sequence_changes": false
+}

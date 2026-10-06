@@ -1,6 +1,6 @@
 # Current interpretation,6Oct18:35CEST
 
-9/9 mouse folds recovered with original binder sequences, exact623aa target, ZIP and SHA256 checks. New diverse4 runtime37m02s. No validated combined winner. r02_l07 is confidence-interest with changed epitope; r01_l05 and r02_l03 have better pose agreement but known human geometry/context risk. rank01_native and r02_l05 are conditional diverse reserves with substantial pose changes. rank08_native mouse .759 is different-epitope, not top combined. r03_l05 and r03_l07 demoted for combined objective. Eleven candidates remain unmodeled in mouse. No averaging ipTM, no pH/KD/novelty validation. Lightning robustness separate and pending.
+9/9 mouse folds recovered with original binder sequences, exact623aa target, ZIP and SHA256 checks. New diverse4 runtime37m02s. No validated combined winner. r02_l07 is confidence-interest with changed epitope; r01_l05 and r02_l03 have better pose agreement but known human geometry/context risk. rank01_native and r02_l05 are conditional diverse reserves with substantial pose changes. rank08_native mouse .759 is different-epitope, not top combined. r03_l05 and r03_l07 demoted for combined objective. Eleven candidates remain unmodeled in mouse. No averaging ipTM, no pH/KD/novelty validation. Lightning robustness dropped; no additional samples produced.
 
 The ranked CSV numbers are audit identifiers, NOT submission/combined priority. Historical notes below are retained for provenance and superseded by this paragraph and mouse9_update.md.
 
