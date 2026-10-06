@@ -276,3 +276,18 @@ No candidate has any affinity, pH-selectivity, or mouse-binding evidence.
   it was left unchanged and noted, not silently flipped.
 - Several interpretations were corrected in-conversation (histidine conservation,
   DIII CIF/sample mismatch, EGF disulfide prep): the corrected versions are used above.
+
+## 12. 2026-10-06: Boltz-2 v5 folds + geometry analysis (02:00 CEST)
+
+- Kernel v5 COMPLETE ~00:03 CEST; all 4 designs folded, sequences verified against designs.
+  ipTM: r02_l07 0.380, r03_l05 0.375, r03_l07 0.334, r01_l07 0.135.
+- Geometry (domain-III-superposed, script `code/analyze_fold_v5.py`): NO fold reproduces the
+  designed H433 pose. Binder RMSD vs template 27-40 A; designed centers 12-47 A from H433
+  (except r02_l07 GLU4 at 6.8 A, at a different site, coincidental). Fold interfaces share no
+  EGFR residues with template interfaces. Note: fold EGFR global conformation differs ~21.5 A
+  from template (no-MSA effect), and Boltz-2 never separated candidates from shuffled controls,
+  so this is a weak negative, not a disproof.
+- Control launched 02:10 CEST: kernel `peperidruejo/egfr-native-ctrls-boltz2` folding the 3 native
+  backbones under identical config. If natives also miss, Boltz-2 no-MSA is unreliable for pose
+  validation; if they hit, the redesigns broke the pose for real. Watchdog monitors both kernels.
+- Next: analyze controls on completion, then decide submission strategy (deadline 2026-10-07 13:59 CEST).

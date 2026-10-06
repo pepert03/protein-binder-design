@@ -533,3 +533,55 @@ target, no MSA (same as the validated v2 batch setup).
   same 4 designs, same no-MSA YAMLs.
 - Housekeeping: /tmp (512M tmpfs) had filled with the v3 output download;
   cleared (it was a duplicate of hidden_runs/fold_v3_logs/).
+
+### 2026-10-06 ~00:03 CEST — Kernel v5 COMPLETE, all 4 designs folded
+
+- v5 finished without error (watchdog detected RUNNING -> COMPLETE at 00:00:20 CEST). Downloaded
+  `boltz2_pathB_folds.zip` to `hidden_runs/fold_v5_out/`; extracted to `hidden_runs/fold_v5_out/preds/`.
+  (One `boltz_cache/boltz2_conf.ckpt` file failed to download via the Kaggle proxy; not needed for analysis.)
+- All four predictions produced model_0 CIF + confidence/pae/pde/plddt files. ipTM / confidence_score:
+  - r01_l07: ipTM 0.135 / 0.725
+  - r02_l07: ipTM 0.380 / 0.780
+  - r03_l05: ipTM 0.375 / 0.770
+  - r03_l07: ipTM 0.334 / 0.747
+- Fold binder sequences verified identical to the designed sequences (checked r03_l07; 70/70 match).
+
+### 2026-10-06 ~02:00 CEST — Geometry analysis: none of the 4 folds reproduces the designed pose
+
+Script: `code/analyze_fold_v5.py` (gemmi, installed in the Proton-PottsMPNN venv).
+
+- Sanity checks first: the fold EGFR (609 aa) and template EGFR sequences are identical (offset 0, 609/609
+  match), but the fold EGFR global conformation differs from the template by ~21.5 A C-alpha RMSD
+  (EGFR ectodomain is flexible; Boltz-2 with no MSA settled in a different domain arrangement).
+  So the comparison was done after superposing on EGFR domain III (model residues 310-480).
+- Binder pose vs template (domain-III-superposed C-alpha RMSD): r03_l07 38.9 A, r03_l05 27.2 A,
+  r01_l07 39.9 A, r02_l07 27.0 A. All four dock at completely different EGFR sites than designed:
+  the fold interface residues (e.g. r03 folds: 446-465 / 10-96) share nothing with the template
+  interface (345-414, including model His406 = H433).
+- Designed protonation-center distances to H433 (model His406) in the folds:
+  - r03_l05: centers 17(ASP) 15.4 A, 18(HIS) 12.6 A, 36(GLU) 24.1 A
+  - r03_l07: 19.8 / 15.6 / 22.6 A
+  - r01_l07: 39.6 / 46.6 / 46.7 A
+  - r02_l07: center 4(GLU) 6.8 A, 35(HIS) 16.8 A, 39(ASP) 13.6 A (but at a different site than
+    designed, so this proximity is coincidental, not the designed mechanism)
+- In the template, rank03's designed interface DID include H433 (Asp37 C-alpha 5.7 A from His406),
+  and the template interface residue lists contain His406. The folds do not reproduce this.
+- Glycan proxy (model Asn325 = UniProt N352): min binder distances 9.7 (r03_l05), 29.5 (r03_l07),
+  33.4 (r01_l07), 24.2 (r02_l07) A. No glycans are modeled in the folds; these are proximity flags only.
+- Interpretation (computational only): Boltz-2 with empty MSA does not reproduce the designed
+  H433-centered poses for any of the 4 redesigns. ipTM 0.33-0.38 at wrong sites is low-confidence
+  and provides no support for these 4 designs as H433-targeted pH switches. It does not prove the
+  designs are bad either: Boltz-2 previously did not separate candidates from shuffled controls, and
+  no-MSA EGFR folds land in a different global conformation, so the predictor may simply be
+  unreliable for this pose-validation task.
+
+### 2026-10-06 ~02:10 CEST — Control kernel launched (native backbones)
+
+- Decisive control: fold the 3 native backbones (rank03_cC5_01, rank01_cC5_03, rank02_cC5_13) under the
+  exact same v5 config (boltz 2.0.3, numpy 2.x, in-process predict with logger=False, no-MSA YAMLs).
+  If the natives also land elsewhere, Boltz-2 no-MSA cannot be trusted for pose validation here and
+  the redesign folds are uninformative. If the natives reproduce their templates, the redesigns
+  genuinely broke the pose: a real negative.
+- New kernel `peperidruejo/egfr-native-ctrls-boltz2` pushed (v1 RUNNING). Notebook:
+  `code/kaggle_fold_ctrl/fold_ctrl.ipynb` (DESIGNS_ = n03_rank03, n01_rank01, n02_rank02).
+- The 5-minute watchdog cron now monitors both kernels and reports any state change immediately.

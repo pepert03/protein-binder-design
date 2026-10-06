@@ -1,0 +1,13 @@
+{
+  "id": "peperidruejo/egfr-native-ctrls-boltz2",
+  "title": "egfr-native-ctrls-boltz2",
+  "code_file": "fold_ctrl.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_internet": "true",
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": []
+}
