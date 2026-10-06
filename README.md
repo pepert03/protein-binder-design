@@ -1,4 +1,4 @@
-# ProteinBase EGFR Challenge
+# protein-binder-design
 
 Design of a conditional EGFR binder for the ProteinBase challenge
 (anthropic-adaptyv-2026, Challenge 01).
