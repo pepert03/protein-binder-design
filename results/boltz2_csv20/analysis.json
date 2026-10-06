@@ -1,0 +1,4707 @@
+[
+  {
+    "name": "r03_l07",
+    "iptm": 0.7914206981658936,
+    "his_positions": {
+      "A": [
+        18,
+        26,
+        48,
+        52,
+        54
+      ],
+      "B": [
+        23,
+        121,
+        159,
+        209,
+        280,
+        334,
+        346,
+        359,
+        394,
+        409,
+        483,
+        535,
+        560,
+        566,
+        591,
+        594,
+        597
+      ]
+    },
+    "interface_residues": {
+      "A": [
+        7,
+        9,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        27,
+        28,
+        29,
+        31,
+        32,
+        33,
+        34,
+        36,
+        43,
+        64
+      ],
+      "B": [
+        29,
+        449,
+        450,
+        451,
+        452,
+        453,
+        454,
+        457,
+        460,
+        461,
+        462,
+        463,
+        464,
+        465,
+        466,
+        467,
+        468,
+        469,
+        471,
+        472,
+        473,
+        474,
+        476,
+        477
+      ]
+    },
+    "his_contacts": [
+      {
+        "binder_res": 18,
+        "binder_name": "HIS",
+        "egfr_res": 449,
+        "egfr_name": "ASN",
+        "distance": 3.107,
+        "atoms": [
+          "CB",
+          "O"
+        ],
+        "plddt": [
+          52.93,
+          83.73
+        ]
+      },
+      {
+        "binder_res": 18,
+        "binder_name": "HIS",
+        "egfr_res": 451,
+        "egfr_name": "ILE",
+        "distance": 4.515,
+        "atoms": [
+          "CB",
+          "O"
+        ],
+        "plddt": [
+          52.93,
+          90.07
+        ]
+      },
+      {
+        "binder_res": 18,
+        "binder_name": "HIS",
+        "egfr_res": 450,
+        "egfr_name": "THR",
+        "distance": 4.579,
+        "atoms": [
+          "CB",
+          "O"
+        ],
+        "plddt": [
+          52.93,
+          88.76
+        ]
+      }
+    ],
+    "interface_pka": [
+      {
+        "chain": "A",
+        "residue": 7,
+        "type": "TYR",
+        "pka_complex": 10.703361041848812,
+        "pka_separated_fixed_coordinates": 10.852345863870486,
+        "delta_pka": -0.1489848220216743,
+        "protonated_fraction_complex_6.5": 0.9999373946038308,
+        "protonated_fraction_complex_7.4": 0.9995029237343298
+      },
+      {
+        "chain": "A",
+        "residue": 9,
+        "type": "COO",
+        "pka_complex": 4.3979028917555425,
+        "pka_separated_fixed_coordinates": 3.9879708465679973,
+        "delta_pka": 0.4099320451875452,
+        "protonated_fraction_complex_6.5": 0.007843019307380227,
+        "protonated_fraction_complex_7.4": 0.0009941934652801597
+      },
+      {
+        "chain": "A",
+        "residue": 12,
+        "type": "COO",
+        "pka_complex": 4.187714031646851,
+        "pka_separated_fixed_coordinates": 4.185999742328515,
+        "delta_pka": 0.0017142893183361707,
+        "protonated_fraction_complex_6.5": 0.004848453712347784,
+        "protonated_fraction_complex_7.4": 0.0006129820190702317
+      },
+      {
+        "chain": "A",
+        "residue": 17,
+        "type": "COO",
+        "pka_complex": 6.786258621513026,
+        "pka_separated_fixed_coordinates": 4.184774291296598,
+        "delta_pka": 2.6014843302164277,
+        "protonated_fraction_complex_6.5": 0.6590660142835371,
+        "protonated_fraction_complex_7.4": 0.1957311217957034
+      },
+      {
+        "chain": "A",
+        "residue": 18,
+        "type": "HIS",
+        "pka_complex": 5.901699493070381,
+        "pka_separated_fixed_coordinates": 6.786347917278529,
+        "delta_pka": -0.884648424208148,
+        "protonated_fraction_complex_6.5": 0.2013886428153209,
+        "protonated_fraction_complex_7.4": 0.030769920682637654
+      },
+      {
+        "chain": "A",
+        "residue": 25,
+        "type": "COO",
+        "pka_complex": 3.3420905857338847,
+        "pka_separated_fixed_coordinates": 3.3266006615791244,
+        "delta_pka": 0.01548992415476036,
+        "protonated_fraction_complex_6.5": 0.0006946863771826915,
+        "protonated_fraction_complex_7.4": 8.750897146658604e-05
+      },
+      {
+        "chain": "A",
+        "residue": 28,
+        "type": "COO",
+        "pka_complex": 4.634196988409246,
+        "pka_separated_fixed_coordinates": 4.61281071342643,
+        "delta_pka": 0.021386274982816644,
+        "protonated_fraction_complex_6.5": 0.013437595077895065,
+        "protonated_fraction_complex_7.4": 0.0017117996224527527
+      },
+      {
+        "chain": "A",
+        "residue": 29,
+        "type": "COO",
+        "pka_complex": 5.008803966981243,
+        "pka_separated_fixed_coordinates": 4.751674921297868,
+        "delta_pka": 0.25712904568337525,
+        "protonated_fraction_complex_6.5": 0.03126154981096062,
+        "protonated_fraction_complex_7.4": 0.004046161160096046
+      },
+      {
+        "chain": "A",
+        "residue": 31,
+        "type": "COO",
+        "pka_complex": 5.276466452556921,
+        "pka_separated_fixed_coordinates": 4.462383178472426,
+        "delta_pka": 0.8140832740844948,
+        "protonated_fraction_complex_6.5": 0.056396970950316566,
+        "protonated_fraction_complex_7.4": 0.007468113684886825
+      },
+      {
+        "chain": "A",
+        "residue": 36,
+        "type": "COO",
+        "pka_complex": 4.26478512108391,
+        "pka_separated_fixed_coordinates": 4.577976232362808,
+        "delta_pka": -0.31319111127889787,
+        "protonated_fraction_complex_6.5": 0.005784497686046794,
+        "protonated_fraction_complex_7.4": 0.0007319259301488951
+      },
+      {
+        "chain": "A",
+        "residue": 43,
+        "type": "ARG",
+        "pka_complex": 12.536885121578816,
+        "pka_separated_fixed_coordinates": 12.658361892611225,
+        "delta_pka": -0.12147677103240895,
+        "protonated_fraction_complex_6.5": 0.9999990814253004,
+        "protonated_fraction_complex_7.4": 0.9999927035483392
+      },
+      {
+        "chain": "A",
+        "residue": 64,
+        "type": "COO",
+        "pka_complex": 4.586937588951528,
+        "pka_separated_fixed_coordinates": 5.174628804767678,
+        "delta_pka": -0.5876912158161494,
+        "protonated_fraction_complex_6.5": 0.012068805483824526,
+        "protonated_fraction_complex_7.4": 0.0015355720051789326
+      },
+      {
+        "chain": "B",
+        "residue": 29,
+        "type": "ARG",
+        "pka_complex": 12.429184547484237,
+        "pka_separated_fixed_coordinates": 12.280158774626546,
+        "delta_pka": 0.1490257728576907,
+        "protonated_fraction_complex_6.5": 0.9999988228957133,
+        "protonated_fraction_complex_7.4": 0.9999906500047153
+      },
+      {
+        "chain": "B",
+        "residue": 454,
+        "type": "LYS",
+        "pka_complex": 10.794777826449799,
+        "pka_separated_fixed_coordinates": 10.365789926833264,
+        "delta_pka": 0.4289878996165353,
+        "protonated_fraction_complex_6.5": 0.9999492775591325,
+        "protonated_fraction_complex_7.4": 0.9995972391752465
+      },
+      {
+        "chain": "B",
+        "residue": 463,
+        "type": "LYS",
+        "pka_complex": 10.81663887369887,
+        "pka_separated_fixed_coordinates": 11.065995781473758,
+        "delta_pka": -0.24935690777488695,
+        "protonated_fraction_complex_6.5": 0.999951767454944,
+        "protonated_fraction_complex_7.4": 0.9996170035388127
+      },
+      {
+        "chain": "B",
+        "residue": 465,
+        "type": "LYS",
+        "pka_complex": 9.814679814125357,
+        "pka_separated_fixed_coordinates": 10.272166639554834,
+        "delta_pka": -0.45748682542947705,
+        "protonated_fraction_complex_6.5": 0.9995157051972906,
+        "protonated_fraction_complex_7.4": 0.9961660018279864
+      },
+      {
+        "chain": "B",
+        "residue": 472,
+        "type": "COO",
+        "pka_complex": 6.118639213625553,
+        "pka_separated_fixed_coordinates": 4.4079831283387545,
+        "delta_pka": 1.7106560852867982,
+        "protonated_fraction_complex_6.5": 0.2935684122093656,
+        "protonated_fraction_complex_7.4": 0.04971561396576967
+      },
+      {
+        "chain": "B",
+        "residue": 476,
+        "type": "LYS",
+        "pka_complex": 9.892899566962843,
+        "pka_separated_fixed_coordinates": 10.566664230847811,
+        "delta_pka": -0.6737646638849686,
+        "protonated_fraction_complex_6.5": 0.9995954942281707,
+        "protonated_fraction_complex_7.4": 0.996795895484116
+      }
+    ],
+    "histidine_ring_contacts": [
+      {
+        "his_chain": "A",
+        "his_res": 18,
+        "partner_res": 449,
+        "partner_name": "ASN",
+        "distance": 4.454,
+        "atoms": [
+          "CG",
+          "O"
+        ],
+        "his_plddt": 52.93
+      }
+    ]
+  },
+  {
+    "name": "n03_rank03_native",
+    "iptm": 0.7514266967773438,
+    "his_positions": {
+      "A": [
+        26,
+        48,
+        52,
+        54
+      ],
+      "B": [
+        23,
+        121,
+        159,
+        209,
+        280,
+        334,
+        346,
+        359,
+        394,
+        409,
+        483,
+        535,
+        560,
+        566,
+        591,
+        594,
+        597
+      ]
+    },
+    "interface_residues": {
+      "A": [
+        7,
+        9,
+        10,
+        12,
+        13,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        32,
+        33,
+        34,
+        35,
+        36,
+        61,
+        62,
+        63,
+        65
+      ],
+      "B": [
+        16,
+        17,
+        18,
+        19,
+        22,
+        348,
+        349,
+        353,
+        382,
+        384,
+        408,
+        409,
+        411,
+        412,
+        415,
+        417,
+        418,
+        438,
+        440,
+        441,
+        443,
+        465,
+        467,
+        468
+      ]
+    },
+    "his_contacts": [
+      {
+        "binder_res": 9,
+        "binder_name": "LEU",
+        "egfr_res": 409,
+        "egfr_name": "HIS",
+        "distance": 2.59,
+        "atoms": [
+          "CD2",
+          "NE2"
+        ],
+        "plddt": [
+          81.56,
+          85.17
+        ]
+      },
+      {
+        "binder_res": 10,
+        "binder_name": "PRO",
+        "egfr_res": 409,
+        "egfr_name": "HIS",
+        "distance": 4.093,
+        "atoms": [
+          "CD",
+          "NE2"
+        ],
+        "plddt": [
+          77.49,
+          85.17
+        ]
+      }
+    ],
+    "interface_pka": [
+      {
+        "chain": "A",
+        "residue": 7,
+        "type": "COO",
+        "pka_complex": 5.308946625023439,
+        "pka_separated_fixed_coordinates": 4.747771371855532,
+        "delta_pka": 0.5611752531679066,
+        "protonated_fraction_complex_6.5": 0.06051152287785572,
+        "protonated_fraction_complex_7.4": 0.008043393194805154
+      },
+      {
+        "chain": "A",
+        "residue": 12,
+        "type": "COO",
+        "pka_complex": 3.9468497007827907,
+        "pka_separated_fixed_coordinates": 3.9421116819163635,
+        "delta_pka": 0.004738018866427218,
+        "protonated_fraction_complex_6.5": 0.0027902057933148266,
+        "protonated_fraction_complex_7.4": 0.0003521249091526689
+      },
+      {
+        "chain": "A",
+        "residue": 20,
+        "type": "COO",
+        "pka_complex": 4.003599519570811,
+        "pka_separated_fixed_coordinates": 4.647498166596975,
+        "delta_pka": -0.6438986470261643,
+        "protonated_fraction_complex_6.5": 0.003178461336435254,
+        "protonated_fraction_complex_7.4": 0.0004012594004023066
+      },
+      {
+        "chain": "A",
+        "residue": 35,
+        "type": "COO",
+        "pka_complex": 4.8700959774082335,
+        "pka_separated_fixed_coordinates": 4.368173094862297,
+        "delta_pka": 0.5019228825459363,
+        "protonated_fraction_complex_6.5": 0.02291028126269073,
+        "protonated_fraction_complex_7.4": 0.002943173663575634
+      },
+      {
+        "chain": "A",
+        "residue": 61,
+        "type": "COO",
+        "pka_complex": 4.5011738815457445,
+        "pka_separated_fixed_coordinates": 4.308649119078555,
+        "delta_pka": 0.19252476246718953,
+        "protonated_fraction_complex_6.5": 0.009927522261673642,
+        "protonated_fraction_complex_7.4": 0.0012607413672993321
+      },
+      {
+        "chain": "A",
+        "residue": 65,
+        "type": "TYR",
+        "pka_complex": 11.760413225698278,
+        "pka_separated_fixed_coordinates": 11.398106621704914,
+        "delta_pka": 0.362306603993364,
+        "protonated_fraction_complex_6.5": 0.9999945098477283,
+        "protonated_fraction_complex_7.4": 0.9999563918327063
+      },
+      {
+        "chain": "B",
+        "residue": 22,
+        "type": "COO",
+        "pka_complex": 3.893670326760101,
+        "pka_separated_fixed_coordinates": 3.354802564450979,
+        "delta_pka": 0.5388677623091218,
+        "protonated_fraction_complex_6.5": 0.002469428982897673,
+        "protonated_fraction_complex_7.4": 0.0003115551962329771
+      },
+      {
+        "chain": "B",
+        "residue": 353,
+        "type": "ARG",
+        "pka_complex": 11.909119293701732,
+        "pka_separated_fixed_coordinates": 12.249669695231647,
+        "delta_pka": -0.34055040152991545,
+        "protonated_fraction_complex_6.5": 0.9999961016662912,
+        "protonated_fraction_complex_7.4": 0.9999690352727956
+      },
+      {
+        "chain": "B",
+        "residue": 409,
+        "type": "HIS",
+        "pka_complex": 4.474017419042471,
+        "pka_separated_fixed_coordinates": 5.799022414600785,
+        "delta_pka": -1.3250049955583139,
+        "protonated_fraction_complex_6.5": 0.009331378940934488,
+        "protonated_fraction_complex_7.4": 0.001184411814069568
+      },
+      {
+        "chain": "B",
+        "residue": 443,
+        "type": "LYS",
+        "pka_complex": 10.50586252811343,
+        "pka_separated_fixed_coordinates": 10.481629884472786,
+        "delta_pka": 0.02423264364064437,
+        "protonated_fraction_complex_6.5": 0.9999013505594059,
+        "protonated_fraction_complex_7.4": 0.9992169360003701
+      },
+      {
+        "chain": "B",
+        "residue": 465,
+        "type": "LYS",
+        "pka_complex": 10.684262894944728,
+        "pka_separated_fixed_coordinates": 10.277152077199572,
+        "delta_pka": 0.40711081774515634,
+        "protonated_fraction_complex_6.5": 0.9999345802782357,
+        "protonated_fraction_complex_7.4": 0.9994805886099362
+      }
+    ],
+    "histidine_ring_contacts": [
+      {
+        "his_chain": "B",
+        "his_res": 409,
+        "partner_res": 9,
+        "partner_name": "LEU",
+        "distance": 2.59,
+        "atoms": [
+          "NE2",
+          "CD2"
+        ],
+        "his_plddt": 85.17
+      },
+      {
+        "his_chain": "B",
+        "his_res": 409,
+        "partner_res": 10,
+        "partner_name": "PRO",
+        "distance": 4.093,
+        "atoms": [
+          "NE2",
+          "CD"
+        ],
+        "his_plddt": 85.17
+      }
+    ]
+  },
+  {
+    "name": "r02_l07",
+    "iptm": 0.6940901279449463,
+    "his_positions": {
+      "A": [
+        29,
+        35,
+        57
+      ],
+      "B": [
+        23,
+        121,
+        159,
+        209,
+        280,
+        334,
+        346,
+        359,
+        394,
+        409,
+        483,
+        535,
+        560,
+        566,
+        591,
+        594,
+        597
+      ]
+    },
+    "interface_residues": {
+      "A": [
+        1,
+        3,
+        4,
+        7,
+        8,
+        11,
+        12,
+        26,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        38,
+        39,
+        42,
+        43,
+        57,
+        59,
+        60,
+        62,
+        63,
+        66,
+        70
+      ],
+      "B": [
+        13,
+        14,
+        15,
+        16,
+        18,
+        20,
+        45,
+        69,
+        70,
+        71,
+        89,
+        90,
+        98,
+        99,
+        101,
+        103,
+        105,
+        125,
+        128,
+        323,
+        325,
+        348,
+        349,
+        350,
+        353,
+        354,
+        356,
+        357,
+        358,
+        384,
+        417,
+        418
+      ]
+    },
+    "his_contacts": [
+      {
+        "binder_res": 35,
+        "binder_name": "HIS",
+        "egfr_res": 15,
+        "egfr_name": "THR",
+        "distance": 2.984,
+        "atoms": [
+          "ND1",
+          "OG1"
+        ],
+        "plddt": [
+          68.42,
+          84.99
+        ]
+      },
+      {
+        "binder_res": 35,
+        "binder_name": "HIS",
+        "egfr_res": 325,
+        "egfr_name": "LEU",
+        "distance": 4.127,
+        "atoms": [
+          "CD2",
+          "CD2"
+        ],
+        "plddt": [
+          68.42,
+          79.44
+        ]
+      },
+      {
+        "binder_res": 57,
+        "binder_name": "HIS",
+        "egfr_res": 357,
+        "egfr_name": "PHE",
+        "distance": 4.63,
+        "atoms": [
+          "ND1",
+          "CE2"
+        ],
+        "plddt": [
+          80.75,
+          66.93
+        ]
+      }
+    ],
+    "interface_pka": [
+      {
+        "chain": "A",
+        "residue": 1,
+        "type": "N+",
+        "pka_complex": 8.458906927772734,
+        "pka_separated_fixed_coordinates": 8.87282465627891,
+        "delta_pka": -0.4139177285061759,
+        "protonated_fraction_complex_6.5": 0.9891271054667765,
+        "protonated_fraction_complex_7.4": 0.9196959674309525
+      },
+      {
+        "chain": "A",
+        "residue": 1,
+        "type": "COO",
+        "pka_complex": 4.018454704353854,
+        "pka_separated_fixed_coordinates": 4.031914559940552,
+        "delta_pka": -0.013459855586698488,
+        "protonated_fraction_complex_6.5": 0.0032886987021751093,
+        "protonated_fraction_complex_7.4": 0.00041521624900324244
+      },
+      {
+        "chain": "A",
+        "residue": 3,
+        "type": "TYR",
+        "pka_complex": 19.567547446833906,
+        "pka_separated_fixed_coordinates": 12.947528457416375,
+        "delta_pka": 6.620018989417531,
+        "protonated_fraction_complex_6.5": 0.9999999999999145,
+        "protonated_fraction_complex_7.4": 0.9999999999993201
+      },
+      {
+        "chain": "A",
+        "residue": 4,
+        "type": "COO",
+        "pka_complex": 3.386125998266569,
+        "pka_separated_fixed_coordinates": 3.0806329845822167,
+        "delta_pka": 0.3054930136843521,
+        "protonated_fraction_complex_6.5": 0.0007687621641636364,
+        "protonated_fraction_complex_7.4": 9.684650139299043e-05
+      },
+      {
+        "chain": "A",
+        "residue": 7,
+        "type": "COO",
+        "pka_complex": 10.556935640471155,
+        "pka_separated_fixed_coordinates": 6.443083383685641,
+        "delta_pka": 4.113852256785513,
+        "protonated_fraction_complex_6.5": 0.9999122946132682,
+        "protonated_fraction_complex_7.4": 0.999303755337238
+      },
+      {
+        "chain": "A",
+        "residue": 11,
+        "type": "LYS",
+        "pka_complex": 9.159358293342533,
+        "pka_separated_fixed_coordinates": 10.70642904715023,
+        "delta_pka": -1.5470707538076969,
+        "protonated_fraction_complex_6.5": 0.9978137933560374,
+        "protonated_fraction_complex_7.4": 0.982894002983965
+      },
+      {
+        "chain": "A",
+        "residue": 12,
+        "type": "COO",
+        "pka_complex": 2.6410570947859897,
+        "pka_separated_fixed_coordinates": 3.8755741226843488,
+        "delta_pka": -1.234517027898359,
+        "protonated_fraction_complex_6.5": 0.00013835568328778882,
+        "protonated_fraction_complex_7.4": 1.7420055297740893e-05
+      },
+      {
+        "chain": "A",
+        "residue": 32,
+        "type": "COO",
+        "pka_complex": 3.1187565590217545,
+        "pka_separated_fixed_coordinates": 3.8598780420195644,
+        "delta_pka": -0.7411214829978099,
+        "protonated_fraction_complex_6.5": 0.00041550482378295404,
+        "protonated_fraction_complex_7.4": 5.2327963438320194e-05
+      },
+      {
+        "chain": "A",
+        "residue": 35,
+        "type": "HIS",
+        "pka_complex": 4.251309722039174,
+        "pka_separated_fixed_coordinates": 6.443816279476543,
+        "delta_pka": -2.192506557437369,
+        "protonated_fraction_complex_6.5": 0.005608761989966452,
+        "protonated_fraction_complex_7.4": 0.0007095801303992386
+      },
+      {
+        "chain": "A",
+        "residue": 39,
+        "type": "COO",
+        "pka_complex": 7.8953917908513045,
+        "pka_separated_fixed_coordinates": 3.4137672907147625,
+        "delta_pka": 4.481624500136542,
+        "protonated_fraction_complex_6.5": 0.9613208800233729,
+        "protonated_fraction_complex_7.4": 0.757804787649256
+      },
+      {
+        "chain": "A",
+        "residue": 43,
+        "type": "COO",
+        "pka_complex": 6.0645330197217575,
+        "pka_separated_fixed_coordinates": 4.749763828558762,
+        "delta_pka": 1.3147691911629957,
+        "protonated_fraction_complex_6.5": 0.2684109441771289,
+        "protonated_fraction_complex_7.4": 0.04414922810993018
+      },
+      {
+        "chain": "A",
+        "residue": 57,
+        "type": "HIS",
+        "pka_complex": 6.74776909492062,
+        "pka_separated_fixed_coordinates": 7.012463124169761,
+        "delta_pka": -0.2646940292491413,
+        "protonated_fraction_complex_6.5": 0.6388807138751763,
+        "protonated_fraction_complex_7.4": 0.18215465734205416
+      },
+      {
+        "chain": "A",
+        "residue": 59,
+        "type": "COO",
+        "pka_complex": 3.5547130768775763,
+        "pka_separated_fixed_coordinates": 3.316982720272653,
+        "delta_pka": 0.23773035660492337,
+        "protonated_fraction_complex_6.5": 0.0011329761106647273,
+        "protonated_fraction_complex_7.4": 0.00014277463751128747
+      },
+      {
+        "chain": "A",
+        "residue": 62,
+        "type": "COO",
+        "pka_complex": 4.469281618190656,
+        "pka_separated_fixed_coordinates": 4.698484160791465,
+        "delta_pka": -0.22920254260080952,
+        "protonated_fraction_complex_6.5": 0.009231111124247423,
+        "protonated_fraction_complex_7.4": 0.0011715815087198825
+      },
+      {
+        "chain": "A",
+        "residue": 66,
+        "type": "COO",
+        "pka_complex": 4.82625710784806,
+        "pka_separated_fixed_coordinates": 4.8714614685975945,
+        "delta_pka": -0.04520436074953427,
+        "protonated_fraction_complex_6.5": 0.020756204287619196,
+        "protonated_fraction_complex_7.4": 0.0026613363352820107
+      },
+      {
+        "chain": "B",
+        "residue": 13,
+        "type": "LYS",
+        "pka_complex": 11.70789570527143,
+        "pka_separated_fixed_coordinates": 10.552302355969067,
+        "delta_pka": 1.1555933493023627,
+        "protonated_fraction_complex_6.5": 0.9999938041398874,
+        "protonated_fraction_complex_7.4": 0.99995078665088
+      },
+      {
+        "chain": "B",
+        "residue": 45,
+        "type": "TYR",
+        "pka_complex": 21.30976936687478,
+        "pka_separated_fixed_coordinates": 10.922768556414463,
+        "delta_pka": 10.387000810460316,
+        "protonated_fraction_complex_6.5": 0.9999999999999984,
+        "protonated_fraction_complex_7.4": 0.9999999999999878
+      },
+      {
+        "chain": "B",
+        "residue": 89,
+        "type": "TYR",
+        "pka_complex": 18.085603007516756,
+        "pka_separated_fixed_coordinates": 11.603433684939823,
+        "delta_pka": 6.482169322576933,
+        "protonated_fraction_complex_6.5": 0.9999999999974034,
+        "protonated_fraction_complex_7.4": 0.9999999999793749
+      },
+      {
+        "chain": "B",
+        "residue": 90,
+        "type": "COO",
+        "pka_complex": 5.522893548648385,
+        "pka_separated_fixed_coordinates": 4.486005564204587,
+        "delta_pka": 1.0368879844437986,
+        "protonated_fraction_complex_6.5": 0.09536061439482037,
+        "protonated_fraction_complex_7.4": 0.013096886615721769
+      },
+      {
+        "chain": "B",
+        "residue": 101,
+        "type": "TYR",
+        "pka_complex": 13.561750392223724,
+        "pka_separated_fixed_coordinates": 9.91991288556292,
+        "delta_pka": 3.641837506660803,
+        "protonated_fraction_complex_6.5": 0.9999999132539776,
+        "protonated_fraction_complex_7.4": 0.9999993109522666
+      },
+      {
+        "chain": "B",
+        "residue": 105,
+        "type": "LYS",
+        "pka_complex": 10.734678268103139,
+        "pka_separated_fixed_coordinates": 10.541467913302116,
+        "delta_pka": 0.1932103548010229,
+        "protonated_fraction_complex_6.5": 0.9999417499324302,
+        "protonated_fraction_complex_7.4": 0.999537490327043
+      },
+      {
+        "chain": "B",
+        "residue": 125,
+        "type": "ARG",
+        "pka_complex": 12.490132811453638,
+        "pka_separated_fixed_coordinates": 12.457635923922169,
+        "delta_pka": 0.03249688753146884,
+        "protonated_fraction_complex_6.5": 0.9999989770209392,
+        "protonated_fraction_complex_7.4": 0.9999918742462012
+      },
+      {
+        "chain": "B",
+        "residue": 323,
+        "type": "COO",
+        "pka_complex": 4.079786596636691,
+        "pka_separated_fixed_coordinates": 3.8620780832019386,
+        "delta_pka": 0.21770851343475206,
+        "protonated_fraction_complex_6.5": 0.003785640715643166,
+        "protonated_fraction_complex_7.4": 0.00047816620882270433
+      },
+      {
+        "chain": "B",
+        "residue": 353,
+        "type": "ARG",
+        "pka_complex": 13.190493797407688,
+        "pka_separated_fixed_coordinates": 12.487133214528857,
+        "delta_pka": 0.7033605828788314,
+        "protonated_fraction_complex_6.5": 0.9999997960582631,
+        "protonated_fraction_complex_7.4": 0.9999983800354942
+      }
+    ],
+    "histidine_ring_contacts": [
+      {
+        "his_chain": "A",
+        "his_res": 35,
+        "partner_res": 15,
+        "partner_name": "THR",
+        "distance": 2.984,
+        "atoms": [
+          "ND1",
+          "OG1"
+        ],
+        "his_plddt": 68.42
+      },
+      {
+        "his_chain": "A",
+        "his_res": 35,
+        "partner_res": 325,
+        "partner_name": "LEU",
+        "distance": 4.127,
+        "atoms": [
+          "CD2",
+          "CD2"
+        ],
+        "his_plddt": 68.42
+      },
+      {
+        "his_chain": "A",
+        "his_res": 57,
+        "partner_res": 357,
+        "partner_name": "PHE",
+        "distance": 4.63,
+        "atoms": [
+          "ND1",
+          "CE2"
+        ],
+        "his_plddt": 80.75
+      }
+    ]
+  },
+  {
+    "name": "r01_l05",
+    "iptm": 0.6162914633750916,
+    "his_positions": {
+      "A": [
+        16,
+        22,
+        48
+      ],
+      "B": [
+        23,
+        121,
+        159,
+        209,
+        280,
+        334,
+        346,
+        359,
+        394,
+        409,
+        483,
+        535,
+        560,
+        566,
+        591,
+        594,
+        597
+      ]
+    },
+    "interface_residues": {
+      "A": [
+        1,
+        2,
+        3,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        25,
+        27,
+        29,
+        41,
+        45,
+        48,
+        49,
+        50,
+        51,
+        53
+      ],
+      "B": [
+        14,
+        16,
+        18,
+        19,
+        20,
+        45,
+        47,
+        69,
+        89,
+        90,
+        99,
+        101,
+        102,
+        103,
+        125,
+        127,
+        128,
+        355,
+        356,
+        357
+      ]
+    },
+    "his_contacts": [
+      {
+        "binder_res": 16,
+        "binder_name": "HIS",
+        "egfr_res": 16,
+        "egfr_name": "GLN",
+        "distance": 3.239,
+        "atoms": [
+          "N",
+          "OE1"
+        ],
+        "plddt": [
+          81.79,
+          87.02
+        ]
+      },
+      {
+        "binder_res": 48,
+        "binder_name": "HIS",
+        "egfr_res": 125,
+        "egfr_name": "ARG",
+        "distance": 4.93,
+        "atoms": [
+          "O",
+          "NH2"
+        ],
+        "plddt": [
+          75.4,
+          93.81
+        ]
+      }
+    ],
+    "interface_pka": [
+      {
+        "chain": "A",
+        "residue": 1,
+        "type": "N+",
+        "pka_complex": 7.718135111796165,
+        "pka_separated_fixed_coordinates": 7.741570957666277,
+        "delta_pka": -0.023435845870111827,
+        "protonated_fraction_complex_6.5": 0.9429378715549592,
+        "protonated_fraction_complex_7.4": 0.6753609120797133
+      },
+      {
+        "chain": "A",
+        "residue": 3,
+        "type": "COO",
+        "pka_complex": 4.183683141076996,
+        "pka_separated_fixed_coordinates": 3.559604214505677,
+        "delta_pka": 0.6240789265713187,
+        "protonated_fraction_complex_6.5": 0.0048038763117786995,
+        "protonated_fraction_complex_7.4": 0.0006073224064175729
+      },
+      {
+        "chain": "A",
+        "residue": 16,
+        "type": "HIS",
+        "pka_complex": 4.763391955150229,
+        "pka_separated_fixed_coordinates": 6.29781458089991,
+        "delta_pka": -1.5344226257496816,
+        "protonated_fraction_complex_6.5": 0.018009401693429433,
+        "protonated_fraction_complex_7.4": 0.0023035115744496747
+      },
+      {
+        "chain": "A",
+        "residue": 19,
+        "type": "COO",
+        "pka_complex": 5.550111810131616,
+        "pka_separated_fixed_coordinates": 4.535872643921788,
+        "delta_pka": 1.014239166209828,
+        "protonated_fraction_complex_6.5": 0.10090598305440988,
+        "protonated_fraction_complex_7.4": 0.013932164794501985
+      },
+      {
+        "chain": "A",
+        "residue": 25,
+        "type": "LYS",
+        "pka_complex": 10.05220623165513,
+        "pka_separated_fixed_coordinates": 10.5545797673927,
+        "delta_pka": -0.5023735357375703,
+        "protonated_fraction_complex_6.5": 0.9997196684328895,
+        "protonated_fraction_complex_7.4": 0.997777572990689
+      },
+      {
+        "chain": "A",
+        "residue": 29,
+        "type": "COO",
+        "pka_complex": 5.830662831652906,
+        "pka_separated_fixed_coordinates": 4.585907062374751,
+        "delta_pka": 1.2447557692781546,
+        "protonated_fraction_complex_6.5": 0.17636005733697652,
+        "protonated_fraction_complex_7.4": 0.026248881436429977
+      },
+      {
+        "chain": "A",
+        "residue": 41,
+        "type": "LYS",
+        "pka_complex": 10.530581892798986,
+        "pka_separated_fixed_coordinates": 10.893238450084606,
+        "delta_pka": -0.36265655728561974,
+        "protonated_fraction_complex_6.5": 0.9999068082145008,
+        "protonated_fraction_complex_7.4": 0.9992602300085989
+      },
+      {
+        "chain": "A",
+        "residue": 48,
+        "type": "HIS",
+        "pka_complex": 6.711939865968676,
+        "pka_separated_fixed_coordinates": 6.576865150806843,
+        "delta_pka": 0.13507471516183323,
+        "protonated_fraction_complex_6.5": 0.6196374273451757,
+        "protonated_fraction_complex_7.4": 0.17018495707284106
+      },
+      {
+        "chain": "A",
+        "residue": 50,
+        "type": "COO",
+        "pka_complex": 4.163766902109231,
+        "pka_separated_fixed_coordinates": 4.288542425841738,
+        "delta_pka": -0.12477552373250766,
+        "protonated_fraction_complex_6.5": 0.004589539399517844,
+        "protonated_fraction_complex_7.4": 0.0005801160588079184
+      },
+      {
+        "chain": "A",
+        "residue": 53,
+        "type": "COO",
+        "pka_complex": 5.2545039844381805,
+        "pka_separated_fixed_coordinates": 4.372546992651867,
+        "delta_pka": 0.8819569917863133,
+        "protonated_fraction_complex_6.5": 0.053765391526070065,
+        "protonated_fraction_complex_7.4": 0.007102453871972553
+      },
+      {
+        "chain": "B",
+        "residue": 45,
+        "type": "TYR",
+        "pka_complex": 14.85471714631329,
+        "pka_separated_fixed_coordinates": 10.965124680883207,
+        "delta_pka": 3.8895924654300824,
+        "protonated_fraction_complex_6.5": 0.9999999955814187,
+        "protonated_fraction_complex_7.4": 0.9999999649019621
+      },
+      {
+        "chain": "B",
+        "residue": 89,
+        "type": "TYR",
+        "pka_complex": 13.736549585943145,
+        "pka_separated_fixed_coordinates": 11.760521256971531,
+        "delta_pka": 1.9760283289716138,
+        "protonated_fraction_complex_6.5": 0.9999999419970089,
+        "protonated_fraction_complex_7.4": 0.9999995392660512
+      },
+      {
+        "chain": "B",
+        "residue": 90,
+        "type": "COO",
+        "pka_complex": 4.711095380777248,
+        "pka_separated_fixed_coordinates": 4.796222392959567,
+        "delta_pka": -0.0851270121823191,
+        "protonated_fraction_complex_6.5": 0.015998930479152705,
+        "protonated_fraction_complex_7.4": 0.002042712913999468
+      },
+      {
+        "chain": "B",
+        "residue": 101,
+        "type": "TYR",
+        "pka_complex": 12.73097084928895,
+        "pka_separated_fixed_coordinates": 9.686358968071993,
+        "delta_pka": 3.044611881216957,
+        "protonated_fraction_complex_6.5": 0.9999994124715578,
+        "protonated_fraction_complex_7.4": 0.9999953331147351
+      },
+      {
+        "chain": "B",
+        "residue": 102,
+        "type": "COO",
+        "pka_complex": 3.0412149467355265,
+        "pka_separated_fixed_coordinates": 2.368673542155001,
+        "delta_pka": 0.6725414045805254,
+        "protonated_fraction_complex_6.5": 0.0003475873522065662,
+        "protonated_fraction_complex_7.4": 4.377195422693424e-05
+      },
+      {
+        "chain": "B",
+        "residue": 125,
+        "type": "ARG",
+        "pka_complex": 12.478825633928611,
+        "pka_separated_fixed_coordinates": 12.71580698847189,
+        "delta_pka": -0.2369813545432784,
+        "protonated_fraction_complex_6.5": 0.9999989500372055,
+        "protonated_fraction_complex_7.4": 0.9999916599098702
+      },
+      {
+        "chain": "B",
+        "residue": 355,
+        "type": "COO",
+        "pka_complex": 3.6234418859232616,
+        "pka_separated_fixed_coordinates": 2.894177337745892,
+        "delta_pka": 0.7292645481773694,
+        "protonated_fraction_complex_6.5": 0.001326982519924994,
+        "protonated_fraction_complex_7.4": 0.0001672512004359403
+      }
+    ],
+    "histidine_ring_contacts": []
+  },
+  {
+    "name": "r02_l03",
+    "iptm": 0.6006556749343872,
+    "his_positions": {
+      "A": [
+        29,
+        35,
+        57
+      ],
+      "B": [
+        23,
+        121,
+        159,
+        209,
+        280,
+        334,
+        346,
+        359,
+        394,
+        409,
+        483,
+        535,
+        560,
+        566,
+        591,
+        594,
+        597
+      ]
+    },
+    "interface_residues": {
+      "A": [
+        1,
+        4,
+        5,
+        7,
+        8,
+        11,
+        12,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        38,
+        39,
+        42,
+        43,
+        59,
+        60,
+        62,
+        63,
+        66,
+        69,
+        70,
+        71
+      ],
+      "B": [
+        14,
+        15,
+        16,
+        18,
+        20,
+        45,
+        47,
+        69,
+        70,
+        71,
+        89,
+        90,
+        98,
+        99,
+        101,
+        102,
+        103,
+        105,
+        125,
+        128,
+        323,
+        325,
+        346,
+        348,
+        349,
+        350,
+        353,
+        355,
+        356,
+        357,
+        358,
+        382,
+        384,
+        408,
+        409,
+        412,
+        415,
+        417,
+        418,
+        438,
+        440,
+        441,
+        465,
+        468
+      ]
+    },
+    "his_contacts": [
+      {
+        "binder_res": 29,
+        "binder_name": "HIS",
+        "egfr_res": 357,
+        "egfr_name": "PHE",
+        "distance": 3.547,
+        "atoms": [
+          "CD2",
+          "CZ"
+        ],
+        "plddt": [
+          72.0,
+          70.07
+        ]
+      },
+      {
+        "binder_res": 35,
+        "binder_name": "HIS",
+        "egfr_res": 325,
+        "egfr_name": "LEU",
+        "distance": 3.195,
+        "atoms": [
+          "CE1",
+          "CD2"
+        ],
+        "plddt": [
+          68.15,
+          80.57
+        ]
+      },
+      {
+        "binder_res": 35,
+        "binder_name": "HIS",
+        "egfr_res": 346,
+        "egfr_name": "HIS",
+        "distance": 4.971,
+        "atoms": [
+          "NE2",
+          "CD2"
+        ],
+        "plddt": [
+          68.15,
+          89.5
+        ]
+      },
+      {
+        "binder_res": 38,
+        "binder_name": "LEU",
+        "egfr_res": 409,
+        "egfr_name": "HIS",
+        "distance": 3.266,
+        "atoms": [
+          "CD1",
+          "CE1"
+        ],
+        "plddt": [
+          73.08,
+          80.1
+        ]
+      },
+      {
+        "binder_res": 70,
+        "binder_name": "LEU",
+        "egfr_res": 409,
+        "egfr_name": "HIS",
+        "distance": 4.495,
+        "atoms": [
+          "CD1",
+          "NE2"
+        ],
+        "plddt": [
+          65.97,
+          80.1
+        ]
+      },
+      {
+        "binder_res": 71,
+        "binder_name": "ASN",
+        "egfr_res": 409,
+        "egfr_name": "HIS",
+        "distance": 4.47,
+        "atoms": [
+          "OD1",
+          "CD2"
+        ],
+        "plddt": [
+          62.84,
+          80.1
+        ]
+      }
+    ],
+    "interface_pka": [
+      {
+        "chain": "A",
+        "residue": 1,
+        "type": "N+",
+        "pka_complex": 7.660413018083777,
+        "pka_separated_fixed_coordinates": 8.228795921445917,
+        "delta_pka": -0.5683829033621395,
+        "protonated_fraction_complex_6.5": 0.9353510298983685,
+        "protonated_fraction_complex_7.4": 0.6455700803688096
+      },
+      {
+        "chain": "A",
+        "residue": 4,
+        "type": "COO",
+        "pka_complex": 4.938149051325955,
+        "pka_separated_fixed_coordinates": 4.151509081995496,
+        "delta_pka": 0.7866399693304595,
+        "protonated_fraction_complex_6.5": 0.026693090432753055,
+        "protonated_fraction_complex_7.4": 0.0034407425576283117
+      },
+      {
+        "chain": "A",
+        "residue": 11,
+        "type": "LYS",
+        "pka_complex": 8.117979524086515,
+        "pka_separated_fixed_coordinates": 10.39894507803935,
+        "delta_pka": -2.2809655539528357,
+        "protonated_fraction_complex_6.5": 0.9764669602177631,
+        "protonated_fraction_complex_7.4": 0.8393242775778791
+      },
+      {
+        "chain": "A",
+        "residue": 12,
+        "type": "COO",
+        "pka_complex": 4.619903763947676,
+        "pka_separated_fixed_coordinates": 3.7688088318458,
+        "delta_pka": 0.8510949321018755,
+        "protonated_fraction_complex_6.5": 0.013008203043169023,
+        "protonated_fraction_complex_7.4": 0.0016564707494289837
+      },
+      {
+        "chain": "A",
+        "residue": 28,
+        "type": "COO",
+        "pka_complex": 4.456240795354401,
+        "pka_separated_fixed_coordinates": 4.43772137379312,
+        "delta_pka": 0.01851942156128139,
+        "protonated_fraction_complex_6.5": 0.008960490098363902,
+        "protonated_fraction_complex_7.4": 0.0011369640615184796
+      },
+      {
+        "chain": "A",
+        "residue": 29,
+        "type": "HIS",
+        "pka_complex": 6.253994806663172,
+        "pka_separated_fixed_coordinates": 6.385635021836848,
+        "delta_pka": -0.1316402151736753,
+        "protonated_fraction_complex_6.5": 0.3620568588047507,
+        "protonated_fraction_complex_7.4": 0.06668426868722697
+      },
+      {
+        "chain": "A",
+        "residue": 35,
+        "type": "HIS",
+        "pka_complex": 4.086400013278997,
+        "pka_separated_fixed_coordinates": 6.41611585283783,
+        "delta_pka": -2.3297158395588333,
+        "protonated_fraction_complex_6.5": 0.003843506179853723,
+        "protonated_fraction_complex_7.4": 0.00048549986352941434
+      },
+      {
+        "chain": "A",
+        "residue": 39,
+        "type": "COO",
+        "pka_complex": 7.463291526863687,
+        "pka_separated_fixed_coordinates": 4.203514307908672,
+        "delta_pka": 3.2597772189550147,
+        "protonated_fraction_complex_6.5": 0.9018596851970084,
+        "protonated_fraction_complex_7.4": 0.5363691856235198
+      },
+      {
+        "chain": "A",
+        "residue": 59,
+        "type": "COO",
+        "pka_complex": 3.9556345044709245,
+        "pka_separated_fixed_coordinates": 3.966289974410676,
+        "delta_pka": -0.010655469939751416,
+        "protonated_fraction_complex_6.5": 0.002847057769646729,
+        "protonated_fraction_complex_7.4": 0.0003593175475262753
+      },
+      {
+        "chain": "A",
+        "residue": 62,
+        "type": "COO",
+        "pka_complex": 4.519987434890972,
+        "pka_separated_fixed_coordinates": 4.652426820831495,
+        "delta_pka": -0.13243938594052374,
+        "protonated_fraction_complex_6.5": 0.010362477209424332,
+        "protonated_fraction_complex_7.4": 0.0013164831863758204
+      },
+      {
+        "chain": "A",
+        "residue": 66,
+        "type": "COO",
+        "pka_complex": 9.557158872765996,
+        "pka_separated_fixed_coordinates": 5.042301584624938,
+        "delta_pka": 4.514857288141058,
+        "protonated_fraction_complex_6.5": 0.999124087837648,
+        "protonated_fraction_complex_7.4": 0.9930844407773001
+      },
+      {
+        "chain": "B",
+        "residue": 45,
+        "type": "TYR",
+        "pka_complex": 15.779429565397386,
+        "pka_separated_fixed_coordinates": 10.915304344786525,
+        "delta_pka": 4.864125220610861,
+        "protonated_fraction_complex_6.5": 0.9999999994745028,
+        "protonated_fraction_complex_7.4": 0.999999995825827
+      },
+      {
+        "chain": "B",
+        "residue": 89,
+        "type": "TYR",
+        "pka_complex": 13.830452462208024,
+        "pka_separated_fixed_coordinates": 11.526996814746795,
+        "delta_pka": 2.303455647461229,
+        "protonated_fraction_complex_6.5": 0.9999999532751929,
+        "protonated_fraction_complex_7.4": 0.9999996288517846
+      },
+      {
+        "chain": "B",
+        "residue": 90,
+        "type": "COO",
+        "pka_complex": 5.118655335316001,
+        "pka_separated_fixed_coordinates": 4.55242234934631,
+        "delta_pka": 0.5662329859696911,
+        "protonated_fraction_complex_6.5": 0.03989990379417308,
+        "protonated_fraction_complex_7.4": 0.005204620819129642
+      },
+      {
+        "chain": "B",
+        "residue": 101,
+        "type": "TYR",
+        "pka_complex": 11.730415408429039,
+        "pka_separated_fixed_coordinates": 9.874017567535537,
+        "delta_pka": 1.8563978408935018,
+        "protonated_fraction_complex_6.5": 0.9999941172277285,
+        "protonated_fraction_complex_7.4": 0.9999532733874458
+      },
+      {
+        "chain": "B",
+        "residue": 102,
+        "type": "COO",
+        "pka_complex": 2.87582448154425,
+        "pka_separated_fixed_coordinates": 2.3210557963173213,
+        "delta_pka": 0.5547686852269287,
+        "protonated_fraction_complex_6.5": 0.00023753155433434446,
+        "protonated_fraction_complex_7.4": 2.990966107164738e-05
+      },
+      {
+        "chain": "B",
+        "residue": 105,
+        "type": "LYS",
+        "pka_complex": 10.103854438954658,
+        "pka_separated_fixed_coordinates": 10.584328812838564,
+        "delta_pka": -0.4804743738839061,
+        "protonated_fraction_complex_6.5": 0.9997510928061989,
+        "protonated_fraction_complex_7.4": 0.9980262709449161
+      },
+      {
+        "chain": "B",
+        "residue": 125,
+        "type": "ARG",
+        "pka_complex": 12.602601539662768,
+        "pka_separated_fixed_coordinates": 12.384801415633097,
+        "delta_pka": 0.21780012402967053,
+        "protonated_fraction_complex_6.5": 0.9999992104164034,
+        "protonated_fraction_complex_7.4": 0.9999937281489393
+      },
+      {
+        "chain": "B",
+        "residue": 323,
+        "type": "COO",
+        "pka_complex": 3.9499859496502068,
+        "pka_separated_fixed_coordinates": 3.8043332386694897,
+        "delta_pka": 0.14565271098071708,
+        "protonated_fraction_complex_6.5": 0.0028103713057883867,
+        "protonated_fraction_complex_7.4": 0.00035467607070431047
+      },
+      {
+        "chain": "B",
+        "residue": 346,
+        "type": "HIS",
+        "pka_complex": 2.999465615362397,
+        "pka_separated_fixed_coordinates": 4.418111014920236,
+        "delta_pka": -1.4186453995578394,
+        "protonated_fraction_complex_6.5": 0.0003157391750513624,
+        "protonated_fraction_complex_7.4": 3.976018050805291e-05
+      },
+      {
+        "chain": "B",
+        "residue": 353,
+        "type": "ARG",
+        "pka_complex": 12.558351614440102,
+        "pka_separated_fixed_coordinates": 12.303194361895592,
+        "delta_pka": 0.25515725254451027,
+        "protonated_fraction_complex_6.5": 0.9999991257251087,
+        "protonated_fraction_complex_7.4": 0.9999930554298453
+      },
+      {
+        "chain": "B",
+        "residue": 355,
+        "type": "COO",
+        "pka_complex": 3.87288884746559,
+        "pka_separated_fixed_coordinates": 2.8671313295570275,
+        "delta_pka": 1.0057575179085623,
+        "protonated_fraction_complex_6.5": 0.0023543182791040717,
+        "protonated_fraction_complex_7.4": 0.00029700232004500237
+      },
+      {
+        "chain": "B",
+        "residue": 409,
+        "type": "HIS",
+        "pka_complex": 3.489154600399116,
+        "pka_separated_fixed_coordinates": 5.581053173960112,
+        "delta_pka": -2.091898573560996,
+        "protonated_fraction_complex_6.5": 0.0009743864219601406,
+        "protonated_fraction_complex_7.4": 0.00012277255039628264
+      },
+      {
+        "chain": "B",
+        "residue": 465,
+        "type": "LYS",
+        "pka_complex": 9.801355141570127,
+        "pka_separated_fixed_coordinates": 10.241714105212996,
+        "delta_pka": -0.4403589636428684,
+        "protonated_fraction_complex_6.5": 0.999500623699249,
+        "protonated_fraction_complex_7.4": 0.9960470192578542
+      }
+    ],
+    "histidine_ring_contacts": [
+      {
+        "his_chain": "A",
+        "his_res": 29,
+        "partner_res": 357,
+        "partner_name": "PHE",
+        "distance": 3.547,
+        "atoms": [
+          "CD2",
+          "CZ"
+        ],
+        "his_plddt": 72.0
+      },
+      {
+        "his_chain": "A",
+        "his_res": 35,
+        "partner_res": 325,
+        "partner_name": "LEU",
+        "distance": 3.195,
+        "atoms": [
+          "CE1",
+          "CD2"
+        ],
+        "his_plddt": 68.15
+      },
+      {
+        "his_chain": "A",
+        "his_res": 35,
+        "partner_res": 346,
+        "partner_name": "HIS",
+        "distance": 4.971,
+        "atoms": [
+          "NE2",
+          "CD2"
+        ],
+        "his_plddt": 68.15
+      },
+      {
+        "his_chain": "B",
+        "his_res": 346,
+        "partner_res": 35,
+        "partner_name": "HIS",
+        "distance": 4.971,
+        "atoms": [
+          "CD2",
+          "NE2"
+        ],
+        "his_plddt": 89.5
+      },
+      {
+        "his_chain": "B",
+        "his_res": 409,
+        "partner_res": 38,
+        "partner_name": "LEU",
+        "distance": 3.266,
+        "atoms": [
+          "CE1",
+          "CD1"
+        ],
+        "his_plddt": 80.1
+      },
+      {
+        "his_chain": "B",
+        "his_res": 409,
+        "partner_res": 70,
+        "partner_name": "LEU",
+        "distance": 4.495,
+        "atoms": [
+          "NE2",
+          "CD1"
+        ],
+        "his_plddt": 80.1
+      },
+      {
+        "his_chain": "B",
+        "his_res": 409,
+        "partner_res": 71,
+        "partner_name": "ASN",
+        "distance": 4.47,
+        "atoms": [
+          "CD2",
+          "OD1"
+        ],
+        "his_plddt": 80.1
+      }
+    ]
+  },
+  {
+    "name": "r02_l01",
+    "iptm": 0.5089394450187683,
+    "his_positions": {
+      "A": [
+        29,
+        35,
+        57
+      ],
+      "B": [
+        23,
+        121,
+        159,
+        209,
+        280,
+        334,
+        346,
+        359,
+        394,
+        409,
+        483,
+        535,
+        560,
+        566,
+        591,
+        594,
+        597
+      ]
+    },
+    "interface_residues": {
+      "A": [
+        2,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        34,
+        35,
+        38,
+        39,
+        41,
+        42,
+        62,
+        63,
+        66,
+        67,
+        70,
+        71
+      ],
+      "B": [
+        14,
+        15,
+        16,
+        19,
+        20,
+        45,
+        47,
+        69,
+        71,
+        99,
+        101,
+        102,
+        103,
+        104,
+        105,
+        325,
+        350,
+        353,
+        354,
+        355,
+        356,
+        357
+      ]
+    },
+    "his_contacts": [
+      {
+        "binder_res": 29,
+        "binder_name": "HIS",
+        "egfr_res": 350,
+        "egfr_name": "VAL",
+        "distance": 4.759,
+        "atoms": [
+          "CA",
+          "CG2"
+        ],
+        "plddt": [
+          66.59,
+          70.03
+        ]
+      },
+      {
+        "binder_res": 29,
+        "binder_name": "HIS",
+        "egfr_res": 354,
+        "egfr_name": "GLY",
+        "distance": 4.943,
+        "atoms": [
+          "N",
+          "O"
+        ],
+        "plddt": [
+          66.59,
+          70.38
+        ]
+      },
+      {
+        "binder_res": 29,
+        "binder_name": "HIS",
+        "egfr_res": 356,
+        "egfr_name": "SER",
+        "distance": 3.762,
+        "atoms": [
+          "CB",
+          "OG"
+        ],
+        "plddt": [
+          66.59,
+          58.95
+        ]
+      },
+      {
+        "binder_res": 29,
+        "binder_name": "HIS",
+        "egfr_res": 355,
+        "egfr_name": "ASP",
+        "distance": 3.765,
+        "atoms": [
+          "CD2",
+          "OD1"
+        ],
+        "plddt": [
+          66.59,
+          64.04
+        ]
+      },
+      {
+        "binder_res": 29,
+        "binder_name": "HIS",
+        "egfr_res": 325,
+        "egfr_name": "LEU",
+        "distance": 3.52,
+        "atoms": [
+          "CE1",
+          "CD1"
+        ],
+        "plddt": [
+          66.59,
+          73.45
+        ]
+      },
+      {
+        "binder_res": 29,
+        "binder_name": "HIS",
+        "egfr_res": 357,
+        "egfr_name": "PHE",
+        "distance": 3.951,
+        "atoms": [
+          "CD2",
+          "CB"
+        ],
+        "plddt": [
+          66.59,
+          60.31
+        ]
+      },
+      {
+        "binder_res": 35,
+        "binder_name": "HIS",
+        "egfr_res": 45,
+        "egfr_name": "TYR",
+        "distance": 2.854,
+        "atoms": [
+          "CB",
+          "OH"
+        ],
+        "plddt": [
+          59.97,
+          92.63
+        ]
+      },
+      {
+        "binder_res": 35,
+        "binder_name": "HIS",
+        "egfr_res": 69,
+        "egfr_name": "LEU",
+        "distance": 2.623,
+        "atoms": [
+          "CB",
+          "CD1"
+        ],
+        "plddt": [
+          59.97,
+          90.82
+        ]
+      },
+      {
+        "binder_res": 35,
+        "binder_name": "HIS",
+        "egfr_res": 14,
+        "egfr_name": "LEU",
+        "distance": 3.927,
+        "atoms": [
+          "CD2",
+          "CB"
+        ],
+        "plddt": [
+          59.97,
+          85.78
+        ]
+      }
+    ],
+    "histidine_ring_contacts": [
+      {
+        "his_chain": "A",
+        "his_res": 29,
+        "partner_res": 325,
+        "partner_name": "LEU",
+        "distance": 3.52,
+        "atoms": [
+          "CE1",
+          "CD1"
+        ],
+        "his_plddt": 66.59
+      },
+      {
+        "his_chain": "A",
+        "his_res": 29,
+        "partner_res": 355,
+        "partner_name": "ASP",
+        "distance": 3.765,
+        "atoms": [
+          "CD2",
+          "OD1"
+        ],
+        "his_plddt": 66.59
+      },
+      {
+        "his_chain": "A",
+        "his_res": 29,
+        "partner_res": 356,
+        "partner_name": "SER",
+        "distance": 4.09,
+        "atoms": [
+          "CD2",
+          "OG"
+        ],
+        "his_plddt": 66.59
+      },
+      {
+        "his_chain": "A",
+        "his_res": 29,
+        "partner_res": 357,
+        "partner_name": "PHE",
+        "distance": 3.951,
+        "atoms": [
+          "CD2",
+          "CB"
+        ],
+        "his_plddt": 66.59
+      },
+      {
+        "his_chain": "A",
+        "his_res": 35,
+        "partner_res": 14,
+        "partner_name": "LEU",
+        "distance": 3.927,
+        "atoms": [
+          "CD2",
+          "CB"
+        ],
+        "his_plddt": 59.97
+      },
+      {
+        "his_chain": "A",
+        "his_res": 35,
+        "partner_res": 45,
+        "partner_name": "TYR",
+        "distance": 3.53,
+        "atoms": [
+          "CG",
+          "OH"
+        ],
+        "his_plddt": 59.97
+      },
+      {
+        "his_chain": "A",
+        "his_res": 35,
+        "partner_res": 69,
+        "partner_name": "LEU",
+        "distance": 3.483,
+        "atoms": [
+          "CG",
+          "CD1"
+        ],
+        "his_plddt": 59.97
+      }
+    ]
+  },
+  {
+    "name": "r02_l05",
+    "iptm": 0.48947805166244507,
+    "his_positions": {
+      "A": [
+        29,
+        35,
+        57
+      ],
+      "B": [
+        23,
+        121,
+        159,
+        209,
+        280,
+        334,
+        346,
+        359,
+        394,
+        409,
+        483,
+        535,
+        560,
+        566,
+        591,
+        594,
+        597
+      ]
+    },
+    "interface_residues": {
+      "A": [
+        7,
+        11,
+        26,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        38,
+        41,
+        42,
+        43,
+        44,
+        59,
+        60,
+        62,
+        63,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71
+      ],
+      "B": [
+        13,
+        14,
+        16,
+        18,
+        20,
+        45,
+        47,
+        69,
+        89,
+        90,
+        98,
+        99,
+        101,
+        102,
+        103,
+        104,
+        105,
+        125,
+        127,
+        128,
+        157,
+        350,
+        353,
+        354,
+        355,
+        356,
+        357,
+        358
+      ]
+    },
+    "his_contacts": [
+      {
+        "binder_res": 35,
+        "binder_name": "HIS",
+        "egfr_res": 16,
+        "egfr_name": "GLN",
+        "distance": 3.07,
+        "atoms": [
+          "CB",
+          "OE1"
+        ],
+        "plddt": [
+          60.88,
+          90.8
+        ]
+      },
+      {
+        "binder_res": 35,
+        "binder_name": "HIS",
+        "egfr_res": 20,
+        "egfr_name": "PHE",
+        "distance": 3.891,
+        "atoms": [
+          "CB",
+          "CZ"
+        ],
+        "plddt": [
+          60.88,
+          93.3
+        ]
+      },
+      {
+        "binder_res": 35,
+        "binder_name": "HIS",
+        "egfr_res": 45,
+        "egfr_name": "TYR",
+        "distance": 4.282,
+        "atoms": [
+          "N",
+          "CE2"
+        ],
+        "plddt": [
+          60.88,
+          94.54
+        ]
+      },
+      {
+        "binder_res": 35,
+        "binder_name": "HIS",
+        "egfr_res": 18,
+        "egfr_name": "GLY",
+        "distance": 4.606,
+        "atoms": [
+          "NE2",
+          "O"
+        ],
+        "plddt": [
+          60.88,
+          89.04
+        ]
+      }
+    ],
+    "histidine_ring_contacts": [
+      {
+        "his_chain": "A",
+        "his_res": 35,
+        "partner_res": 16,
+        "partner_name": "GLN",
+        "distance": 3.154,
+        "atoms": [
+          "CG",
+          "OE1"
+        ],
+        "his_plddt": 60.88
+      },
+      {
+        "his_chain": "A",
+        "his_res": 35,
+        "partner_res": 18,
+        "partner_name": "GLY",
+        "distance": 4.606,
+        "atoms": [
+          "NE2",
+          "O"
+        ],
+        "his_plddt": 60.88
+      },
+      {
+        "his_chain": "A",
+        "his_res": 35,
+        "partner_res": 20,
+        "partner_name": "PHE",
+        "distance": 4.953,
+        "atoms": [
+          "CG",
+          "CZ"
+        ],
+        "his_plddt": 60.88
+      }
+    ]
+  },
+  {
+    "name": "rank08_native",
+    "iptm": 0.43646085262298584,
+    "his_positions": {
+      "A": [
+        28,
+        56
+      ],
+      "B": [
+        23,
+        121,
+        159,
+        209,
+        280,
+        334,
+        346,
+        359,
+        394,
+        409,
+        483,
+        535,
+        560,
+        566,
+        591,
+        594,
+        597
+      ]
+    },
+    "interface_residues": {
+      "A": [
+        46,
+        47,
+        48,
+        59,
+        60,
+        61,
+        62,
+        64,
+        66,
+        67,
+        68
+      ],
+      "B": [
+        14,
+        45,
+        69,
+        89,
+        90,
+        98,
+        99,
+        101,
+        125,
+        127,
+        128,
+        157,
+        356,
+        357,
+        359
+      ]
+    },
+    "his_contacts": [
+      {
+        "binder_res": 46,
+        "binder_name": "TYR",
+        "egfr_res": 359,
+        "egfr_name": "HIS",
+        "distance": 3.055,
+        "atoms": [
+          "CB",
+          "NE2"
+        ],
+        "plddt": [
+          68.04,
+          72.46
+        ]
+      },
+      {
+        "binder_res": 47,
+        "binder_name": "LEU",
+        "egfr_res": 359,
+        "egfr_name": "HIS",
+        "distance": 3.23,
+        "atoms": [
+          "O",
+          "CE1"
+        ],
+        "plddt": [
+          71.79,
+          72.46
+        ]
+      },
+      {
+        "binder_res": 48,
+        "binder_name": "ILE",
+        "egfr_res": 359,
+        "egfr_name": "HIS",
+        "distance": 3.414,
+        "atoms": [
+          "CG1",
+          "CD2"
+        ],
+        "plddt": [
+          60.28,
+          72.46
+        ]
+      }
+    ],
+    "histidine_ring_contacts": [
+      {
+        "his_chain": "B",
+        "his_res": 359,
+        "partner_res": 46,
+        "partner_name": "TYR",
+        "distance": 3.055,
+        "atoms": [
+          "NE2",
+          "CB"
+        ],
+        "his_plddt": 72.46
+      },
+      {
+        "his_chain": "B",
+        "his_res": 359,
+        "partner_res": 47,
+        "partner_name": "LEU",
+        "distance": 3.23,
+        "atoms": [
+          "CE1",
+          "O"
+        ],
+        "his_plddt": 72.46
+      },
+      {
+        "his_chain": "B",
+        "his_res": 359,
+        "partner_res": 48,
+        "partner_name": "ILE",
+        "distance": 3.414,
+        "atoms": [
+          "CD2",
+          "CG1"
+        ],
+        "his_plddt": 72.46
+      }
+    ]
+  },
+  {
+    "name": "rank01_native",
+    "iptm": 0.4297199249267578,
+    "his_positions": {
+      "A": [
+        22,
+        48
+      ],
+      "B": [
+        23,
+        121,
+        159,
+        209,
+        280,
+        334,
+        346,
+        359,
+        394,
+        409,
+        483,
+        535,
+        560,
+        566,
+        591,
+        594,
+        597
+      ]
+    },
+    "interface_residues": {
+      "A": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        11,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        27,
+        29,
+        43,
+        63,
+        65
+      ],
+      "B": [
+        14,
+        15,
+        16,
+        18,
+        19,
+        20,
+        45,
+        47,
+        69,
+        71,
+        89,
+        90,
+        98,
+        99,
+        101,
+        102,
+        103,
+        105,
+        125,
+        127,
+        128,
+        155,
+        325,
+        357,
+        358
+      ]
+    },
+    "his_contacts": [],
+    "histidine_ring_contacts": []
+  },
+  {
+    "name": "r03_l05",
+    "iptm": 0.40344786643981934,
+    "his_positions": {
+      "A": [
+        18,
+        26,
+        48,
+        52,
+        54
+      ],
+      "B": [
+        23,
+        121,
+        159,
+        209,
+        280,
+        334,
+        346,
+        359,
+        394,
+        409,
+        483,
+        535,
+        560,
+        566,
+        591,
+        594,
+        597
+      ]
+    },
+    "interface_residues": {
+      "A": [
+        7,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        25,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        45,
+        62,
+        63,
+        64,
+        66,
+        68
+      ],
+      "B": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        22,
+        45,
+        69,
+        89,
+        98,
+        99,
+        101,
+        125,
+        128,
+        325,
+        353,
+        409,
+        418,
+        440,
+        465,
+        467,
+        468
+      ]
+    },
+    "his_contacts": [
+      {
+        "binder_res": 18,
+        "binder_name": "HIS",
+        "egfr_res": 19,
+        "egfr_name": "THR",
+        "distance": 4.708,
+        "atoms": [
+          "N",
+          "CG2"
+        ],
+        "plddt": [
+          60.33,
+          87.8
+        ]
+      },
+      {
+        "binder_res": 18,
+        "binder_name": "HIS",
+        "egfr_res": 22,
+        "egfr_name": "ASP",
+        "distance": 4.423,
+        "atoms": [
+          "ND1",
+          "OD2"
+        ],
+        "plddt": [
+          60.33,
+          88.64
+        ]
+      },
+      {
+        "binder_res": 18,
+        "binder_name": "HIS",
+        "egfr_res": 18,
+        "egfr_name": "GLY",
+        "distance": 3.65,
+        "atoms": [
+          "ND1",
+          "CA"
+        ],
+        "plddt": [
+          60.33,
+          86.11
+        ]
+      },
+      {
+        "binder_res": 18,
+        "binder_name": "HIS",
+        "egfr_res": 465,
+        "egfr_name": "LYS",
+        "distance": 3.745,
+        "atoms": [
+          "CD2",
+          "NZ"
+        ],
+        "plddt": [
+          60.33,
+          93.16
+        ]
+      },
+      {
+        "binder_res": 18,
+        "binder_name": "HIS",
+        "egfr_res": 17,
+        "egfr_name": "LEU",
+        "distance": 4.386,
+        "atoms": [
+          "CE1",
+          "C"
+        ],
+        "plddt": [
+          60.33,
+          87.51
+        ]
+      },
+      {
+        "binder_res": 20,
+        "binder_name": "THR",
+        "egfr_res": 409,
+        "egfr_name": "HIS",
+        "distance": 4.032,
+        "atoms": [
+          "CG2",
+          "NE2"
+        ],
+        "plddt": [
+          69.33,
+          89.38
+        ]
+      },
+      {
+        "binder_res": 22,
+        "binder_name": "THR",
+        "egfr_res": 409,
+        "egfr_name": "HIS",
+        "distance": 4.249,
+        "atoms": [
+          "OG1",
+          "CE1"
+        ],
+        "plddt": [
+          72.06,
+          89.38
+        ]
+      }
+    ],
+    "histidine_ring_contacts": [
+      {
+        "his_chain": "A",
+        "his_res": 18,
+        "partner_res": 17,
+        "partner_name": "LEU",
+        "distance": 4.386,
+        "atoms": [
+          "CE1",
+          "C"
+        ],
+        "his_plddt": 60.33
+      },
+      {
+        "his_chain": "A",
+        "his_res": 18,
+        "partner_res": 18,
+        "partner_name": "GLY",
+        "distance": 3.65,
+        "atoms": [
+          "ND1",
+          "CA"
+        ],
+        "his_plddt": 60.33
+      },
+      {
+        "his_chain": "A",
+        "his_res": 18,
+        "partner_res": 22,
+        "partner_name": "ASP",
+        "distance": 4.423,
+        "atoms": [
+          "ND1",
+          "OD2"
+        ],
+        "his_plddt": 60.33
+      },
+      {
+        "his_chain": "A",
+        "his_res": 18,
+        "partner_res": 465,
+        "partner_name": "LYS",
+        "distance": 3.745,
+        "atoms": [
+          "CD2",
+          "NZ"
+        ],
+        "his_plddt": 60.33
+      },
+      {
+        "his_chain": "B",
+        "his_res": 409,
+        "partner_res": 20,
+        "partner_name": "THR",
+        "distance": 4.032,
+        "atoms": [
+          "NE2",
+          "CG2"
+        ],
+        "his_plddt": 89.38
+      },
+      {
+        "his_chain": "B",
+        "his_res": 409,
+        "partner_res": 22,
+        "partner_name": "THR",
+        "distance": 4.249,
+        "atoms": [
+          "CE1",
+          "OG1"
+        ],
+        "his_plddt": 89.38
+      }
+    ]
+  },
+  {
+    "name": "r03_l03",
+    "iptm": 0.40135324001312256,
+    "his_positions": {
+      "A": [
+        18,
+        26,
+        48,
+        52,
+        54
+      ],
+      "B": [
+        23,
+        121,
+        159,
+        209,
+        280,
+        334,
+        346,
+        359,
+        394,
+        409,
+        483,
+        535,
+        560,
+        566,
+        591,
+        594,
+        597
+      ]
+    },
+    "interface_residues": {
+      "A": [
+        7,
+        9,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        23,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        39,
+        41,
+        43,
+        45,
+        49,
+        50,
+        51,
+        52,
+        53,
+        55
+      ],
+      "B": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        45,
+        69,
+        71,
+        90,
+        98,
+        99,
+        101,
+        102,
+        125,
+        127,
+        128,
+        323,
+        325,
+        348,
+        349,
+        350,
+        351,
+        353,
+        354,
+        356,
+        357,
+        384,
+        408,
+        409,
+        417,
+        418,
+        440
+      ]
+    },
+    "his_contacts": [
+      {
+        "binder_res": 18,
+        "binder_name": "HIS",
+        "egfr_res": 69,
+        "egfr_name": "LEU",
+        "distance": 2.851,
+        "atoms": [
+          "CA",
+          "CD2"
+        ],
+        "plddt": [
+          63.77,
+          90.35
+        ]
+      },
+      {
+        "binder_res": 18,
+        "binder_name": "HIS",
+        "egfr_res": 99,
+        "egfr_name": "SER",
+        "distance": 4.265,
+        "atoms": [
+          "ND1",
+          "O"
+        ],
+        "plddt": [
+          63.77,
+          91.34
+        ]
+      },
+      {
+        "binder_res": 18,
+        "binder_name": "HIS",
+        "egfr_res": 101,
+        "egfr_name": "TYR",
+        "distance": 2.918,
+        "atoms": [
+          "CE1",
+          "O"
+        ],
+        "plddt": [
+          63.77,
+          88.83
+        ]
+      },
+      {
+        "binder_res": 18,
+        "binder_name": "HIS",
+        "egfr_res": 71,
+        "egfr_name": "THR",
+        "distance": 4.978,
+        "atoms": [
+          "CE1",
+          "CG2"
+        ],
+        "plddt": [
+          63.77,
+          93.71
+        ]
+      },
+      {
+        "binder_res": 18,
+        "binder_name": "HIS",
+        "egfr_res": 102,
+        "egfr_name": "ASP",
+        "distance": 4.289,
+        "atoms": [
+          "CE1",
+          "CA"
+        ],
+        "plddt": [
+          63.77,
+          85.26
+        ]
+      },
+      {
+        "binder_res": 31,
+        "binder_name": "GLU",
+        "egfr_res": 409,
+        "egfr_name": "HIS",
+        "distance": 3.248,
+        "atoms": [
+          "OE2",
+          "NE2"
+        ],
+        "plddt": [
+          74.05,
+          89.23
+        ]
+      },
+      {
+        "binder_res": 52,
+        "binder_name": "HIS",
+        "egfr_res": 353,
+        "egfr_name": "ARG",
+        "distance": 4.167,
+        "atoms": [
+          "CA",
+          "NH1"
+        ],
+        "plddt": [
+          75.4,
+          87.83
+        ]
+      }
+    ],
+    "histidine_ring_contacts": [
+      {
+        "his_chain": "A",
+        "his_res": 18,
+        "partner_res": 69,
+        "partner_name": "LEU",
+        "distance": 3.795,
+        "atoms": [
+          "ND1",
+          "CD2"
+        ],
+        "his_plddt": 63.77
+      },
+      {
+        "his_chain": "A",
+        "his_res": 18,
+        "partner_res": 71,
+        "partner_name": "THR",
+        "distance": 4.978,
+        "atoms": [
+          "CE1",
+          "CG2"
+        ],
+        "his_plddt": 63.77
+      },
+      {
+        "his_chain": "A",
+        "his_res": 18,
+        "partner_res": 99,
+        "partner_name": "SER",
+        "distance": 4.265,
+        "atoms": [
+          "ND1",
+          "O"
+        ],
+        "his_plddt": 63.77
+      },
+      {
+        "his_chain": "A",
+        "his_res": 18,
+        "partner_res": 101,
+        "partner_name": "TYR",
+        "distance": 2.918,
+        "atoms": [
+          "CE1",
+          "O"
+        ],
+        "his_plddt": 63.77
+      },
+      {
+        "his_chain": "A",
+        "his_res": 18,
+        "partner_res": 102,
+        "partner_name": "ASP",
+        "distance": 4.289,
+        "atoms": [
+          "CE1",
+          "CA"
+        ],
+        "his_plddt": 63.77
+      },
+      {
+        "his_chain": "A",
+        "his_res": 52,
+        "partner_res": 353,
+        "partner_name": "ARG",
+        "distance": 4.324,
+        "atoms": [
+          "ND1",
+          "NH2"
+        ],
+        "his_plddt": 75.4
+      },
+      {
+        "his_chain": "B",
+        "his_res": 409,
+        "partner_res": 31,
+        "partner_name": "GLU",
+        "distance": 3.248,
+        "atoms": [
+          "NE2",
+          "OE2"
+        ],
+        "his_plddt": 89.23
+      }
+    ]
+  },
+  {
+    "name": "rank04_native",
+    "iptm": 0.37943506240844727,
+    "his_positions": {
+      "A": [
+        23,
+        41,
+        51
+      ],
+      "B": [
+        23,
+        121,
+        159,
+        209,
+        280,
+        334,
+        346,
+        359,
+        394,
+        409,
+        483,
+        535,
+        560,
+        566,
+        591,
+        594,
+        597
+      ]
+    },
+    "interface_residues": {
+      "A": [
+        2,
+        3,
+        6,
+        7,
+        10,
+        24,
+        25,
+        26,
+        27,
+        28,
+        30,
+        31,
+        34,
+        37,
+        38,
+        39,
+        40,
+        42,
+        55,
+        59,
+        62,
+        63,
+        66,
+        67,
+        68,
+        69,
+        71,
+        72
+      ],
+      "B": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        45,
+        69,
+        70,
+        71,
+        89,
+        90,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        105,
+        125,
+        127,
+        128,
+        349,
+        350,
+        353,
+        354,
+        355,
+        356,
+        357,
+        359,
+        418
+      ]
+    },
+    "his_contacts": [
+      {
+        "binder_res": 71,
+        "binder_name": "GLU",
+        "egfr_res": 359,
+        "egfr_name": "HIS",
+        "distance": 4.295,
+        "atoms": [
+          "OE2",
+          "NE2"
+        ],
+        "plddt": [
+          60.24,
+          82.43
+        ]
+      }
+    ],
+    "histidine_ring_contacts": [
+      {
+        "his_chain": "B",
+        "his_res": 359,
+        "partner_res": 71,
+        "partner_name": "GLU",
+        "distance": 4.295,
+        "atoms": [
+          "NE2",
+          "OE2"
+        ],
+        "his_plddt": 82.43
+      }
+    ]
+  },
+  {
+    "name": "rank05_native",
+    "iptm": 0.35577845573425293,
+    "his_positions": {
+      "A": [
+        28,
+        53
+      ],
+      "B": [
+        23,
+        121,
+        159,
+        209,
+        280,
+        334,
+        346,
+        359,
+        394,
+        409,
+        483,
+        535,
+        560,
+        566,
+        591,
+        594,
+        597
+      ]
+    },
+    "interface_residues": {
+      "A": [
+        2,
+        4,
+        6,
+        8,
+        11,
+        12,
+        13,
+        14,
+        16,
+        17,
+        18,
+        19,
+        20,
+        22,
+        36,
+        38,
+        40,
+        42,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        72
+      ],
+      "B": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        20,
+        45,
+        69,
+        101,
+        102,
+        103,
+        325,
+        348,
+        349,
+        350,
+        352,
+        353,
+        354,
+        355,
+        356,
+        357,
+        358,
+        365,
+        385,
+        386,
+        387,
+        388,
+        389
+      ]
+    },
+    "his_contacts": [
+      {
+        "binder_res": 53,
+        "binder_name": "HIS",
+        "egfr_res": 388,
+        "egfr_name": "GLU",
+        "distance": 3.4,
+        "atoms": [
+          "CE1",
+          "OE1"
+        ],
+        "plddt": [
+          60.69,
+          84.82
+        ]
+      }
+    ],
+    "histidine_ring_contacts": [
+      {
+        "his_chain": "A",
+        "his_res": 53,
+        "partner_res": 388,
+        "partner_name": "GLU",
+        "distance": 3.4,
+        "atoms": [
+          "CE1",
+          "OE1"
+        ],
+        "his_plddt": 60.69
+      }
+    ]
+  },
+  {
+    "name": "r03_l01",
+    "iptm": 0.334525465965271,
+    "his_positions": {
+      "A": [
+        18,
+        26,
+        48,
+        52,
+        54
+      ],
+      "B": [
+        23,
+        121,
+        159,
+        209,
+        280,
+        334,
+        346,
+        359,
+        394,
+        409,
+        483,
+        535,
+        560,
+        566,
+        591,
+        594,
+        597
+      ]
+    },
+    "interface_residues": {
+      "A": [
+        7,
+        9,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        39,
+        41,
+        43,
+        45,
+        48,
+        49,
+        51,
+        52,
+        53,
+        55
+      ],
+      "B": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        20,
+        45,
+        47,
+        69,
+        89,
+        90,
+        98,
+        99,
+        101,
+        102,
+        103,
+        105,
+        125,
+        128,
+        325,
+        348,
+        349,
+        350,
+        353,
+        356,
+        357,
+        382,
+        384,
+        408,
+        409,
+        418,
+        441,
+        443
+      ]
+    },
+    "his_contacts": [
+      {
+        "binder_res": 18,
+        "binder_name": "HIS",
+        "egfr_res": 69,
+        "egfr_name": "LEU",
+        "distance": 4.259,
+        "atoms": [
+          "N",
+          "CD2"
+        ],
+        "plddt": [
+          68.94,
+          90.02
+        ]
+      },
+      {
+        "binder_res": 18,
+        "binder_name": "HIS",
+        "egfr_res": 20,
+        "egfr_name": "PHE",
+        "distance": 3.494,
+        "atoms": [
+          "CE1",
+          "CZ"
+        ],
+        "plddt": [
+          68.94,
+          88.52
+        ]
+      },
+      {
+        "binder_res": 18,
+        "binder_name": "HIS",
+        "egfr_res": 47,
+        "egfr_name": "GLN",
+        "distance": 3.826,
+        "atoms": [
+          "CE1",
+          "OE1"
+        ],
+        "plddt": [
+          68.94,
+          92.27
+        ]
+      },
+      {
+        "binder_res": 31,
+        "binder_name": "GLU",
+        "egfr_res": 409,
+        "egfr_name": "HIS",
+        "distance": 4.166,
+        "atoms": [
+          "OE2",
+          "CE1"
+        ],
+        "plddt": [
+          73.77,
+          88.6
+        ]
+      },
+      {
+        "binder_res": 48,
+        "binder_name": "HIS",
+        "egfr_res": 443,
+        "egfr_name": "LYS",
+        "distance": 4.211,
+        "atoms": [
+          "O",
+          "CD"
+        ],
+        "plddt": [
+          74.11,
+          93.49
+        ]
+      },
+      {
+        "binder_res": 52,
+        "binder_name": "HIS",
+        "egfr_res": 349,
+        "egfr_name": "PRO",
+        "distance": 4.894,
+        "atoms": [
+          "N",
+          "CG"
+        ],
+        "plddt": [
+          73.31,
+          89.35
+        ]
+      },
+      {
+        "binder_res": 52,
+        "binder_name": "HIS",
+        "egfr_res": 353,
+        "egfr_name": "ARG",
+        "distance": 3.73,
+        "atoms": [
+          "CA",
+          "NH1"
+        ],
+        "plddt": [
+          73.31,
+          87.45
+        ]
+      }
+    ],
+    "histidine_ring_contacts": [
+      {
+        "his_chain": "A",
+        "his_res": 18,
+        "partner_res": 20,
+        "partner_name": "PHE",
+        "distance": 3.494,
+        "atoms": [
+          "CE1",
+          "CZ"
+        ],
+        "his_plddt": 68.94
+      },
+      {
+        "his_chain": "A",
+        "his_res": 18,
+        "partner_res": 47,
+        "partner_name": "GLN",
+        "distance": 3.826,
+        "atoms": [
+          "CE1",
+          "OE1"
+        ],
+        "his_plddt": 68.94
+      },
+      {
+        "his_chain": "A",
+        "his_res": 52,
+        "partner_res": 353,
+        "partner_name": "ARG",
+        "distance": 4.635,
+        "atoms": [
+          "ND1",
+          "CZ"
+        ],
+        "his_plddt": 73.31
+      },
+      {
+        "his_chain": "B",
+        "his_res": 409,
+        "partner_res": 31,
+        "partner_name": "GLU",
+        "distance": 4.166,
+        "atoms": [
+          "CE1",
+          "OE2"
+        ],
+        "his_plddt": 88.6
+      }
+    ]
+  },
+  {
+    "name": "n02_rank02_native",
+    "iptm": 0.31544029712677,
+    "his_positions": {
+      "A": [
+        29,
+        57
+      ],
+      "B": [
+        23,
+        121,
+        159,
+        209,
+        280,
+        334,
+        346,
+        359,
+        394,
+        409,
+        483,
+        535,
+        560,
+        566,
+        591,
+        594,
+        597
+      ]
+    },
+    "interface_residues": {
+      "A": [
+        34,
+        35,
+        38,
+        39,
+        47,
+        62,
+        63,
+        65,
+        66,
+        68,
+        69,
+        70,
+        71
+      ],
+      "B": [
+        21,
+        22,
+        25,
+        26,
+        28,
+        29,
+        384,
+        409,
+        411,
+        412,
+        417,
+        418,
+        438,
+        440,
+        465,
+        467,
+        468,
+        469
+      ]
+    },
+    "his_contacts": [
+      {
+        "binder_res": 69,
+        "binder_name": "LEU",
+        "egfr_res": 409,
+        "egfr_name": "HIS",
+        "distance": 4.808,
+        "atoms": [
+          "CD1",
+          "CE1"
+        ],
+        "plddt": [
+          56.96,
+          81.62
+        ]
+      }
+    ],
+    "histidine_ring_contacts": [
+      {
+        "his_chain": "B",
+        "his_res": 409,
+        "partner_res": 69,
+        "partner_name": "LEU",
+        "distance": 4.808,
+        "atoms": [
+          "CE1",
+          "CD1"
+        ],
+        "his_plddt": 81.62
+      }
+    ]
+  },
+  {
+    "name": "rank07_native",
+    "iptm": 0.30978983640670776,
+    "his_positions": {
+      "A": [
+        16,
+        41
+      ],
+      "B": [
+        23,
+        121,
+        159,
+        209,
+        280,
+        334,
+        346,
+        359,
+        394,
+        409,
+        483,
+        535,
+        560,
+        566,
+        591,
+        594,
+        597
+      ]
+    },
+    "interface_residues": {
+      "A": [
+        11,
+        34,
+        35,
+        36,
+        38,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        49
+      ],
+      "B": [
+        14,
+        15,
+        16,
+        20,
+        45,
+        47,
+        69,
+        89,
+        90,
+        98,
+        99,
+        101,
+        102,
+        103,
+        125,
+        127,
+        128
+      ]
+    },
+    "his_contacts": [
+      {
+        "binder_res": 41,
+        "binder_name": "HIS",
+        "egfr_res": 99,
+        "egfr_name": "SER",
+        "distance": 3.203,
+        "atoms": [
+          "ND1",
+          "OG"
+        ],
+        "plddt": [
+          61.74,
+          92.43
+        ]
+      },
+      {
+        "binder_res": 41,
+        "binder_name": "HIS",
+        "egfr_res": 101,
+        "egfr_name": "TYR",
+        "distance": 2.361,
+        "atoms": [
+          "O",
+          "OH"
+        ],
+        "plddt": [
+          61.74,
+          89.82
+        ]
+      },
+      {
+        "binder_res": 41,
+        "binder_name": "HIS",
+        "egfr_res": 128,
+        "egfr_name": "ASN",
+        "distance": 3.077,
+        "atoms": [
+          "CB",
+          "ND2"
+        ],
+        "plddt": [
+          61.74,
+          88.32
+        ]
+      },
+      {
+        "binder_res": 41,
+        "binder_name": "HIS",
+        "egfr_res": 127,
+        "egfr_name": "SER",
+        "distance": 3.723,
+        "atoms": [
+          "CE1",
+          "OG"
+        ],
+        "plddt": [
+          61.74,
+          91.42
+        ]
+      }
+    ],
+    "histidine_ring_contacts": [
+      {
+        "his_chain": "A",
+        "his_res": 41,
+        "partner_res": 99,
+        "partner_name": "SER",
+        "distance": 3.203,
+        "atoms": [
+          "ND1",
+          "OG"
+        ],
+        "his_plddt": 61.74
+      },
+      {
+        "his_chain": "A",
+        "his_res": 41,
+        "partner_res": 127,
+        "partner_name": "SER",
+        "distance": 3.723,
+        "atoms": [
+          "CE1",
+          "OG"
+        ],
+        "his_plddt": 61.74
+      },
+      {
+        "his_chain": "A",
+        "his_res": 41,
+        "partner_res": 128,
+        "partner_name": "ASN",
+        "distance": 3.355,
+        "atoms": [
+          "ND1",
+          "ND2"
+        ],
+        "his_plddt": 61.74
+      }
+    ]
+  },
+  {
+    "name": "r01_l01",
+    "iptm": 0.25631681084632874,
+    "his_positions": {
+      "A": [
+        16,
+        22,
+        48
+      ],
+      "B": [
+        23,
+        121,
+        159,
+        209,
+        280,
+        334,
+        346,
+        359,
+        394,
+        409,
+        483,
+        535,
+        560,
+        566,
+        591,
+        594,
+        597
+      ]
+    },
+    "interface_residues": {
+      "A": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        15,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        25,
+        27,
+        29,
+        45,
+        61,
+        62,
+        63,
+        64,
+        65,
+        67
+      ],
+      "B": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        20,
+        45,
+        69,
+        89,
+        90,
+        92,
+        93,
+        98,
+        99,
+        101,
+        125,
+        127,
+        128,
+        325,
+        353,
+        355,
+        357,
+        358
+      ]
+    },
+    "his_contacts": [
+      {
+        "binder_res": 22,
+        "binder_name": "HIS",
+        "egfr_res": 18,
+        "egfr_name": "GLY",
+        "distance": 4.454,
+        "atoms": [
+          "NE2",
+          "CA"
+        ],
+        "plddt": [
+          57.43,
+          86.72
+        ]
+      }
+    ],
+    "histidine_ring_contacts": [
+      {
+        "his_chain": "A",
+        "his_res": 22,
+        "partner_res": 18,
+        "partner_name": "GLY",
+        "distance": 4.454,
+        "atoms": [
+          "NE2",
+          "CA"
+        ],
+        "his_plddt": 57.43
+      }
+    ]
+  },
+  {
+    "name": "r01_l03",
+    "iptm": 0.23195205628871918,
+    "his_positions": {
+      "A": [
+        16,
+        22,
+        48
+      ],
+      "B": [
+        23,
+        121,
+        159,
+        209,
+        280,
+        334,
+        346,
+        359,
+        394,
+        409,
+        483,
+        535,
+        560,
+        566,
+        591,
+        594,
+        597
+      ]
+    },
+    "interface_residues": {
+      "A": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        29,
+        44
+      ],
+      "B": [
+        14,
+        15,
+        16,
+        20,
+        45,
+        69,
+        90,
+        99,
+        101,
+        102,
+        103,
+        104,
+        105,
+        128,
+        322,
+        323,
+        324,
+        325,
+        355,
+        357,
+        358
+      ]
+    },
+    "his_contacts": [
+      {
+        "binder_res": 16,
+        "binder_name": "HIS",
+        "egfr_res": 45,
+        "egfr_name": "TYR",
+        "distance": 4.423,
+        "atoms": [
+          "CD2",
+          "CE1"
+        ],
+        "plddt": [
+          72.07,
+          93.77
+        ]
+      },
+      {
+        "binder_res": 16,
+        "binder_name": "HIS",
+        "egfr_res": 16,
+        "egfr_name": "GLN",
+        "distance": 2.165,
+        "atoms": [
+          "NE2",
+          "OE1"
+        ],
+        "plddt": [
+          72.07,
+          90.02
+        ]
+      },
+      {
+        "binder_res": 16,
+        "binder_name": "HIS",
+        "egfr_res": 20,
+        "egfr_name": "PHE",
+        "distance": 4.308,
+        "atoms": [
+          "CD2",
+          "CZ"
+        ],
+        "plddt": [
+          72.07,
+          92.6
+        ]
+      },
+      {
+        "binder_res": 22,
+        "binder_name": "HIS",
+        "egfr_res": 323,
+        "egfr_name": "ASP",
+        "distance": 2.721,
+        "atoms": [
+          "N",
+          "O"
+        ],
+        "plddt": [
+          59.9,
+          77.15
+        ]
+      },
+      {
+        "binder_res": 22,
+        "binder_name": "HIS",
+        "egfr_res": 324,
+        "egfr_name": "SER",
+        "distance": 4.327,
+        "atoms": [
+          "CE1",
+          "CA"
+        ],
+        "plddt": [
+          59.9,
+          86.22
+        ]
+      },
+      {
+        "binder_res": 22,
+        "binder_name": "HIS",
+        "egfr_res": 322,
+        "egfr_name": "LYS",
+        "distance": 4.646,
+        "atoms": [
+          "ND1",
+          "O"
+        ],
+        "plddt": [
+          59.9,
+          76.4
+        ]
+      },
+      {
+        "binder_res": 22,
+        "binder_name": "HIS",
+        "egfr_res": 358,
+        "egfr_name": "THR",
+        "distance": 3.106,
+        "atoms": [
+          "NE2",
+          "CG2"
+        ],
+        "plddt": [
+          59.9,
+          80.99
+        ]
+      }
+    ],
+    "histidine_ring_contacts": [
+      {
+        "his_chain": "A",
+        "his_res": 16,
+        "partner_res": 16,
+        "partner_name": "GLN",
+        "distance": 2.165,
+        "atoms": [
+          "NE2",
+          "OE1"
+        ],
+        "his_plddt": 72.07
+      },
+      {
+        "his_chain": "A",
+        "his_res": 16,
+        "partner_res": 20,
+        "partner_name": "PHE",
+        "distance": 4.308,
+        "atoms": [
+          "CD2",
+          "CZ"
+        ],
+        "his_plddt": 72.07
+      },
+      {
+        "his_chain": "A",
+        "his_res": 16,
+        "partner_res": 45,
+        "partner_name": "TYR",
+        "distance": 4.423,
+        "atoms": [
+          "CD2",
+          "CE1"
+        ],
+        "his_plddt": 72.07
+      },
+      {
+        "his_chain": "A",
+        "his_res": 22,
+        "partner_res": 322,
+        "partner_name": "LYS",
+        "distance": 4.646,
+        "atoms": [
+          "ND1",
+          "O"
+        ],
+        "his_plddt": 59.9
+      },
+      {
+        "his_chain": "A",
+        "his_res": 22,
+        "partner_res": 323,
+        "partner_name": "ASP",
+        "distance": 3.627,
+        "atoms": [
+          "ND1",
+          "O"
+        ],
+        "his_plddt": 59.9
+      },
+      {
+        "his_chain": "A",
+        "his_res": 22,
+        "partner_res": 324,
+        "partner_name": "SER",
+        "distance": 4.327,
+        "atoms": [
+          "CE1",
+          "CA"
+        ],
+        "his_plddt": 59.9
+      },
+      {
+        "his_chain": "A",
+        "his_res": 22,
+        "partner_res": 358,
+        "partner_name": "THR",
+        "distance": 3.106,
+        "atoms": [
+          "NE2",
+          "CG2"
+        ],
+        "his_plddt": 59.9
+      }
+    ]
+  },
+  {
+    "name": "rank06_native",
+    "iptm": 0.22484569251537323,
+    "his_positions": {
+      "A": [
+        19,
+        36
+      ],
+      "B": [
+        23,
+        121,
+        159,
+        209,
+        280,
+        334,
+        346,
+        359,
+        394,
+        409,
+        483,
+        535,
+        560,
+        566,
+        591,
+        594,
+        597
+      ]
+    },
+    "interface_residues": {
+      "A": [
+        1,
+        2,
+        15,
+        16,
+        17,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        38,
+        39,
+        40,
+        41,
+        42,
+        44,
+        46,
+        52,
+        54,
+        55,
+        56,
+        57
+      ],
+      "B": [
+        14,
+        15,
+        16,
+        18,
+        19,
+        45,
+        69,
+        98,
+        99,
+        101,
+        105,
+        125,
+        127,
+        128,
+        153,
+        155,
+        157,
+        325,
+        356,
+        357
+      ]
+    },
+    "his_contacts": [],
+    "histidine_ring_contacts": []
+  },
+  {
+    "name": "r01_l07",
+    "iptm": 0.15496869385242462,
+    "his_positions": {
+      "A": [
+        16,
+        22,
+        48
+      ],
+      "B": [
+        23,
+        121,
+        159,
+        209,
+        280,
+        334,
+        346,
+        359,
+        394,
+        409,
+        483,
+        535,
+        560,
+        566,
+        591,
+        594,
+        597
+      ]
+    },
+    "interface_residues": {
+      "A": [
+        1,
+        2,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        44,
+        46,
+        47,
+        48,
+        50,
+        52,
+        56,
+        57,
+        58,
+        59,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "B": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        22,
+        68,
+        69,
+        89,
+        90,
+        98,
+        99,
+        101,
+        105,
+        125,
+        127,
+        128,
+        157,
+        159,
+        325,
+        348,
+        349,
+        350,
+        353,
+        354,
+        355,
+        356,
+        357,
+        384,
+        408,
+        418
+      ]
+    },
+    "his_contacts": [
+      {
+        "binder_res": 22,
+        "binder_name": "HIS",
+        "egfr_res": 15,
+        "egfr_name": "THR",
+        "distance": 3.524,
+        "atoms": [
+          "CD2",
+          "CG2"
+        ],
+        "plddt": [
+          56.0,
+          89.55
+        ]
+      },
+      {
+        "binder_res": 22,
+        "binder_name": "HIS",
+        "egfr_res": 348,
+        "egfr_name": "LEU",
+        "distance": 4.136,
+        "atoms": [
+          "N",
+          "CD1"
+        ],
+        "plddt": [
+          56.0,
+          91.98
+        ]
+      },
+      {
+        "binder_res": 22,
+        "binder_name": "HIS",
+        "egfr_res": 384,
+        "egfr_name": "GLN",
+        "distance": 3.874,
+        "atoms": [
+          "C",
+          "OE1"
+        ],
+        "plddt": [
+          56.0,
+          92.57
+        ]
+      },
+      {
+        "binder_res": 22,
+        "binder_name": "HIS",
+        "egfr_res": 17,
+        "egfr_name": "LEU",
+        "distance": 3.973,
+        "atoms": [
+          "CB",
+          "CD2"
+        ],
+        "plddt": [
+          56.0,
+          89.63
+        ]
+      },
+      {
+        "binder_res": 22,
+        "binder_name": "HIS",
+        "egfr_res": 12,
+        "egfr_name": "ASN",
+        "distance": 3.376,
+        "atoms": [
+          "CE1",
+          "OD1"
+        ],
+        "plddt": [
+          56.0,
+          89.23
+        ]
+      },
+      {
+        "binder_res": 22,
+        "binder_name": "HIS",
+        "egfr_res": 408,
+        "egfr_name": "GLN",
+        "distance": 4.922,
+        "atoms": [
+          "ND1",
+          "NE2"
+        ],
+        "plddt": [
+          56.0,
+          91.4
+        ]
+      },
+      {
+        "binder_res": 48,
+        "binder_name": "HIS",
+        "egfr_res": 18,
+        "egfr_name": "GLY",
+        "distance": 3.785,
+        "atoms": [
+          "CD2",
+          "CA"
+        ],
+        "plddt": [
+          62.1,
+          90.71
+        ]
+      },
+      {
+        "binder_res": 48,
+        "binder_name": "HIS",
+        "egfr_res": 19,
+        "egfr_name": "THR",
+        "distance": 4.704,
+        "atoms": [
+          "CD2",
+          "N"
+        ],
+        "plddt": [
+          62.1,
+          92.06
+        ]
+      },
+      {
+        "binder_res": 48,
+        "binder_name": "HIS",
+        "egfr_res": 22,
+        "egfr_name": "ASP",
+        "distance": 3.738,
+        "atoms": [
+          "NE2",
+          "OD2"
+        ],
+        "plddt": [
+          62.1,
+          92.47
+        ]
+      },
+      {
+        "binder_res": 59,
+        "binder_name": "LYS",
+        "egfr_res": 159,
+        "egfr_name": "HIS",
+        "distance": 3.047,
+        "atoms": [
+          "NZ",
+          "CD2"
+        ],
+        "plddt": [
+          70.93,
+          64.02
+        ]
+      },
+      {
+        "binder_res": 62,
+        "binder_name": "GLU",
+        "egfr_res": 159,
+        "egfr_name": "HIS",
+        "distance": 4.873,
+        "atoms": [
+          "OE2",
+          "NE2"
+        ],
+        "plddt": [
+          61.53,
+          64.02
+        ]
+      }
+    ],
+    "histidine_ring_contacts": [
+      {
+        "his_chain": "A",
+        "his_res": 22,
+        "partner_res": 12,
+        "partner_name": "ASN",
+        "distance": 3.376,
+        "atoms": [
+          "CE1",
+          "OD1"
+        ],
+        "his_plddt": 56.0
+      },
+      {
+        "his_chain": "A",
+        "his_res": 22,
+        "partner_res": 15,
+        "partner_name": "THR",
+        "distance": 3.524,
+        "atoms": [
+          "CD2",
+          "CG2"
+        ],
+        "his_plddt": 56.0
+      },
+      {
+        "his_chain": "A",
+        "his_res": 22,
+        "partner_res": 17,
+        "partner_name": "LEU",
+        "distance": 4.378,
+        "atoms": [
+          "CG",
+          "CD2"
+        ],
+        "his_plddt": 56.0
+      },
+      {
+        "his_chain": "A",
+        "his_res": 22,
+        "partner_res": 348,
+        "partner_name": "LEU",
+        "distance": 4.768,
+        "atoms": [
+          "ND1",
+          "CD1"
+        ],
+        "his_plddt": 56.0
+      },
+      {
+        "his_chain": "A",
+        "his_res": 22,
+        "partner_res": 408,
+        "partner_name": "GLN",
+        "distance": 4.922,
+        "atoms": [
+          "ND1",
+          "NE2"
+        ],
+        "his_plddt": 56.0
+      },
+      {
+        "his_chain": "A",
+        "his_res": 48,
+        "partner_res": 18,
+        "partner_name": "GLY",
+        "distance": 3.785,
+        "atoms": [
+          "CD2",
+          "CA"
+        ],
+        "his_plddt": 62.1
+      },
+      {
+        "his_chain": "A",
+        "his_res": 48,
+        "partner_res": 19,
+        "partner_name": "THR",
+        "distance": 4.704,
+        "atoms": [
+          "CD2",
+          "N"
+        ],
+        "his_plddt": 62.1
+      },
+      {
+        "his_chain": "A",
+        "his_res": 48,
+        "partner_res": 22,
+        "partner_name": "ASP",
+        "distance": 3.738,
+        "atoms": [
+          "NE2",
+          "OD2"
+        ],
+        "his_plddt": 62.1
+      },
+      {
+        "his_chain": "B",
+        "his_res": 159,
+        "partner_res": 59,
+        "partner_name": "LYS",
+        "distance": 3.047,
+        "atoms": [
+          "CD2",
+          "NZ"
+        ],
+        "his_plddt": 64.02
+      },
+      {
+        "his_chain": "B",
+        "his_res": 159,
+        "partner_res": 62,
+        "partner_name": "GLU",
+        "distance": 4.873,
+        "atoms": [
+          "NE2",
+          "OE2"
+        ],
+        "his_plddt": 64.02
+      }
+    ]
+  }
+]
