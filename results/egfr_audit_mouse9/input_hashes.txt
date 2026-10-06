@@ -1,0 +1,2 @@
+a9c3496aa727e61d25d9e1291c9ba28d2c2ad19c0e26569dc083d53ec4169536  /tmp/sprot.fasta.gz
+6a0bc702c4ebd19d9c25d164e424a2539ac3ba3a4d2c9e4e28298100f1bcf32b  /downloads/pepe_sequences-ff9b9e50.csv

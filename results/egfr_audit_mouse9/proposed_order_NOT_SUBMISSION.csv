@@ -1,0 +1,21 @@
+rank,name,status,sequence,molecule_class
+1,r03_l07,"Audit identifier, NOT combined rank; mouse ipTM 0.285, pose RMSD 24.4A, Jaccard 0.145; conditional, official novelty unknown",SVTVDTYADPGDAPMVDHMAVTLGDHVEEAEVFTTENADITVRYKDKHGKVHEHTFTAPPEGTEYTVEIP,protein
+2,r02_l05,"Audit identifier, NOT combined rank; mouse ipTM 0.595, pose RMSD 21.0A, Jaccard 0.333; conditional, official novelty unknown",DLAEQAELLAKEGKVEEALELLRKLIEEHPADLPHALLDLTIYPNGKKILEELAKEHPELKELIDEALLLN,protein
+3,rank08_native,"Audit identifier, NOT combined rank; mouse ipTM 0.759, pose RMSD 37.8A, Jaccard 0.051; conditional, official novelty unknown",SANALGVVEEVLSDTTVKVNGVTVTLPHGTTVEIGSYVYVEGDDVYLIKGTVTCGHEAVLIANVCRPK,protein
+4,rank01_native,"Audit identifier, NOT combined rank; mouse ipTM 0.584, pose RMSD 22.3A, Jaccard 0.472; conditional, official novelty unknown",ESLTFKVGDLPANSFVEVELPHGSKVIVTCLEEGPDSKTLKITFINEHGEVKETTLTVKKDETVTVT,protein
+5,rank06_native,"Audit identifier, NOT combined rank; mouse unmodeled; official novelty unknown; Reserva: interfaz baja confianza",SYTATCKDGKCTVTLTTEHSTVTAEGEGVVEATDPHTKTTVVATCKNGRLVDLYVTG,protein
+6,r02_l01,"Audit identifier, NOT combined rank; mouse unmodeled; official novelty unknown; Revision, sin novelty oficial",MLGEQVIQLAKEGKVEEALELLRKLIEEHPAELPHTLLDLTLFPNGKKILEELAKEHPELKELIDEALLLN,protein
+7,r03_l05,"Audit identifier, NOT combined rank; mouse ipTM 0.275, pose RMSD 16.6A, Jaccard 0.344; conditional, official novelty unknown",SVTVDTAAEPGDTPVVDHATVTLGDHVEEAEVTVAENGTITVRYKDKHGKVHEHTFTAPPEGTAYTVEIP,protein
+8,r03_l03,"Audit identifier, NOT combined rank; mouse unmodeled; official novelty unknown; Revision, sin novelty oficial",SVTVAYAAEPGDTPVLDHVTVTLGDHVEEAEVLAGENGTITVRYKDKHGKVHEHTFTAPPEGGDYTVEIP,protein
+9,r01_l01,"Audit identifier, NOT combined rank; mouse unmodeled; official novelty unknown; Reserva: interfaz baja confianza",MADSELLSDLPANSSHVFELPHGSKVVIECLEEGPDSKTLKITFINEHGEVKETTLTVKKDESISFS,protein
+10,r03_l01,"Audit identifier, NOT combined rank; mouse unmodeled; official novelty unknown; Revision, sin novelty oficial",SVTVSFSALPGDVPVLDHVTVTLGDHVEEAEVLAGENGTITVRYKDKHGKVHEHTFTAPPEGGDYTVEIP,protein
+11,r01_l07,"Audit identifier, NOT combined rank; mouse unmodeled; official novelty unknown; Reserva: interfaz baja confianza",FADCESMFDFPANSAHTVEAPHGSKVIDSCLEEGPDSKTLKITFINEHGEVKETTLTVKKDESFCFD,protein
+12,r02_l07,"Audit identifier, NOT combined rank; mouse ipTM 0.711, pose RMSD 81.0A, Jaccard 0.213; conditional, official novelty unknown",DLYEQAEALAKEGKVEEALELLRKLIEEHPADLFHAILDLTIEPNGKKILEELAKEHPELKELIDEALLLN,protein
+13,n03_rank03_native,"Audit identifier, NOT combined rank; mouse ipTM 0.464, pose RMSD 5.9A, Jaccard 0.615; conditional, official novelty unknown",SVTVTFEALPGDPPIVLSVEVTLGDHVEEAEVIADPDGTITVRYKDKHGKVHEHTFTAPPEGGVYTVEIP,protein
+14,n02_rank02_native,"Audit identifier, NOT combined rank; mouse unmodeled; official novelty unknown; Reserva: contexto activo con choque",SLGTEAVRLAKEGKVEEALELLRKLIEEHPEELPDTIIALTLYPNGKKILEELAKEHPELKELIDEALLLN,protein
+15,r02_l03,"Audit identifier, NOT combined rank; mouse ipTM 0.494, pose RMSD 3.2A, Jaccard 0.680; conditional, official novelty unknown",MLAEQAVLLAKEGKVEEALELLRKLIEEHPNLLPHALLDLTIFPNGKKILEELAKEHPELKELIDEALLLN,protein
+16,r01_l03,"Audit identifier, NOT combined rank; mouse unmodeled; official novelty unknown; Reserva: contexto activo con choque",MADSESLADLPANSQHVFELPHGSKVIVQCLEEGPDSKTLKITFINEHGEVKETTLTVKKDESITFS,protein
+17,r01_l05,"Audit identifier, NOT combined rank; mouse ipTM 0.601, pose RMSD 4.3A, Jaccard 0.500; conditional, official novelty unknown",MCDSETLADMPANSFHVFECPHGSKVIVECLEEGPDSKTLKITFINEHGEVKETTLTVKKDEALTFS,protein
+18,rank04_native,"Audit identifier, NOT combined rank; mouse unmodeled; official novelty unknown; Excluir provisional: solapamiento propio",MTEELVRAARAGDLERVRELLPHASVEGQIAALRALAERGHVDAVKELLPHLNEEARRAALEGLERQGFLEEVE,protein
+19,rank05_native,"Audit identifier, NOT combined rank; mouse unmodeled; official novelty unknown; Excluir provisional: novelty fuerte",APPLVVCPGIGRGIFAGELFINAKNIPHLEGCTVIDGELRLLPSAFEGNPLLHVPPLDPAQLAVLATVRVVL,protein
+20,rank07_native,"Audit identifier, NOT combined rank; mouse unmodeled; official novelty unknown; Excluir provisional: novelty fuerte",GILEGKISINAENIPHFKGKKKFDGLLFLLPSSFEGDEALHVPPLNPEDLKILDSL,protein

@@ -1,0 +1,15 @@
+{
+  "boltz": "2.2.1",
+  "target": "mouse EGFR ECD, 623 aa, UniProt Q01279 residues25-647",
+  "target_source": "https://rest.uniprot.org/uniprotkb/Q01279.fasta",
+  "input_sha256": "527dacf7dfd8f23d7841ba54c57e41f3fddb079d3e6950c466dc60fb75864e44",
+  "msa": "empty, no remote MSA",
+  "samples": 1,
+  "recycling_steps": 3,
+  "sampling_steps": 200,
+  "seed": 20261006,
+  "pH_prediction": false,
+  "affinity_prediction": false,
+  "mouse_prediction": true,
+  "sequence_changes": false
+}
