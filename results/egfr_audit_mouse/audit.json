@@ -1,0 +1,2915 @@
+[
+  {
+    "name": "n02_rank02_native",
+    "iptm": 0.31544029712677,
+    "interface_uniprot": [
+      45,
+      46,
+      49,
+      50,
+      52,
+      53,
+      408,
+      433,
+      435,
+      436,
+      441,
+      442,
+      462,
+      464,
+      489,
+      491,
+      492,
+      493
+    ],
+    "conserved": 15,
+    "interface_n": 18,
+    "mutations": [
+      "S442>G442",
+      "I491>M491",
+      "S492>N492"
+    ],
+    "min_interface_A": 2.215,
+    "contacts_under_2.5": 2,
+    "contacts_under_1.5": 0,
+    "glycan_context": [
+      {
+        "pdb": "1IVO",
+        "fit": "DI",
+        "n_CA": 164,
+        "rmsd_A": 0.69,
+        "resolved_glycan_min_A": 3.1,
+        "other_domain_min_A": 4.79,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 2.3,
+        "resolved_glycan_min_A": 3.25,
+        "other_domain_min_A": 1.2,
+        "other_domain_pairs_under_2.5": 19
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.62,
+        "resolved_glycan_min_A": 2.32,
+        "other_domain_min_A": 0.47,
+        "other_domain_pairs_under_2.5": 31
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIV",
+        "n_CA": 31,
+        "rmsd_A": 1.3,
+        "resolved_glycan_min_A": 2.35,
+        "other_domain_min_A": 0.65,
+        "other_domain_pairs_under_2.5": 34
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "local",
+        "n_CA": 12,
+        "rmsd_A": 0.44,
+        "resolved_glycan_min_A": 2.06,
+        "other_domain_min_A": 0.76,
+        "other_domain_pairs_under_2.5": 34
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DI",
+        "n_CA": 163,
+        "rmsd_A": 0.87,
+        "resolved_glycan_min_A": 4.03,
+        "other_domain_min_A": 16.49,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 2.14,
+        "resolved_glycan_min_A": 4.5,
+        "other_domain_min_A": 0.65,
+        "other_domain_pairs_under_2.5": 14
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.53,
+        "resolved_glycan_min_A": 14.52,
+        "other_domain_min_A": 17.9,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIV",
+        "n_CA": 132,
+        "rmsd_A": 1.02,
+        "resolved_glycan_min_A": 14.96,
+        "other_domain_min_A": 1.89,
+        "other_domain_pairs_under_2.5": 5
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "local",
+        "n_CA": 12,
+        "rmsd_A": 0.41,
+        "resolved_glycan_min_A": 14.86,
+        "other_domain_min_A": 17.81,
+        "other_domain_pairs_under_2.5": 0
+      }
+    ],
+    "near_sequons": [],
+    "majority_domain": "DIII"
+  },
+  {
+    "name": "n03_rank03_native",
+    "iptm": 0.7514266967773438,
+    "interface_uniprot": [
+      40,
+      41,
+      42,
+      43,
+      46,
+      372,
+      373,
+      377,
+      406,
+      408,
+      432,
+      433,
+      435,
+      436,
+      439,
+      441,
+      442,
+      462,
+      464,
+      465,
+      467,
+      489,
+      491,
+      492
+    ],
+    "conserved": 19,
+    "interface_n": 24,
+    "mutations": [
+      "R377>K377",
+      "S442>G442",
+      "K467>R467",
+      "I491>M491",
+      "S492>N492"
+    ],
+    "min_interface_A": 2.048,
+    "contacts_under_2.5": 3,
+    "contacts_under_1.5": 0,
+    "glycan_context": [
+      {
+        "pdb": "1IVO",
+        "fit": "DI",
+        "n_CA": 164,
+        "rmsd_A": 0.74,
+        "resolved_glycan_min_A": 1.62,
+        "other_domain_min_A": 5.48,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 2.78,
+        "resolved_glycan_min_A": 0.49,
+        "other_domain_min_A": 0.22,
+        "other_domain_pairs_under_2.5": 199
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.65,
+        "resolved_glycan_min_A": 0.71,
+        "other_domain_min_A": 0.79,
+        "other_domain_pairs_under_2.5": 52
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIV",
+        "n_CA": 31,
+        "rmsd_A": 1.31,
+        "resolved_glycan_min_A": 0.74,
+        "other_domain_min_A": 0.45,
+        "other_domain_pairs_under_2.5": 71
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "local",
+        "n_CA": 19,
+        "rmsd_A": 0.51,
+        "resolved_glycan_min_A": 0.43,
+        "other_domain_min_A": 0.71,
+        "other_domain_pairs_under_2.5": 54
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DI",
+        "n_CA": 163,
+        "rmsd_A": 0.86,
+        "resolved_glycan_min_A": 12.27,
+        "other_domain_min_A": 11.27,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 2.8,
+        "resolved_glycan_min_A": 14.69,
+        "other_domain_min_A": 1.1,
+        "other_domain_pairs_under_2.5": 8
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.55,
+        "resolved_glycan_min_A": 9.46,
+        "other_domain_min_A": 16.29,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIV",
+        "n_CA": 132,
+        "rmsd_A": 0.99,
+        "resolved_glycan_min_A": 11.08,
+        "other_domain_min_A": 0.68,
+        "other_domain_pairs_under_2.5": 87
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "local",
+        "n_CA": 19,
+        "rmsd_A": 0.49,
+        "resolved_glycan_min_A": 9.58,
+        "other_domain_min_A": 16.25,
+        "other_domain_pairs_under_2.5": 0
+      }
+    ],
+    "near_sequons": [
+      {
+        "uniprot_N": 444,
+        "distance_A": 7.33
+      }
+    ],
+    "majority_domain": "DIII"
+  },
+  {
+    "name": "r03_l05",
+    "iptm": 0.40344786643981934,
+    "interface_uniprot": [
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      46,
+      69,
+      93,
+      113,
+      122,
+      123,
+      125,
+      149,
+      152,
+      349,
+      377,
+      433,
+      442,
+      464,
+      489,
+      491,
+      492
+    ],
+    "conserved": 20,
+    "interface_n": 24,
+    "mutations": [
+      "R377>K377",
+      "S442>G442",
+      "I491>M491",
+      "S492>N492"
+    ],
+    "min_interface_A": 2.113,
+    "contacts_under_2.5": 3,
+    "contacts_under_1.5": 0,
+    "glycan_context": [
+      {
+        "pdb": "1IVO",
+        "fit": "DI",
+        "n_CA": 164,
+        "rmsd_A": 0.74,
+        "resolved_glycan_min_A": 5.64,
+        "other_domain_min_A": 4.0,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 2.96,
+        "resolved_glycan_min_A": 0.62,
+        "other_domain_min_A": 0.9,
+        "other_domain_pairs_under_2.5": 48
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.7,
+        "resolved_glycan_min_A": 5.19,
+        "other_domain_min_A": 0.29,
+        "other_domain_pairs_under_2.5": 324
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIV",
+        "n_CA": 31,
+        "rmsd_A": 1.34,
+        "resolved_glycan_min_A": 4.83,
+        "other_domain_min_A": 0.28,
+        "other_domain_pairs_under_2.5": 347
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "local",
+        "n_CA": 16,
+        "rmsd_A": 0.36,
+        "resolved_glycan_min_A": 5.38,
+        "other_domain_min_A": 4.25,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DI",
+        "n_CA": 163,
+        "rmsd_A": 0.84,
+        "resolved_glycan_min_A": 10.2,
+        "other_domain_min_A": 9.6,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 3.15,
+        "resolved_glycan_min_A": 16.22,
+        "other_domain_min_A": 0.76,
+        "other_domain_pairs_under_2.5": 66
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.58,
+        "resolved_glycan_min_A": 7.6,
+        "other_domain_min_A": 19.25,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIV",
+        "n_CA": 132,
+        "rmsd_A": 1.3,
+        "resolved_glycan_min_A": 13.08,
+        "other_domain_min_A": 2.44,
+        "other_domain_pairs_under_2.5": 1
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "local",
+        "n_CA": 16,
+        "rmsd_A": 0.38,
+        "resolved_glycan_min_A": 9.68,
+        "other_domain_min_A": 8.99,
+        "other_domain_pairs_under_2.5": 0
+      }
+    ],
+    "near_sequons": [
+      {
+        "uniprot_N": 128,
+        "distance_A": 8.34
+      }
+    ],
+    "majority_domain": "DI"
+  },
+  {
+    "name": "r03_l07",
+    "iptm": 0.7914206981658936,
+    "interface_uniprot": [
+      53,
+      473,
+      474,
+      475,
+      476,
+      477,
+      478,
+      481,
+      484,
+      485,
+      486,
+      487,
+      488,
+      489,
+      490,
+      491,
+      492,
+      493,
+      495,
+      496,
+      497,
+      498,
+      500,
+      501
+    ],
+    "conserved": 17,
+    "interface_n": 24,
+    "mutations": [
+      "S484>P484",
+      "G485>N485",
+      "I491>M491",
+      "S492>N492",
+      "G495>A495",
+      "N497>K497",
+      "S498>D498"
+    ],
+    "min_interface_A": 1.734,
+    "contacts_under_2.5": 2,
+    "contacts_under_1.5": 0,
+    "glycan_context": [
+      {
+        "pdb": "1IVO",
+        "fit": "DI",
+        "n_CA": 164,
+        "rmsd_A": 0.75,
+        "resolved_glycan_min_A": 6.64,
+        "other_domain_min_A": 1.06,
+        "other_domain_pairs_under_2.5": 8
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 2.57,
+        "resolved_glycan_min_A": 8.62,
+        "other_domain_min_A": 0.4,
+        "other_domain_pairs_under_2.5": 325
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.64,
+        "resolved_glycan_min_A": 8.91,
+        "other_domain_min_A": 5.43,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIV",
+        "n_CA": 31,
+        "rmsd_A": 1.3,
+        "resolved_glycan_min_A": 7.78,
+        "other_domain_min_A": 0.83,
+        "other_domain_pairs_under_2.5": 22
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "local",
+        "n_CA": 23,
+        "rmsd_A": 0.73,
+        "resolved_glycan_min_A": 8.77,
+        "other_domain_min_A": 5.64,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DI",
+        "n_CA": 163,
+        "rmsd_A": 0.85,
+        "resolved_glycan_min_A": 7.77,
+        "other_domain_min_A": 12.28,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 2.74,
+        "resolved_glycan_min_A": 6.95,
+        "other_domain_min_A": 4.9,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.54,
+        "resolved_glycan_min_A": 14.78,
+        "other_domain_min_A": 6.58,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIV",
+        "n_CA": 132,
+        "rmsd_A": 1.1,
+        "resolved_glycan_min_A": 16.83,
+        "other_domain_min_A": 1.91,
+        "other_domain_pairs_under_2.5": 6
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "local",
+        "n_CA": 23,
+        "rmsd_A": 0.57,
+        "resolved_glycan_min_A": 15.08,
+        "other_domain_min_A": 6.4,
+        "other_domain_pairs_under_2.5": 0
+      }
+    ],
+    "near_sequons": [],
+    "majority_domain": "DIII"
+  },
+  {
+    "name": "r02_l07",
+    "iptm": 0.6940901279449463,
+    "interface_uniprot": [
+      37,
+      38,
+      39,
+      40,
+      42,
+      44,
+      69,
+      93,
+      94,
+      95,
+      113,
+      114,
+      122,
+      123,
+      125,
+      127,
+      129,
+      149,
+      152,
+      347,
+      349,
+      372,
+      373,
+      374,
+      377,
+      378,
+      380,
+      381,
+      382,
+      408,
+      441,
+      442
+    ],
+    "conserved": 27,
+    "interface_n": 32,
+    "mutations": [
+      "K37>R37",
+      "A127>T127",
+      "K129>R129",
+      "R377>K377",
+      "S442>G442"
+    ],
+    "min_interface_A": 2.151,
+    "contacts_under_2.5": 3,
+    "contacts_under_1.5": 0,
+    "glycan_context": [
+      {
+        "pdb": "1IVO",
+        "fit": "DI",
+        "n_CA": 164,
+        "rmsd_A": 0.7,
+        "resolved_glycan_min_A": 6.16,
+        "other_domain_min_A": 2.26,
+        "other_domain_pairs_under_2.5": 2
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 2.77,
+        "resolved_glycan_min_A": 3.16,
+        "other_domain_min_A": 0.5,
+        "other_domain_pairs_under_2.5": 102
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.72,
+        "resolved_glycan_min_A": 1.56,
+        "other_domain_min_A": 0.35,
+        "other_domain_pairs_under_2.5": 221
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIV",
+        "n_CA": 31,
+        "rmsd_A": 1.3,
+        "resolved_glycan_min_A": 0.86,
+        "other_domain_min_A": 0.39,
+        "other_domain_pairs_under_2.5": 138
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "local",
+        "n_CA": 19,
+        "rmsd_A": 0.5,
+        "resolved_glycan_min_A": 6.01,
+        "other_domain_min_A": 2.07,
+        "other_domain_pairs_under_2.5": 2
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DI",
+        "n_CA": 163,
+        "rmsd_A": 0.87,
+        "resolved_glycan_min_A": 6.4,
+        "other_domain_min_A": 6.22,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 3.22,
+        "resolved_glycan_min_A": 14.26,
+        "other_domain_min_A": 0.47,
+        "other_domain_pairs_under_2.5": 114
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.7,
+        "resolved_glycan_min_A": 4.07,
+        "other_domain_min_A": 20.03,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIV",
+        "n_CA": 132,
+        "rmsd_A": 1.38,
+        "resolved_glycan_min_A": 7.05,
+        "other_domain_min_A": 2.49,
+        "other_domain_pairs_under_2.5": 1
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "local",
+        "n_CA": 19,
+        "rmsd_A": 0.57,
+        "resolved_glycan_min_A": 5.96,
+        "other_domain_min_A": 5.65,
+        "other_domain_pairs_under_2.5": 0
+      }
+    ],
+    "near_sequons": [
+      {
+        "uniprot_N": 128,
+        "distance_A": 6.77
+      },
+      {
+        "uniprot_N": 175,
+        "distance_A": 9.38
+      },
+      {
+        "uniprot_N": 352,
+        "distance_A": 9.58
+      },
+      {
+        "uniprot_N": 444,
+        "distance_A": 9.19
+      }
+    ],
+    "majority_domain": "DI"
+  },
+  {
+    "name": "r01_l07",
+    "iptm": 0.15496869385242462,
+    "interface_uniprot": [
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      46,
+      92,
+      93,
+      113,
+      114,
+      122,
+      123,
+      125,
+      129,
+      149,
+      151,
+      152,
+      181,
+      183,
+      349,
+      372,
+      373,
+      374,
+      377,
+      378,
+      379,
+      380,
+      381,
+      408,
+      432,
+      442
+    ],
+    "conserved": 30,
+    "interface_n": 34,
+    "mutations": [
+      "K37>R37",
+      "K129>R129",
+      "R377>K377",
+      "S442>G442"
+    ],
+    "min_interface_A": 1.666,
+    "contacts_under_2.5": 2,
+    "contacts_under_1.5": 0,
+    "glycan_context": [
+      {
+        "pdb": "1IVO",
+        "fit": "DI",
+        "n_CA": 164,
+        "rmsd_A": 0.74,
+        "resolved_glycan_min_A": 8.22,
+        "other_domain_min_A": 3.33,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 2.62,
+        "resolved_glycan_min_A": 3.94,
+        "other_domain_min_A": 0.81,
+        "other_domain_pairs_under_2.5": 39
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.68,
+        "resolved_glycan_min_A": 3.2,
+        "other_domain_min_A": 1.61,
+        "other_domain_pairs_under_2.5": 4
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIV",
+        "n_CA": 31,
+        "rmsd_A": 1.33,
+        "resolved_glycan_min_A": 2.96,
+        "other_domain_min_A": 1.64,
+        "other_domain_pairs_under_2.5": 9
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "local",
+        "n_CA": 22,
+        "rmsd_A": 0.62,
+        "resolved_glycan_min_A": 8.05,
+        "other_domain_min_A": 3.19,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DI",
+        "n_CA": 163,
+        "rmsd_A": 0.85,
+        "resolved_glycan_min_A": 11.28,
+        "other_domain_min_A": 9.12,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 3.05,
+        "resolved_glycan_min_A": 16.43,
+        "other_domain_min_A": 0.54,
+        "other_domain_pairs_under_2.5": 130
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.55,
+        "resolved_glycan_min_A": 5.62,
+        "other_domain_min_A": 21.37,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIV",
+        "n_CA": 132,
+        "rmsd_A": 1.4,
+        "resolved_glycan_min_A": 6.85,
+        "other_domain_min_A": 2.03,
+        "other_domain_pairs_under_2.5": 6
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "local",
+        "n_CA": 22,
+        "rmsd_A": 0.97,
+        "resolved_glycan_min_A": 11.15,
+        "other_domain_min_A": 8.91,
+        "other_domain_pairs_under_2.5": 0
+      }
+    ],
+    "near_sequons": [
+      {
+        "uniprot_N": 128,
+        "distance_A": 7.36
+      },
+      {
+        "uniprot_N": 352,
+        "distance_A": 9.46
+      }
+    ],
+    "majority_domain": "DI"
+  },
+  {
+    "name": "rank01_native",
+    "iptm": 0.4297199249267578,
+    "interface_uniprot": [
+      38,
+      39,
+      40,
+      42,
+      43,
+      44,
+      69,
+      71,
+      93,
+      95,
+      113,
+      114,
+      122,
+      123,
+      125,
+      126,
+      127,
+      129,
+      149,
+      151,
+      152,
+      179,
+      349,
+      381,
+      382
+    ],
+    "conserved": 22,
+    "interface_n": 25,
+    "mutations": [
+      "D126>G126",
+      "A127>T127",
+      "K129>R129"
+    ],
+    "min_interface_A": 2.354,
+    "contacts_under_2.5": 1,
+    "contacts_under_1.5": 0,
+    "glycan_context": [
+      {
+        "pdb": "1IVO",
+        "fit": "DI",
+        "n_CA": 164,
+        "rmsd_A": 0.68,
+        "resolved_glycan_min_A": 11.07,
+        "other_domain_min_A": 4.54,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 2.46,
+        "resolved_glycan_min_A": 6.89,
+        "other_domain_min_A": 0.58,
+        "other_domain_pairs_under_2.5": 30
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.63,
+        "resolved_glycan_min_A": 5.22,
+        "other_domain_min_A": 0.72,
+        "other_domain_pairs_under_2.5": 115
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIV",
+        "n_CA": 31,
+        "rmsd_A": 1.3,
+        "resolved_glycan_min_A": 4.36,
+        "other_domain_min_A": 0.23,
+        "other_domain_pairs_under_2.5": 88
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "local",
+        "n_CA": 22,
+        "rmsd_A": 0.7,
+        "resolved_glycan_min_A": 10.93,
+        "other_domain_min_A": 4.41,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DI",
+        "n_CA": 163,
+        "rmsd_A": 0.85,
+        "resolved_glycan_min_A": 12.09,
+        "other_domain_min_A": 11.45,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 2.55,
+        "resolved_glycan_min_A": 19.04,
+        "other_domain_min_A": 0.48,
+        "other_domain_pairs_under_2.5": 117
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.55,
+        "resolved_glycan_min_A": 3.33,
+        "other_domain_min_A": 28.95,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIV",
+        "n_CA": 132,
+        "rmsd_A": 1.3,
+        "resolved_glycan_min_A": 1.01,
+        "other_domain_min_A": 2.92,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "local",
+        "n_CA": 22,
+        "rmsd_A": 0.57,
+        "resolved_glycan_min_A": 11.31,
+        "other_domain_min_A": 11.01,
+        "other_domain_pairs_under_2.5": 0
+      }
+    ],
+    "near_sequons": [
+      {
+        "uniprot_N": 128,
+        "distance_A": 5.65
+      }
+    ],
+    "majority_domain": "DI"
+  },
+  {
+    "name": "rank05_native",
+    "iptm": 0.35577845573425293,
+    "interface_uniprot": [
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      44,
+      69,
+      93,
+      125,
+      126,
+      127,
+      349,
+      372,
+      373,
+      374,
+      376,
+      377,
+      378,
+      379,
+      380,
+      381,
+      382,
+      389,
+      409,
+      410,
+      411,
+      412,
+      413
+    ],
+    "conserved": 25,
+    "interface_n": 30,
+    "mutations": [
+      "K37>R37",
+      "D126>G126",
+      "A127>T127",
+      "R377>K377",
+      "E412>D412"
+    ],
+    "min_interface_A": 1.472,
+    "contacts_under_2.5": 2,
+    "contacts_under_1.5": 1,
+    "glycan_context": [
+      {
+        "pdb": "1IVO",
+        "fit": "DI",
+        "n_CA": 164,
+        "rmsd_A": 0.71,
+        "resolved_glycan_min_A": 3.18,
+        "other_domain_min_A": 1.87,
+        "other_domain_pairs_under_2.5": 4
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 2.92,
+        "resolved_glycan_min_A": 4.07,
+        "other_domain_min_A": 0.59,
+        "other_domain_pairs_under_2.5": 150
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.78,
+        "resolved_glycan_min_A": 1.2,
+        "other_domain_min_A": 0.39,
+        "other_domain_pairs_under_2.5": 182
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIV",
+        "n_CA": 31,
+        "rmsd_A": 1.33,
+        "resolved_glycan_min_A": 0.22,
+        "other_domain_min_A": 0.43,
+        "other_domain_pairs_under_2.5": 177
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "local",
+        "n_CA": 17,
+        "rmsd_A": 0.98,
+        "resolved_glycan_min_A": 0.64,
+        "other_domain_min_A": 0.45,
+        "other_domain_pairs_under_2.5": 330
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DI",
+        "n_CA": 163,
+        "rmsd_A": 0.83,
+        "resolved_glycan_min_A": 2.48,
+        "other_domain_min_A": 2.8,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 3.27,
+        "resolved_glycan_min_A": 5.41,
+        "other_domain_min_A": 0.56,
+        "other_domain_pairs_under_2.5": 21
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.66,
+        "resolved_glycan_min_A": 3.29,
+        "other_domain_min_A": 19.74,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIV",
+        "n_CA": 132,
+        "rmsd_A": 1.25,
+        "resolved_glycan_min_A": 5.08,
+        "other_domain_min_A": 1.87,
+        "other_domain_pairs_under_2.5": 6
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "local",
+        "n_CA": 17,
+        "rmsd_A": 0.81,
+        "resolved_glycan_min_A": 3.51,
+        "other_domain_min_A": 19.38,
+        "other_domain_pairs_under_2.5": 0
+      }
+    ],
+    "near_sequons": [
+      {
+        "uniprot_N": 128,
+        "distance_A": 6.48
+      },
+      {
+        "uniprot_N": 352,
+        "distance_A": 6.72
+      },
+      {
+        "uniprot_N": 413,
+        "distance_A": 4.95
+      },
+      {
+        "uniprot_N": 444,
+        "distance_A": 5.04
+      }
+    ],
+    "majority_domain": "DIII"
+  },
+  {
+    "name": "rank04_native",
+    "iptm": 0.37943506240844727,
+    "interface_uniprot": [
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      69,
+      93,
+      94,
+      95,
+      113,
+      114,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      129,
+      149,
+      151,
+      152,
+      373,
+      374,
+      377,
+      378,
+      379,
+      380,
+      381,
+      383,
+      442
+    ],
+    "conserved": 28,
+    "interface_n": 35,
+    "mutations": [
+      "K37>R37",
+      "D126>G126",
+      "A127>T127",
+      "K129>R129",
+      "R377>K377",
+      "H383>R383",
+      "S442>G442"
+    ],
+    "min_interface_A": 0.824,
+    "contacts_under_2.5": 4,
+    "contacts_under_1.5": 1,
+    "glycan_context": [
+      {
+        "pdb": "1IVO",
+        "fit": "DI",
+        "n_CA": 164,
+        "rmsd_A": 0.74,
+        "resolved_glycan_min_A": 7.49,
+        "other_domain_min_A": 2.33,
+        "other_domain_pairs_under_2.5": 1
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 2.61,
+        "resolved_glycan_min_A": 5.45,
+        "other_domain_min_A": 0.66,
+        "other_domain_pairs_under_2.5": 48
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.6,
+        "resolved_glycan_min_A": 1.04,
+        "other_domain_min_A": 0.31,
+        "other_domain_pairs_under_2.5": 55
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIV",
+        "n_CA": 31,
+        "rmsd_A": 1.31,
+        "resolved_glycan_min_A": 0.77,
+        "other_domain_min_A": 1.15,
+        "other_domain_pairs_under_2.5": 25
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "local",
+        "n_CA": 26,
+        "rmsd_A": 0.5,
+        "resolved_glycan_min_A": 7.56,
+        "other_domain_min_A": 2.47,
+        "other_domain_pairs_under_2.5": 1
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DI",
+        "n_CA": 163,
+        "rmsd_A": 0.88,
+        "resolved_glycan_min_A": 11.87,
+        "other_domain_min_A": 7.98,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 3.25,
+        "resolved_glycan_min_A": 16.46,
+        "other_domain_min_A": 0.58,
+        "other_domain_pairs_under_2.5": 111
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.51,
+        "resolved_glycan_min_A": 6.6,
+        "other_domain_min_A": 20.7,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIV",
+        "n_CA": 132,
+        "rmsd_A": 1.01,
+        "resolved_glycan_min_A": 8.49,
+        "other_domain_min_A": 2.07,
+        "other_domain_pairs_under_2.5": 1
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "local",
+        "n_CA": 26,
+        "rmsd_A": 0.43,
+        "resolved_glycan_min_A": 11.51,
+        "other_domain_min_A": 7.79,
+        "other_domain_pairs_under_2.5": 0
+      }
+    ],
+    "near_sequons": [
+      {
+        "uniprot_N": 128,
+        "distance_A": 6.3
+      },
+      {
+        "uniprot_N": 444,
+        "distance_A": 8.6
+      }
+    ],
+    "majority_domain": "DI"
+  },
+  {
+    "name": "rank07_native",
+    "iptm": 0.30978983640670776,
+    "interface_uniprot": [
+      38,
+      39,
+      40,
+      44,
+      69,
+      71,
+      93,
+      113,
+      114,
+      122,
+      123,
+      125,
+      126,
+      127,
+      149,
+      151,
+      152
+    ],
+    "conserved": 15,
+    "interface_n": 17,
+    "mutations": [
+      "D126>G126",
+      "A127>T127"
+    ],
+    "min_interface_A": 2.198,
+    "contacts_under_2.5": 2,
+    "contacts_under_1.5": 0,
+    "glycan_context": [
+      {
+        "pdb": "1IVO",
+        "fit": "DI",
+        "n_CA": 164,
+        "rmsd_A": 0.67,
+        "resolved_glycan_min_A": 12.14,
+        "other_domain_min_A": 10.91,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 3.11,
+        "resolved_glycan_min_A": 5.83,
+        "other_domain_min_A": 0.8,
+        "other_domain_pairs_under_2.5": 19
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.71,
+        "resolved_glycan_min_A": 17.26,
+        "other_domain_min_A": 17.62,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIV",
+        "n_CA": 31,
+        "rmsd_A": 1.32,
+        "resolved_glycan_min_A": 21.32,
+        "other_domain_min_A": 15.37,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "local",
+        "n_CA": 17,
+        "rmsd_A": 0.47,
+        "resolved_glycan_min_A": 12.16,
+        "other_domain_min_A": 11.02,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DI",
+        "n_CA": 163,
+        "rmsd_A": 0.84,
+        "resolved_glycan_min_A": 18.29,
+        "other_domain_min_A": 17.11,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 1.54,
+        "resolved_glycan_min_A": 20.16,
+        "other_domain_min_A": 1.37,
+        "other_domain_pairs_under_2.5": 18
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.56,
+        "resolved_glycan_min_A": 13.5,
+        "other_domain_min_A": 1.75,
+        "other_domain_pairs_under_2.5": 4
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIV",
+        "n_CA": 132,
+        "rmsd_A": 1.16,
+        "resolved_glycan_min_A": 3.89,
+        "other_domain_min_A": 0.32,
+        "other_domain_pairs_under_2.5": 197
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "local",
+        "n_CA": 17,
+        "rmsd_A": 0.5,
+        "resolved_glycan_min_A": 17.41,
+        "other_domain_min_A": 16.38,
+        "other_domain_pairs_under_2.5": 0
+      }
+    ],
+    "near_sequons": [
+      {
+        "uniprot_N": 128,
+        "distance_A": 7.2
+      }
+    ],
+    "majority_domain": "DI"
+  },
+  {
+    "name": "rank08_native",
+    "iptm": 0.43646085262298584,
+    "interface_uniprot": [
+      38,
+      69,
+      93,
+      113,
+      114,
+      122,
+      123,
+      125,
+      149,
+      151,
+      152,
+      181,
+      380,
+      381,
+      383
+    ],
+    "conserved": 14,
+    "interface_n": 15,
+    "mutations": [
+      "H383>R383"
+    ],
+    "min_interface_A": 2.468,
+    "contacts_under_2.5": 1,
+    "contacts_under_1.5": 0,
+    "glycan_context": [
+      {
+        "pdb": "1IVO",
+        "fit": "DI",
+        "n_CA": 164,
+        "rmsd_A": 0.85,
+        "resolved_glycan_min_A": 11.29,
+        "other_domain_min_A": 4.98,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 2.32,
+        "resolved_glycan_min_A": 7.48,
+        "other_domain_min_A": 1.53,
+        "other_domain_pairs_under_2.5": 7
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.73,
+        "resolved_glycan_min_A": 10.08,
+        "other_domain_min_A": 6.88,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIV",
+        "n_CA": 31,
+        "rmsd_A": 1.3,
+        "resolved_glycan_min_A": 9.63,
+        "other_domain_min_A": 2.02,
+        "other_domain_pairs_under_2.5": 2
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "local",
+        "n_CA": 12,
+        "rmsd_A": 0.45,
+        "resolved_glycan_min_A": 11.62,
+        "other_domain_min_A": 5.04,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DI",
+        "n_CA": 163,
+        "rmsd_A": 0.82,
+        "resolved_glycan_min_A": 10.75,
+        "other_domain_min_A": 5.74,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 2.37,
+        "resolved_glycan_min_A": 16.83,
+        "other_domain_min_A": 0.52,
+        "other_domain_pairs_under_2.5": 14
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.61,
+        "resolved_glycan_min_A": 4.89,
+        "other_domain_min_A": 22.24,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIV",
+        "n_CA": 132,
+        "rmsd_A": 1.29,
+        "resolved_glycan_min_A": 3.57,
+        "other_domain_min_A": 1.31,
+        "other_domain_pairs_under_2.5": 7
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "local",
+        "n_CA": 12,
+        "rmsd_A": 0.48,
+        "resolved_glycan_min_A": 10.13,
+        "other_domain_min_A": 5.3,
+        "other_domain_pairs_under_2.5": 0
+      }
+    ],
+    "near_sequons": [
+      {
+        "uniprot_N": 128,
+        "distance_A": 7.5
+      }
+    ],
+    "majority_domain": "DI"
+  },
+  {
+    "name": "rank06_native",
+    "iptm": 0.22484569251537323,
+    "interface_uniprot": [
+      38,
+      39,
+      40,
+      42,
+      43,
+      69,
+      93,
+      122,
+      123,
+      125,
+      129,
+      149,
+      151,
+      152,
+      177,
+      179,
+      181,
+      349,
+      380,
+      381
+    ],
+    "conserved": 19,
+    "interface_n": 20,
+    "mutations": [
+      "K129>R129"
+    ],
+    "min_interface_A": 2.276,
+    "contacts_under_2.5": 2,
+    "contacts_under_1.5": 0,
+    "glycan_context": [
+      {
+        "pdb": "1IVO",
+        "fit": "DI",
+        "n_CA": 164,
+        "rmsd_A": 0.67,
+        "resolved_glycan_min_A": 10.59,
+        "other_domain_min_A": 8.72,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 2.51,
+        "resolved_glycan_min_A": 7.81,
+        "other_domain_min_A": 2.27,
+        "other_domain_pairs_under_2.5": 1
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.62,
+        "resolved_glycan_min_A": 6.32,
+        "other_domain_min_A": 3.21,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIV",
+        "n_CA": 31,
+        "rmsd_A": 1.31,
+        "resolved_glycan_min_A": 6.03,
+        "other_domain_min_A": 1.06,
+        "other_domain_pairs_under_2.5": 18
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "local",
+        "n_CA": 17,
+        "rmsd_A": 0.57,
+        "resolved_glycan_min_A": 10.2,
+        "other_domain_min_A": 8.62,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DI",
+        "n_CA": 163,
+        "rmsd_A": 0.85,
+        "resolved_glycan_min_A": 13.45,
+        "other_domain_min_A": 14.26,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 2.22,
+        "resolved_glycan_min_A": 18.85,
+        "other_domain_min_A": 1.23,
+        "other_domain_pairs_under_2.5": 40
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.54,
+        "resolved_glycan_min_A": 7.33,
+        "other_domain_min_A": 27.88,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIV",
+        "n_CA": 132,
+        "rmsd_A": 1.36,
+        "resolved_glycan_min_A": 10.78,
+        "other_domain_min_A": 4.49,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "local",
+        "n_CA": 17,
+        "rmsd_A": 0.49,
+        "resolved_glycan_min_A": 12.86,
+        "other_domain_min_A": 13.86,
+        "other_domain_pairs_under_2.5": 0
+      }
+    ],
+    "near_sequons": [
+      {
+        "uniprot_N": 128,
+        "distance_A": 9.51
+      }
+    ],
+    "majority_domain": "DI"
+  },
+  {
+    "name": "r02_l05",
+    "iptm": 0.48947805166244507,
+    "interface_uniprot": [
+      37,
+      38,
+      40,
+      42,
+      44,
+      69,
+      71,
+      93,
+      113,
+      114,
+      122,
+      123,
+      125,
+      126,
+      127,
+      128,
+      129,
+      149,
+      151,
+      152,
+      181,
+      374,
+      377,
+      378,
+      379,
+      380,
+      381,
+      382
+    ],
+    "conserved": 23,
+    "interface_n": 28,
+    "mutations": [
+      "K37>R37",
+      "D126>G126",
+      "A127>T127",
+      "K129>R129",
+      "R377>K377"
+    ],
+    "min_interface_A": 1.785,
+    "contacts_under_2.5": 2,
+    "contacts_under_1.5": 0,
+    "glycan_context": [
+      {
+        "pdb": "1IVO",
+        "fit": "DI",
+        "n_CA": 164,
+        "rmsd_A": 0.68,
+        "resolved_glycan_min_A": 10.15,
+        "other_domain_min_A": 6.84,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 2.39,
+        "resolved_glycan_min_A": 7.66,
+        "other_domain_min_A": 0.43,
+        "other_domain_pairs_under_2.5": 32
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.65,
+        "resolved_glycan_min_A": 4.46,
+        "other_domain_min_A": 1.64,
+        "other_domain_pairs_under_2.5": 14
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIV",
+        "n_CA": 31,
+        "rmsd_A": 1.31,
+        "resolved_glycan_min_A": 3.34,
+        "other_domain_min_A": 0.31,
+        "other_domain_pairs_under_2.5": 44
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "local",
+        "n_CA": 21,
+        "rmsd_A": 0.56,
+        "resolved_glycan_min_A": 10.36,
+        "other_domain_min_A": 6.88,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DI",
+        "n_CA": 163,
+        "rmsd_A": 0.81,
+        "resolved_glycan_min_A": 14.92,
+        "other_domain_min_A": 12.38,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 2.38,
+        "resolved_glycan_min_A": 20.37,
+        "other_domain_min_A": 0.51,
+        "other_domain_pairs_under_2.5": 69
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.6,
+        "resolved_glycan_min_A": 4.21,
+        "other_domain_min_A": 28.63,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIV",
+        "n_CA": 132,
+        "rmsd_A": 1.05,
+        "resolved_glycan_min_A": 5.64,
+        "other_domain_min_A": 1.81,
+        "other_domain_pairs_under_2.5": 3
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "local",
+        "n_CA": 21,
+        "rmsd_A": 0.5,
+        "resolved_glycan_min_A": 14.41,
+        "other_domain_min_A": 12.08,
+        "other_domain_pairs_under_2.5": 0
+      }
+    ],
+    "near_sequons": [
+      {
+        "uniprot_N": 128,
+        "distance_A": 4.61
+      },
+      {
+        "uniprot_N": 352,
+        "distance_A": 9.66
+      }
+    ],
+    "majority_domain": "DI"
+  },
+  {
+    "name": "r01_l05",
+    "iptm": 0.6162914633750916,
+    "interface_uniprot": [
+      38,
+      40,
+      42,
+      43,
+      44,
+      69,
+      71,
+      93,
+      113,
+      114,
+      123,
+      125,
+      126,
+      127,
+      149,
+      151,
+      152,
+      379,
+      380,
+      381
+    ],
+    "conserved": 18,
+    "interface_n": 20,
+    "mutations": [
+      "D126>G126",
+      "A127>T127"
+    ],
+    "min_interface_A": 1.063,
+    "contacts_under_2.5": 7,
+    "contacts_under_1.5": 1,
+    "glycan_context": [
+      {
+        "pdb": "1IVO",
+        "fit": "DI",
+        "n_CA": 164,
+        "rmsd_A": 0.66,
+        "resolved_glycan_min_A": 10.57,
+        "other_domain_min_A": 6.31,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 2.3,
+        "resolved_glycan_min_A": 6.42,
+        "other_domain_min_A": 0.4,
+        "other_domain_pairs_under_2.5": 31
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.7,
+        "resolved_glycan_min_A": 3.98,
+        "other_domain_min_A": 0.51,
+        "other_domain_pairs_under_2.5": 45
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIV",
+        "n_CA": 31,
+        "rmsd_A": 1.3,
+        "resolved_glycan_min_A": 3.59,
+        "other_domain_min_A": 0.42,
+        "other_domain_pairs_under_2.5": 57
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "local",
+        "n_CA": 17,
+        "rmsd_A": 0.52,
+        "resolved_glycan_min_A": 10.62,
+        "other_domain_min_A": 6.4,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DI",
+        "n_CA": 163,
+        "rmsd_A": 0.76,
+        "resolved_glycan_min_A": 13.88,
+        "other_domain_min_A": 10.56,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 2.85,
+        "resolved_glycan_min_A": 17.86,
+        "other_domain_min_A": 0.4,
+        "other_domain_pairs_under_2.5": 97
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.59,
+        "resolved_glycan_min_A": 7.78,
+        "other_domain_min_A": 28.73,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIV",
+        "n_CA": 132,
+        "rmsd_A": 1.68,
+        "resolved_glycan_min_A": 10.1,
+        "other_domain_min_A": 3.73,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "local",
+        "n_CA": 17,
+        "rmsd_A": 0.46,
+        "resolved_glycan_min_A": 13.36,
+        "other_domain_min_A": 10.14,
+        "other_domain_pairs_under_2.5": 0
+      }
+    ],
+    "near_sequons": [
+      {
+        "uniprot_N": 128,
+        "distance_A": 5.71
+      }
+    ],
+    "majority_domain": "DI"
+  },
+  {
+    "name": "r01_l03",
+    "iptm": 0.23195205628871918,
+    "interface_uniprot": [
+      38,
+      39,
+      40,
+      44,
+      69,
+      93,
+      114,
+      123,
+      125,
+      126,
+      127,
+      128,
+      129,
+      152,
+      346,
+      347,
+      348,
+      349,
+      379,
+      381,
+      382
+    ],
+    "conserved": 17,
+    "interface_n": 21,
+    "mutations": [
+      "D126>G126",
+      "A127>T127",
+      "K129>R129",
+      "S348>T348"
+    ],
+    "min_interface_A": 2.165,
+    "contacts_under_2.5": 2,
+    "contacts_under_1.5": 0,
+    "glycan_context": [
+      {
+        "pdb": "1IVO",
+        "fit": "DI",
+        "n_CA": 164,
+        "rmsd_A": 0.71,
+        "resolved_glycan_min_A": 5.07,
+        "other_domain_min_A": 1.2,
+        "other_domain_pairs_under_2.5": 40
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 2.96,
+        "resolved_glycan_min_A": 1.57,
+        "other_domain_min_A": 0.17,
+        "other_domain_pairs_under_2.5": 49
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.65,
+        "resolved_glycan_min_A": 1.67,
+        "other_domain_min_A": 0.25,
+        "other_domain_pairs_under_2.5": 568
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIV",
+        "n_CA": 31,
+        "rmsd_A": 1.34,
+        "resolved_glycan_min_A": 0.91,
+        "other_domain_min_A": 0.36,
+        "other_domain_pairs_under_2.5": 725
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "local",
+        "n_CA": 14,
+        "rmsd_A": 0.54,
+        "resolved_glycan_min_A": 4.83,
+        "other_domain_min_A": 0.77,
+        "other_domain_pairs_under_2.5": 36
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DI",
+        "n_CA": 163,
+        "rmsd_A": 0.85,
+        "resolved_glycan_min_A": 7.3,
+        "other_domain_min_A": 5.13,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 3.14,
+        "resolved_glycan_min_A": 13.45,
+        "other_domain_min_A": 0.51,
+        "other_domain_pairs_under_2.5": 81
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.57,
+        "resolved_glycan_min_A": 1.1,
+        "other_domain_min_A": 25.37,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIV",
+        "n_CA": 132,
+        "rmsd_A": 1.73,
+        "resolved_glycan_min_A": 1.92,
+        "other_domain_min_A": 0.4,
+        "other_domain_pairs_under_2.5": 31
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "local",
+        "n_CA": 14,
+        "rmsd_A": 0.63,
+        "resolved_glycan_min_A": 6.19,
+        "other_domain_min_A": 4.8,
+        "other_domain_pairs_under_2.5": 0
+      }
+    ],
+    "near_sequons": [
+      {
+        "uniprot_N": 128,
+        "distance_A": 4.83
+      },
+      {
+        "uniprot_N": 352,
+        "distance_A": 6.25
+      }
+    ],
+    "majority_domain": "DI"
+  },
+  {
+    "name": "r01_l01",
+    "iptm": 0.25631681084632874,
+    "interface_uniprot": [
+      38,
+      39,
+      40,
+      41,
+      42,
+      44,
+      69,
+      93,
+      113,
+      114,
+      116,
+      117,
+      122,
+      123,
+      125,
+      149,
+      151,
+      152,
+      349,
+      377,
+      379,
+      381,
+      382
+    ],
+    "conserved": 21,
+    "interface_n": 23,
+    "mutations": [
+      "S116>T116",
+      "R377>K377"
+    ],
+    "min_interface_A": 1.93,
+    "contacts_under_2.5": 1,
+    "contacts_under_1.5": 0,
+    "glycan_context": [
+      {
+        "pdb": "1IVO",
+        "fit": "DI",
+        "n_CA": 164,
+        "rmsd_A": 0.67,
+        "resolved_glycan_min_A": 6.31,
+        "other_domain_min_A": 4.56,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 2.66,
+        "resolved_glycan_min_A": 2.9,
+        "other_domain_min_A": 0.55,
+        "other_domain_pairs_under_2.5": 55
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.61,
+        "resolved_glycan_min_A": 3.19,
+        "other_domain_min_A": 0.5,
+        "other_domain_pairs_under_2.5": 118
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIV",
+        "n_CA": 31,
+        "rmsd_A": 1.31,
+        "resolved_glycan_min_A": 2.77,
+        "other_domain_min_A": 0.44,
+        "other_domain_pairs_under_2.5": 78
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "local",
+        "n_CA": 18,
+        "rmsd_A": 0.51,
+        "resolved_glycan_min_A": 6.25,
+        "other_domain_min_A": 4.12,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DI",
+        "n_CA": 163,
+        "rmsd_A": 0.85,
+        "resolved_glycan_min_A": 12.42,
+        "other_domain_min_A": 9.96,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 2.93,
+        "resolved_glycan_min_A": 18.09,
+        "other_domain_min_A": 0.56,
+        "other_domain_pairs_under_2.5": 86
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.54,
+        "resolved_glycan_min_A": 5.33,
+        "other_domain_min_A": 22.96,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIV",
+        "n_CA": 132,
+        "rmsd_A": 1.34,
+        "resolved_glycan_min_A": 4.71,
+        "other_domain_min_A": 1.28,
+        "other_domain_pairs_under_2.5": 20
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "local",
+        "n_CA": 18,
+        "rmsd_A": 0.44,
+        "resolved_glycan_min_A": 12.03,
+        "other_domain_min_A": 9.3,
+        "other_domain_pairs_under_2.5": 0
+      }
+    ],
+    "near_sequons": [
+      {
+        "uniprot_N": 128,
+        "distance_A": 9.43
+      },
+      {
+        "uniprot_N": 175,
+        "distance_A": 8.71
+      },
+      {
+        "uniprot_N": 352,
+        "distance_A": 8.78
+      }
+    ],
+    "majority_domain": "DI"
+  },
+  {
+    "name": "r02_l03",
+    "iptm": 0.6006556749343872,
+    "interface_uniprot": [
+      38,
+      39,
+      40,
+      42,
+      44,
+      69,
+      71,
+      93,
+      94,
+      95,
+      113,
+      114,
+      122,
+      123,
+      125,
+      126,
+      127,
+      129,
+      149,
+      152,
+      347,
+      349,
+      370,
+      372,
+      373,
+      374,
+      377,
+      379,
+      380,
+      381,
+      382,
+      406,
+      408,
+      432,
+      433,
+      436,
+      439,
+      441,
+      442,
+      462,
+      464,
+      465,
+      489,
+      492
+    ],
+    "conserved": 38,
+    "interface_n": 44,
+    "mutations": [
+      "D126>G126",
+      "A127>T127",
+      "K129>R129",
+      "R377>K377",
+      "S442>G442",
+      "S492>N492"
+    ],
+    "min_interface_A": 2.014,
+    "contacts_under_2.5": 2,
+    "contacts_under_1.5": 0,
+    "glycan_context": [
+      {
+        "pdb": "1IVO",
+        "fit": "DI",
+        "n_CA": 164,
+        "rmsd_A": 0.75,
+        "resolved_glycan_min_A": 5.35,
+        "other_domain_min_A": 1.84,
+        "other_domain_pairs_under_2.5": 3
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 2.78,
+        "resolved_glycan_min_A": 1.61,
+        "other_domain_min_A": 0.19,
+        "other_domain_pairs_under_2.5": 169
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.66,
+        "resolved_glycan_min_A": 1.76,
+        "other_domain_min_A": 0.22,
+        "other_domain_pairs_under_2.5": 490
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIV",
+        "n_CA": 31,
+        "rmsd_A": 1.3,
+        "resolved_glycan_min_A": 1.28,
+        "other_domain_min_A": 0.34,
+        "other_domain_pairs_under_2.5": 514
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "local",
+        "n_CA": 24,
+        "rmsd_A": 0.74,
+        "resolved_glycan_min_A": 1.1,
+        "other_domain_min_A": 0.35,
+        "other_domain_pairs_under_2.5": 466
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DI",
+        "n_CA": 163,
+        "rmsd_A": 0.82,
+        "resolved_glycan_min_A": 4.83,
+        "other_domain_min_A": 5.13,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 3.08,
+        "resolved_glycan_min_A": 11.95,
+        "other_domain_min_A": 0.53,
+        "other_domain_pairs_under_2.5": 111
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.59,
+        "resolved_glycan_min_A": 4.01,
+        "other_domain_min_A": 16.49,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIV",
+        "n_CA": 132,
+        "rmsd_A": 1.18,
+        "resolved_glycan_min_A": 4.97,
+        "other_domain_min_A": 1.49,
+        "other_domain_pairs_under_2.5": 11
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "local",
+        "n_CA": 24,
+        "rmsd_A": 0.59,
+        "resolved_glycan_min_A": 4.49,
+        "other_domain_min_A": 16.43,
+        "other_domain_pairs_under_2.5": 0
+      }
+    ],
+    "near_sequons": [
+      {
+        "uniprot_N": 128,
+        "distance_A": 6.11
+      },
+      {
+        "uniprot_N": 352,
+        "distance_A": 7.2
+      },
+      {
+        "uniprot_N": 444,
+        "distance_A": 8.29
+      }
+    ],
+    "majority_domain": "DIII"
+  },
+  {
+    "name": "r03_l03",
+    "iptm": 0.40135324001312256,
+    "interface_uniprot": [
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      69,
+      93,
+      95,
+      114,
+      122,
+      123,
+      125,
+      126,
+      149,
+      151,
+      152,
+      347,
+      349,
+      372,
+      373,
+      374,
+      375,
+      377,
+      378,
+      380,
+      381,
+      408,
+      432,
+      433,
+      441,
+      442,
+      464
+    ],
+    "conserved": 31,
+    "interface_n": 35,
+    "mutations": [
+      "K37>R37",
+      "D126>G126",
+      "R377>K377",
+      "S442>G442"
+    ],
+    "min_interface_A": 2.234,
+    "contacts_under_2.5": 3,
+    "contacts_under_1.5": 0,
+    "glycan_context": [
+      {
+        "pdb": "1IVO",
+        "fit": "DI",
+        "n_CA": 164,
+        "rmsd_A": 0.76,
+        "resolved_glycan_min_A": 3.93,
+        "other_domain_min_A": 5.26,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 2.83,
+        "resolved_glycan_min_A": 0.94,
+        "other_domain_min_A": 0.95,
+        "other_domain_pairs_under_2.5": 54
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.77,
+        "resolved_glycan_min_A": 0.93,
+        "other_domain_min_A": 0.34,
+        "other_domain_pairs_under_2.5": 155
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIV",
+        "n_CA": 31,
+        "rmsd_A": 1.33,
+        "resolved_glycan_min_A": 1.16,
+        "other_domain_min_A": 0.65,
+        "other_domain_pairs_under_2.5": 103
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "local",
+        "n_CA": 19,
+        "rmsd_A": 0.56,
+        "resolved_glycan_min_A": 3.94,
+        "other_domain_min_A": 5.32,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DI",
+        "n_CA": 163,
+        "rmsd_A": 0.85,
+        "resolved_glycan_min_A": 11.34,
+        "other_domain_min_A": 8.46,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 2.94,
+        "resolved_glycan_min_A": 14.75,
+        "other_domain_min_A": 0.3,
+        "other_domain_pairs_under_2.5": 82
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.66,
+        "resolved_glycan_min_A": 3.17,
+        "other_domain_min_A": 19.04,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIV",
+        "n_CA": 132,
+        "rmsd_A": 1.11,
+        "resolved_glycan_min_A": 4.31,
+        "other_domain_min_A": 0.6,
+        "other_domain_pairs_under_2.5": 17
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "local",
+        "n_CA": 19,
+        "rmsd_A": 0.5,
+        "resolved_glycan_min_A": 11.28,
+        "other_domain_min_A": 7.96,
+        "other_domain_pairs_under_2.5": 0
+      }
+    ],
+    "near_sequons": [
+      {
+        "uniprot_N": 128,
+        "distance_A": 7.66
+      },
+      {
+        "uniprot_N": 352,
+        "distance_A": 9.6
+      },
+      {
+        "uniprot_N": 444,
+        "distance_A": 8.43
+      }
+    ],
+    "majority_domain": "DI"
+  },
+  {
+    "name": "r02_l01",
+    "iptm": 0.5089394450187683,
+    "interface_uniprot": [
+      38,
+      39,
+      40,
+      43,
+      44,
+      69,
+      71,
+      93,
+      95,
+      123,
+      125,
+      126,
+      127,
+      128,
+      129,
+      349,
+      374,
+      377,
+      378,
+      379,
+      380,
+      381
+    ],
+    "conserved": 18,
+    "interface_n": 22,
+    "mutations": [
+      "D126>G126",
+      "A127>T127",
+      "K129>R129",
+      "R377>K377"
+    ],
+    "min_interface_A": 2.321,
+    "contacts_under_2.5": 1,
+    "contacts_under_1.5": 0,
+    "glycan_context": [
+      {
+        "pdb": "1IVO",
+        "fit": "DI",
+        "n_CA": 164,
+        "rmsd_A": 0.71,
+        "resolved_glycan_min_A": 12.11,
+        "other_domain_min_A": 3.61,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 2.43,
+        "resolved_glycan_min_A": 6.62,
+        "other_domain_min_A": 0.7,
+        "other_domain_pairs_under_2.5": 99
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.86,
+        "resolved_glycan_min_A": 3.41,
+        "other_domain_min_A": 0.74,
+        "other_domain_pairs_under_2.5": 24
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIV",
+        "n_CA": 31,
+        "rmsd_A": 1.3,
+        "resolved_glycan_min_A": 3.64,
+        "other_domain_min_A": 1.01,
+        "other_domain_pairs_under_2.5": 31
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "local",
+        "n_CA": 15,
+        "rmsd_A": 0.46,
+        "resolved_glycan_min_A": 12.18,
+        "other_domain_min_A": 3.49,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DI",
+        "n_CA": 163,
+        "rmsd_A": 0.86,
+        "resolved_glycan_min_A": 10.46,
+        "other_domain_min_A": 7.46,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 2.69,
+        "resolved_glycan_min_A": 17.1,
+        "other_domain_min_A": 0.48,
+        "other_domain_pairs_under_2.5": 73
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.81,
+        "resolved_glycan_min_A": 4.69,
+        "other_domain_min_A": 27.35,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIV",
+        "n_CA": 132,
+        "rmsd_A": 1.37,
+        "resolved_glycan_min_A": 6.02,
+        "other_domain_min_A": 0.97,
+        "other_domain_pairs_under_2.5": 7
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "local",
+        "n_CA": 15,
+        "rmsd_A": 0.45,
+        "resolved_glycan_min_A": 9.83,
+        "other_domain_min_A": 6.46,
+        "other_domain_pairs_under_2.5": 0
+      }
+    ],
+    "near_sequons": [
+      {
+        "uniprot_N": 128,
+        "distance_A": 4.25
+      },
+      {
+        "uniprot_N": 352,
+        "distance_A": 7.58
+      }
+    ],
+    "majority_domain": "DI"
+  },
+  {
+    "name": "r03_l01",
+    "iptm": 0.334525465965271,
+    "interface_uniprot": [
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      44,
+      69,
+      71,
+      93,
+      113,
+      114,
+      122,
+      123,
+      125,
+      126,
+      127,
+      129,
+      149,
+      152,
+      349,
+      372,
+      373,
+      374,
+      377,
+      380,
+      381,
+      406,
+      408,
+      432,
+      433,
+      442,
+      465,
+      467
+    ],
+    "conserved": 28,
+    "interface_n": 35,
+    "mutations": [
+      "K37>R37",
+      "D126>G126",
+      "A127>T127",
+      "K129>R129",
+      "R377>K377",
+      "S442>G442",
+      "K467>R467"
+    ],
+    "min_interface_A": 1.598,
+    "contacts_under_2.5": 3,
+    "contacts_under_1.5": 0,
+    "glycan_context": [
+      {
+        "pdb": "1IVO",
+        "fit": "DI",
+        "n_CA": 164,
+        "rmsd_A": 0.76,
+        "resolved_glycan_min_A": 3.18,
+        "other_domain_min_A": 5.73,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 2.77,
+        "resolved_glycan_min_A": 0.7,
+        "other_domain_min_A": 0.75,
+        "other_domain_pairs_under_2.5": 54
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.73,
+        "resolved_glycan_min_A": 0.33,
+        "other_domain_min_A": 0.48,
+        "other_domain_pairs_under_2.5": 110
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "DIV",
+        "n_CA": 31,
+        "rmsd_A": 1.33,
+        "resolved_glycan_min_A": 0.7,
+        "other_domain_min_A": 0.45,
+        "other_domain_pairs_under_2.5": 80
+      },
+      {
+        "pdb": "1IVO",
+        "fit": "local",
+        "n_CA": 21,
+        "rmsd_A": 0.6,
+        "resolved_glycan_min_A": 2.79,
+        "other_domain_min_A": 5.71,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DI",
+        "n_CA": 163,
+        "rmsd_A": 0.85,
+        "resolved_glycan_min_A": 8.44,
+        "other_domain_min_A": 9.94,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DII",
+        "n_CA": 145,
+        "rmsd_A": 2.87,
+        "resolved_glycan_min_A": 14.5,
+        "other_domain_min_A": 0.44,
+        "other_domain_pairs_under_2.5": 131
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIII",
+        "n_CA": 171,
+        "rmsd_A": 0.64,
+        "resolved_glycan_min_A": 6.32,
+        "other_domain_min_A": 19.53,
+        "other_domain_pairs_under_2.5": 0
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "DIV",
+        "n_CA": 132,
+        "rmsd_A": 1.19,
+        "resolved_glycan_min_A": 9.49,
+        "other_domain_min_A": 1.45,
+        "other_domain_pairs_under_2.5": 8
+      },
+      {
+        "pdb": "1NQL",
+        "fit": "local",
+        "n_CA": 21,
+        "rmsd_A": 0.47,
+        "resolved_glycan_min_A": 8.24,
+        "other_domain_min_A": 9.71,
+        "other_domain_pairs_under_2.5": 0
+      }
+    ],
+    "near_sequons": [
+      {
+        "uniprot_N": 128,
+        "distance_A": 6.68
+      },
+      {
+        "uniprot_N": 352,
+        "distance_A": 9.57
+      },
+      {
+        "uniprot_N": 444,
+        "distance_A": 5.72
+      }
+    ],
+    "majority_domain": "DI"
+  }
+]
