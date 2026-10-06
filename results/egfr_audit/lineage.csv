@@ -1,0 +1,21 @@
+name,lineage_match,parent,lambda,mutation_count,C5_run_manifest,official_novelty
+n02_rank02_native,original generated candidate FASTA,rank02_cC5_13_binder_chainA,,0,not recovered,not checked
+n03_rank03_native,original generated candidate FASTA,rank03_cC5_01_binder_chainA,,0,not recovered,not checked
+r03_l05,exact ProtonPotts sweep sequence,rank03_cC5_01,0.5,17,not recovered,not checked
+r03_l07,exact ProtonPotts sweep sequence,rank03_cC5_01,0.7,19,not recovered,not checked
+r02_l07,exact ProtonPotts sweep sequence,rank02_cC5_13,0.7,15,not recovered,not checked
+r01_l07,exact ProtonPotts sweep sequence,rank01_cC5_03,0.7,20,not recovered,not checked
+rank01_native,original generated candidate FASTA,rank01_cC5_03_binder_chainA,,0,not recovered,not checked
+rank05_native,original generated candidate FASTA,rank05_cC5_06_binder_chainA,,0,not recovered,not checked
+rank04_native,original generated candidate FASTA,rank04_cC5_02_binder_chainA,,0,not recovered,not checked
+rank07_native,original generated candidate FASTA,rank07_cC5_10_binder_chainA,,0,not recovered,not checked
+rank08_native,original generated candidate FASTA,rank08_cC5_07_binder_chainA,,0,not recovered,not checked
+rank06_native,original generated candidate FASTA,rank06_cC5_09_binder_chainA,,0,not recovered,not checked
+r02_l05,exact ProtonPotts sweep sequence,rank02_cC5_13,0.5,14,not recovered,not checked
+r01_l05,exact ProtonPotts sweep sequence,rank01_cC5_03,0.5,18,not recovered,not checked
+r01_l03,exact ProtonPotts sweep sequence,rank01_cC5_03,0.3,17,not recovered,not checked
+r01_l01,exact ProtonPotts sweep sequence,rank01_cC5_03,0.1,20,not recovered,not checked
+r02_l03,exact ProtonPotts sweep sequence,rank02_cC5_13,0.3,14,not recovered,not checked
+r03_l03,exact ProtonPotts sweep sequence,rank03_cC5_01,0.3,15,not recovered,not checked
+r02_l01,exact ProtonPotts sweep sequence,rank02_cC5_13,0.1,12,not recovered,not checked
+r03_l01,exact ProtonPotts sweep sequence,rank03_cC5_01,0.1,13,not recovered,not checked

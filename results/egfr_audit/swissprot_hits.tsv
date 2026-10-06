@@ -1,0 +1,17 @@
+rank05_native	P00533	53.100	64	72	6	69	336	399	7.308E-16	74	sp|P00533|EGFR_HUMAN Epidermal growth factor receptor OS=Homo sapiens OX=9606 GN=EGFR PE=1 SV=2
+rank05_native	P55245	53.100	64	72	6	69	336	399	1.004E-15	74	sp|P55245|EGFR_MACMU Epidermal growth factor receptor OS=Macaca mulatta OX=9544 GN=EGFR PE=2 SV=2
+rank05_native	Q01279	51.500	64	72	6	69	336	399	9.293E-15	71	sp|Q01279|EGFR_MOUSE Epidermal growth factor receptor OS=Mus musculus OX=10090 GN=Egfr PE=1 SV=1
+rank05_native	P13387	46.800	64	72	6	69	343	406	2.452E-10	58	sp|P13387|EGFR_CHICK Epidermal growth factor receptor (Fragment) OS=Gallus gallus OX=9031 GN=EGFR PE=1 SV=1
+rank05_native	Q60553	40.600	64	72	6	69	341	404	5.512E-08	51	sp|Q60553|ERBB2_MESAU Receptor tyrosine-protein kinase erbB-2 OS=Mesocricetus auratus OX=10036 GN=ERBB2 PE=2 SV=1
+rank05_native	P70424	40.600	64	72	6	69	342	405	1.972E-07	50	sp|P70424|ERBB2_MOUSE Receptor tyrosine-protein kinase erbB-2 OS=Mus musculus OX=10090 GN=Erbb2 PE=1 SV=3
+rank05_native	P06494	37.500	64	72	6	69	342	405	1.972E-07	50	sp|P06494|ERBB2_RAT Receptor tyrosine-protein kinase erbB-2 OS=Rattus norvegicus OX=10116 GN=Erbb2 PE=1 SV=3
+rank04_native	Q804S5	46.400	56	74	1	51	431	486	9.896E-06	45	sp|Q804S5|MIB1_DANRE E3 ubiquitin-protein ligase mib1 OS=Danio rerio OX=7955 GN=mib1 PE=1 SV=1
+rank04_native	Q86YT6	46.200	54	74	1	49	431	484	1.269E-04	42	sp|Q86YT6|MIB1_HUMAN E3 ubiquitin-protein ligase MIB1 OS=Homo sapiens OX=9606 GN=MIB1 PE=1 SV=1
+rank04_native	Q80SY4	46.200	54	74	1	49	431	484	1.269E-04	42	sp|Q80SY4|MIB1_MOUSE E3 ubiquitin-protein ligase MIB1 OS=Mus musculus OX=10090 GN=Mib1 PE=1 SV=1
+rank04_native	Q6GNY1	44.600	56	74	1	51	431	486	1.746E-04	42	sp|Q6GNY1|MIB1_XENLA E3 ubiquitin-protein ligase mib1 OS=Xenopus laevis OX=8355 GN=mib1 PE=2 SV=1
+rank07_native	P00533	47.100	53	56	1	53	343	395	2.742E-09	54	sp|P00533|EGFR_HUMAN Epidermal growth factor receptor OS=Homo sapiens OX=9606 GN=EGFR PE=1 SV=2
+rank07_native	P55245	47.100	53	56	1	53	343	395	3.773E-09	54	sp|P55245|EGFR_MACMU Epidermal growth factor receptor OS=Macaca mulatta OX=9544 GN=EGFR PE=2 SV=2
+rank07_native	Q01279	45.200	53	56	1	53	343	395	1.266E-07	49	sp|Q01279|EGFR_MOUSE Epidermal growth factor receptor OS=Mus musculus OX=10090 GN=Egfr PE=1 SV=1
+rank07_native	O18735	42.800	49	56	8	56	355	403	1.635E-06	46	sp|O18735|ERBB2_CANLF Receptor tyrosine-protein kinase erbB-2 OS=Canis lupus familiaris OX=9615 GN=ERBB2 PE=2 SV=1
+rank07_native	P04626	42.800	49	56	8	56	355	403	2.251E-06	46	sp|P04626|ERBB2_HUMAN Receptor tyrosine-protein kinase erbB-2 OS=Homo sapiens OX=9606 GN=ERBB2 PE=1 SV=1
+rank07_native	P13387	42.300	52	56	1	52	350	401	5.532E-05	42	sp|P13387|EGFR_CHICK Epidermal growth factor receptor (Fragment) OS=Gallus gallus OX=9031 GN=EGFR PE=1 SV=1

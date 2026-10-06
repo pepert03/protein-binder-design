@@ -1,0 +1,11 @@
+# Sources, 6 October 2026
+- Private repo https://github.com/pepert03/protein-binder-design . Inspected docs/STATUS.md, REPORT.md, original candidate FASTA, 3 exact ProtonPotts sweeps, redesign script, generation script. Current snapshot c6d45504b8b3eb248ccc87584cdd256214a10144. Generation script recovered for a different DIII batch, not exact C5 manifest.
+- https://proteinbase.com/competitions/anthropic-adaptyv-2026/challenges/egfr . Live human target explicitly25-645, 621aa; de novo zero-shot requirement; no starting from existing binder.
+- https://www.adaptyvbio.com/blog/novelty . Sequence and structural level rules, not universal30% gate; official assessment includes broader databases and domain analysis.
+- https://www.rcsb.org/structure/1IVO ; http://files.rcsb.org/download/1IVO.pdb . Active EGF-bound human receptor, partial experimentally resolved glycans, CHO expression,3.3A. PDB mature numbering +24=UniProt.
+- https://www.rcsb.org/structure/1NQL ; https://files.rcsb.org/download/1NQL.pdb . Tethered human ECD; experimentally resolved sugars, no full HEK293 glycoform ensemble. PDB numbering +24=UniProt.
+- https://rest.uniprot.org/uniprotkb/P00533.fasta ; https://rest.uniprot.org/uniprotkb/Q01279.fasta . Canonical human and mouse sequences downloaded for alignment.
+- https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/ ; uniprot_sprot.fasta.gz dated10Jun2026 on download index. Local SwissProt screening only; no patent/PDB/PLAbDab search. Database SHA256 recorded.
+- https://github.com/soedinglab/MMseqs2 ; https://dev.mmseqs.com/latest/ . Local executable, sensitive search-s7.5; best hits, identity/coverage separate.
+- https://github.com/jwohlwend/boltz/blob/main/docs/prediction.md . Confidence metrics and prediction mechanics; no pH in this calculation.
+- https://www.kaggle.com/code/peperidruejo/proteinbase-csv20-full-human-egfr/output?scriptVersionId=355767895 . Private verified source20 original human structures; archive ZIP integrity passed; candidate sequences exact originalCSV and target exactUniProt25-645.
