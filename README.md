@@ -1,3 +1,5 @@
+> Challenge 2 (TNF-alpha, bind pH 7.4 / release pH 6.0): see [challenge2/README.md](challenge2/README.md).
+
 > Current results: see [latest EGFR summary](docs/LATEST_EGFR_2026-10-06.md). Human20 and mouse9 completed; Lightning robustness dropped. Historical rankings and target statements below may be superseded. No validated binding or final submission.
 
 # protein-binder-design
