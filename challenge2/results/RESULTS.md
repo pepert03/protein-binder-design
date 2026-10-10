@@ -90,3 +90,18 @@ Top by i_pae (parent traj6 0.391/0.675/0.821):
 - [5,30]: 0.387 / 0.617 CKDVIHIKVPDSFQPDPRWHQTYQRYRARAHGQDGGGDGVVVVLLCCLLLLLLLILLLKLLKKFD
 - [6,22,30]: 0.389 / 0.605 hisCat 1 CKDVIIHKVPDSFQPDPRWHQTHQRYRARAHGQDGGGDGVVVVLLCCLLLLLLLILLLKLLKKFD
 Many variants hold i_pae <0.40. His placement is by proximity to target K/R, a heuristic; no pH-dependence is computed.
+
+## Run11 mouse screen of the 40 traj6 His variants (screening only)
+Method: mouse TNF residues (UniProt P06804, aligned to human P01375: 124/157 identical, one gap at human pos 71 kept as human) threaded onto the human 1TNF trimer crop (backbone and numbering unchanged, 92/93 crop residues matched), same AF2 binder protocol as run8. This tests only whether the designed fold survives the mouse sequence at the epitope. It is NOT mouse binding data and NOT pH data; AF2 self-scores only.
+Mean i_pae human 0.424 vs mouse 0.441. i_pae < 0.40: 10 variants on human, 3 on mouse. 11 variants have i_pae < 0.42 on both.
+Both-species shortlist (human i_pae / mouse i_pae):
+- His [6,29]: 0.407 / 0.371 (mouse i_ptm 0.634, pLDDT 0.811)
+- His [8,22]: 0.381 / 0.394
+- His [6,22]: 0.388 / 0.398
+- His [6,8,26]: 0.392 / 0.400
+- His [6,26,30]: 0.388 / 0.400
+- His [6,22,30]: 0.389 / 0.403
+- His [22,26]: 0.397 / 0.406
+- His [5,30]: 0.387 / 0.408
+Full table: results/run11_mouse_threaded_his_scan.json (mouse) and results/run8_his_on_traj6.json (human). Sequences are in those files.
+Open items: pH 6.0 vs 7.4 is not modelled; His placement is a proximity heuristic near target K/R. The L-rich hydrophobic tail may cause aggregation. Run12 (new seeds 2500+) is running for more parents.
