@@ -116,3 +116,12 @@ Open items: pH 6.0 vs 7.4 is not modelled; His placement is a proximity heuristi
 ## Kaggle T4 run, seeds 7100+ (AF2 self-scores only, not binding or pH data)
 5 trajectories, i_pae: 0.756, 0.724, 0.559, 0.753, 0.674. No hit (< 0.4). Nothing added to the top-20 draft.
 Seed-5100 run: 0.467, 0.78, 0.751, 0.614, 0.764. Also no hit.
+
+
+## Kaggle seeded semigreedy run (seeds 9100+, 10 Oct 21:48 CEST)
+Verified live at 22:00 CEST. Parent P0 = run6 traj6, P1 = His [8,22] variant. Design_semigreedy(iters=40, tries=6), 100-minute wall-clock budget. No launch was repeated on handover.
+
+Trajectory 1 from P1, elapsed 497 s: i_pae 0.365, i_ptm 0.706, pLDDT 0.811. Sequence:
+`CKDVIIIKHPYPVTPDPRWHQTVQRYRERAEREELLGDGVRNGCLCCLLLLLLLILLLKELTKVP`
+
+Trajectory 2 still in progress at iteration 18. All numbers are AF2 self-scores, NOT binding or pH data. No mouse screen or independent full-target validation for this candidate. Hydrophobic tail remains a major liability. Existing top20 ranking intentionally unchanged pending further screening.
