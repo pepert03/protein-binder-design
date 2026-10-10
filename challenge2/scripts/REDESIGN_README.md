@@ -19,3 +19,5 @@ Sources inspected:
 - https://biopython.org/docs/latest/api/Bio.PDB.SASA.html
 
 The scripts have not been integration-tested. Inspect generated coordinates visually before accepting any structure. No automatic submission or top20 replacement occurs.
+
+Preparation update 23:16: raw duplicate-ATOM identifiers are rejected before Bio.PDB parsing because the previous run had duplicate binder atoms that caused NaNs. No automatic deduplication is performed in the repair script. A duplicated file must be recovered and inspected first. Browser daily time limit deferred the 23:15 live check until midnight. Scripts still not executed.

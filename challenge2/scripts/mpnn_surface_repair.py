@@ -9,6 +9,13 @@ from Bio.PDB import PDBParser, PDBIO, Select
 from Bio.PDB.SASA import ShrakeRupley
 from colabdesign.mpnn import mk_mpnn_model
 from colabdesign.af.alphafold.common import residue_constants
+# Bio.PDB can silently discard duplicate atom identifiers; reject before parsing.
+seen_atoms=set()
+for line in open(a.pdb):
+ if line.startswith('ATOM'):
+  key=(line[21],line[22:27],line[12:16],line[16])
+  if key in seen_atoms:raise ValueError(('Duplicate PDB atom',key))
+  seen_atoms.add(key)
 s=PDBParser(QUIET=True).get_structure('x',a.pdb); m=s[0]
 chains=list(m); b=m[a.binder]; targets=[c for c in chains if c.id!=a.binder]
 if not targets:raise ValueError('No target chains')
