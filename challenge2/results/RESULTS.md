@@ -112,3 +112,7 @@ Open items: pH 6.0 vs 7.4 is not modelled; His placement is a proximity heuristi
 - 18:19 DGX run13: 11 trajectories, best i_pae 0.562, no hits. Kaggle T4x2 seeds 5100+: traj 1 i_pae 0.467 / i_ptm 0.681 / pLDDT 0.782 (1362 s per trajectory). AF2 self-scores only.
 - 19:51 Kaggle T4x2 run (seeds 5100+, own account) DONE, 5 trajectories: i_pae 0.467, 0.78, 0.751, 0.614, 0.764. No hit (<0.40). Best i_ptm 0.681 / pLDDT 0.782 (traj 1). AF2 self-scores only, not binding or pH data. ~22 min per trajectory on T4.
 - Net: best candidates overall remain run6 traj6 (i_pae 0.391) and the His-scan variants from runs 8/11. New runs 13 (DGX) and Kaggle added no better design.
+
+## Kaggle T4 run, seeds 7100+ (AF2 self-scores only, not binding or pH data)
+5 trajectories, i_pae: 0.756, 0.724, 0.559, 0.753, 0.674. No hit (< 0.4). Nothing added to the top-20 draft.
+Seed-5100 run: 0.467, 0.78, 0.751, 0.614, 0.764. Also no hit.
