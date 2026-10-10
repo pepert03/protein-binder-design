@@ -82,3 +82,11 @@ traj6: i_pae 0.391, i_ptm 0.675, pLDDT 0.821 (human TNF only; mouse unchecked)
 seq CKDVIIIKVPDSFQPDPRWHQTYQRYRARAEGQDGGGDGVVVVLLCCLLLLLLLILLLKLLKKFD
 Warning: L-rich hydrophobic tail, likely sticky. Others: traj1 0.72/0.53, traj4 0.652/0.542, traj5 0.779/0.581.
 His scan on traj6 (run8) returned NaN for all 40 variants and for the unmutated seq; under diagnosis. Run7 (BL55) NaN too.
+
+## Run8 His scan on run6 traj6 (40 variants; AF2 self-scores only, NOT pH or binding data)
+Earlier NaN cause: d6_6.pdb had the binder chain duplicated (2 CA per residue); deduping atoms fixed it. 40/40 now give real values (results/run8_his_on_traj6.json).
+Top by i_pae (parent traj6 0.391/0.675/0.821):
+- His at [8,22]: 0.381 / i_ptm 0.622 / pLDDT 0.812 CKDVIIIKHPDSFQPDPRWHQTHQRYRARAEGQDGGGDGVVVVLLCCLLLLLLLILLLKLLKKFD
+- [5,30]: 0.387 / 0.617 CKDVIHIKVPDSFQPDPRWHQTYQRYRARAHGQDGGGDGVVVVLLCCLLLLLLLILLLKLLKKFD
+- [6,22,30]: 0.389 / 0.605 hisCat 1 CKDVIIHKVPDSFQPDPRWHQTHQRYRARAHGQDGGGDGVVVVLLCCLLLLLLLILLLKLLKKFD
+Many variants hold i_pae <0.40. His placement is by proximity to target K/R, a heuristic; no pH-dependence is computed.
