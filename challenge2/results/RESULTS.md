@@ -76,3 +76,9 @@ Positions are 0-based in the 65-aa binder. hisCat = binder His with ring N withi
 | 8 | [28, 29, 32] | 0.863 | 0.078 | 0.715 | 0 | `DDDKIAAILLCLLLLLVLLTPAGPQPSEHHVAHYRKYREKQLKAPRKAGKACESCIKEIIEKKDD` |
 
 Unmutated run4 traj8 baseline: i_pae 0.493, i_ptm 0.602, pLDDT 0.705. Bar used: i_pae < 0.4.
+
+## Run6 (BL65, seeds 700+) - AF2 self-scores only, NOT binding or pH data
+traj6: i_pae 0.391, i_ptm 0.675, pLDDT 0.821 (human TNF only; mouse unchecked)
+seq CKDVIIIKVPDSFQPDPRWHQTYQRYRARAEGQDGGGDGVVVVLLCCLLLLLLLILLLKLLKKFD
+Warning: L-rich hydrophobic tail, likely sticky. Others: traj1 0.72/0.53, traj4 0.652/0.542, traj5 0.779/0.581.
+His scan on traj6 (run8) returned NaN for all 40 variants and for the unmutated seq; under diagnosis. Run7 (BL55) NaN too.
