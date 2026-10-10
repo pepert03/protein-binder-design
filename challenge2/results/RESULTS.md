@@ -105,3 +105,10 @@ Both-species shortlist (human i_pae / mouse i_pae):
 - His [5,30]: 0.387 / 0.408
 Full table: results/run11_mouse_threaded_his_scan.json (mouse) and results/run8_his_on_traj6.json (human). Sequences are in those files.
 Open items: pH 6.0 vs 7.4 is not modelled; His placement is a proximity heuristic near target K/R. The L-rich hydrophobic tail may cause aggregation. Run12 (new seeds 2500+) is running for more parents.
+
+## Update 18:09 (AF2 self-scores only, not binding or pH data)
+- DGX run13 (seeds 3100+, XLA autotune fix): 9 trajectories, best i_pae 0.562, no hits (<0.4).
+- Kaggle T4x2 run (seeds 5100+, own account) started 17:57, no finished trajectory yet at 18:09 (T4 slower).
+- 18:19 DGX run13: 11 trajectories, best i_pae 0.562, no hits. Kaggle T4x2 seeds 5100+: traj 1 i_pae 0.467 / i_ptm 0.681 / pLDDT 0.782 (1362 s per trajectory). AF2 self-scores only.
+- 19:51 Kaggle T4x2 run (seeds 5100+, own account) DONE, 5 trajectories: i_pae 0.467, 0.78, 0.751, 0.614, 0.764. No hit (<0.40). Best i_ptm 0.681 / pLDDT 0.782 (traj 1). AF2 self-scores only, not binding or pH data. ~22 min per trajectory on T4.
+- Net: best candidates overall remain run6 traj6 (i_pae 0.391) and the His-scan variants from runs 8/11. New runs 13 (DGX) and Kaggle added no better design.
