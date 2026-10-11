@@ -1,0 +1,76 @@
+{
+  "sequence": "AAAQAAQAQWTSQSSSNNNNGGNGPNGTRNYTTYVQAVAQAVRGVGKGHE",
+  "repredict_log": {
+    "con": 3.9923810958862305,
+    "exp_res": 0.3880819082260132,
+    "i_con": 5.592157363891602,
+    "i_pae": 0.9002025127410889,
+    "pae": 0.8563460111618042,
+    "plddt": 0.377138614654541,
+    "seq_ent": 135.64700317382812,
+    "loss": 5.654443740844727,
+    "i_ptm": 0.17167747020721436,
+    "ptm": 0.8486636877059937,
+    "hard": 1.0,
+    "soft": 0.0,
+    "temp": 1.0,
+    "recycles": 3.0
+  },
+  "pae_source": "def get_pae_loss(outputs, mask_1d=None, mask_1b=None, mask_2d=None):\n  p = get_pae(outputs) / 31.0\n  p = (p + p.T) / 2\n  L = p.shape[0]\n  if mask_1d is None: mask_1d = jnp.ones(L)\n  if mask_1b is None: mask_1b = jnp.ones(L)\n  if mask_2d is None: mask_2d = jnp.ones((L,L))\n  mask_2d = mask_2d * mask_1d[:,None] * mask_1b[None,:]\n  return mask_loss(p, mask_2d)\n",
+  "clash_audit": [
+    {
+      "pdb": "trajectory01_repredicted.pdb",
+      "model": 0,
+      "target_residues": 456,
+      "binder_residues": 50,
+      "min_heavy_distance_A": 6.20479303907041,
+      "pairs_under2A": 0,
+      "binder_residues_under4A": 0
+    },
+    {
+      "pdb": "trajectory01_repredicted.pdb",
+      "model": 1,
+      "target_residues": 456,
+      "binder_residues": 50,
+      "min_heavy_distance_A": 9.879536262291214,
+      "pairs_under2A": 0,
+      "binder_residues_under4A": 0
+    },
+    {
+      "pdb": "trajectory01_optimized.pdb",
+      "model": 0,
+      "target_residues": 277,
+      "binder_residues": 50,
+      "min_heavy_distance_A": 2.0748818858835865,
+      "pairs_under2A": 0,
+      "binder_residues_under4A": 1
+    },
+    {
+      "pdb": "trajectory01_optimized.pdb",
+      "model": 1,
+      "target_residues": 277,
+      "binder_residues": 50,
+      "min_heavy_distance_A": 7.780354677425107,
+      "pairs_under2A": 0,
+      "binder_residues_under4A": 0
+    },
+    {
+      "pdb": "trajectory01_optimized.pdb",
+      "model": 0,
+      "audit_type": "omitted_full_trimer_after_target_fit",
+      "target_fit_rmsd_A": 0.9806242380937417,
+      "min_heavy_distance_A": 11.955701406174427,
+      "pairs_under2A": 0,
+      "binder_residues_under4A": 0
+    },
+    {
+      "pdb": "trajectory01_optimized.pdb",
+      "model": 1,
+      "audit_type": "omitted_full_trimer_after_target_fit",
+      "target_fit_rmsd_A": 0.9245726606284022,
+      "min_heavy_distance_A": 0.06000634223836685,
+      "pairs_under2A": 37,
+      "binder_residues_under4A": 13
+    }
+  ]
+}
