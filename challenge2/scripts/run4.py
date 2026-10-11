@@ -72,7 +72,7 @@ while time.time()-t0 < BUDGET:
     k+=1
     af.restart(seed=k+200)
     af.design_3stage(30 if DRY else 100, 30 if DRY else 100, 5 if DRY else 10)
-    lg=af.aux['log']; seq=af.get_seqs()[0]
+    chosen=af._tmp['best'].get('aux', af.aux); lg=chosen['log']; seq=af.get_seqs(get_best=True)[0]
     base=dict(traj=k, seq=seq, plddt=round(lg['plddt'],3), i_pae=round(lg['i_pae'],3), i_ptm=round(lg['i_ptm'],3))
     af.save_pdb(f'c4_{k}.pdb')
     print('TRAJ',base, 'elapsed',int(time.time()-t0), flush=True)

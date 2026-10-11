@@ -1,3 +1,5 @@
+> Historical planning/results text below is superseded by [LATEST_STATUS.md](LATEST_STATUS.md), updated11October2026. No supported pH-switch binder or submission.
+
 # TNF-alpha pH-switch binder: method text (fallback, draft)
 
 Goal: bind TNF-alpha trimer at pH 7.4, lose binding at pH 6.0, human and mouse.

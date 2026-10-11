@@ -72,7 +72,7 @@ while time.time()-t0 < BUDGET:
     k+=1
     af.restart(seed=k)
     af.design_3stage(30 if DRY else 100, 30 if DRY else 100, 5 if DRY else 10)
-    lg=af.aux['log']; seq=af.get_seqs()[0]
+    chosen=af._tmp['best'].get('aux', af.aux); lg=chosen['log']; seq=af.get_seqs(get_best=True)[0]
     base=dict(traj=k, seq=seq, plddt=round(lg['plddt'],3), i_pae=round(lg['i_pae'],3), i_ptm=round(lg['i_ptm'],3))
     af.save_pdb(f'c3_{k}.pdb')
     print('TRAJ',base, 'elapsed',int(time.time()-t0), flush=True)
@@ -94,7 +94,7 @@ for r in rows[:6]:
     for s in out['seq']:
         bs=s.split('/')[-1] if '/' in s else s[-BL:]
         af.predict(seq=bs, num_models=2, num_recycles=3, verbose=False)
-        lg=af.aux['log']; af.save_pdb('tmp.pdb')
+        lg=af.aux['log']; af.save_pdb('tmp.pdb', get_best=False)
         nh=bs.count('H'); hc=hiscat(open('tmp.pdb').read(), BL)
         final.append(dict(parent=k, seq=bs, plddt=round(lg['plddt'],3), i_pae=round(lg['i_pae'],3), i_ptm=round(lg['i_ptm'],3), nHis=nh, hisCat=hc))
         print('MPNN',final[-1], flush=True)

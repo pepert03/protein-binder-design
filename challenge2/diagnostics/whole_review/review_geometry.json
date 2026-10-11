@@ -1,0 +1,232 @@
+[
+  {
+    "file": "/tmp/tnf/regenerated/tnf_crop.pdb",
+    "sha256": "f7f976a11c0fffc2350ef8efe61a3c0e6922bf80caf8d9e205942ce174a71ed0",
+    "chains": [
+      {
+        "chain": "A",
+        "length": 93,
+        "gaps": [
+          {
+            "from": 36,
+            "to": 59,
+            "CA_distance_A": 13.6295804977417
+          },
+          {
+            "from": 80,
+            "to": 94,
+            "CA_distance_A": 5.235830783843994
+          },
+          {
+            "from": 120,
+            "to": 133,
+            "CA_distance_A": 12.77861213684082
+          }
+        ]
+      },
+      {
+        "chain": "B",
+        "length": 17,
+        "gaps": [
+          {
+            "from": 104,
+            "to": 112,
+            "CA_distance_A": 9.640406608581543
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "/tmp/tnf/neighbour_results/input/neighbour24.pdb",
+    "sha256": "524b300fce142bf4118373e7b54b815d27e63514ff98d4145016c4404fbc1d62",
+    "chains": [
+      {
+        "chain": "A",
+        "length": 117,
+        "gaps": [
+          {
+            "from": 6,
+            "to": 13,
+            "CA_distance_A": 10.799469947814941
+          },
+          {
+            "from": 48,
+            "to": 57,
+            "CA_distance_A": 13.065912246704102
+          },
+          {
+            "from": 81,
+            "to": 92,
+            "CA_distance_A": 4.197038650512695
+          },
+          {
+            "from": 122,
+            "to": 132,
+            "CA_distance_A": 12.949897766113281
+          }
+        ]
+      },
+      {
+        "chain": "B",
+        "length": 56,
+        "gaps": [
+          {
+            "from": 78,
+            "to": 95,
+            "CA_distance_A": 5.696804046630859
+          },
+          {
+            "from": 121,
+            "to": 141,
+            "CA_distance_A": 21.614013671875
+          }
+        ]
+      },
+      {
+        "chain": "C",
+        "length": 104,
+        "gaps": [
+          {
+            "from": 26,
+            "to": 47,
+            "CA_distance_A": 11.138832092285156
+          },
+          {
+            "from": 48,
+            "to": 55,
+            "CA_distance_A": 14.714570045471191
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "/tmp/tnf/crop366_final/neighbour366_mig/input/neighbour30.pdb",
+    "sha256": "291acbeb528fd8f1327936685487377cda666421ec0f93f80458c6a2baef2e77",
+    "chains": [
+      {
+        "chain": "A",
+        "length": 152,
+        "gaps": []
+      },
+      {
+        "chain": "B",
+        "length": 79,
+        "gaps": [
+          {
+            "from": 18,
+            "to": 34,
+            "CA_distance_A": 11.682665824890137
+          },
+          {
+            "from": 34,
+            "to": 57,
+            "CA_distance_A": 18.275110244750977
+          },
+          {
+            "from": 80,
+            "to": 92,
+            "CA_distance_A": 6.178029537200928
+          },
+          {
+            "from": 123,
+            "to": 134,
+            "CA_distance_A": 15.198371887207031
+          }
+        ]
+      },
+      {
+        "chain": "C",
+        "length": 135,
+        "gaps": [
+          {
+            "from": 29,
+            "to": 41,
+            "CA_distance_A": 13.732937812805176
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "/tmp/tnf/full_results/output/unmodified_control_complex.pdb",
+    "model": 1,
+    "target_length": 456,
+    "binder_length": 65,
+    "sequence_sha256": "55ef975299fc0f22ab533da239f6169f8cbcf1663fee42dba3f7f1b37cb9cbd1",
+    "min_heavy_distance_A": 5.389831379081792,
+    "pairs_under2A": 0,
+    "binder_residues_under4A": 0
+  },
+  {
+    "file": "/tmp/tnf/full_results/output/unmodified_control_complex.pdb",
+    "model": 2,
+    "target_length": 456,
+    "binder_length": 65,
+    "sequence_sha256": "55ef975299fc0f22ab533da239f6169f8cbcf1663fee42dba3f7f1b37cb9cbd1",
+    "min_heavy_distance_A": 10.630114975820977,
+    "pairs_under2A": 0,
+    "binder_residues_under4A": 0
+  },
+  {
+    "file": "/tmp/tnf/full_results/output/mpnn_repair_02_complex.pdb",
+    "model": 1,
+    "target_length": 456,
+    "binder_length": 65,
+    "sequence_sha256": "7123471d0852d19dfc13e0a0e1d0547a1d9becafefe3b41e0b8b47bd9ff074dc",
+    "min_heavy_distance_A": 6.784618616346505,
+    "pairs_under2A": 0,
+    "binder_residues_under4A": 0
+  },
+  {
+    "file": "/tmp/tnf/full_results/output/mpnn_repair_02_complex.pdb",
+    "model": 2,
+    "target_length": 456,
+    "binder_length": 65,
+    "sequence_sha256": "7123471d0852d19dfc13e0a0e1d0547a1d9becafefe3b41e0b8b47bd9ff074dc",
+    "min_heavy_distance_A": 9.690506850451461,
+    "pairs_under2A": 0,
+    "binder_residues_under4A": 0
+  },
+  {
+    "file": "/tmp/tnf/neighbour_results/output/trajectory01_repredicted.pdb",
+    "model": 1,
+    "target_length": 456,
+    "binder_length": 50,
+    "sequence_sha256": "1914f6fd04bd1ae5add590a65b2c5a4a94e618ab1256d589567637c2df3b8b20",
+    "min_heavy_distance_A": 6.20479303907041,
+    "pairs_under2A": 0,
+    "binder_residues_under4A": 0
+  },
+  {
+    "file": "/tmp/tnf/neighbour_results/output/trajectory01_repredicted.pdb",
+    "model": 2,
+    "target_length": 456,
+    "binder_length": 50,
+    "sequence_sha256": "1914f6fd04bd1ae5add590a65b2c5a4a94e618ab1256d589567637c2df3b8b20",
+    "min_heavy_distance_A": 9.879536262291214,
+    "pairs_under2A": 0,
+    "binder_residues_under4A": 0
+  },
+  {
+    "file": "/tmp/tnf/crop366_final/neighbour366_mig/output/trajectory01_repredicted.pdb",
+    "model": 1,
+    "target_length": 456,
+    "binder_length": 50,
+    "sequence_sha256": "bd70aa0e6f42d41a90f46f592b7d7ad09774a03d751db285c62766d5ac922eb8",
+    "min_heavy_distance_A": 4.364095584255544,
+    "pairs_under2A": 0,
+    "binder_residues_under4A": 0
+  },
+  {
+    "file": "/tmp/tnf/crop366_final/neighbour366_mig/output/trajectory01_repredicted.pdb",
+    "model": 2,
+    "target_length": 456,
+    "binder_length": 50,
+    "sequence_sha256": "bd70aa0e6f42d41a90f46f592b7d7ad09774a03d751db285c62766d5ac922eb8",
+    "min_heavy_distance_A": 6.035622277335409,
+    "pairs_under2A": 0,
+    "binder_residues_under4A": 0
+  }
+]

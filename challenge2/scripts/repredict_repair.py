@@ -24,10 +24,10 @@ for mode in ('alone','complex'):
  else:model.prep_inputs(pdb_filename=a.target,chain=a.target_chains,binder_len=len(control),rm_target_seq=False)
  for name,seq in seqs:
   model.predict(seq=seq,num_models=2,num_recycles=3,verbose=False,seed=17001)
-  lg=model.aux['log'];fn=out/f'{name}_{mode}.pdb';model.save_pdb(str(fn))
-  r=dict(name=name,mode=mode,sequence=seq,plddt=float(lg['plddt']),ptm=float(lg.get('ptm',float('nan'))),i_pae_normalized=float(lg.get('i_pae',float('nan'))),i_ptm=float(lg.get('i_ptm',float('nan'))),pdb=str(fn))
-  records.append(r);print('PREDICT',json.dumps(r),flush=True)
- json.dump(dict(pae_source=inspect.getsource(get_pae_loss),predictions=records),open(out/'predictions.json','w'),indent=2)
+  lg=model.aux['log'];fn=out/f'{name}_{mode}.pdb';model.save_pdb(str(fn), get_best=False)
+  r=dict(name=name,mode=mode,sequence=seq,plddt=float(lg['plddt']),ptm=float(lg['ptm']) if 'ptm' in lg else None,i_pae_normalized=float(lg['i_pae']) if 'i_pae' in lg else None,i_ptm=float(lg['i_ptm']) if 'i_ptm' in lg else None,pdb=str(fn))
+  records.append(r);print('PREDICT',json.dumps(r, allow_nan=False),flush=True)
+ json.dump(dict(pae_source=inspect.getsource(get_pae_loss),predictions=records),open(out/'predictions.json','w'),indent=2,allow_nan=False)
 # Binder CA alignment compares shape, not interface pose. Require equal residue counts.
 parser=PDBParser(QUIET=True)
 for name,seq in seqs:

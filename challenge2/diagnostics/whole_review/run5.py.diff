@@ -1,0 +1,11 @@
+--- a/challenge2/scripts/run5.py
++++ b/challenge2/scripts/run5.py
+@@ -93,7 +93,7 @@
+         for i in c: s[i]='H'
+         s=''.join(s)
+         af.predict(seq=s, num_models=2, num_recycles=3, verbose=False)
+-        lg=af.aux['log']; af.save_pdb('tmp.pdb')
++        lg=af.aux['log']; af.save_pdb('tmp.pdb', get_best=False)
+         r_=dict(parent=k,pos=list(c),seq=s,plddt=round(lg['plddt'],3),i_pae=round(lg['i_pae'],3),i_ptm=round(lg['i_ptm'],3),hisCat=hiscat(open('tmp.pdb').read(),len(s)))
+         res.append(r_); print('HIS',r_,flush=True)
+ json.dump(res,open('results5.json','w'))

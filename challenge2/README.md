@@ -1,3 +1,5 @@
+> Historical planning/results text below is superseded by [LATEST_STATUS.md](LATEST_STATUS.md), updated11October2026. No supported pH-switch binder or submission.
+
 # Challenge 2 - TNF-alpha (Anthropic x Adaptyv 2026, Proteinbase)
 
 Goal: design a de novo binder to the soluble human TNF-alpha trimer
