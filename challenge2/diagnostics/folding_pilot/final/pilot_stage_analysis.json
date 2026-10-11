@@ -1,0 +1,74 @@
+[
+  {
+    "arm": "baseline",
+    "stage": "soft",
+    "sequence": "WQEQQITGMAFPIKNNYFFDNEAVQWFRDETDSTGNARNRTHHWMPFHYS",
+    "plddt": 0.33907967805862427,
+    "i_pae": 0.8673103451728821,
+    "intra": 0.5677466988563538,
+    "offdiagonal_intra_A": 17.95423126220703,
+    "i_ptm": 0.15680310130119324,
+    "con": 4.368396759033203,
+    "i_con": 5.528184413909912
+  },
+  {
+    "arm": "baseline",
+    "stage": "temp",
+    "sequence": "QQEQQITGMAMGIWNNYFFDNEAQQWFRDETDSTGNARNRTRHWMPTHLS",
+    "plddt": 0.32191240787506104,
+    "i_pae": 0.8469499945640564,
+    "intra": 0.5867690443992615,
+    "offdiagonal_intra_A": 18.555959701538086,
+    "i_ptm": 0.15951107442378998,
+    "con": 4.297051906585693,
+    "i_con": 5.252857208251953
+  },
+  {
+    "arm": "baseline",
+    "stage": "optimized",
+    "sequence": "QQEQQITGMAMGIWNNYFFDNEAQQWFRDETDSTGNARNRTRHWMPTHTS",
+    "plddt": 0.30155032873153687,
+    "i_pae": 0.8415288329124451,
+    "intra": 0.5861279368400574,
+    "offdiagonal_intra_A": 18.53567886352539,
+    "i_ptm": 0.1563607156276703,
+    "con": 4.209595203399658,
+    "i_con": 5.222568511962891
+  },
+  {
+    "arm": "folding",
+    "stage": "soft",
+    "sequence": "WQEDQIYGFDFPIWNLYIFDNEAGQWFRDPNDSTGNARNRTHHWMYFNYG",
+    "plddt": 0.34582430124282837,
+    "i_pae": 0.8653459548950195,
+    "intra": 0.5707317590713501,
+    "offdiagonal_intra_A": 18.04865837097168,
+    "i_ptm": 0.15608391165733337,
+    "con": 4.643813610076904,
+    "i_con": 5.1501641273498535
+  },
+  {
+    "arm": "folding",
+    "stage": "temp",
+    "sequence": "WWEDQIYGHDMGIWNLSIFDNEANQWKRDPNDSTGNAANRTHHWMYFHYG",
+    "plddt": 0.32426726818084717,
+    "i_pae": 0.840400218963623,
+    "intra": 0.5722296237945557,
+    "offdiagonal_intra_A": 18.096036911010742,
+    "i_ptm": 0.15722694993019104,
+    "con": 4.5687336921691895,
+    "i_con": 5.278044700622559
+  },
+  {
+    "arm": "folding",
+    "stage": "optimized",
+    "sequence": "WWEDQIYGHDMGIWNLSIFDNEANQWKRDPNDSTGNAANRTHHGMYFHYG",
+    "plddt": 0.2822278141975403,
+    "i_pae": 0.8312510251998901,
+    "intra": 0.5864036679267883,
+    "offdiagonal_intra_A": 18.544403076171875,
+    "i_ptm": 0.15227574110031128,
+    "con": 4.489104270935059,
+    "i_con": 5.091806888580322
+  }
+]
