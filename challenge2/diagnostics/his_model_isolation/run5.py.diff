@@ -1,0 +1,33 @@
+--- a/challenge2/scripts/run5.py
++++ b/challenge2/scripts/run5.py
+@@ -55,19 +55,8 @@
+     print('AF His bias set',flush=True)
+ except Exception as e: print('no AF bias',e,flush=True)
+ rows=[]; k=0
+-def hiscat(pdb_str, blen):
+-    # binder is last chain; count binder His whose side chain atoms are within 5A of target Lys/Arg/His side chain N
+-    ch={}
+-    for l in pdb_str.splitlines():
+-        if l.startswith('ATOM'): ch.setdefault(l[21],[]).append((l[17:20],int(l[22:26]),l[12:16].strip(),np.array([float(l[30:38]),float(l[38:46]),float(l[46:54])])))
+-    names=sorted(ch); b=ch[names[-1]]; tg=[a for n in names[:-1] for a in ch[n]]
+-    cat=[a for a in tg if a[0] in('LYS','ARG','HIS') and a[2] in('NZ','NH1','NH2','NE','ND1','NE2')]
+-    C=np.array([a[3] for a in cat]) if cat else np.zeros((0,3))
+-    n=0
+-    for r in sorted({a[1] for a in b if a[0]=='HIS'}):
+-        ne=[a[3] for a in b if a[1]==r and a[2] in('ND1','NE2')]
+-        if len(C) and min(np.linalg.norm(C-x,axis=1).min() for x in ne)<5.0: n+=1
+-    return n
++from his_contacts import conservative_count as hiscat
++
+ import itertools, random, json
+ random.seed(1)
+ three={'ALA':'A','ARG':'R','ASN':'N','ASP':'D','CYS':'C','GLN':'Q','GLU':'E','GLY':'G','HIS':'H','ILE':'I','LEU':'L','LYS':'K','MET':'M','PHE':'F','PRO':'P','SER':'S','THR':'T','TRP':'W','TYR':'Y','VAL':'V'}
+@@ -94,7 +83,7 @@
+         s=''.join(s)
+         af.predict(seq=s, num_models=2, num_recycles=3, verbose=False)
+         lg=af.aux['log']; af.save_pdb('tmp.pdb', get_best=False)
+-        r_=dict(parent=k,pos=list(c),seq=s,plddt=round(lg['plddt'],3),i_pae=round(lg['i_pae'],3),i_ptm=round(lg['i_ptm'],3),hisCat=hiscat(open('tmp.pdb').read(),len(s)))
++        r_=dict(parent=k,pos=list(c),seq=s,plddt=round(lg['plddt'],3),i_pae=round(lg['i_pae'],3),i_ptm=round(lg['i_ptm'],3),hisCat=hiscat(open('tmp.pdb').read(),len(s)),hisCat_rule='minimum_per_model_5A_proximity')
+         res.append(r_); print('HIS',r_,flush=True)
+ json.dump(res,open('results5.json','w'))
+ print('DONE5',flush=True)

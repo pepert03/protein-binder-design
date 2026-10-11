@@ -1,0 +1,68 @@
+{
+  "unmodified_control_complex.pdb": [
+    {
+      "model": 1,
+      "binder_chain": "B",
+      "target_chains": [
+        "A"
+      ],
+      "his_count_within_cutoff": 0,
+      "cutoff_A": 5.0,
+      "contacts": []
+    },
+    {
+      "model": 2,
+      "binder_chain": "B",
+      "target_chains": [
+        "A"
+      ],
+      "his_count_within_cutoff": 0,
+      "cutoff_A": 5.0,
+      "contacts": []
+    }
+  ],
+  "mpnn_repair_02_complex.pdb": [
+    {
+      "model": 1,
+      "binder_chain": "B",
+      "target_chains": [
+        "A"
+      ],
+      "his_count_within_cutoff": 0,
+      "cutoff_A": 5.0,
+      "contacts": []
+    },
+    {
+      "model": 2,
+      "binder_chain": "B",
+      "target_chains": [
+        "A"
+      ],
+      "his_count_within_cutoff": 0,
+      "cutoff_A": 5.0,
+      "contacts": []
+    }
+  ],
+  "crop366_full": [
+    {
+      "model": 1,
+      "binder_chain": "B",
+      "target_chains": [
+        "A"
+      ],
+      "his_count_within_cutoff": 0,
+      "cutoff_A": 5.0,
+      "contacts": []
+    },
+    {
+      "model": 2,
+      "binder_chain": "B",
+      "target_chains": [
+        "A"
+      ],
+      "his_count_within_cutoff": 0,
+      "cutoff_A": 5.0,
+      "contacts": []
+    }
+  ]
+}
