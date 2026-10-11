@@ -1,0 +1,58 @@
+{
+  "sequence": "QQEQQITGMAMGIWNNYFFDNEAQQWFRDETDSTGNARNRTRHWMPTHTS",
+  "repredict_log": {
+    "con": 4.3246073722839355,
+    "exp_res": 0.4406737983226776,
+    "i_con": 5.8120832443237305,
+    "i_pae": 0.9132869839668274,
+    "pae": 0.880230188369751,
+    "plddt": 0.30935215950012207,
+    "seq_ent": 2.712939977645874,
+    "loss": 5.881148338317871,
+    "i_ptm": 0.15971088409423828,
+    "ptm": 0.8483572006225586,
+    "hard": 1.0,
+    "soft": 0.0,
+    "temp": 1.0,
+    "recycles": 3.0
+  },
+  "pae_source": "def get_pae_loss(outputs, mask_1d=None, mask_1b=None, mask_2d=None):\n  p = get_pae(outputs) / 31.0\n  p = (p + p.T) / 2\n  L = p.shape[0]\n  if mask_1d is None: mask_1d = jnp.ones(L)\n  if mask_1b is None: mask_1b = jnp.ones(L)\n  if mask_2d is None: mask_2d = jnp.ones((L,L))\n  mask_2d = mask_2d * mask_1d[:,None] * mask_1b[None,:]\n  return mask_loss(p, mask_2d)\n",
+  "clash_audit": [
+    {
+      "pdb": "trajectory01_optimized.pdb",
+      "model": 0,
+      "target_residues": 366,
+      "binder_residues": 50,
+      "min_heavy_distance_A": 3.467654898847457,
+      "pairs_under2A": 0,
+      "binder_residues_under4A": 1
+    },
+    {
+      "pdb": "trajectory01_repredicted.pdb",
+      "model": 0,
+      "target_residues": 456,
+      "binder_residues": 50,
+      "min_heavy_distance_A": 4.364095584255544,
+      "pairs_under2A": 0,
+      "binder_residues_under4A": 0
+    },
+    {
+      "pdb": "trajectory01_repredicted.pdb",
+      "model": 1,
+      "target_residues": 456,
+      "binder_residues": 50,
+      "min_heavy_distance_A": 6.035622277335409,
+      "pairs_under2A": 0,
+      "binder_residues_under4A": 0
+    },
+    {
+      "pdb": "trajectory01_optimized.pdb",
+      "model": 0,
+      "audit_type": "omitted_full_trimer_after_target_fit",
+      "target_fit_rmsd_A": 0.6373605969971022,
+      "min_heavy_distance_A": 25.830267973840918,
+      "pairs_under2A": 0,
+      "binder_residues_under4A": 0
+    }
+  ]
+}
