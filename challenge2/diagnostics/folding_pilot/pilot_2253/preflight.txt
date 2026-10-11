@@ -1,0 +1,25 @@
+GPU 0: NVIDIA H200 (UUID: GPU-5aae8e47-e2f0-61e6-6ba9-14105ccf5232)
+  MIG 1g.18gb     Device  0: (UUID: MIG-907be2ba-6091-5ac6-87ad-bc229ea33e97)
+ERROR:2026-10-11 21:17:03,265:jax._src.xla_bridge:444: Jax plugin configuration error: Exception when calling jax_plugins.xla_cuda12.initialize()
+Traceback (most recent call last):
+  File "/home/202111246/tnf/venv/lib/python3.10/site-packages/jax_plugins/xla_cuda12/__init__.py", line 197, in _version_check
+    version = get_version()
+RuntimeError: jaxlib/cuda/versions_helpers.cc:81: operation cusparseGetProperty(MAJOR_VERSION, &major) failed: The cuSPARSE library was not found.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/202111246/tnf/venv/lib/python3.10/site-packages/jax/_src/xla_bridge.py", line 442, in discover_pjrt_plugins
+    plugin_module.initialize()
+  File "/home/202111246/tnf/venv/lib/python3.10/site-packages/jax_plugins/xla_cuda12/__init__.py", line 324, in initialize
+    _check_cuda_versions(raise_on_first_error=True)
+  File "/home/202111246/tnf/venv/lib/python3.10/site-packages/jax_plugins/xla_cuda12/__init__.py", line 262, in _check_cuda_versions
+    _version_check("cuSPARSE", cuda_versions.cusparse_get_version,
+  File "/home/202111246/tnf/venv/lib/python3.10/site-packages/jax_plugins/xla_cuda12/__init__.py", line 201, in _version_check
+    raise RuntimeError(err_msg) from e
+RuntimeError: Unable to load cuSPARSE. Is it installed?
+WARNING:2026-10-11 21:17:03,268:jax._src.xla_bridge:794: An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+0.6.2 [CpuDevice(id=0)]
+[None]
+f6b9c0f7211643e2a52f65c855de076b3347fab9163755d651b5d88defb16414  full1tnf.pdb
+291acbeb528fd8f1327936685487377cda666421ec0f93f80458c6a2baef2e77  neighbour30.pdb

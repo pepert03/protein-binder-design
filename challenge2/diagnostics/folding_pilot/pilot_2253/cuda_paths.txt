@@ -1,0 +1,12 @@
+../venv/lib/python3.10/site-packages/nvidia/nvjitlink/lib
+../venv/lib/python3.10/site-packages/nvidia/nvshmem/lib
+../venv/lib/python3.10/site-packages/nvidia/cusolver/lib
+../venv/lib/python3.10/site-packages/nvidia/cuda_cccl/lib
+../venv/lib/python3.10/site-packages/nvidia/cublas/lib
+../venv/lib/python3.10/site-packages/nvidia/cuda_nvrtc/lib
+../venv/lib/python3.10/site-packages/nvidia/cuda_runtime/lib
+../venv/lib/python3.10/site-packages/nvidia/cusparse/lib
+../venv/lib/python3.10/site-packages/nvidia/nccl/lib
+../venv/lib/python3.10/site-packages/nvidia/cufft/lib
+../venv/lib/python3.10/site-packages/nvidia/cudnn/lib
+../venv/lib/python3.10/site-packages/nvidia/cuda_cupti/lib

@@ -1,0 +1,4 @@
+0.6.2 [CudaDevice(id=0)]
+[{'num_allocs': 0, 'bytes_in_use': 0, 'peak_bytes_in_use': 0, 'largest_alloc_size': 0, 'bytes_limit': 12884901888, 'bytes_reserved': 0, 'peak_bytes_reserved': 0, 'largest_free_block_bytes': 0, 'pool_bytes': 0, 'peak_pool_bytes': 0}]
+-rw-r--r-- 1 202111246 202111246 287716 Oct 11 21:16 full1tnf.pdb
+-rw-r--r-- 1 202111246 202111246 231664 Oct 11 21:16 neighbour30.pdb

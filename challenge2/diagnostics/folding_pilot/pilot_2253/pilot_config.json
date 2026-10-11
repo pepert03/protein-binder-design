@@ -1,0 +1,35 @@
+{
+  "seed": 32101,
+  "target_length": 366,
+  "binder_length": 50,
+  "model": "model_1_ptm",
+  "optimization_recycles": 0,
+  "stages": [
+    100,
+    30,
+    10
+  ],
+  "arms": {
+    "baseline": {
+      "plddt": 0.1,
+      "binder_intra_pae": 0.0
+    },
+    "folding": {
+      "plddt": 0.5,
+      "binder_intra_pae": 0.4
+    }
+  },
+  "shared_weights": {
+    "pae": 0.1,
+    "i_pae": 0.5,
+    "con": 0.5,
+    "i_con": 1.0
+  },
+  "input_sha256": {
+    "full1tnf.pdb": "f6b9c0f7211643e2a52f65c855de076b3347fab9163755d651b5d88defb16414",
+    "neighbour30.pdb": "291acbeb528fd8f1327936685487377cda666421ec0f93f80458c6a2baef2e77"
+  },
+  "jax": "0.6.2",
+  "devices": "[CudaDevice(id=0)]",
+  "caveat": "joint folding-emphasis intervention; no causal isolation of two weights; no histidine bias, H allowed"
+}

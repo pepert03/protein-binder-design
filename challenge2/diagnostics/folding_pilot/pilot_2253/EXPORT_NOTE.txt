@@ -1,0 +1,1 @@
+Archive export note: `process_status.txt` is preserved verbatim from the supplied snapshot and reports the process state only when that file was captured. It does not establish the process's current state. The archive contains completed baseline outputs; the folding output directory was empty, so no folding-arm result is included. No model weights or checkpoints are included.

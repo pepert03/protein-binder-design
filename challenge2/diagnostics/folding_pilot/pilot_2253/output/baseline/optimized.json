@@ -1,0 +1,47 @@
+{
+  "sequence": "QQEQQITGMAMGIWNNYFFDNEAQQWFRDETDSTGNARNRTRHWMPTHTS",
+  "sequence_sha256": "bd70aa0e6f42d41a90f46f592b7d7ad09774a03d751db285c62766d5ac922eb8",
+  "aggregate_log": {
+    "binder_intra_pae": 0.5861279368400574,
+    "con": 4.209595203399658,
+    "exp_res": 0.3542116582393646,
+    "hard": 1.0,
+    "i_con": 5.222568511962891,
+    "i_pae": 0.8415288329124451,
+    "i_ptm": 0.1563607156276703,
+    "loss": 7.903402805328369,
+    "pae": 0.8542746901512146,
+    "plddt": 0.30155032873153687,
+    "ptm": 0.8254417181015015,
+    "recycles": 0.0,
+    "seq_ent": 0.014034169726073742,
+    "soft": 1.0,
+    "temp": 0.01
+  },
+  "per_model": [
+    {
+      "model": 1,
+      "scopes": {
+        "binder_intra": {
+          "mean_A": 18.169965738809108,
+          "normalized_by31": 0.5861279270583583,
+          "pair_count": 2500,
+          "symmetrized": true
+        },
+        "binder_to_entire_target": {
+          "mean_A": 27.61811325349443,
+          "normalized_by31": 0.8909068791449816,
+          "pair_count": 18300,
+          "symmetrized": true
+        },
+        "binder_to_hotspots": {
+          "mean_A": 26.08739653996059,
+          "normalized_by31": 0.84152892064389,
+          "pair_count": 350,
+          "symmetrized": true
+        }
+      },
+      "binder_plddt": 0.30155035853385925
+    }
+  ]
+}
