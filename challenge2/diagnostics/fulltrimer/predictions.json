@@ -1,0 +1,25 @@
+{
+  "pae_source": "def get_pae_loss(outputs, mask_1d=None, mask_1b=None, mask_2d=None):\n  p = get_pae(outputs) / 31.0\n  p = (p + p.T) / 2\n  L = p.shape[0]\n  if mask_1d is None: mask_1d = jnp.ones(L)\n  if mask_1b is None: mask_1b = jnp.ones(L)\n  if mask_2d is None: mask_2d = jnp.ones((L,L))\n  mask_2d = mask_2d * mask_1d[:,None] * mask_1b[None,:]\n  return mask_loss(p, mask_2d)\n",
+  "predictions": [
+    {
+      "name": "unmodified_control",
+      "mode": "complex",
+      "sequence": "CKDVIIIKHPYPVTPDPRWHQTVQRYRERAEREELLGDGVRNGCLCCLLLLLLLILLLKELTKVP",
+      "plddt": 0.6312460899353027,
+      "ptm": 0.8286725282669067,
+      "i_pae_normalized": 0.9139038324356079,
+      "i_ptm": 0.14453676342964172,
+      "pdb": "output/unmodified_control_complex.pdb"
+    },
+    {
+      "name": "mpnn_repair_02",
+      "mode": "complex",
+      "sequence": "CKDVIIIKHPYPVTPDPRWHETVQRYRERAEREEEEGDRERRGREEEERRRREEEERRREEELVP",
+      "plddt": 0.710483968257904,
+      "ptm": 0.8278539180755615,
+      "i_pae_normalized": 0.9130752086639404,
+      "i_ptm": 0.15627580881118774,
+      "pdb": "output/mpnn_repair_02_complex.pdb"
+    }
+  ]
+}

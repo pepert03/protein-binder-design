@@ -1,0 +1,568 @@
+{
+  "source_pdb": "/tmp/tnf/regenerated/model1_candidate.pdb",
+  "binder_chain": "B",
+  "target_chains": [
+    "A"
+  ],
+  "control_sequence": "CKDVIIIKHPYPVTPDPRWHQTVQRYRERAEREELLGDGVRNGCLCCLLLLLLLILLLKELTKVP",
+  "weight_family": "original",
+  "fix_pos": "A,B1,B2,B3,B4,B5,B6,B7,B8,B9,B10,B11,B12,B13,B14,B15,B16,B17,B18,B19,B20,B22,B23,B24,B25,B26,B27,B28,B29,B30,B31,B32,B33,B34,B37,B38,B41,B43",
+  "audit": [
+    {
+      "index0": 0,
+      "resnum": 1,
+      "aa": "C",
+      "target_distance": 2.227055311203003,
+      "binder_sasa_A2": 167.24874190448878,
+      "fixed": true
+    },
+    {
+      "index0": 1,
+      "resnum": 2,
+      "aa": "K",
+      "target_distance": 5.524576663970947,
+      "binder_sasa_A2": 194.84338593300743,
+      "fixed": true
+    },
+    {
+      "index0": 2,
+      "resnum": 3,
+      "aa": "D",
+      "target_distance": 2.6163887977600098,
+      "binder_sasa_A2": 139.65995380467638,
+      "fixed": true
+    },
+    {
+      "index0": 3,
+      "resnum": 4,
+      "aa": "V",
+      "target_distance": 3.2538182735443115,
+      "binder_sasa_A2": 97.78633134262057,
+      "fixed": true
+    },
+    {
+      "index0": 4,
+      "resnum": 5,
+      "aa": "I",
+      "target_distance": 2.6346213817596436,
+      "binder_sasa_A2": 140.3920454239277,
+      "fixed": true
+    },
+    {
+      "index0": 5,
+      "resnum": 6,
+      "aa": "I",
+      "target_distance": 2.828415632247925,
+      "binder_sasa_A2": 124.3984108528025,
+      "fixed": true
+    },
+    {
+      "index0": 6,
+      "resnum": 7,
+      "aa": "I",
+      "target_distance": 3.088254928588867,
+      "binder_sasa_A2": 129.65956067154565,
+      "fixed": true
+    },
+    {
+      "index0": 7,
+      "resnum": 8,
+      "aa": "K",
+      "target_distance": 4.28517484664917,
+      "binder_sasa_A2": 176.25067406045557,
+      "fixed": true
+    },
+    {
+      "index0": 8,
+      "resnum": 9,
+      "aa": "H",
+      "target_distance": 3.0361428260803223,
+      "binder_sasa_A2": 141.29839490448836,
+      "fixed": true
+    },
+    {
+      "index0": 9,
+      "resnum": 10,
+      "aa": "P",
+      "target_distance": 4.608799934387207,
+      "binder_sasa_A2": 112.11957136447047,
+      "fixed": true
+    },
+    {
+      "index0": 10,
+      "resnum": 11,
+      "aa": "Y",
+      "target_distance": 4.904898643493652,
+      "binder_sasa_A2": 170.4405497750535,
+      "fixed": true
+    },
+    {
+      "index0": 11,
+      "resnum": 12,
+      "aa": "P",
+      "target_distance": 5.185307502746582,
+      "binder_sasa_A2": 125.1711672473619,
+      "fixed": true
+    },
+    {
+      "index0": 12,
+      "resnum": 13,
+      "aa": "V",
+      "target_distance": 2.067666530609131,
+      "binder_sasa_A2": 107.51374520689555,
+      "fixed": true
+    },
+    {
+      "index0": 13,
+      "resnum": 14,
+      "aa": "T",
+      "target_distance": 3.083932638168335,
+      "binder_sasa_A2": 123.16346334704699,
+      "fixed": true
+    },
+    {
+      "index0": 14,
+      "resnum": 15,
+      "aa": "P",
+      "target_distance": 4.037517070770264,
+      "binder_sasa_A2": 52.318626353893144,
+      "fixed": true
+    },
+    {
+      "index0": 15,
+      "resnum": 16,
+      "aa": "D",
+      "target_distance": 4.476222515106201,
+      "binder_sasa_A2": 89.11755880438166,
+      "fixed": true
+    },
+    {
+      "index0": 16,
+      "resnum": 17,
+      "aa": "P",
+      "target_distance": 7.662213325500488,
+      "binder_sasa_A2": 98.48083694736437,
+      "fixed": true
+    },
+    {
+      "index0": 17,
+      "resnum": 18,
+      "aa": "R",
+      "target_distance": 6.822407245635986,
+      "binder_sasa_A2": 184.77815032750664,
+      "fixed": true
+    },
+    {
+      "index0": 18,
+      "resnum": 19,
+      "aa": "W",
+      "target_distance": 2.127089262008667,
+      "binder_sasa_A2": 149.76631914119798,
+      "fixed": true
+    },
+    {
+      "index0": 19,
+      "resnum": 20,
+      "aa": "H",
+      "target_distance": 6.236501216888428,
+      "binder_sasa_A2": 89.95594935265986,
+      "fixed": true
+    },
+    {
+      "index0": 20,
+      "resnum": 21,
+      "aa": "Q",
+      "target_distance": 8.081146240234375,
+      "binder_sasa_A2": 115.69562114931054,
+      "fixed": false
+    },
+    {
+      "index0": 21,
+      "resnum": 22,
+      "aa": "T",
+      "target_distance": 3.786428928375244,
+      "binder_sasa_A2": 52.41900652236065,
+      "fixed": true
+    },
+    {
+      "index0": 22,
+      "resnum": 23,
+      "aa": "V",
+      "target_distance": 3.7792108058929443,
+      "binder_sasa_A2": 48.30512864159665,
+      "fixed": true
+    },
+    {
+      "index0": 23,
+      "resnum": 24,
+      "aa": "Q",
+      "target_distance": 6.9532880783081055,
+      "binder_sasa_A2": 104.23040389277581,
+      "fixed": true
+    },
+    {
+      "index0": 24,
+      "resnum": 25,
+      "aa": "R",
+      "target_distance": 4.364494800567627,
+      "binder_sasa_A2": 119.63687479694508,
+      "fixed": true
+    },
+    {
+      "index0": 25,
+      "resnum": 26,
+      "aa": "Y",
+      "target_distance": 2.0922744274139404,
+      "binder_sasa_A2": 143.20977757404424,
+      "fixed": true
+    },
+    {
+      "index0": 26,
+      "resnum": 27,
+      "aa": "R",
+      "target_distance": 3.3713533878326416,
+      "binder_sasa_A2": 156.11677223027624,
+      "fixed": true
+    },
+    {
+      "index0": 27,
+      "resnum": 28,
+      "aa": "E",
+      "target_distance": 6.2996134757995605,
+      "binder_sasa_A2": 102.13675858382925,
+      "fixed": true
+    },
+    {
+      "index0": 28,
+      "resnum": 29,
+      "aa": "R",
+      "target_distance": 4.300179481506348,
+      "binder_sasa_A2": 121.96277176758622,
+      "fixed": true
+    },
+    {
+      "index0": 29,
+      "resnum": 30,
+      "aa": "A",
+      "target_distance": 3.0862746238708496,
+      "binder_sasa_A2": 63.60002274108102,
+      "fixed": true
+    },
+    {
+      "index0": 30,
+      "resnum": 31,
+      "aa": "E",
+      "target_distance": 5.466026306152344,
+      "binder_sasa_A2": 114.03684766184449,
+      "fixed": true
+    },
+    {
+      "index0": 31,
+      "resnum": 32,
+      "aa": "R",
+      "target_distance": 7.676679611206055,
+      "binder_sasa_A2": 159.94305615316,
+      "fixed": true
+    },
+    {
+      "index0": 32,
+      "resnum": 33,
+      "aa": "E",
+      "target_distance": 5.663256645202637,
+      "binder_sasa_A2": 120.85621487039755,
+      "fixed": true
+    },
+    {
+      "index0": 33,
+      "resnum": 34,
+      "aa": "E",
+      "target_distance": 2.9264352321624756,
+      "binder_sasa_A2": 125.45441324100955,
+      "fixed": true
+    },
+    {
+      "index0": 34,
+      "resnum": 35,
+      "aa": "L",
+      "target_distance": 8.65356731414795,
+      "binder_sasa_A2": 128.6536478366074,
+      "fixed": false
+    },
+    {
+      "index0": 35,
+      "resnum": 36,
+      "aa": "L",
+      "target_distance": 10.594206809997559,
+      "binder_sasa_A2": 110.9656266836951,
+      "fixed": false
+    },
+    {
+      "index0": 36,
+      "resnum": 37,
+      "aa": "G",
+      "target_distance": 8.243470191955566,
+      "binder_sasa_A2": 29.6902873903929,
+      "fixed": true
+    },
+    {
+      "index0": 37,
+      "resnum": 38,
+      "aa": "D",
+      "target_distance": 4.756203651428223,
+      "binder_sasa_A2": 86.02484933248172,
+      "fixed": true
+    },
+    {
+      "index0": 38,
+      "resnum": 39,
+      "aa": "G",
+      "target_distance": 9.801685333251953,
+      "binder_sasa_A2": 40.90529564162511,
+      "fixed": false
+    },
+    {
+      "index0": 39,
+      "resnum": 40,
+      "aa": "V",
+      "target_distance": 11.813453674316406,
+      "binder_sasa_A2": 98.61700613934156,
+      "fixed": false
+    },
+    {
+      "index0": 40,
+      "resnum": 41,
+      "aa": "R",
+      "target_distance": 4.94843864440918,
+      "binder_sasa_A2": 173.934176735034,
+      "fixed": true
+    },
+    {
+      "index0": 41,
+      "resnum": 42,
+      "aa": "N",
+      "target_distance": 9.401389122009277,
+      "binder_sasa_A2": 102.7095714555436,
+      "fixed": false
+    },
+    {
+      "index0": 42,
+      "resnum": 43,
+      "aa": "G",
+      "target_distance": 13.193826675415039,
+      "binder_sasa_A2": 25.10998353153574,
+      "fixed": true
+    },
+    {
+      "index0": 43,
+      "resnum": 44,
+      "aa": "C",
+      "target_distance": 14.189291000366211,
+      "binder_sasa_A2": 70.80333027101462,
+      "fixed": false
+    },
+    {
+      "index0": 44,
+      "resnum": 45,
+      "aa": "L",
+      "target_distance": 10.929302215576172,
+      "binder_sasa_A2": 106.13511381953545,
+      "fixed": false
+    },
+    {
+      "index0": 45,
+      "resnum": 46,
+      "aa": "C",
+      "target_distance": 15.659249305725098,
+      "binder_sasa_A2": 72.26120519146889,
+      "fixed": false
+    },
+    {
+      "index0": 46,
+      "resnum": 47,
+      "aa": "C",
+      "target_distance": 18.057716369628906,
+      "binder_sasa_A2": 79.60830970034257,
+      "fixed": false
+    },
+    {
+      "index0": 47,
+      "resnum": 48,
+      "aa": "L",
+      "target_distance": 16.493432998657227,
+      "binder_sasa_A2": 92.71503425111916,
+      "fixed": false
+    },
+    {
+      "index0": 48,
+      "resnum": 49,
+      "aa": "L",
+      "target_distance": 17.47389030456543,
+      "binder_sasa_A2": 106.27128301151262,
+      "fixed": false
+    },
+    {
+      "index0": 49,
+      "resnum": 50,
+      "aa": "L",
+      "target_distance": 21.47063446044922,
+      "binder_sasa_A2": 103.17518061954682,
+      "fixed": false
+    },
+    {
+      "index0": 50,
+      "resnum": 51,
+      "aa": "L",
+      "target_distance": 22.595125198364258,
+      "binder_sasa_A2": 92.98737263507357,
+      "fixed": false
+    },
+    {
+      "index0": 51,
+      "resnum": 52,
+      "aa": "L",
+      "target_distance": 21.158477783203125,
+      "binder_sasa_A2": 101.30460095537578,
+      "fixed": false
+    },
+    {
+      "index0": 52,
+      "resnum": 53,
+      "aa": "L",
+      "target_distance": 24.25171661376953,
+      "binder_sasa_A2": 101.16843176339859,
+      "fixed": false
+    },
+    {
+      "index0": 53,
+      "resnum": 54,
+      "aa": "L",
+      "target_distance": 27.226423263549805,
+      "binder_sasa_A2": 96.49621746986801,
+      "fixed": false
+    },
+    {
+      "index0": 54,
+      "resnum": 55,
+      "aa": "I",
+      "target_distance": 26.92998504638672,
+      "binder_sasa_A2": 97.68171630725604,
+      "fixed": false
+    },
+    {
+      "index0": 55,
+      "resnum": 56,
+      "aa": "L",
+      "target_distance": 27.348814010620117,
+      "binder_sasa_A2": 104.51897802756393,
+      "fixed": false
+    },
+    {
+      "index0": 56,
+      "resnum": 57,
+      "aa": "L",
+      "target_distance": 30.778989791870117,
+      "binder_sasa_A2": 107.34274203557534,
+      "fixed": false
+    },
+    {
+      "index0": 57,
+      "resnum": 58,
+      "aa": "L",
+      "target_distance": 32.56563186645508,
+      "binder_sasa_A2": 98.88934452329595,
+      "fixed": false
+    },
+    {
+      "index0": 58,
+      "resnum": 59,
+      "aa": "K",
+      "target_distance": 32.06007385253906,
+      "binder_sasa_A2": 127.59411429825775,
+      "fixed": false
+    },
+    {
+      "index0": 59,
+      "resnum": 60,
+      "aa": "E",
+      "target_distance": 34.979835510253906,
+      "binder_sasa_A2": 125.0237762864261,
+      "fixed": false
+    },
+    {
+      "index0": 60,
+      "resnum": 61,
+      "aa": "L",
+      "target_distance": 37.2127685546875,
+      "binder_sasa_A2": 131.45951733286398,
+      "fixed": false
+    },
+    {
+      "index0": 61,
+      "resnum": 62,
+      "aa": "T",
+      "target_distance": 37.83811569213867,
+      "binder_sasa_A2": 106.86265641262437,
+      "fixed": false
+    },
+    {
+      "index0": 62,
+      "resnum": 63,
+      "aa": "K",
+      "target_distance": 36.973907470703125,
+      "binder_sasa_A2": 154.21805646229964,
+      "fixed": false
+    },
+    {
+      "index0": 63,
+      "resnum": 64,
+      "aa": "V",
+      "target_distance": 42.31022262573242,
+      "binder_sasa_A2": 110.9298376601854,
+      "fixed": false
+    },
+    {
+      "index0": 64,
+      "resnum": 65,
+      "aa": "P",
+      "target_distance": 45.68807601928711,
+      "binder_sasa_A2": 155.48014732858218,
+      "fixed": false
+    }
+  ],
+  "samples": [
+    {
+      "name": "mpnn_repair_02",
+      "sequence": "CKDVIIIKHPYPVTPDPRWHETVQRYRERAEREEEEGDRERRGREEEERRRREEEERRREEELVP",
+      "score": 1.073003718512356,
+      "weight_family": "original",
+      "changes": [
+        20,
+        34,
+        35,
+        38,
+        39,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        60,
+        61,
+        62
+      ],
+      "max19_hydrophobic_count": 8
+    }
+  ]
+}
