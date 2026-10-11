@@ -1,0 +1,37 @@
+GRADIENT_SUBBATCH_PATCH def _prep_model(self, **kwargs):
+  '''prep model'''
+  if not hasattr(self,"_model") or self._cfg != self._model["runner"].config:
+    self._cfg.model.global_config.subbatch_size = 1
+    self._model = self._get_model(self._cfg)
+    if sum(self._lengths) > 384:
+      self._cfg.model.global_config.subbatch_size = 1
+      self._model["fn"] = self._get_model(self._cfg)["fn"]
+
+  self._opt = copy_dict(self.opt)  
+  self.restart(**kwargs)
+
+FRESH_CONFIG {"seed": 30101, "binder_len": 50, "target_len": 456, "weights": {"con": 0.5, "exp_res": 0.0, "helix": 0.0, "i_con": 1.0, "i_pae": 0.5, "pae": 0.1, "plddt": 0.1, "seq_ent": 0.0}, "hotspot": [59, 61, 107, 109, 135, 137, 140]}
+MEMORY_CONFIG bfloat16: true
+bfloat16_output: false
+multimer_mode: false
+subbatch_size: 1
+use_dgram: false
+use_remat: true
+zero_init: true
+
+E1011 10:32:11.760588     164 pjrt_stream_executor_client.cc:2916] Execution of replica 0 failed: RESOURCE_EXHAUSTED: Out of memory while trying to allocate 15490948248 bytes. [tf-allocator-allocation-error='']
+Traceback (most recent call last):
+  File "/kaggle/working/tnf_fullmem/input/fresh_design.py", line 32, in <module>
+    t0=time.time();af.run(num_models=1,num_recycles=0,backprop=True)
+                   ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/colabdesign/af/design.py", line 96, in run
+    auxs.append(self._recycle(p, num_recycles=num_recycles, backprop=backprop))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/colabdesign/af/design.py", line 191, in _recycle
+    aux = self._single(model_params, backprop)
+  File "/usr/local/lib/python3.13/dist-packages/colabdesign/af/design.py", line 140, in _single
+    (loss, aux), grad = self._model["grad_fn"](*flags)
+                        ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+jaxlib._jax.XlaRuntimeError: RESOURCE_EXHAUSTED: Out of memory while trying to allocate 15490948248 bytes.
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
