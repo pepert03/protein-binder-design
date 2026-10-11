@@ -1,0 +1,11 @@
+def _prep_model(self, **kwargs):
+  '''prep model'''
+  if not hasattr(self,"_model") or self._cfg != self._model["runner"].config:
+    self._cfg.model.global_config.subbatch_size = None
+    self._model = self._get_model(self._cfg)
+    if sum(self._lengths) > 384:
+      self._cfg.model.global_config.subbatch_size = 4
+      self._model["fn"] = self._get_model(self._cfg)["fn"]
+
+  self._opt = copy_dict(self.opt)  
+  self.restart(**kwargs)
