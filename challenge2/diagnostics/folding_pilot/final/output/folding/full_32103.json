@@ -1,0 +1,58 @@
+{
+  "sequence": "WWEDQIYGHDMGIWNLSIFDNEANQWKRDPNDSTGNAANRTHHGMYFHYG",
+  "sequence_sha256": "34bcdd347d7dc4236c7f919a4dda02e349e3a15815bcd831df701f554d88d992",
+  "aggregate_log": {
+    "con": 4.391880035400391,
+    "exp_res": 0.3007895350456238,
+    "i_con": 5.890180587768555,
+    "i_pae": 0.9151277542114258,
+    "pae": 0.8812044858932495,
+    "plddt": 0.3113844394683838,
+    "seq_ent": 2.712939977645874,
+    "loss": 5.959042549133301,
+    "i_ptm": 0.1580277532339096,
+    "ptm": 0.8482702374458313,
+    "hard": 1.0,
+    "soft": 0.0,
+    "temp": 1.0,
+    "recycles": 3.0
+  },
+  "per_model": [
+    {
+      "model": 1,
+      "scopes": {
+        "binder_intra": {
+          "mean_A": 18.204201290881635,
+          "normalized_by31": 0.5872322997058592,
+          "pair_count": 2500,
+          "symmetrized": true
+        },
+        "binder_to_entire_target": {
+          "mean_A": 27.831480190837592,
+          "normalized_by31": 0.8977896835754062,
+          "pair_count": 22800,
+          "symmetrized": true
+        }
+      },
+      "binder_plddt": 0.28952404856681824
+    },
+    {
+      "model": 2,
+      "scopes": {
+        "binder_intra": {
+          "mean_A": 17.24895140528679,
+          "normalized_by31": 0.5564177872673157,
+          "pair_count": 2500,
+          "symmetrized": true
+        },
+        "binder_to_entire_target": {
+          "mean_A": 28.906441651185354,
+          "normalized_by31": 0.9324658597156565,
+          "pair_count": 22800,
+          "symmetrized": true
+        }
+      },
+      "binder_plddt": 0.33324483036994934
+    }
+  ]
+}

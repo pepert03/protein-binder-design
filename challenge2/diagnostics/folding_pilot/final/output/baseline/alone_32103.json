@@ -1,0 +1,18 @@
+{
+  "sequence": "QQEQQITGMAMGIWNNYFFDNEAQQWFRDETDSTGNARNRTRHWMPTHTS",
+  "aggregate_log": {
+    "con": 4.100862503051758,
+    "exp_res": 0.18237128853797913,
+    "helix": 1.8428001403808594,
+    "pae": 0.4849168658256531,
+    "plddt": 0.5890956819057465,
+    "seq_ent": 2.712939977645874,
+    "loss": 4.100862503051758,
+    "i_ptm": 0.0,
+    "ptm": 0.26865047216415405,
+    "hard": 1.0,
+    "soft": 0.0,
+    "temp": 1.0,
+    "recycles": 3.0
+  }
+}

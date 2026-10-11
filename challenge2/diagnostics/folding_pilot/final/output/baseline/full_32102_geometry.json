@@ -1,0 +1,92 @@
+{
+  "file_sha256": "4f62b932a3c41b048538d54bfb68cbdc610e4364aa0d4bac9113666b2eccb9dd",
+  "binder_chain": "B",
+  "target_chains": [
+    "A"
+  ],
+  "method": "Every MODEL; heavy atoms exclude H/D; strict distances; gaps flagged, not declared covalent errors; Rg is descriptive, not acceptance test",
+  "models": [
+    {
+      "model": 1,
+      "sequence": "QQEQQITGMAMGIWNNYFFDNEAQQWFRDETDSTGNARNRTRHWMPTHTS",
+      "sequence_sha256": "bd70aa0e6f42d41a90f46f592b7d7ad09774a03d751db285c62766d5ac922eb8",
+      "binder_length": 50,
+      "target_residues": 456,
+      "min_heavy_distance_A": 4.364095584255544,
+      "pairs_under2A": 0,
+      "contacts_A": {
+        "4": {
+          "heavy_atom_pairs": 0,
+          "binder_residues": 0,
+          "target_residues": 0
+        },
+        "5": {
+          "heavy_atom_pairs": 1,
+          "binder_residues": 1,
+          "target_residues": 1
+        },
+        "8": {
+          "heavy_atom_pairs": 65,
+          "binder_residues": 7,
+          "target_residues": 8
+        }
+      },
+      "binder_CA_radius_gyration_A": 21.033369064331055,
+      "chain_discontinuities": [
+        {
+          "chain": "A",
+          "from_residue": 152,
+          "to_residue": 208,
+          "CA_distance_A": 15.964786529541016
+        },
+        {
+          "chain": "A",
+          "from_residue": 359,
+          "to_residue": 415,
+          "CA_distance_A": 15.254695892333984
+        }
+      ]
+    },
+    {
+      "model": 2,
+      "sequence": "QQEQQITGMAMGIWNNYFFDNEAQQWFRDETDSTGNARNRTRHWMPTHTS",
+      "sequence_sha256": "bd70aa0e6f42d41a90f46f592b7d7ad09774a03d751db285c62766d5ac922eb8",
+      "binder_length": 50,
+      "target_residues": 456,
+      "min_heavy_distance_A": 6.035622277335409,
+      "pairs_under2A": 0,
+      "contacts_A": {
+        "4": {
+          "heavy_atom_pairs": 0,
+          "binder_residues": 0,
+          "target_residues": 0
+        },
+        "5": {
+          "heavy_atom_pairs": 0,
+          "binder_residues": 0,
+          "target_residues": 0
+        },
+        "8": {
+          "heavy_atom_pairs": 12,
+          "binder_residues": 1,
+          "target_residues": 1
+        }
+      },
+      "binder_CA_radius_gyration_A": 22.05065155029297,
+      "chain_discontinuities": [
+        {
+          "chain": "A",
+          "from_residue": 152,
+          "to_residue": 208,
+          "CA_distance_A": 16.135089874267578
+        },
+        {
+          "chain": "A",
+          "from_residue": 359,
+          "to_residue": 415,
+          "CA_distance_A": 15.419638633728027
+        }
+      ]
+    }
+  ]
+}
