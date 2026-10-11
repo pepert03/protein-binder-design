@@ -1,0 +1,21 @@
+{
+  "sequence": "CKDVIIIKHPYPVTPDPRWHQTVQRYRERAEREELLGDGVRNGCLCCLLLLLLLILLLKELTKVP",
+  "log": {
+    "con": 5.3739776611328125,
+    "exp_res": 0.16563156247138977,
+    "i_con": 4.117947101593018,
+    "i_pae": 0.4318540692329407,
+    "pae": 0.3962319493293762,
+    "plddt": 0.7975428104400635,
+    "seq_ent": 176.3411102294922,
+    "loss": 4.138193130493164,
+    "i_ptm": 0.616439700126648,
+    "ptm": 0.7062923908233643,
+    "hard": 1.0,
+    "soft": 0.0,
+    "temp": 1.0,
+    "recycles": 3.0
+  },
+  "pae_source": "def get_pae_loss(outputs, mask_1d=None, mask_1b=None, mask_2d=None):\n  p = get_pae(outputs) / 31.0\n  p = (p + p.T) / 2\n  L = p.shape[0]\n  if mask_1d is None: mask_1d = jnp.ones(L)\n  if mask_1b is None: mask_1b = jnp.ones(L)\n  if mask_2d is None: mask_2d = jnp.ones((L,L))\n  mask_2d = mask_2d * mask_1d[:,None] * mask_1b[None,:]\n  return mask_loss(p, mask_2d)\n",
+  "mpnn_constructor": "(model_name='v_48_020', backbone_noise=0.0, dropout=0.0, seed=None, verbose=False)"
+}
