@@ -1,0 +1,222 @@
+[
+  {
+    "rank": 1,
+    "sequence": "CKDVIIIKHPDSFQPDPRWHQTHQRYRARAEGQDGGGDGVVVVLLCCLLLLLLLILLLKLLKKFD",
+    "length": 65,
+    "histidines": 3,
+    "cysteines": 3,
+    "hydrophobic_fraction_AVILMFWY": 0.4462,
+    "longest_hydrophobic_run_AVILMFWY": 11,
+    "contains_tail_VVVVLLCCLLLLLLLILLL": true,
+    "full_trimer_validation_of_this_exact_sequence": "not established"
+  },
+  {
+    "rank": 2,
+    "sequence": "CKDVIIHKVPDSFQPDPRWHQTHQRYRARAEGQDGGGDGVVVVLLCCLLLLLLLILLLKLLKKFD",
+    "length": 65,
+    "histidines": 3,
+    "cysteines": 3,
+    "hydrophobic_fraction_AVILMFWY": 0.4462,
+    "longest_hydrophobic_run_AVILMFWY": 11,
+    "contains_tail_VVVVLLCCLLLLLLLILLL": true,
+    "full_trimer_validation_of_this_exact_sequence": "not established"
+  },
+  {
+    "rank": 3,
+    "sequence": "CKDVIIHKVPDSFQPDPRWHQTYQRYHARAHGQDGGGDGVVVVLLCCLLLLLLLILLLKLLKKFD",
+    "length": 65,
+    "histidines": 4,
+    "cysteines": 3,
+    "hydrophobic_fraction_AVILMFWY": 0.4615,
+    "longest_hydrophobic_run_AVILMFWY": 11,
+    "contains_tail_VVVVLLCCLLLLLLLILLL": true,
+    "full_trimer_validation_of_this_exact_sequence": "not established"
+  },
+  {
+    "rank": 4,
+    "sequence": "CKDVIIHKHPDSFQPDPRWHQTYQRYHARAEGQDGGGDGVVVVLLCCLLLLLLLILLLKLLKKFD",
+    "length": 65,
+    "histidines": 4,
+    "cysteines": 3,
+    "hydrophobic_fraction_AVILMFWY": 0.4462,
+    "longest_hydrophobic_run_AVILMFWY": 11,
+    "contains_tail_VVVVLLCCLLLLLLLILLL": true,
+    "full_trimer_validation_of_this_exact_sequence": "not established"
+  },
+  {
+    "rank": 5,
+    "sequence": "CKDVIIHKVPDSFQPDPRWHQTHQRYRARAHGQDGGGDGVVVVLLCCLLLLLLLILLLKLLKKFD",
+    "length": 65,
+    "histidines": 4,
+    "cysteines": 3,
+    "hydrophobic_fraction_AVILMFWY": 0.4462,
+    "longest_hydrophobic_run_AVILMFWY": 11,
+    "contains_tail_VVVVLLCCLLLLLLLILLL": true,
+    "full_trimer_validation_of_this_exact_sequence": "not established"
+  },
+  {
+    "rank": 6,
+    "sequence": "CKDVIIIKVPDSFQPDPRWHQTHQRYHARAEGQDGGGDGVVVVLLCCLLLLLLLILLLKLLKKFD",
+    "length": 65,
+    "histidines": 3,
+    "cysteines": 3,
+    "hydrophobic_fraction_AVILMFWY": 0.4615,
+    "longest_hydrophobic_run_AVILMFWY": 11,
+    "contains_tail_VVVVLLCCLLLLLLLILLL": true,
+    "full_trimer_validation_of_this_exact_sequence": "not established"
+  },
+  {
+    "rank": 7,
+    "sequence": "CKDVIIHKVPDSFQPDPRWHQTYQRYRARHEGQDGGGDGVVVVLLCCLLLLLLLILLLKLLKKFD",
+    "length": 65,
+    "histidines": 3,
+    "cysteines": 3,
+    "hydrophobic_fraction_AVILMFWY": 0.4462,
+    "longest_hydrophobic_run_AVILMFWY": 11,
+    "contains_tail_VVVVLLCCLLLLLLLILLL": true,
+    "full_trimer_validation_of_this_exact_sequence": "not established"
+  },
+  {
+    "rank": 8,
+    "sequence": "CKDVIHIKVPDSFQPDPRWHQTYQRYRARAHGQDGGGDGVVVVLLCCLLLLLLLILLLKLLKKFD",
+    "length": 65,
+    "histidines": 3,
+    "cysteines": 3,
+    "hydrophobic_fraction_AVILMFWY": 0.4615,
+    "longest_hydrophobic_run_AVILMFWY": 11,
+    "contains_tail_VVVVLLCCLLLLLLLILLL": true,
+    "full_trimer_validation_of_this_exact_sequence": "not established"
+  },
+  {
+    "rank": 9,
+    "sequence": "CKDVIIHKVPDSFQPDPRHHQTYQRYRARAEGQDGGGDGVVVVLLCCLLLLLLLILLLKLLKKFD",
+    "length": 65,
+    "histidines": 3,
+    "cysteines": 3,
+    "hydrophobic_fraction_AVILMFWY": 0.4462,
+    "longest_hydrophobic_run_AVILMFWY": 11,
+    "contains_tail_VVVVLLCCLLLLLLLILLL": true,
+    "full_trimer_validation_of_this_exact_sequence": "not established"
+  },
+  {
+    "rank": 10,
+    "sequence": "CKDVIIIKVPDSFQPDPHWHQTHQRYHARAEGQDGGGDGVVVVLLCCLLLLLLLILLLKLLKKFD",
+    "length": 65,
+    "histidines": 4,
+    "cysteines": 3,
+    "hydrophobic_fraction_AVILMFWY": 0.4615,
+    "longest_hydrophobic_run_AVILMFWY": 11,
+    "contains_tail_VVVVLLCCLLLLLLLILLL": true,
+    "full_trimer_validation_of_this_exact_sequence": "not established"
+  },
+  {
+    "rank": 11,
+    "sequence": "CHDVIIHKVPDSFQPDPRWHQTYQRYHARAEGQDGGGDGVVVVLLCCLLLLLLLILLLKLLKKFD",
+    "length": 65,
+    "histidines": 4,
+    "cysteines": 3,
+    "hydrophobic_fraction_AVILMFWY": 0.4615,
+    "longest_hydrophobic_run_AVILMFWY": 11,
+    "contains_tail_VVVVLLCCLLLLLLLILLL": true,
+    "full_trimer_validation_of_this_exact_sequence": "not established"
+  },
+  {
+    "rank": 12,
+    "sequence": "CKDVIIIKHPDSFQPDPRWHQTYQRYRARHHGQDGGGDGVVVVLLCCLLLLLLLILLLKLLKKFD",
+    "length": 65,
+    "histidines": 4,
+    "cysteines": 3,
+    "hydrophobic_fraction_AVILMFWY": 0.4462,
+    "longest_hydrophobic_run_AVILMFWY": 11,
+    "contains_tail_VVVVLLCCLLLLLLLILLL": true,
+    "full_trimer_validation_of_this_exact_sequence": "not established"
+  },
+  {
+    "rank": 13,
+    "sequence": "CHDVIIHKVPDSFQPDPRWHQTYQRHRARAEGQDGGGDGVVVVLLCCLLLLLLLILLLKLLKKFD",
+    "length": 65,
+    "histidines": 4,
+    "cysteines": 3,
+    "hydrophobic_fraction_AVILMFWY": 0.4462,
+    "longest_hydrophobic_run_AVILMFWY": 11,
+    "contains_tail_VVVVLLCCLLLLLLLILLL": true,
+    "full_trimer_validation_of_this_exact_sequence": "not established"
+  },
+  {
+    "rank": 14,
+    "sequence": "CKDVIIIKVPDSFQPDPRHHQTYQRYRARAHGQDGGGDGVVVVLLCCLLLLLLLILLLKLLKKFD",
+    "length": 65,
+    "histidines": 3,
+    "cysteines": 3,
+    "hydrophobic_fraction_AVILMFWY": 0.4615,
+    "longest_hydrophobic_run_AVILMFWY": 11,
+    "contains_tail_VVVVLLCCLLLLLLLILLL": true,
+    "full_trimer_validation_of_this_exact_sequence": "not established"
+  },
+  {
+    "rank": 15,
+    "sequence": "CKDVIIIKVPDSFQPDPHHHQTYQRYRARAEGQDGGGDGVVVVLLCCLLLLLLLILLLKLLKKFD",
+    "length": 65,
+    "histidines": 3,
+    "cysteines": 3,
+    "hydrophobic_fraction_AVILMFWY": 0.4615,
+    "longest_hydrophobic_run_AVILMFWY": 11,
+    "contains_tail_VVVVLLCCLLLLLLLILLL": true,
+    "full_trimer_validation_of_this_exact_sequence": "not established"
+  },
+  {
+    "rank": 16,
+    "sequence": "CKDVIHHKVPDSFQPDPRWHQTYQRYHARAEGQDGGGDGVVVVLLCCLLLLLLLILLLKLLKKFD",
+    "length": 65,
+    "histidines": 4,
+    "cysteines": 3,
+    "hydrophobic_fraction_AVILMFWY": 0.4462,
+    "longest_hydrophobic_run_AVILMFWY": 11,
+    "contains_tail_VVVVLLCCLLLLLLLILLL": true,
+    "full_trimer_validation_of_this_exact_sequence": "not established"
+  },
+  {
+    "rank": 17,
+    "sequence": "CKDVIIIKVPDSFQPDPRWHQTYQRYRARAEGQDGGGDGVVVVLLCCLLLLLLLILLLKLLKKFD",
+    "length": 65,
+    "histidines": 1,
+    "cysteines": 3,
+    "hydrophobic_fraction_AVILMFWY": 0.4769,
+    "longest_hydrophobic_run_AVILMFWY": 11,
+    "contains_tail_VVVVLLCCLLLLLLLILLL": true,
+    "full_trimer_validation_of_this_exact_sequence": "not established"
+  },
+  {
+    "rank": 18,
+    "sequence": "DDDKIAAILLCLLLLLVLLTPAGPQPSEHDVADYRKYREKQLKAPRKAGKACESCIKEIIEKKDD",
+    "length": 65,
+    "histidines": 1,
+    "cysteines": 3,
+    "hydrophobic_fraction_AVILMFWY": 0.4,
+    "longest_hydrophobic_run_AVILMFWY": 8,
+    "contains_tail_VVVVLLCCLLLLLLLILLL": false,
+    "full_trimer_validation_of_this_exact_sequence": "not established"
+  },
+  {
+    "rank": 19,
+    "sequence": "DDDKIAAILLCLLLLLVLLTPAGPQPHETDVADYRKYREKQLKAPRKAGKACESCIKEIIEKKDD",
+    "length": 65,
+    "histidines": 1,
+    "cysteines": 3,
+    "hydrophobic_fraction_AVILMFWY": 0.4,
+    "longest_hydrophobic_run_AVILMFWY": 8,
+    "contains_tail_VVVVLLCCLLLLLLLILLL": false,
+    "full_trimer_validation_of_this_exact_sequence": "not established"
+  },
+  {
+    "rank": 20,
+    "sequence": "DDDKIAAILLCLLLLLVLLTPAGPQPSETDVADYRKYREKQLKAPRKAGKACESCIKEIIEKKDD",
+    "length": 65,
+    "histidines": 0,
+    "cysteines": 3,
+    "hydrophobic_fraction_AVILMFWY": 0.4,
+    "longest_hydrophobic_run_AVILMFWY": 8,
+    "contains_tail_VVVVLLCCLLLLLLLILLL": false,
+    "full_trimer_validation_of_this_exact_sequence": "not established"
+  }
+]
