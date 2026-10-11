@@ -1,0 +1,394 @@
+[
+  {
+    "arm": "baseline",
+    "sequence": "QQEQQITGMAMGIWNNYFFDNEAQQWFRDETDSTGNARNRTRHWMPTHTS",
+    "optimized_log": {
+      "binder_intra_pae": 0.5861279368400574,
+      "con": 4.209595203399658,
+      "exp_res": 0.3542116582393646,
+      "hard": 1.0,
+      "i_con": 5.222568511962891,
+      "i_pae": 0.8415288329124451,
+      "i_ptm": 0.1563607156276703,
+      "loss": 7.903402805328369,
+      "pae": 0.8542746901512146,
+      "plddt": 0.30155032873153687,
+      "ptm": 0.8254417181015015,
+      "recycles": 0.0,
+      "seq_ent": 0.014034169726073742,
+      "soft": 1.0,
+      "temp": 0.01
+    },
+    "full_log": {
+      "con": 4.3246073722839355,
+      "exp_res": 0.4406737983226776,
+      "i_con": 5.8120832443237305,
+      "i_pae": 0.9132869839668274,
+      "pae": 0.880230188369751,
+      "plddt": 0.30935215950012207,
+      "seq_ent": 2.712939977645874,
+      "loss": 5.881148338317871,
+      "i_ptm": 0.15971088409423828,
+      "ptm": 0.8483572006225586,
+      "hard": 1.0,
+      "soft": 0.0,
+      "temp": 1.0,
+      "recycles": 3.0
+    },
+    "alone_log": {
+      "con": 4.100862503051758,
+      "exp_res": 0.18237128853797913,
+      "helix": 1.8428001403808594,
+      "pae": 0.4849168658256531,
+      "plddt": 0.5890956819057465,
+      "seq_ent": 2.712939977645874,
+      "loss": 4.100862503051758,
+      "i_ptm": 0.0,
+      "ptm": 0.26865047216415405,
+      "hard": 1.0,
+      "soft": 0.0,
+      "temp": 1.0,
+      "recycles": 3.0
+    },
+    "full_per_model": [
+      {
+        "model": 1,
+        "scopes": {
+          "binder_intra": {
+            "mean_A": 18.387828745234014,
+            "normalized_by31": 0.5931557659752907,
+            "pair_count": 2500,
+            "symmetrized": true
+          },
+          "binder_to_entire_target": {
+            "mean_A": 27.899532151765992,
+            "normalized_by31": 0.8999849081214836,
+            "pair_count": 22800,
+            "symmetrized": true
+          }
+        },
+        "binder_plddt": 0.2861652076244354
+      },
+      {
+        "model": 2,
+        "scopes": {
+          "binder_intra": {
+            "mean_A": 17.494795036959648,
+            "normalized_by31": 0.5643482269986984,
+            "pair_count": 2500,
+            "symmetrized": true
+          },
+          "binder_to_entire_target": {
+            "mean_A": 28.72426725605078,
+            "normalized_by31": 0.9265892663242187,
+            "pair_count": 22800,
+            "symmetrized": true
+          }
+        },
+        "binder_plddt": 0.33253899216651917
+      }
+    ],
+    "full_geometry": [
+      {
+        "model": 1,
+        "sequence": "QQEQQITGMAMGIWNNYFFDNEAQQWFRDETDSTGNARNRTRHWMPTHTS",
+        "sequence_sha256": "bd70aa0e6f42d41a90f46f592b7d7ad09774a03d751db285c62766d5ac922eb8",
+        "binder_length": 50,
+        "target_residues": 456,
+        "min_heavy_distance_A": 4.364095584255544,
+        "pairs_under2A": 0,
+        "contacts_A": {
+          "4": {
+            "heavy_atom_pairs": 0,
+            "binder_residues": 0,
+            "target_residues": 0
+          },
+          "5": {
+            "heavy_atom_pairs": 1,
+            "binder_residues": 1,
+            "target_residues": 1
+          },
+          "8": {
+            "heavy_atom_pairs": 65,
+            "binder_residues": 7,
+            "target_residues": 8
+          }
+        },
+        "binder_CA_radius_gyration_A": 21.033369064331055,
+        "chain_discontinuities": [
+          {
+            "chain": "A",
+            "from_residue": 152,
+            "to_residue": 208,
+            "CA_distance_A": 15.964786529541016
+          },
+          {
+            "chain": "A",
+            "from_residue": 359,
+            "to_residue": 415,
+            "CA_distance_A": 15.254695892333984
+          }
+        ]
+      },
+      {
+        "model": 2,
+        "sequence": "QQEQQITGMAMGIWNNYFFDNEAQQWFRDETDSTGNARNRTRHWMPTHTS",
+        "sequence_sha256": "bd70aa0e6f42d41a90f46f592b7d7ad09774a03d751db285c62766d5ac922eb8",
+        "binder_length": 50,
+        "target_residues": 456,
+        "min_heavy_distance_A": 6.035622277335409,
+        "pairs_under2A": 0,
+        "contacts_A": {
+          "4": {
+            "heavy_atom_pairs": 0,
+            "binder_residues": 0,
+            "target_residues": 0
+          },
+          "5": {
+            "heavy_atom_pairs": 0,
+            "binder_residues": 0,
+            "target_residues": 0
+          },
+          "8": {
+            "heavy_atom_pairs": 12,
+            "binder_residues": 1,
+            "target_residues": 1
+          }
+        },
+        "binder_CA_radius_gyration_A": 22.05065155029297,
+        "chain_discontinuities": [
+          {
+            "chain": "A",
+            "from_residue": 152,
+            "to_residue": 208,
+            "CA_distance_A": 16.135089874267578
+          },
+          {
+            "chain": "A",
+            "from_residue": 359,
+            "to_residue": 415,
+            "CA_distance_A": 15.419638633728027
+          }
+        ]
+      }
+    ],
+    "alone_vs_full_consistency": [
+      {
+        "model": 1,
+        "binder_CA_RMSD_A": 13.277125162246259
+      },
+      {
+        "model": 2,
+        "binder_CA_RMSD_A": 9.9967131970611
+      }
+    ],
+    "omitted_geometry": [
+      {
+        "model": 1,
+        "target_fit_RMSD_A": 0.6373605969971022,
+        "omitted_min_distance_A": 25.830267973840918,
+        "pairs_under2A": 0
+      }
+    ],
+    "seed_PDBs_identical": {
+      "full": true,
+      "alone": true
+    }
+  },
+  {
+    "arm": "folding",
+    "sequence": "WWEDQIYGHDMGIWNLSIFDNEANQWKRDPNDSTGNAANRTHHGMYFHYG",
+    "optimized_log": {
+      "binder_intra_pae": 0.5864036679267883,
+      "con": 4.489104270935059,
+      "exp_res": 0.25233975052833557,
+      "hard": 1.0,
+      "i_con": 5.091806888580322,
+      "i_pae": 0.8312510251998901,
+      "i_ptm": 0.15227574110031128,
+      "loss": 8.430171966552734,
+      "pae": 0.8473936319351196,
+      "plddt": 0.2822278141975403,
+      "ptm": 0.8252427577972412,
+      "recycles": 0.0,
+      "seq_ent": 0.03834265470504761,
+      "soft": 1.0,
+      "temp": 0.01
+    },
+    "full_log": {
+      "con": 4.391880035400391,
+      "exp_res": 0.3007895350456238,
+      "i_con": 5.890180587768555,
+      "i_pae": 0.9151277542114258,
+      "pae": 0.8812044858932495,
+      "plddt": 0.3113844394683838,
+      "seq_ent": 2.712939977645874,
+      "loss": 5.959042549133301,
+      "i_ptm": 0.1580277532339096,
+      "ptm": 0.8482702374458313,
+      "hard": 1.0,
+      "soft": 0.0,
+      "temp": 1.0,
+      "recycles": 3.0
+    },
+    "alone_log": {
+      "con": 4.14955997467041,
+      "exp_res": 0.13096721470355988,
+      "helix": 2.4622793197631836,
+      "pae": 0.6075849533081055,
+      "plddt": 0.5128654539585114,
+      "seq_ent": 2.712939977645874,
+      "loss": 4.14955997467041,
+      "i_ptm": 0.0,
+      "ptm": 0.13667787611484528,
+      "hard": 1.0,
+      "soft": 0.0,
+      "temp": 1.0,
+      "recycles": 3.0
+    },
+    "full_per_model": [
+      {
+        "model": 1,
+        "scopes": {
+          "binder_intra": {
+            "mean_A": 18.204201290881635,
+            "normalized_by31": 0.5872322997058592,
+            "pair_count": 2500,
+            "symmetrized": true
+          },
+          "binder_to_entire_target": {
+            "mean_A": 27.831480190837592,
+            "normalized_by31": 0.8977896835754062,
+            "pair_count": 22800,
+            "symmetrized": true
+          }
+        },
+        "binder_plddt": 0.28952404856681824
+      },
+      {
+        "model": 2,
+        "scopes": {
+          "binder_intra": {
+            "mean_A": 17.24895140528679,
+            "normalized_by31": 0.5564177872673157,
+            "pair_count": 2500,
+            "symmetrized": true
+          },
+          "binder_to_entire_target": {
+            "mean_A": 28.906441651185354,
+            "normalized_by31": 0.9324658597156565,
+            "pair_count": 22800,
+            "symmetrized": true
+          }
+        },
+        "binder_plddt": 0.33324483036994934
+      }
+    ],
+    "full_geometry": [
+      {
+        "model": 1,
+        "sequence": "WWEDQIYGHDMGIWNLSIFDNEANQWKRDPNDSTGNAANRTHHGMYFHYG",
+        "sequence_sha256": "34bcdd347d7dc4236c7f919a4dda02e349e3a15815bcd831df701f554d88d992",
+        "binder_length": 50,
+        "target_residues": 456,
+        "min_heavy_distance_A": 5.85412274963827,
+        "pairs_under2A": 0,
+        "contacts_A": {
+          "4": {
+            "heavy_atom_pairs": 0,
+            "binder_residues": 0,
+            "target_residues": 0
+          },
+          "5": {
+            "heavy_atom_pairs": 0,
+            "binder_residues": 0,
+            "target_residues": 0
+          },
+          "8": {
+            "heavy_atom_pairs": 15,
+            "binder_residues": 3,
+            "target_residues": 4
+          }
+        },
+        "binder_CA_radius_gyration_A": 23.24934196472168,
+        "chain_discontinuities": [
+          {
+            "chain": "A",
+            "from_residue": 152,
+            "to_residue": 208,
+            "CA_distance_A": 15.984166145324707
+          },
+          {
+            "chain": "A",
+            "from_residue": 359,
+            "to_residue": 415,
+            "CA_distance_A": 15.246971130371094
+          }
+        ]
+      },
+      {
+        "model": 2,
+        "sequence": "WWEDQIYGHDMGIWNLSIFDNEANQWKRDPNDSTGNAANRTHHGMYFHYG",
+        "sequence_sha256": "34bcdd347d7dc4236c7f919a4dda02e349e3a15815bcd831df701f554d88d992",
+        "binder_length": 50,
+        "target_residues": 456,
+        "min_heavy_distance_A": 11.571337746459804,
+        "pairs_under2A": 0,
+        "contacts_A": {
+          "4": {
+            "heavy_atom_pairs": 0,
+            "binder_residues": 0,
+            "target_residues": 0
+          },
+          "5": {
+            "heavy_atom_pairs": 0,
+            "binder_residues": 0,
+            "target_residues": 0
+          },
+          "8": {
+            "heavy_atom_pairs": 0,
+            "binder_residues": 0,
+            "target_residues": 0
+          }
+        },
+        "binder_CA_radius_gyration_A": 26.41459846496582,
+        "chain_discontinuities": [
+          {
+            "chain": "A",
+            "from_residue": 152,
+            "to_residue": 208,
+            "CA_distance_A": 16.144723892211914
+          },
+          {
+            "chain": "A",
+            "from_residue": 359,
+            "to_residue": 415,
+            "CA_distance_A": 15.46489143371582
+          }
+        ]
+      }
+    ],
+    "alone_vs_full_consistency": [
+      {
+        "model": 1,
+        "binder_CA_RMSD_A": 8.991984660591656
+      },
+      {
+        "model": 2,
+        "binder_CA_RMSD_A": 8.772131970251081
+      }
+    ],
+    "omitted_geometry": [
+      {
+        "model": 1,
+        "target_fit_RMSD_A": 0.6361285913659224,
+        "omitted_min_distance_A": 25.768862197270224,
+        "pairs_under2A": 0
+      }
+    ],
+    "seed_PDBs_identical": {
+      "full": true,
+      "alone": true
+    }
+  }
+]
