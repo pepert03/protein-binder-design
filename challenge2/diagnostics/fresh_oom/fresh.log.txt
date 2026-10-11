@@ -1,0 +1,38 @@
+FRESH_CONFIG {"seed": 27101, "binder_len": 50, "target_len": 456, "weights": {"con": 0.5, "exp_res": 0.0, "helix": 0.0, "i_con": 1.0, "i_pae": 0.5, "pae": 0.1, "plddt": 0.1, "seq_ent": 0.0}, "hotspot": [59, 61, 107, 109, 135, 137, 140]}
+Stage 1: running (logits → soft)
+E1011 06:11:06.911806     164 pjrt_stream_executor_client.cc:2916] Execution of replica 0 failed: RESOURCE_EXHAUSTED: Out of memory while trying to allocate 14921877544 bytes. [tf-allocator-allocation-error='']
+Traceback (most recent call last):
+  File "/kaggle/working/tnf_fresh/input/fresh_design.py", line 23, in <module>
+    t0=time.time();af.design_3stage(50,20,5,num_models=1,num_recycles=1,verbose=1)
+                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/colabdesign/af/design.py", line 368, in design_3stage
+    self.design_logits(soft_iters, e_soft=1,
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+      ramp_recycles=ramp_recycles, **kwargs)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/colabdesign/af/design.py", line 346, in design_logits
+    self.design(iters, **kwargs)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/colabdesign/af/design.py", line 340, in design
+    self.step(lr_scale=lr_scale, num_recycles=num_recycles,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              num_models=num_models, sample_models=sample_models, models=models,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              backprop=backprop, callback=callback, save_best=save_best, verbose=verbose)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/colabdesign/af/design.py", line 206, in step
+    self.run(num_recycles=num_recycles, num_models=num_models, sample_models=sample_models,
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+             models=models, backprop=backprop, callback=callback)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/colabdesign/af/design.py", line 96, in run
+    auxs.append(self._recycle(p, num_recycles=num_recycles, backprop=backprop))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/colabdesign/af/design.py", line 191, in _recycle
+    aux = self._single(model_params, backprop)
+  File "/usr/local/lib/python3.13/dist-packages/colabdesign/af/design.py", line 140, in _single
+    (loss, aux), grad = self._model["grad_fn"](*flags)
+                        ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+jaxlib._jax.XlaRuntimeError: RESOURCE_EXHAUSTED: Out of memory while trying to allocate 14921877544 bytes.
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
