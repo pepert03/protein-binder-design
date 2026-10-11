@@ -1,0 +1,9 @@
+PREDICT {"name": "unmodified_control", "mode": "alone", "sequence": "CKDVIIIKHPYPVTPDPRWHQTVQRYRERAEREELLGDGVRNGCLCCLLLLLLLILLLKELTKVP", "plddt": 0.744532585144043, "ptm": 0.39523276686668396, "i_pae_normalized": NaN, "i_ptm": 0.0, "pdb": "output/unmodified_control_alone.pdb"}
+PREDICT {"name": "mpnn_repair_03", "mode": "alone", "sequence": "CKDVIIIKHPYPVTPDPRWHETVQRYRERAEREEEEGDRERRGEEEEERRRREEEERRREEERRP", "plddt": 0.8536684513092041, "ptm": 0.5336716175079346, "i_pae_normalized": NaN, "i_ptm": 0.0, "pdb": "output/mpnn_repair_03_alone.pdb"}
+PREDICT {"name": "mpnn_repair_02", "mode": "alone", "sequence": "CKDVIIIKHPYPVTPDPRWHETVQRYRERAEREEEEGDRERRGREEEERRRREEEERRREEELVP", "plddt": 0.8453881144523621, "ptm": 0.5291042327880859, "i_pae_normalized": NaN, "i_ptm": 0.0, "pdb": "output/mpnn_repair_02_alone.pdb"}
+PREDICT {"name": "unmodified_control", "mode": "complex", "sequence": "CKDVIIIKHPYPVTPDPRWHQTVQRYRERAEREELLGDGVRNGCLCCLLLLLLLILLLKELTKVP", "plddt": 0.7973376512527466, "ptm": 0.7059838771820068, "i_pae_normalized": 0.4323351979255676, "i_ptm": 0.6148413419723511, "pdb": "output/unmodified_control_complex.pdb"}
+PREDICT {"name": "mpnn_repair_03", "mode": "complex", "sequence": "CKDVIIIKHPYPVTPDPRWHETVQRYRERAEREEEEGDRERRGEEEEERRRREEEERRREEERRP", "plddt": 0.8178737163543701, "ptm": 0.713509202003479, "i_pae_normalized": 0.41396868228912354, "i_ptm": 0.5861190557479858, "pdb": "output/mpnn_repair_03_complex.pdb"}
+PREDICT {"name": "mpnn_repair_02", "mode": "complex", "sequence": "CKDVIIIKHPYPVTPDPRWHETVQRYRERAEREEEEGDRERRGREEEERRRREEEERRREEELVP", "plddt": 0.8141099810600281, "ptm": 0.7163550853729248, "i_pae_normalized": 0.4105117917060852, "i_ptm": 0.5837107300758362, "pdb": "output/mpnn_repair_02_complex.pdb"}
+SELF_CONSISTENCY unmodified_control binder_CA_RMSD_A 4.116710138145626
+SELF_CONSISTENCY mpnn_repair_03 binder_CA_RMSD_A 5.3107671898934745
+SELF_CONSISTENCY mpnn_repair_02 binder_CA_RMSD_A 4.3643116225046095
