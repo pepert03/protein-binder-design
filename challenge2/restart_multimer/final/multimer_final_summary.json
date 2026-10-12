@@ -1,0 +1,137 @@
+[
+  {
+    "cohort": "cohort_fixed",
+    "seed": 42111,
+    "sequence_in_soft_PDB": "WLKKSPKSPMMTYLQQLDKAWQTTCVDNANSPRCMKAIYELFSEMFNEKPIREMGQTAED",
+    "log": {
+      "binder_intra_pae": 0.39002904295921326,
+      "con": 3.186769723892212,
+      "exp_res": 0.1795872449874878,
+      "hard": 0.0,
+      "i_con": 3.3197214603424072,
+      "i_pae": 0.48216569423675537,
+      "i_ptm": 0.7432453632354736,
+      "loss": 6.754085063934326,
+      "pae": 0.5199257731437683,
+      "plddt": 0.566339522600174,
+      "ptm": 0.7882498502731323,
+      "recycles": 1.0,
+      "seq_ent": 1.8991516828536987,
+      "soft": 0.792,
+      "temp": 1.0
+    },
+    "scopes": [
+      {
+        "binder_intra": {
+          "mean_A": 12.09090022198028,
+          "normalized_by31": 0.39002903941871875,
+          "pair_count": 3600,
+          "symmetrized": true
+        },
+        "binder_to_entire_target": {
+          "mean_A": 16.989927531723225,
+          "normalized_by31": 0.5480621784426847,
+          "pair_count": 16620,
+          "symmetrized": true
+        },
+        "binder_to_hotspots": {
+          "mean_A": 14.94713696809042,
+          "normalized_by31": 0.48216570864807806,
+          "pair_count": 420,
+          "symmetrized": true
+        }
+      }
+    ],
+    "status": "rejected soft optimization state, not independently validated discrete sequence"
+  },
+  {
+    "cohort": "cohort_fixed",
+    "seed": 42112,
+    "sequence_in_soft_PDB": "VIATFLNAMSIIDAADEYMDSNHLEYELDHFQEGLAHPSWEAFVKNAPDDMMKRVSALGA",
+    "log": {
+      "binder_intra_pae": 0.35037070512771606,
+      "con": 3.2969493865966797,
+      "exp_res": 0.10816138982772827,
+      "hard": 0.0,
+      "i_con": 3.4076485633850098,
+      "i_pae": 0.45906123518943787,
+      "i_ptm": 0.7624011635780334,
+      "loss": 6.93402099609375,
+      "pae": 0.482468843460083,
+      "plddt": 0.5663147568702698,
+      "ptm": 0.8027891516685486,
+      "recycles": 1.0,
+      "seq_ent": 1.8047868013381958,
+      "soft": 0.81,
+      "temp": 1.0
+    },
+    "scopes": [
+      {
+        "binder_intra": {
+          "mean_A": 10.861492058634758,
+          "normalized_by31": 0.3503707115688631,
+          "pair_count": 3600,
+          "symmetrized": true
+        },
+        "binder_to_entire_target": {
+          "mean_A": 15.84354560237499,
+          "normalized_by31": 0.5110821162056448,
+          "pair_count": 16620,
+          "symmetrized": true
+        },
+        "binder_to_hotspots": {
+          "mean_A": 14.230897918201627,
+          "normalized_by31": 0.4590612231677944,
+          "pair_count": 420,
+          "symmetrized": true
+        }
+      }
+    ],
+    "status": "rejected soft optimization state, not independently validated discrete sequence"
+  },
+  {
+    "cohort": "cohort_rescue0",
+    "seed": 42111,
+    "sequence_in_soft_PDB": "LIEGSELSRTEKYLQDLDRAWQVTCVPNADGPTCSPAIYQAVWNMFLEKRNREEGITAED",
+    "log": {
+      "binder_intra_pae": 0.3872399926185608,
+      "con": 3.4241583347320557,
+      "exp_res": 0.1570737212896347,
+      "hard": 0.0,
+      "i_con": 3.8957629203796387,
+      "i_pae": 0.6026250720024109,
+      "i_ptm": 0.7084547877311707,
+      "loss": 7.432490348815918,
+      "pae": 0.6326543092727661,
+      "plddt": 0.4769377112388611,
+      "ptm": 0.7579425573348999,
+      "recycles": 1.0,
+      "seq_ent": 1.9315786361694336,
+      "soft": 0.864,
+      "temp": 1.0
+    },
+    "scopes": [
+      {
+        "binder_intra": {
+          "mean_A": 12.004440720346238,
+          "normalized_by31": 0.38724002323697543,
+          "pair_count": 3600,
+          "symmetrized": true
+        },
+        "binder_to_entire_target": {
+          "mean_A": 21.26019150662795,
+          "normalized_by31": 0.6858126292460629,
+          "pair_count": 16620,
+          "symmetrized": true
+        },
+        "binder_to_hotspots": {
+          "mean_A": 18.681375727199374,
+          "normalized_by31": 0.6026250234580444,
+          "pair_count": 420,
+          "symmetrized": true
+        }
+      }
+    ],
+    "status": "rejected soft optimization state, not independently validated discrete sequence"
+  }
+]
