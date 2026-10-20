@@ -8,7 +8,7 @@ function decodeMesh(gl, p) {
     const nn = new Int8Array(bytes.buffer, off, p.nv * 3); off += p.nv * 3;
     let cc = null;
     if (p.has_col) { cc = new Uint8Array(bytes.buffer, off, p.nv * 3); off += p.nv * 3; }
-    off = Math.ceil(off / 4) * 4; const idx32 = new Uint32Array(bytes.buffer, off, p.nf * 3);
+    off = Math.ceil(off / 4) * 4; const idx32 = p.i16 ? new Uint16Array(bytes.buffer, off, p.nf * 3) : new Uint32Array(bytes.buffer, off, p.nf * 3);
     const pos = new Float32Array(p.nv * 3);
     const scale = p.span / 32000;
     let maxR = 0; let cx = 0, cy = 0, cz = 0;
@@ -131,19 +131,20 @@ function hexToRgb(h) {
 function ease(t) { return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; }
 
 
-export function mountViewer(canvas, data, onError) {
+export function mountViewer(canvas, data, onError, onDesign) {
  const gl = canvas.getContext('webgl',{antialias:true,alpha:false,preserveDrawingBuffer:true});
  if(!gl){onError();return ()=>{};}
  const prog=makeProgram(gl);gl.useProgram(prog);
  const u={};for(const n of ['Proj','View','Model','Cam','Fog','Base','Light','UseCol','Alpha','FogN','FogF','Rim'])u[n]=gl.getUniformLocation(prog,'u'+n);
- const loaded={};for(const key of Object.keys(data)){loaded[key]={rec:decodeMesh(gl,data[key].receptor),binder:data[key].binder?decodeMesh(gl,data[key].binder):null};}
- let selected='tnf',yaw=.62,pitch=.12,zoom=3.3,drag=false,lx=0,ly=0,raf,stopped=false;
+ const loaded={};for(const key of Object.keys(data)){loaded[key]={rec:decodeMesh(gl,data[key].receptor),binders:(data[key].designs||[]).map(d=>({name:d.name,ipTM:d.ipTM,mesh:decodeMesh(gl,d.mesh)}))};}
+ let selected='tnf',yaw=.62,pitch=.12,zoom=3.3,drag=false,lx=0,ly=0,raf,stopped=false;const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;let playing=!reduce,holdUntil=0,cur=0,lastCycle=0,lastT=0;const CYCLE=1000,SPIN=.12;
+ function setDesign(i,silent){const L=loaded[selected].binders;if(!L.length){cur=0;onDesign&&onDesign(null,0,0);return;}cur=((i%L.length)+L.length)%L.length;onDesign&&onDesign(L[cur],cur,L.length);}
  gl.enable(gl.DEPTH_TEST);gl.disable(gl.CULL_FACE);gl.clearColor(1,1,1,1);
  function draw(mesh,base){gl.uniformMatrix4fv(u.Model,false,mTranslate([0,0,0]));gl.uniform3fv(u.Base,base);gl.uniform1f(u.UseCol,0);gl.uniform1f(u.Alpha,1);gl.uniform1f(u.Rim,.1);gl.bindBuffer(gl.ARRAY_BUFFER,mesh.pos);gl.vertexAttribPointer(0,3,gl.FLOAT,false,0,0);gl.enableVertexAttribArray(0);gl.bindBuffer(gl.ARRAY_BUFFER,mesh.norm);gl.vertexAttribPointer(1,3,gl.FLOAT,false,0,0);gl.enableVertexAttribArray(1);gl.disableVertexAttribArray(2);gl.vertexAttrib3f(2,...base);gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER,mesh.idx);gl.drawElements(gl.TRIANGLES,mesh.count,gl.UNSIGNED_SHORT,0);}
- function frame(){if(stopped)return;const w=canvas.clientWidth,h=canvas.clientHeight,dpr=Math.min(devicePixelRatio||1,2);if(canvas.width!==Math.round(w*dpr)||canvas.height!==Math.round(h*dpr)){canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);}gl.viewport(0,0,canvas.width,canvas.height);const {rec,binder}=loaded[selected];const radius=rec.radius*zoom*Math.max(1,.95/(w/h));const eye=[radius*Math.cos(pitch)*Math.sin(yaw),radius*Math.sin(pitch),radius*Math.cos(pitch)*Math.cos(yaw)];gl.uniformMatrix4fv(u.Proj,false,mPerspective(.62,w/h,1,radius*8));gl.uniformMatrix4fv(u.View,false,mLookAt(eye,[0,0,0],[0,1,0]));gl.uniform3fv(u.Cam,eye);gl.uniform3f(u.Fog,1,1,1);gl.uniform1f(u.FogN,radius*2);gl.uniform1f(u.FogF,radius*5);gl.uniform3f(u.Light,.5,.8,.7);gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);draw(rec,[.72,.75,.76]);if(binder)draw(binder,[.27,.40,.95]);raf=requestAnimationFrame(frame);}
- const down=e=>{drag=true;lx=e.clientX;ly=e.clientY;try{canvas.setPointerCapture(e.pointerId)}catch(_){}};
- const move=e=>{if(!drag)return;yaw-=(e.clientX-lx)*.008;pitch=Math.max(-1.45,Math.min(1.45,pitch+(e.clientY-ly)*.008));lx=e.clientX;ly=e.clientY;};const up=()=>{drag=false;};const wheel=e=>{e.preventDefault();zoom=Math.max(2.2,Math.min(5.5,zoom*(1+e.deltaY*.001)));};
+ function frame(now){if(stopped)return;now=now||performance.now();const dt=lastT?Math.min(.1,(now-lastT)/1000):0;lastT=now;const active=playing&&!drag&&now>=holdUntil;if(active){yaw-=SPIN*dt;if(loaded[selected].binders.length>1&&now-lastCycle>=CYCLE){lastCycle=now;setDesign(cur+1);}}else{lastCycle=now;}const w=canvas.clientWidth,h=canvas.clientHeight,dpr=Math.min(devicePixelRatio||1,2);if(canvas.width!==Math.round(w*dpr)||canvas.height!==Math.round(h*dpr)){canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);}gl.viewport(0,0,canvas.width,canvas.height);const {rec,binders}=loaded[selected];const binder=binders.length?binders[cur].mesh:null;const radius=rec.radius*zoom*Math.max(1,.95/(w/h));const eye=[radius*Math.cos(pitch)*Math.sin(yaw),radius*Math.sin(pitch),radius*Math.cos(pitch)*Math.cos(yaw)];gl.uniformMatrix4fv(u.Proj,false,mPerspective(.62,w/h,1,radius*8));gl.uniformMatrix4fv(u.View,false,mLookAt(eye,[0,0,0],[0,1,0]));gl.uniform3fv(u.Cam,eye);gl.uniform3f(u.Fog,1,1,1);gl.uniform1f(u.FogN,radius*2);gl.uniform1f(u.FogF,radius*5);gl.uniform3f(u.Light,.5,.8,.7);gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);draw(rec,[.72,.75,.76]);if(binder)draw(binder,[.27,.40,.95]);raf=requestAnimationFrame(frame);}
+ const down=e=>{drag=true;holdUntil=Infinity;lx=e.clientX;ly=e.clientY;try{canvas.setPointerCapture(e.pointerId)}catch(_){}};
+ const move=e=>{if(!drag)return;yaw-=(e.clientX-lx)*.008;pitch=Math.max(-1.45,Math.min(1.45,pitch+(e.clientY-ly)*.008));lx=e.clientX;ly=e.clientY;};const up=()=>{drag=false;holdUntil=performance.now()+2500;};const wheel=e=>{e.preventDefault();zoom=Math.max(2.2,Math.min(5.5,zoom*(1+e.deltaY*.001)));};
  canvas.addEventListener('pointerdown',down);canvas.addEventListener('pointermove',move);canvas.addEventListener('pointerup',up);canvas.addEventListener('pointercancel',up);canvas.addEventListener('wheel',wheel,{passive:false});
- const api={select(key){selected=key;zoom=key==='tnf'?3.3:3.1;yaw=key==='tnf'?.62:-2.11;pitch=key==='tnf'?.12:-.43;},reset(){api.select(selected);},dispose(){stopped=true;cancelAnimationFrame(raf);canvas.removeEventListener('pointerdown',down);canvas.removeEventListener('pointermove',move);canvas.removeEventListener('pointerup',up);canvas.removeEventListener('pointercancel',up);canvas.removeEventListener('wheel',wheel);}};
+ const api={toggle(){playing=!playing;holdUntil=0;lastCycle=performance.now();return playing;},isPlaying(){return playing;},select(key){selected=key;cur=0;lastCycle=performance.now();setDesign(0);zoom=key==='tnf'?3.3:3.1;yaw=key==='tnf'?.62:-2.11;pitch=key==='tnf'?.12:-.43;},reset(){api.select(selected);},dispose(){stopped=true;cancelAnimationFrame(raf);canvas.removeEventListener('pointerdown',down);canvas.removeEventListener('pointermove',move);canvas.removeEventListener('pointerup',up);canvas.removeEventListener('pointercancel',up);canvas.removeEventListener('wheel',wheel);}};
  frame();return api;
 }

@@ -10,9 +10,9 @@
   <canvas id="molecule" aria-label="Interactive molecular structure. Drag to rotate. Scroll to zoom." tabindex="0"></canvas>
   <div class="corner">
    <label for="challenge">Protein design</label>
-   <select id="challenge" aria-label="Select challenge"><option value="egfr">01 · EGFR</option><option value="tnf" selected>02 · TNF α</option></select>
+   <select id="challenge" aria-label="Select challenge"><option value="egfr" selected>01 · EGFR</option><option value="tnf">02 · TNF α</option></select>
   </div>
-  <div class="tools"><button id="reset" aria-label="Reset molecular view">Reset view</button><span>Drag to rotate</span></div>
+  <div class="tools"><button id="playpause" aria-pressed="false">Pause</button><button id="reset" aria-label="Reset molecular view">Reset view</button><span>Drag to rotate</span></div>
   <footer><p id="caption">TNF α · 1TNF · Target structure only</p><p id="caveat">Candidate coordinates unavailable. No binder shown.</p><a id="source" href="https://www.rcsb.org/structure/1TNF" target="_blank" rel="noopener">Structure source ↗</a></footer>
   <p id="error" hidden>This browser cannot display the 3D view.</p>
  </main>
