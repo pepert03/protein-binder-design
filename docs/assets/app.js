@@ -13,7 +13,7 @@ function update(){
   isEgfr=select.value==='egfr';
   api.select?.(select.value);
   if(isEgfr){
-    $('#caveat').textContent='Predicted complexes of the 20 draft sequences, ranked by ipTM. Ribbon cartoon derived from the CA trace. Not experimentally validated.';
+    $('#caveat').textContent='Predicted complexes of the 20 draft sequences, ranked by ipTM. Binders drawn as a smooth backbone tube along the CA trace. Not experimentally validated.';
     $('#source').href='https://github.com/pepert03/protein-binder-design';
   }else{
     cap.textContent='TNF α · 1TNF · Target structure only';
