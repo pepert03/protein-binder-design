@@ -10,7 +10,10 @@
   <canvas id="molecule" aria-label="Interactive molecular structure. Drag to rotate. Scroll to zoom." tabindex="0"></canvas>
   <div class="corner">
    <label for="challenge">Protein design</label>
-   <select id="challenge" aria-label="Select challenge"><option value="egfr" selected>01 · EGFR</option><option value="tnf">02 · TNF α</option></select>
+   <div class="dd" id="challenge-dd">
+    <button id="challenge-btn" type="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Select challenge"><span id="challenge-label">01 · EGFR</span><svg viewBox="0 0 10 6" width="10" height="6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></button>
+    <ul id="challenge-menu" role="listbox" aria-label="Challenge" hidden><li role="option" data-value="egfr" aria-selected="true" tabindex="-1">01 · EGFR</li><li role="option" data-value="tnf" aria-selected="false" tabindex="-1">02 · TNF α</li></ul>
+   </div>
   </div>
   <div class="tools"><button id="playpause" aria-pressed="false">Pause</button><button id="reset" aria-label="Reset molecular view">Reset view</button><span>Drag to rotate</span></div>
   <footer><p id="caption">TNF α · 1TNF · Target structure only</p><p id="caveat">Candidate coordinates unavailable. No binder shown.</p><a id="source" href="https://www.rcsb.org/structure/1TNF" target="_blank" rel="noopener">Structure source ↗</a></footer>
