@@ -1,45 +1,54 @@
-# MPNN CPU sobre scaffold_v5 - analisis verificado (25 oct)
+# MPNN CPU sobre scaffold_v5 - analisis verificado v2 (25 oct, reconciliado)
 
-Artefactos del investigador (ejecutados en su entorno CPU, reportados: 16/lote,
-seed 42, T=0.1, modelo v_48_020). **Comandos exactos y logs NO suministrados**:
-provenance parcial, recuperada de cabeceras FASTA y contenido (ver abajo).
-Sin GPU. Sin plegado nuevo: son SECUENCIAS sobre el scaffold fijo; nada de esto
-valida plegado ni funcion.
+Artefactos del investigador ejecutados en su entorno CPU (torch 2.14.1+cpu, modelo
+v_48_020, seed 42, T=0.1, cadena B disenada, A fija). Sin GPU. Sin plegado nuevo:
+son SECUENCIAS sobre el scaffold fijo; nada de esto valida plegado ni funcion.
 
-## Cabeceras (ambos archivos, identicas)
-- modelo v_48_020, git_hash 8907e6671bfbfc92303b5f79c4b5e6ce47cdef57, seed=42, T=0.1
-- fixed_chains=['A'], designed_chains=['B']
-- 16 muestras por archivo, 36 aa, todas unicas, alfabeto AA valido
+## Provenance: COMPLETA y verificada (provenance.md + logs en este directorio)
+- Entrada: scaffold_v5.pdb sha256 7931f785...87da = archivo del repo (commit 6b33d50). Coincide.
+- Repo dauparas/ProteinMPNN commit 8907e66, pesos v_48_020.pt sha256 c9cb4a67...f5bd (declarado).
+- Comandos exactos y logs de re-ejecucion publicados; re-runs byte-identicos (determinista, seed 42).
+- Hashes de CONTENIDO sha256 de los FASTA publicados aqui:
+    LIBRE       62675e45...b546  = salida declarada de la corrida libre. Coincide.
+    RESTRINGIDA 6299aefc...3de8  = salida declarada de la corrida restringida. Coincide.
+  (Los sufijos 453d904d/5893bd87 del transporte eran hashes del attachment, no del contenido:
+  no hubo corrupcion; la asignacion LIBRE/RESTRINGIDA queda confirmada por DOS vias:
+  cumplimiento del omit y hashes declarados.)
 
-## Asignacion libre/restringida (recuperada del contenido, NO de nombres de archivo)
-El investigador no sabia que archivo era cual. Prueba de cumplimiento contra
-omit_B3B6.jsonl (posiciones B3 y B6 restringidas a {A,G,S,T,V}):
-- `scaffold_v5_LIBRE.fa` (hash adjunto 453d904d): pos3 viola en 16/16, pos6 en 15/16 -> LIBRE
-- `scaffold_v5_RESTRINGIDA.fa` (hash adjunto 5893bd87): pos3 0/16, pos6 0/16 violaciones -> RESTRINGIDA
-  (pos6 colapsa a G en 16/16; pos3 solo {A,V})
+## Datos basicos (verificados)
+16 muestras por archivo, 36 aa, todas unicas, alfabeto valido. Cabeceras: modelo
+v_48_020, git 8907e66, seed=42, T=0.1, fixed_chains=['A'], designed_chains=['B'].
 
-## Hallazgo critico: las restricciones NO cubren el conflicto esterico real
-Comprobacion independiente de posiciones estrechas sobre scaffold_v5 (dos metodos):
-- bb_check (CB aproximado, repo): B6=1.83 A, B28=1.45 A (los unicos <2.5 A)
-- Reconstruccion CB tetraedrica independiente (N,CA,C, quiralidad L):
-  B28=1.86 A, B32=1.97 A; siguiente B19=2.57 A (B6=3.23 A por este metodo)
+## Mapa CB RECONCILIADO (sustituye a todas las listas anteriores)
+Tres implementaciones independientes (canonica ProteinMPNN l.968-970; tetraedrica
+109.47 grad con quiralidad por datos reales; reimplementacion propia del verificador),
+todas validadas contra los 301 CB REALES del receptor en el propio archivo:
+med error 0.056 / 0.064 / 0.056 A; quiralidad contraria FALSADA (med 2.44 A).
+Mapa unico, distancia minima CB->receptor con par explicito:
+- CONFLICTOS (<2.0 A): B2=1.17 (CD1 A356) | B6=1.71 (CD1 A113) | B31=1.96 (CA A90)
+- LIMPIOS: B28=2.68 | B32=3.52 | B3=3.63 | B4=4.30 | borde: B11=2.03, B35=2.58
+RETRACTADO: el mapa previo del verificador (B28/B32, construccion especular con
+error med 2.35 A contra CB reales) y el CB aproximado de bb_check (B6/B28).
+B3/B4 del investigador venia de scaffold_v3, descartado.
 
-Conclusion:
-- **B28 es el unico conflicto confirmado por AMBOS metodos y quedo SIN restringir**
-  (muestra {A,E,R} en ambas corridas; E/R son cadenas largas).
-- B6 solo aparece con el metodo aproximado (ambiguo por orientacion de CB).
-- B3/B4 (criterio del investigador) NO aparece en ningun metodo sobre v5; el valor
-  B3 procedia de scaffold_v3, ya descartado. Restringir B3 no corrige nada conocido.
-- Las restricciones aplicadas NO son una solucion demostrada a los conflictos CB:
-  son una heuristica sobre posiciones parcialmente equivocadas.
+## Efecto sobre las 32 secuencias (verificado posicion a posicion)
+- B2: GLICINA en 32/32 (ambas corridas). Sin CB: el conflicto no se materializa.
+- B31: GLICINA en 32/32. Idem.
+- B6: corrida restringida -> G en 16/16 (evitado); corrida LIBRE -> L en 15/16
+  (choque CB real si se usara tal cual).
+- B3 (restringida innecesariamente): limpio a 3.63 A.
+Conclusion honesta: los conflictos reales B2/B31 se evitaron por glicina ESPONTANEA
+de MPNN, no por diseno ni por la restriccion; la restriccion B6->AGSTV solo fue
+efectiva porque el muestreo eligio G (A,S,T,V tienen CB y chocarian). Ninguna de
+estas evasiones es garantia para futuras campanas: cualquier candidata con residuo
+con CB en B2/B6/B31 choca; las opciones son forzar G o revisar la pose.
 
 ## Novelty (proxy debil, limitaciones explicitas)
-- Maxima identidad en ventana de 8 aa vs GLP-1(7-36): 3-5/8 (ambas corridas)
-- vs exendina-4(1-30): 3-4/8
-- Esto NO demuestra diversidad estructural, ni cumplimiento de la regla de
-  diversidad de la competicion, ni zero-shot: es solo un proxy de secuencia local.
+Max. identidad ventana 8 aa: vs GLP-1(7-36) 3-5/8; vs exendina-4 3-4/8.
+NO demuestra diversidad estructural, ni cumplimiento de la regla de la competicion,
+ni zero-shot: es solo un proxy de secuencia local.
 
 ## Alcance
-Gates/RMSD sobre el scaffold miden fidelidad de construccion de la pose, no
-validan estas secuencias ni su plegado. Cualquier afirmacion de plegado/funcion
-requiere estructura nueva (re-plegado independiente) con autorizacion de GPU.
+Gates/RMSD sobre el scaffold miden fidelidad de construccion de la pose, no validan
+estas secuencias ni su plegado. Cualquier afirmacion de plegado/funcion requiere
+estructura nueva (re-plegado independiente) con autorizacion de GPU.

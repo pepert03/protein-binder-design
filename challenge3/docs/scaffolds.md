@@ -59,9 +59,11 @@ independiente (escritor, 25 oct): regenerado atomo a atomo (0 mismatches) desde
 scripts/exporta_scaffold5.py; B1 N-CA-C = 111.0 (v4: 90.0) y B36 CA-C-O = 122.0 (v4:
 180.0); check_scaffold 0 fuera de tolerancia; crosscheck biopython nominal; 0 colisiones
 internas; 0 choques backbone-receptor; gate PASS (G1=3, G2=10, G3 OK, G4=0). bb_check:
-0 enlaces fuera; los 2 conflictos de CB aproximado (B6 1.83 A, B28 1.45 A) SIGUEN
-ABIERTOS como reserva sin solucion demostrada. Quiralidad: NO establecida (sin CB en el
-archivo; la lectura "L" de pseudo-CB reconstruido sigue retirada). Sin secuencia, sin
+0 enlaces fuera. Mapa CB RESUELTO (25 oct, results/mpnn_v5/analisis_mpnn.md): tres
+construcciones validadas contra 301 CB reales (med 0.056-0.064 A) fijan conflictos en
+B2=1.17, B6=1.71, B31=1.96 A; B28/B32 limpios. Lista previa B6/B28 (bb_check aprox.)
+retractada. Quiralidad de construccion fijada por calibracion con datos reales (signo +);
+el fichero sigue sin CB propio. Sin secuencia, sin
 sidechains reales, sin plegado, sin funcion: la salida futura de ProteinMPNN sera una
 secuencia candidata sobre esta pose, NO un diseno validado.
 
@@ -91,10 +93,10 @@ RESERVAS (ninguna resuelta):
 - QUIRALIDAD: NO establecida. El PDB no lleva CB; cualquier afirmacion "L" deriva de un
   pseudo-CB reconstruido por convencion, no del archivo. Afirmacion L retirada
   explicitamente. Se fijara al construir secuencia real.
-- Sidechains: CONFLICTO ABIERTO en B6 y B28: CB APROXIMADO a <2 A del receptor (1.83 y
-  1.45 A; posiciones CB estimadas por bb_check, no reales). NO esta demostrado que la
-  eleccion de residuo pequeno o de rotamero lo resuelva: queda como reserva, no como
-  solucion. Puede requerir revisar la pose.
+- Sidechains: mapa CB validado (ver v5): conflictos reales B2/B6/B31 (<2 A). Las 32
+  secuencias MPNN actuales los evitan con GLICINA espontanea (32/32 en B2 y B31; G en B6
+  en la corrida restringida) - evasion no garantizada, no solucion de la pose. Reserva:
+  cualquier candidata futura con CB en B2/B6/B31 choca; forzar G o revisar la pose.
 - Sin secuencia, sin sidechains reales, sin plegado, sin funcion. Nada predice union ni
   activacion. Es una HIPOTESIS DE POSE con backbone geometricamente valido (salvo
   extremos), candidata a diseno de secuencia, no un diseno.
