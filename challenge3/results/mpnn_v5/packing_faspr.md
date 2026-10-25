@@ -33,3 +33,33 @@ en tanto su 55 reproduce y es el minimo del rango reportado, pero la tabla falta
 - Propuesta de busqueda sidechain-aware a 3.4 A: heuristica NO validada; sin promesa.
 - No se publica render: sin verificacion visual disponible; la tabla por posicion de
   arriba es el dato verificado.
+
+---
+
+# v2 (25 oct 14:4x): pasada CON receptor como contexto fijo - verificada
+
+El investigador corrigio el metodo (su primera pasada era binder aislado, como marco
+el verificador): complejo_bb.pdb = receptor COMPLETO + backbone binder; secuencia del
+receptor en minusculas (recseq_lower.txt, 316 aa) como contexto fijo; choques contados
+contra el receptor ORIGINAL (coords 6X18 exactas), no contra la salida de FASPR.
+
+## Verificacion del verificador (reproduccion independiente, tarball extraido con revision de rutas)
+- Mecanismo: la cadena A de la salida conserva los 2575 atomos del receptor, 0 ausentes,
+  desplazamiento max 0.067 A (drift <=0.07 confirmado). El contexto SI entro en el packing.
+- Backbone binder intacto: drift CA = 0.000 A.
+- Reconteo propio RESTR_3 contra receptor original: 46 choques, dmin 1.46 (NH1 B22 -
+  CH2 A186) = EXACTAMENTE lo reportado.
+- **Control nativo REPRODUCIDO directamente desde 6X18 real (cadena P vs R, SIN
+  packing): 3 choques, dmin 2.46 = lo reportado.** Ya no es provenance pendiente.
+- Tabla de las 32 publicada (pack_ctx_results.txt): rango 46-90 choques, dmin
+  0.56-1.46 A; mejor = RESTR_3 (46, 1.46).
+
+## Lectura honesta
+- Las 32 candidatas sobre esta pose rigida quedan a 46-90 solapes del receptor frente
+  a 3 del nativo: interfaz muy lejos de nativa bajo este criterio.
+- dmin de 0.56-1.46 A (atomos casi coincidentes en varias) indica que el scoring
+  interno de FASPR no impidió solapes severos en la interfaz: cribado, no optimizador
+  fisico. Sigue siendo evidencia del FALLO del protocolo rigido ensayado (rotamer
+  library + backbone fijo + sin relajacion), NO prueba de imposibilidad universal.
+- El investigador RETIRO la busqueda global a 3.4 A (el nativo no la cumple): correcto.
+- Pendiente menor: version/commit de FASPR y sha256 de bb_binder.pdb/receptor_A.pdb.

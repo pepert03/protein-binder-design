@@ -1,0 +1,66 @@
+LIBRE         1: choques= 81 dmin=0.85 (NH1 B22-CE3 A186) pos=[1, 2, 3, 6, 7, 8, 15, 18, 19, 22, 27, 28, 30, 31, 32, 34, 35]
+LIBRE         2: choques= 77 dmin=0.86 (CD1 B6-CD2 A113) pos=[1, 2, 3, 6, 7, 8, 15, 18, 19, 27, 28, 30, 31, 32, 35]
+LIBRE         3: choques= 62 dmin=0.86 (CD1 B6-CD2 A113) pos=[1, 2, 3, 6, 7, 8, 15, 18, 19, 22, 27, 28, 30, 31, 32, 35]
+LIBRE         4: choques= 83 dmin=0.56 (CZ B22-CZ3 A186) pos=[1, 2, 3, 6, 8, 15, 18, 19, 22, 27, 28, 30, 31, 32, 35]
+LIBRE         5: choques= 90 dmin=0.56 (CZ B22-CZ3 A186) pos=[1, 2, 3, 6, 8, 15, 16, 18, 19, 22, 27, 28, 30, 31, 32, 35]
+LIBRE         6: choques= 80 dmin=0.86 (CD1 B6-CD2 A113) pos=[1, 2, 3, 5, 6, 7, 8, 15, 18, 19, 22, 27, 28, 30, 31, 32, 35]
+LIBRE         7: choques= 89 dmin=0.56 (CZ B22-CZ3 A186) pos=[1, 2, 3, 5, 6, 7, 8, 15, 16, 18, 19, 22, 27, 28, 30, 31, 32, 35]
+LIBRE         8: choques= 78 dmin=0.56 (CZ B22-CZ3 A186) pos=[1, 2, 3, 6, 7, 8, 15, 16, 18, 19, 22, 27, 28, 30, 31, 32, 35]
+LIBRE         9: choques= 76 dmin=0.56 (CZ B22-CZ3 A186) pos=[1, 2, 3, 6, 8, 15, 18, 19, 22, 27, 28, 30, 31, 32, 35]
+LIBRE        10: choques= 58 dmin=1.06 (NH1 B30-OE1 A40) pos=[1, 2, 3, 5, 6, 7, 8, 15, 18, 19, 27, 28, 30, 31, 32, 35]
+LIBRE        11: choques= 81 dmin=0.86 (CD1 B6-CD2 A113) pos=[1, 2, 3, 5, 6, 7, 8, 15, 16, 18, 19, 22, 27, 28, 30, 31, 32, 35]
+LIBRE        12: choques= 78 dmin=0.56 (CZ B22-CZ3 A186) pos=[1, 2, 3, 6, 7, 8, 15, 18, 19, 22, 27, 28, 30, 31, 32, 35]
+LIBRE        13: choques= 78 dmin=0.86 (CD1 B6-CD2 A113) pos=[1, 2, 3, 5, 6, 7, 8, 15, 16, 18, 19, 27, 28, 30, 31, 32, 35]
+LIBRE        14: choques= 72 dmin=0.86 (CD1 B6-CD2 A113) pos=[1, 2, 3, 6, 7, 8, 15, 18, 19, 27, 28, 30, 31, 32, 35]
+LIBRE        15: choques= 72 dmin=0.86 (CD1 B6-CD2 A113) pos=[1, 2, 3, 6, 7, 8, 15, 18, 19, 27, 28, 30, 31, 32, 35]
+LIBRE        16: choques= 83 dmin=0.56 (CZ B22-CZ3 A186) pos=[1, 2, 3, 5, 6, 8, 15, 16, 18, 19, 22, 27, 28, 30, 31, 32, 35]
+RESTR         1: choques= 69 dmin=0.85 (NH1 B22-CE3 A186) pos=[1, 2, 3, 5, 6, 7, 8, 15, 18, 19, 22, 27, 28, 30, 31, 32, 34, 35]
+RESTR         2: choques= 64 dmin=1.11 (OE1 B18-CH2 A186) pos=[1, 2, 3, 6, 7, 8, 15, 18, 19, 27, 28, 30, 31, 32, 35]
+RESTR         3: choques= 46 dmin=1.46 (NH1 B22-CH2 A186) pos=[1, 2, 6, 8, 15, 18, 19, 22, 27, 28, 30, 31, 32, 35]
+RESTR         4: choques= 70 dmin=0.56 (CZ B22-CZ3 A186) pos=[1, 2, 3, 6, 8, 15, 18, 19, 22, 27, 28, 30, 31, 32, 35]
+RESTR         5: choques= 76 dmin=0.56 (CZ B22-CZ3 A186) pos=[1, 2, 6, 8, 15, 16, 18, 19, 22, 27, 28, 30, 31, 32, 35]
+RESTR         6: choques= 64 dmin=1.06 (NH1 B30-OE1 A40) pos=[1, 2, 5, 6, 8, 15, 18, 19, 22, 27, 28, 30, 31, 32, 35]
+RESTR         7: choques= 76 dmin=0.56 (CZ B22-CZ3 A186) pos=[1, 2, 3, 5, 6, 7, 8, 15, 16, 18, 19, 22, 27, 28, 30, 31, 32, 35]
+RESTR         8: choques= 63 dmin=0.56 (CZ B22-CZ3 A186) pos=[1, 2, 5, 6, 8, 15, 16, 18, 19, 22, 27, 28, 30, 31, 32, 35]
+RESTR         9: choques= 56 dmin=0.56 (CZ B22-CZ3 A186) pos=[1, 2, 6, 8, 15, 18, 19, 22, 27, 28, 30, 31, 32, 35]
+RESTR        10: choques= 53 dmin=1.06 (NH1 B30-OE1 A40) pos=[1, 2, 5, 6, 8, 15, 18, 19, 27, 28, 30, 31, 32, 35]
+RESTR        11: choques= 59 dmin=1.06 (NH1 B30-OE1 A40) pos=[1, 2, 3, 5, 6, 7, 8, 15, 18, 19, 22, 27, 28, 30, 31, 32, 35]
+RESTR        12: choques= 65 dmin=0.56 (CZ B22-CZ3 A186) pos=[1, 2, 3, 6, 7, 8, 15, 18, 19, 22, 27, 28, 30, 31, 32, 35]
+RESTR        13: choques= 64 dmin=1.01 (OE1 B18-CH2 A186) pos=[1, 2, 3, 5, 6, 8, 13, 15, 16, 18, 19, 27, 28, 30, 31, 32, 35]
+RESTR        14: choques= 56 dmin=1.11 (OE1 B18-CH2 A186) pos=[1, 2, 6, 8, 15, 18, 19, 27, 28, 30, 31, 32, 35]
+RESTR        15: choques= 57 dmin=1.01 (OE1 B18-CH2 A186) pos=[1, 2, 3, 6, 8, 15, 18, 19, 27, 28, 30, 31, 32, 35]
+RESTR        16: choques= 69 dmin=0.56 (CZ B22-CZ3 A186) pos=[1, 2, 5, 6, 8, 15, 16, 18, 19, 22, 27, 28, 30, 31, 32, 35]
+
+RESUMEN (nativo=3 choques, dmin 2.46):
+  RESTR         3 choques= 46 dmin=1.46
+  RESTR        10 choques= 53 dmin=1.06
+  RESTR         9 choques= 56 dmin=0.56
+  RESTR        14 choques= 56 dmin=1.11
+  RESTR        15 choques= 57 dmin=1.01
+  LIBRE        10 choques= 58 dmin=1.06
+  RESTR        11 choques= 59 dmin=1.06
+  LIBRE         3 choques= 62 dmin=0.86
+  RESTR         8 choques= 63 dmin=0.56
+  RESTR         2 choques= 64 dmin=1.11
+  RESTR         6 choques= 64 dmin=1.06
+  RESTR        13 choques= 64 dmin=1.01
+  RESTR        12 choques= 65 dmin=0.56
+  RESTR         1 choques= 69 dmin=0.85
+  RESTR        16 choques= 69 dmin=0.56
+  RESTR         4 choques= 70 dmin=0.56
+  LIBRE        14 choques= 72 dmin=0.86
+  LIBRE        15 choques= 72 dmin=0.86
+  LIBRE         9 choques= 76 dmin=0.56
+  RESTR         5 choques= 76 dmin=0.56
+  RESTR         7 choques= 76 dmin=0.56
+  LIBRE         2 choques= 77 dmin=0.86
+  LIBRE         8 choques= 78 dmin=0.56
+  LIBRE        12 choques= 78 dmin=0.56
+  LIBRE        13 choques= 78 dmin=0.86
+  LIBRE         6 choques= 80 dmin=0.86
+  LIBRE         1 choques= 81 dmin=0.85
+  LIBRE        11 choques= 81 dmin=0.86
+  LIBRE         4 choques= 83 dmin=0.56
+  LIBRE        16 choques= 83 dmin=0.56
+  LIBRE         7 choques= 89 dmin=0.56
+  LIBRE         5 choques= 90 dmin=0.56
