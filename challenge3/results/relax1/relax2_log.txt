@@ -1,0 +1,32 @@
+RELAX2 (variante A': receptor FUERTEMENTE RESTRINGIDO k=10000 kJ/mol/nm2, NO receptor fijo duro)
+
+RAZON DEL CAMBIO DE PROTOCOLO (no declarada en mi reporte previo, lo corrijo):
+el protocolo preparado decia masa=0 para fijar el receptor, pero LocalEnergyMinimizer de OpenMM
+minimiza sobre POSICIONES e IGNORA las masas (no es dinamica): masa 0 no inmoviliza.
+Sustitui por restriccion armonica fuerte k=10000 sobre todos los atomos del receptor y verifique
+el movimiento residual: receptor CA RMSD 0.06 A (max 0.29) — pequeno pero NO cero.
+Por tanto: NO es "receptor inmovil" ni "aisla perfectamente la contribucion del binder".
+Etiqueta correcta: variante A' (receptor fuertemente restringido), no protocolo A.
+
+SALIDA COMPLETA (python3 -u relax2.py, CPU, 2026-10-25 ~15:09 CET):
+C1 NATIVO: choques 3->2 | dmin 2.46->2.55 | contactos 980->992 | lig CA RMSD 0.369 (max 0.888) | receptor CA RMSD 0.0599 (max 0.2857) | E 164239->-6278 kJ/mol | atomos restringidos 6320
+C2 poly-ALA: choques 4->0 | dmin 2.36->2.91 | contactos 245->257 | lig CA RMSD 0.388 (max 1.392) | receptor CA RMSD 0.0615 (max 0.1428) | E 114007->-3231 kJ/mol | atomos restringidos 5187
+C3 LIBRE6_2: choques 21->2 | dmin 2.10->2.61 | contactos 601->582 | lig CA RMSD 0.868 (max 3.170) | receptor CA RMSD 0.0623 (max 0.2032) | E 124608->-8479 kJ/mol | atomos restringidos 5187
+
+ANCLAJES (metrica exacta verificador: CA primer/ultimo residuo -> U367-391 / U120-138):
+NATIVO pre: 8.19 / 15.14 | LIBRE6_2 pre: 7.35 / 16.65 | LIBRE6_2 rel2: 7.13 / 17.83 | ALA rel2: 7.87 / 17.31
+Estas dos distancias no prueban "native-like integral" ni "interfaz intacta" (retractado): son dos
+distancias puntuales y un conteo de contactos; no cubren calidad de interfaz ni funcion.
+
+ENTORNO: python 3.10.12 | openmm 8.6.1 | pdbfixer 1.12.0 | numpy 2.2.6 | amber14-all.xml vacio |
+LocalEnergyMinimizer tol=10 kJ/mol/nm maxIter=500 | CPU 2 nucleos, sin CUDA
+
+SHA256:
+8c1ec90be9b9f833196465d0e1ad8564fdf656082f6bd84406f868876e7944fb  relax2.py
+9220be0019d56c36f793b3192ffca1a4d82bf246564e619f2a973bde3cde2158  audita_relax.py
+73994371fb59f8cb3215f142c5f5f1dab1d2ef3a8d51c54bafd6ca2565232880  cand2_complex.pdb
+3005810bd8ce6a8e8e48192c8bdea69fe954a315cd28c5125999832b9ef0c8cf  nativo_RP.pdb
+085b49120ca473620033ed17f4593052b76247acdeec6e90ee3bc22dc7c9839f  ala6_complex.pdb
+b1e961abd9bb6266b6d0c2f8965905ee64ea65d2b5fae5231d262b5c0ac86ba1  nativo_RP_rel2.pdb
+a23cebad8970b14284fb6b13dc18dcaf1b0fa1f8e3b873c82738a5f99e9e0b83  ala6_complex_rel2.pdb
+68aeb41b716979137a970b87b7ef797e66e8c83ac76367b556cc764a201b5b3c  cand2_complex_rel2.pdb
