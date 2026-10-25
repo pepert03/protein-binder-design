@@ -76,8 +76,15 @@ if TSV:
         if ln.strip():
             c = ln.split(); nat[int(c[2])] = c[3]
 
-for mid in sorted(parse_models(PDB)):
-    m = parse_models(PDB)[mid]
+_models = parse_models(PDB)
+if not _models:
+    print('ERROR: 0 MODELs parseados (PDB sin registros MODEL/ENDMDL o vacio)')
+    sys.exit(2)
+for mid in sorted(_models):
+    m = _models[mid]
+    if not m['A'] or not m['B']:
+        print(f'MODEL {mid}: ERROR parseo (cadena A receptor o B binder vacia o ausente)')
+        sys.exit(2)
     rows, cl, gmin, beng, seqB = analyze(m)
     print('=' * 60)
     print('MODEL', mid, '| binder_seq', seqB, '| n_target', len(m['A']), 'n_binder', len(m['B']))

@@ -68,7 +68,7 @@ LÍMITES DUROS de estas cifras:
 
 ## 5. Siguientes pasos locales propuestos (sin GPU)
 
-1. Muestreo variable (dos segmentos con bisagra y parámetros variables) hasta
+1. (Superseded por docs/scaffolds.md: v2 descartado, v3 FALLA verificación química.) Muestreo variable (dos segmentos con bisagra y parámetros variables) hasta
    0 choques o demostrar lo contrario. En preparación.
 2. Si aparece una pose: exportar PDB del scaffold y dejar listo el input de
    fixbb/ProteinMPNN (sin ejecutar).
