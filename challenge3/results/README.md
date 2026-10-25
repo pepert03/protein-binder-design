@@ -86,3 +86,12 @@ TM core). This is an observed geometry plus an UNPROVEN causal hypothesis,
 not evidence about activation. `../docs/propuesta_end_conditioning.md` lists
 candidate design changes (end-conditioning); none has been executed and no
 agonism is claimed or proven for anything in this repository.
+
+## Local redesign viability (25 Oct 2026)
+
+`../docs/viabilidad_rediseno.md`: gates ensemble_rmsd.py and orient_gate.py
+implemented and reproduced (0.49/1.13 A and 1.62/4.93 A; G4 = 27/24 and
+15/54), 6X18 corridor calibration (native frame = calibration only under the
+official de novo/zero-shot rule), target-only sampling. No zero-clash pose
+demonstrated; recoverability claims withdrawn; nothing here proves redesign
+viability, sidechains, binding or agonism. Run outputs in `viability/`.

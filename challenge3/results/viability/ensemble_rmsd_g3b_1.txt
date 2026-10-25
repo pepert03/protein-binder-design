@@ -1,0 +1,4 @@
+# Reproducido en el sandbox del agente (numpy 2.2.6); Umbrel sin numpy
+MODELs 1 vs 2: receptor CA=316, binder CA=36
+RMSD global (fit receptor): 1.62 A
+RMSD binder (fit receptor): 4.93 A

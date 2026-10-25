@@ -3,7 +3,9 @@
 Objetivo: que el extremo N del péptido contacte el bolsillo de activación (U367-391) y el C el ECD,
 sin copiar motivos de GLP-1/exendina y sin asumir que un hotspot global produce orientación.
 
-**Estado: PROPUESTA DE DISEÑO. NO ejecutada. Ninguna de estas opciones ha corrido; el agonismo NO
+**Estado: PROPUESTA DE DISEÑO. Marco de reglas verificado (FAQ 8 oficial): de novo/zero-shot; el marco del ligando nativo solo vale para calibrar filtros, nunca como base de diseno.**
+
+**Detalle: NO ejecutada. Ninguna de estas opciones ha corrido; el agonismo NO
 está probado para ningún diseño de este repositorio. Requeriría una nueva campaña autorizada (GPU).**
 
 ## Opciones (de menor a mayor cambio de pipeline)
@@ -27,5 +29,5 @@ está probado para ningún diseño de este repositorio. Requeriría una nueva ca
 - Estérico: 0 pares intercadena <2 Å (scripts/gate_pose.py).
 - Orientación: ≥3 residuos de 1-12 con contacto ≤6 Å a U367-391; ≥3 residuos de 27-36 con
   contacto ≤6 Å a ECD; 0 residuos de 27-36 con contacto ≤3 Å al core TM.
-- Ensemble: binder RMSD <2 Å entre miembros (ensemble_rmsd.py, pendiente de escribir).
+- Ensemble: binder RMSD <2 Å entre miembros (scripts/ensemble_rmsd.py).
 - Presentación honesta: "compatible con el modo de unión nativo" — nunca "agonista".

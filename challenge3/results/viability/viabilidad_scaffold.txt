@@ -1,0 +1,23 @@
+Peptido nativo: resseq 7-36 (30 res)
+
+Luz del corredor (CA peptido -> receptor, min A):
+  P7: 4.75
+  P8: 4.09
+  P9: 4.28
+  P10: 3.71
+  P11: 4.15
+  P12: 4.44
+  P13: 4.47
+  P14: 2.95
+  P15: 5.45
+  P16: 4.54
+  P17: 4.18
+  P18: 3.37
+  P19: 6.05
+  P20: 4.74
+  CA con luz <2.0 A: 0 de 30
+
+Distancia minima superficie ECD(120-138) <-> bolsillo(367-391): 7.6 A
+Span CA N-term(P7) -> C-term(P36): 40.6 A en 30 res
+Una helice ideal que cubra ese span necesita ~28 res (tenemos 30: holgado=True)
+Choques backbone(<2.0 A) del marco nativo vs receptor: 0

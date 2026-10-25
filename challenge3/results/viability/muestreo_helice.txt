@@ -1,0 +1,6 @@
+# Reproducido en el sandbox del agente (numpy 2.2.6); Umbrel sin numpy
+  2000 muestras: mejor choques=9, C-ECD=10.9 A
+  4000 muestras: mejor choques=4, C-ECD=2.6 A
+
+MEJOR: choques=4, distancia extremo C al ECD=2.6 A
+NO demostrado con este muestreo: aumentar muestras o permitir kink (dos segmentos).
