@@ -36,10 +36,12 @@ Referencia: EM 6X18 (receptor 384 CA observados UP 29-423 + GLP-1 7-36) y comple
   loops y cola citoplasmática, no del bolsillo TM.
 - Binder top02 vs pose de diseño (complejo_v6, mismo receptor de referencia): 5.20 Å CA-RMSD.
 - Binder top02 (36 aa) vs péptido nativo EM (30 aa): NO se usa RMSD (longitudes distintas, sin mapa
-  1:1 justificado). Medida: distancia de cada CA del binder al CA nativo más cercano, con el receptor
-  alineado por 166 CA del core TM. Media global 10.5 Å, pero por mitades: res 1-15 = 3.9 Å (el
-  N-terminal del binder sigue la trayectoria nativa, varios a ~2 Å), res 16-36 = 15.2 Å (la mitad
-  C-terminal diverge hasta 25 Å). Mapeo residuo a residuo completo en analiza_result.json/stdout.
+  1:1 justificado). Medida: distancia de cada CA del binder al CA nativo más cercano (nearest-CA,
+  dirección binder->nativo), con el receptor alineado por 166 CA del core TM. Media global 10.5 Å.
+  Como descripción puramente geométrica (NO prueba orientación ni modo de unión nativo): las
+  distancias son menores en los primeros ~15 residuos del binder (media 3.9 Å) que en el resto
+  (15.2 Å, hasta 25 Å); el corte 15/16 es una partición descriptiva arbitraria. Mapeo residuo a
+  residuo completo en la salida de analiza.py.
 - Péptido nativo predicho vs su pose EM real: 34.3 Å — el modelo NO reproduce el modo de unión nativo.
 - Contactos de interfaz (<4.5 Å, receptor en numeración UniProt):
   top02: 45 residuos en ECD (29-148) y bolsillo TM/ECL (197-217, 233-237, 298-310, 364, 375-388)
@@ -53,9 +55,9 @@ Referencia: EM 6X18 (receptor 384 CA observados UP 29-423 + GLP-1 7-36) y comple
 - El control nativo bajo (0.366) NO autentica agonismo ni unión del nativo: el modelo tampoco
   reproduce la pose nativa experimental (34 Å).
 - Esto NO es un diseño validado. Es una comprobación de coherencia con resultado favorable y acotado.
-- Figura comparativa: comparativa_top02_vs_6X18.png (trazas CA, alineada por 166 CA del core TM;
-  gris = receptor EM 6X18, azul = receptor predicho, rojo = binder top02 36 aa, verde = GLP-1 nativo
-  EM 30 aa; inspección visual realizada).
+- Figura comparativa: comparativa_top02_vs_6X18.png (trazas CA, NO cartoon; alineada por 166 CA del
+  core TM; gris = receptor EM 6X18, azul = receptor predicho, rojo = binder top02 36 aa, verde =
+  GLP-1 nativo EM 30 aa; marcas N/C de ambos péptidos; inspección visual realizada).
 
 ## 6. Incidencias de esta verificación (transparencia)
 - Mi primera pasada de alineamiento tenía un bug en la convención de Kabsch (RMSD receptor 52 Å,
