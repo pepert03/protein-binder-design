@@ -62,9 +62,10 @@ biopython 1.88 como segunda implementacion, reproducido en el sandbox del escrit
 - Longitudes: 0 fuera de tolerancia (bb_check y crosscheck: N-CA 1.46, CA-C 1.52,
   C-O 1.23, C-N 1.33).
 - Angulos/torsiones: dentro de tolerancia en residuos internos (N-CA-C 111, CA-C-N 116,
-  C-N-CA 121, omega +-180, phi -58, psi -47; crosscheck biopython: idem). DOS artefactos
-  terminales: B1 N-CA-C = 90 grados y B36 CA-C-O = 180 grados (O colineal), propios del
-  constructor en los extremos; cosmeticos para un scaffold, reales si se usan tal cual.
+  C-N-CA 121, omega +-180, phi -58, psi -47; crosscheck biopython: idem). DOS defectos
+  terminales PENDIENTES DE CORRECCION antes de cualquier diseno de secuencia: B1
+  N-CA-C = 90 grados y B36 CA-C-O = 180 grados (O colineal). No son cosmeticos: v4 NO
+  es input valido para ProteinMPNN hasta que los extremos esten corregidos.
 - Choques: 0 internos no enlazados (check_scaffold) y 0 backbone-receptor (gate G4).
 - Gate de orientacion: PASS (G1=3, G2=10, G3 OK, G4=0).
 - Calibracion (test_nativo.py, SOLO calibracion, no base de diseno): la helice canonica
@@ -76,9 +77,10 @@ RESERVAS (ninguna resuelta):
 - QUIRALIDAD: NO establecida. El PDB no lleva CB; cualquier afirmacion "L" deriva de un
   pseudo-CB reconstruido por convencion, no del archivo. Afirmacion L retirada
   explicitamente. Se fijara al construir secuencia real.
-- Sidechains: 2 residuos con CB APROXIMADO a <2 A del receptor (B6: 1.83 A, B28: 1.45 A;
-  posiciones CB estimadas por bb_check, no reales). B6/B28 necesitaran residuos pequenos
-  y revision de rotameros en el diseno de secuencia.
+- Sidechains: CONFLICTO ABIERTO en B6 y B28: CB APROXIMADO a <2 A del receptor (1.83 y
+  1.45 A; posiciones CB estimadas por bb_check, no reales). NO esta demostrado que la
+  eleccion de residuo pequeno o de rotamero lo resuelva: queda como reserva, no como
+  solucion. Puede requerir revisar la pose.
 - Sin secuencia, sin sidechains reales, sin plegado, sin funcion. Nada predice union ni
   activacion. Es una HIPOTESIS DE POSE con backbone geometricamente valido (salvo
   extremos), candidata a diseno de secuencia, no un diseno.
