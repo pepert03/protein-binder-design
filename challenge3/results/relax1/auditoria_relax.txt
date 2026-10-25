@@ -1,0 +1,19 @@
+AUDITORIA RELAX-BENCH (metodo corregido, pares de cadenas verificados, atomos pesados, OXT excluido por ser anadido por capping)
+
+Sistema / choques pre->post / dmin pre->post / contactos<5A pre->post / CA RMSD ligando / CA RMSD receptor
+NATIVO 6X18 R-P:  3 -> 6 | 2.46 -> 2.58 | 980 -> 1102 | peptido 0.57 (max 2.14) | receptor 0.67 (max 4.38)
+LIBRE6_2:        21 -> 1 | 2.10 -> 2.58 | 601 -> 634  | binder 1.14 (max 3.24)  | receptor 0.88 (max 4.54)
+
+Anclaje candidata (emparejamiento por orden CA, pdbfixer renumero cadenas):
+  N-term-bolsillo: 6.26 -> 5.36 A | C-term-ECD: 5.24 -> 6.09 A  (enganche preservado)
+
+Energias (vacio, amber14): NATIVO 161777 -> -45405 kJ/mol | LIBRE6_2 132505 -> -41403 kJ/mol
+Convergencia: LocalEnergyMinimizer tol=10 kJ/mol/nm, maxIter=500, restriccion CA k=100 kJ/mol/nm2 (NO fija el receptor: RMSD receptor 0.67-0.88)
+
+ERRORES DETECTADOS EN MI REPORTE ANTERIOR (retirados):
+- "21->0 choques, dmin->8.24": FALSO. El selector por tamano comparo dos fragmentos del RECEPTOR entre si en el archivo post (7 cadenas tras split por TER). Corregido: 21->1, dmin 2.58.
+- "NATIVO 3->0": mismo bug de emparejamiento; corregido: 3->6 (el criterio estricto vdW>0.4, tras minimizacion en vacio, MARCA incluso la interfaz nativa: el cero no es referencia calibrada post-relajacion).
+- Reafirmo retractacion: nada probado sobre v5 (solapes 0.42 A, no ensayado aqui).
+
+Provenance: openmm 8.6.1, pdbfixer (pip), ForceField amber14-all.xml, vacio (sin disolvente), LocalEnergyMinimizer, CPU. Entradas/salidas sha256 abajo.
+Interpretacion limitada: la relajacion local absorbio 20/21 solapes de la mejor candidata v6 SIN perder interfaz (contactos 601->634, anclaje mantenido), con deriva binder 1.14 A / receptor 0.88 A; el control nativo gana solapes estrictos (3->6) compactandose (contacts +122). Vacio, una candidata, un protocolo: no valida diseno ni generaliza.

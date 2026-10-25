@@ -1,0 +1,8 @@
+Entorno relax-bench/auditoria: python 3.10.12 | openmm 8.6.1 | pdbfixer 1.12.0 | numpy 2.2.6 | CPU 2 nucleos, sin CUDA
+FF: amber14-all.xml, vacio (sin disolvente ni membrana); LocalEnergyMinimizer tol=10 kJ/mol/nm maxIter=500; restriccion CA k=100 kJ/mol/nm2 (receptor NO fijo en relax1)
+Energias (kJ/mol, vacio): NATIVO 161777 -> -45405 | LIBRE6_2 132505 -> -41403
+sha256:
+73994371fb59f8cb3215f142c5f5f1dab1d2ef3a8d51c54bafd6ca2565232880  cand2_complex.pdb
+3005810bd8ce6a8e8e48192c8bdea69fe954a315cd28c5125999832b9ef0c8cf  nativo_RP.pdb
+30eee52945abef3c4e00a5a568758f914399d7e00ae307b3b79e5dd6d2e375d4  cand2_complex_rel.pdb
+2651801f3e3720195db91177bdebfe0b494f8ba343bc175bb7f28c889643ecc7  nativo_RP_rel.pdb
