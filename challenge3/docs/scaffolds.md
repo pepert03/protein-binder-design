@@ -51,7 +51,21 @@ C-O = 0.80 A, sin CB). Se conserva como evidencia y para regresiones del gate.
 - scripts/exporta_scaffold2.py, scripts/verifica_scaffold_v2.py: generador/verificador
   de v2 (artefacto descartado; conservados para procedencia).
 
-## scaffold_v4.pdb - SUPERA la verificacion geometrica (con reservas; NO es un diseno)
+## scaffold_v5.pdb - INPUT VIGENTE: geometria verificada, extremos corregidos (NO es un diseno)
+
+Igual que v4 (misma pose, PARAMS identicos, traza CA identica a 0.0000 A) pero con los
+extremos corregidos construyendo 38 residuos y conservando 2-37. Verificacion
+independiente (escritor, 25 oct): regenerado atomo a atomo (0 mismatches) desde
+scripts/exporta_scaffold5.py; B1 N-CA-C = 111.0 (v4: 90.0) y B36 CA-C-O = 122.0 (v4:
+180.0); check_scaffold 0 fuera de tolerancia; crosscheck biopython nominal; 0 colisiones
+internas; 0 choques backbone-receptor; gate PASS (G1=3, G2=10, G3 OK, G4=0). bb_check:
+0 enlaces fuera; los 2 conflictos de CB aproximado (B6 1.83 A, B28 1.45 A) SIGUEN
+ABIERTOS como reserva sin solucion demostrada. Quiralidad: NO establecida (sin CB en el
+archivo; la lectura "L" de pseudo-CB reconstruido sigue retirada). Sin secuencia, sin
+sidechains reales, sin plegado, sin funcion: la salida futura de ProteinMPNN sera una
+secuencia candidata sobre esta pose, NO un diseno validado.
+
+## scaffold_v4.pdb - SUPERSEDIDA por v5 (misma pose; extremos B1/B36 con geometria invalida)
 
 Verificacion independiente (escritor, 25 oct; ademas crosscheck del investigador con
 biopython 1.88 como segunda implementacion, reproducido en el sandbox del escritor):

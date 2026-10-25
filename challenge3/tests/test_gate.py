@@ -8,6 +8,7 @@ GATE = os.path.join(BASE, '..', 'scripts', 'orient_gate.py')
 G3_1 = os.path.join(BASE, '..', 'results', 'traj1', 'g3_1.pdb')
 SCAF2 = os.path.join(BASE, '..', 'scaffolds', 'scaffold_v2_DISCARDED.pdb')
 SCAF4 = os.path.join(BASE, '..', 'scaffolds', 'scaffold_v4.pdb')
+SCAF5 = os.path.join(BASE, '..', 'scaffolds', 'scaffold_v5.pdb')
 TMP = tempfile.mkdtemp(prefix='gate_tests_')
 
 def run(path):
@@ -52,6 +53,9 @@ rc, out = run(p); res.append(('T8 binder incompleto -> ERROR claro', rc == 2 and
 
 # T9: scaffold_v4 real -> PASS (exit 0)
 rc, out = run(SCAF4); res.append(('T9 scaffold_v4 -> PASS exit 0', rc == 0 and 'GATE GLOBAL: PASS' in out))
+
+# T10: scaffold_v5 (input vigente) -> PASS (exit 0)
+rc, out = run(SCAF5); res.append(('T10 scaffold_v5 -> PASS exit 0', rc == 0 and 'GATE GLOBAL: PASS' in out))
 
 for nombre, ok in res: print(('OK ' if ok else 'FALLO '), nombre)
 print('TODOS PASS' if all(ok for _, ok in res) else 'HAY FALLOS')
