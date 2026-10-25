@@ -102,3 +102,9 @@ RESERVAS (ninguna resuelta):
 Siguiente paso propuesto (docs/siguiente_paso.md, NO ejecutado): ProteinMPNN en CPU
 sobre la cadena B. Pausado hasta revision; la validacion AF2 posterior requeriria GPU
 con autorizacion explicita.
+
+ACLARACION DE ALCANCE (25 oct): ProteinMPNN genera una SECUENCIA sobre
+el scaffold fijo; NO produce una pose predicha independiente. Gates y RMSD medidos
+contra el scaffold son metricas condicionadas al scaffold: NO validan la secuencia ni
+su plegado. Esa validacion requiere una estructura nueva (re-plegado independiente,
+p. ej. AF2), que requeriria autorizacion de GPU.
