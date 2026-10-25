@@ -1,8 +1,8 @@
 version: 1
 # BORRADOR — NO LISTO. Constructo pendiente de aprobación del usuario.
 # Cadena A = GLP1R humano CONTINUO, UniProt P43220 posiciones 24-463 (cadena madura;
-# FT SIGNAL 1..23, FT CHAIN 24..463; fuente: /tmp/pose/P43220.txt sha1 739ecaa8ea56c62a566da3737a25f6de6a532b9d,
-# entrada Reviewed, seq version 2). SIN uniones artificiales: secuencia real continua.
+# FT SIGNAL 1..23, FT CHAIN 24..463; fuente: UniProt P43220, entrada Reviewed, seq version 2 (rest.uniprot.org);
+# match exacto verificado por el verificador contra el SQ). SIN uniones artificiales: secuencia real continua.
 # Topología UniProt (FT): ECD 24-139; TM1 140-164; ICL1 165-175; TM2 176-201; ECL1 202-227;
 # TM3 228-251; ICL2 252-265; TM4 266-290; ECL2 291-305; TM5 306-328; ICL3 329-348;
 # TM6 349-370; ECL3 371-383; TM7 384-404; cola citoplasmática 405-463.

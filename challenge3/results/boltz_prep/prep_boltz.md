@@ -68,7 +68,9 @@ aprobación explícita previa). Hasta medirlo, no se puede declarar viable ni CP
 - glp1r_top02.yaml 853466623d5a4f9e538153e93b05990b4e3cbdde — complejo 316+36, msa:empty.
 - glp1r_nativo.yaml c4caa2feededf93ce16ce5d299e50021f0f6b9c0 — control techo.
 - glp1r_aleatorio36.yaml 3d7355f0674fd5b1c148c320eb2689464e78894b — control suelo.
-- seqs.json 445a5ebc2ffb88e547bfd72f5cce4b8e78cfada8 — secuencias exactas y su procedencia.
+- seqs.json 3caedeb3303a763fbdfc070da807c31b833b5552 — secuencias exactas y su procedencia. CORREGIDO 25oct por el verificador:
+  la entrada recA (concatenado descartado) se sustituye por glp1r_24-463 (secuencia exacta de las
+  DRAFT, 440 aa); binders sin cambios. El historial git conserva la versión anterior.
 
 ## 6b. YAML concatenados = DESCARTADOS (25oct)
 Concatenar los fragmentos del crop crea 5 uniones peptídicas artificiales; aun con caveat NO es ruta

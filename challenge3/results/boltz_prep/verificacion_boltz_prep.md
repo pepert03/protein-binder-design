@@ -47,3 +47,10 @@
 - Correcciones aplicadas por el verificador al publicar (prosa acordada): recomendacion por
   FIDELIDAD de constructo (no por invalidez de truncar); CPU NO declarado inviable por la tabla
   orientativa Boltz-1 (cap RAM/boltz 2.x sin verificar); saneo de IDs internos de la prosa.
+
+## Correccion seqs.json (riesgo de ejecucion, resuelto 25oct)
+seqs.json contenia recA = constructo concatenado DESCARTADO: cualquier consumidor del manifiesto
+habria ejecutado el constructo invalido. Sustituido por glp1r_24-463 (secuencia exacta de las
+DRAFT verificadas, 440 aa, sha1 seqs.json nuevo 3caedeb3303a763fbdfc070da807c31b833b5552); binders top02/nativo/aleatorio36
+sin cambios. Historial git conserva la version anterior. Ademas se sustituyo en las DRAFT la
+ruta local del investigador (/tmp/pose/...) por la fuente verificable (UniProt P43220 SV=2).
