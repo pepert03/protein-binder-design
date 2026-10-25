@@ -3,7 +3,7 @@
 ## traj1 (first DGX trajectory, 24-25 Oct 2026) - FAILS the steric gate
 
 - `traj1/g3_1.pdb` - best-model export of trajectory 1 (ColabDesign binder, 36 aa
-  sequence PPSPKIWEAHEAQARYDYLRIAIEDHVSVGMFGGAM, 2 MODELs).
+  sequence PPSPKIWEAHEAQARYDYLRIAIEDHVSVGMFGGAM; two MODELs from the ensemble of the same best step - one candidate).
 - `traj1/g3_1_gate.txt` - per-MODEL pose gate (`scripts/gate_pose.py`, reproduced
   independently on the Umbrel clone): MODEL 1: 27 atom pairs < 2.0 A, minimum
   0.56 A; MODEL 2: 24 pairs, minimum 0.93 A. Both models show severe steric
@@ -25,3 +25,21 @@ sequence (6/6 exact).
 
 Earlier contact analyses of this pose used a circular mapping and are
 superseded; they are not published here.
+
+## Notation: two MODELs = one candidate
+
+The PDB exports carry two MODEL records that come from the ensemble of the
+SAME best optimization step (confirmed against the colabdesign source in the
+DGX venv). They are not two independent candidates. The run metrics in the
+log are averages over the ensemble members (e.g. plddt 65.7 / 64.6 -> mean
+65.1, matching the log). The steric gate is evaluated per MODEL; both models
+of traj1 fail it, so the verdict is unchanged.
+
+## DGX-side tooling
+
+`scripts/supervisor_dgx.sh` - the actual supervisor that ran on the DGX for
+run g3b: it waits for the composite condition (TRAJ traj=1 line in the log +
+g3b_results.json containing "traj": 1 + json mtime stable for 20 s +
+non-empty g3b_1.pdb), copies the artifacts to export/ BEFORE stopping the
+process, and leaves a g3b_SUPERVISOR.txt record. DGX-only; not for the
+Umbrel.
