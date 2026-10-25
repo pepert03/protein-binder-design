@@ -1,0 +1,26 @@
+nohup: ignoring input
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/4498 [00:00<?, ?it/s]Loading weights:   0%|          | 18/4498 [00:02<08:21,  8.93it/s]Loading weights:  33%|███▎      | 1485/4498 [00:02<00:03, 979.61it/s]Loading weights: 100%|██████████| 4498/4498 [00:02<00:00, 2057.14it/s]
+[transformers] [1mEsmForProteinFolding LOAD REPORT[0m from: facebook/esmfold_v1
+Key                                | Status  | 
+-----------------------------------+---------+-
+esm.contact_head.regression.weight | MISSING | 
+esm.contact_head.regression.bias   | MISSING | 
+
+Notes:
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+{"name": "v6_top02", "len": 36, "mean_plddt": 0.92, "ca_rmsd_vs_ref": 0.695, "max_ca_dev": 1.283, "pdb": "out32/v6_top02_esmfold.pdb"}
+{"name": "v6_top14", "len": 36, "mean_plddt": 0.9, "ca_rmsd_vs_ref": 0.48, "max_ca_dev": 0.946, "pdb": "out32/v6_top14_esmfold.pdb"}
+{"name": "v6_top05", "len": 36, "mean_plddt": 0.92, "ca_rmsd_vs_ref": 0.64, "max_ca_dev": 1.154, "pdb": "out32/v6_top05_esmfold.pdb"}
+{"name": "aleatorio36", "len": 36, "mean_plddt": 0.89, "ca_rmsd_vs_ref": 0.607, "max_ca_dev": 1.135, "pdb": "out32/aleatorio36_esmfold.pdb"}
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/4498 [00:00<?, ?it/s]Loading weights:   0%|          | 18/4498 [00:01<07:38,  9.78it/s]Loading weights:  13%|█▎        | 568/4498 [00:01<00:09, 405.10it/s]Loading weights: 100%|██████████| 4498/4498 [00:02<00:00, 2214.79it/s]
+[transformers] [1mEsmForProteinFolding LOAD REPORT[0m from: facebook/esmfold_v1
+Key                                | Status  | 
+-----------------------------------+---------+-
+esm.contact_head.regression.weight | MISSING | 
+esm.contact_head.regression.bias   | MISSING | 
+
+Notes:
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+{"name": "nativo_glp1", "len": 30, "mean_plddt": 0.64, "ca_rmsd_vs_ref": 6.426, "max_ca_dev": 11.19, "pdb": "out32/nativo_glp1_esmfold.pdb"}
