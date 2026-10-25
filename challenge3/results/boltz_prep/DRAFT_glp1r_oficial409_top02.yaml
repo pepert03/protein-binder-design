@@ -1,0 +1,15 @@
+version: 1
+# BORRADOR — constructo OFICIAL challenge 3 (UniProt P43220 24-432, 409 aa), verificado
+# residuo a residuo contra la pagina oficial (fetch 25oct ~20:00 CET). Tanda aprobada por el
+# usuario 25oct 20:04 CET (mismos 3 casos, sin submission). SIN uniones artificiales.
+# 409 aa + binder. msa: empty. LIMITACION: prediccion de complejo sobre secuencia completa;
+# pose/confianza del modelo, sin contexto de membrana/Gs; NO es validacion experimental.
+sequences:
+  - protein:
+      id: A
+      sequence: RPQGATVSLWETVQKWREYRRQCQRSLTEDPPPATDLFCNRTFDEYACWPDGEPGSFVNVSCPWYLPWASSVPQGHVYRFCTAEGLWLQKDNSSLPWRDLSECEESKRGERSSPEEQLLFLYIIYTVGYALSFSALVIASAILLGFRHLHCTRNYIHLNLFASFILRALSVFIKDAALKWMYSTAAQQHQWDGLLSYQDSLSCRLVFLLMQYCVAANYYWLLVEGVYLYTLLAFSVLSEQWIFRLYVSIGWGVPLLFVVPWGIVKYLYEDEGCWTRNSNMNYWLIIRLPILFAIGVNFLIFVRVICIVVSKLKANLMCKTDIKCRLAKSTLTLIPLLGTHEVIFAFVMDEHARGTLRFIKLFTELSFTSFQGLMVAILYCFVNNEVQLEFRKSWERWRLEHLHIQRDSS
+      msa: empty
+  - protein:
+      id: B
+      sequence: SAESLLTEGLGEALRARNARLAREAAEAAELAERAA
+      msa: empty
