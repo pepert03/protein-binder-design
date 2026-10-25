@@ -66,3 +66,26 @@ Referencia: EM 6X18 (receptor 384 CA observados UP 29-423 + GLP-1 7-36) y comple
 - Escaneo de datos privados sobre todo el paquete: sin wamids, IDs de agentes/chats, cuentas, rutas de
   usuario ni secretos (los únicos matches eran texto de ayuda de boltz y nombres de hiperparámetros).
 - Script de análisis incluido (analiza.py); resultados crudos en analiza_result.json.
+
+## 7. Analisis regional ECD/ECL2 (auditado del investigador, 25oct)
+El investigador aporto un analisis regional propio (LEEME + analyze.py). Veredicto de la auditoria:
+- REPRODUCIDO EXACTO con mi codigo independiente (analiza.py extendido): global 6.38/8.58/10.13 A;
+  bloque 136-410 (270 CA) 3.81/3.84/4.24 A; ECD (29-135, 101 CA) RMSD tras alinear bloque TM
+  14.88/19.30/23.89 A, desplazamiento de centroide 12.05/12.86/17.06 A; ECL2 aprox (285-310, 26 CA)
+  RMSD 2.49/2.27/2.53 A, centroide 1.79/1.35/1.82 A (top02/nativo/aleatorio36).
+- OJO con nombres de region (aproximadas por anotacion propia del investigador, NO FT UniProt):
+  su "TMD" 136-410 incluye loops ICL/ECL y ECL2, no es el core TM; por eso da 3.8-4.2 A frente a
+  2.6 A del core TM FT estricto (166 CA, seccion 4). Su "ECL2" 285-310 incluye extremos TM4/TM5
+  (FT ECL2 = 291-305), lo que ancla el alineamiento y embellece la cifra. Se publican ambas con sus
+  definiciones exactas; no mezclar.
+- RECHAZADO: su binder_rmsd_vs_peptido_EM para top02 (10.12 A) y aleatorio36 (64.82 A): trunca el
+  binder a 30 res (min(len)) con correspondencia posicional arbitraria contra GLP-1 30 aa — RMSD sin
+  mapa justificado, no publicable. Su binder_dist_centroide usa el mismo truncado; los valores con el
+  binder COMPLETO (36 res, mi calculo) son 11.56 A (top02) y 63.96 A (aleatorio36). Para nativo la
+  correspondencia 1:1 SI esta justificada (secuencia identica): 32.69 A bajo alineamiento por bloque
+  136-410 (34.25 A bajo alineamiento global 384 CA, seccion 4; ambas correctas en su frame).
+- Lectura nueva que aporta (descriptiva, con caveat de estado): el ECD predicho queda desplazado
+  ~12-17 A de centroide respecto al EM tras alinear el bloque TM, mientras ECL2 y el core TM quedan
+  cerca. 6X18 es estado ACTIVO (peptido+Gs+Nb35) y las predicciones no llevan Gs: parte del
+  desplazamiento del ECD puede ser diferencia de estado, no solo error del modelo. Estas cifras
+  describen geometria; no validan union ni explican el ipTM (ninguna causalidad probada).
