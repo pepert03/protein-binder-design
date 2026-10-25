@@ -1,0 +1,78 @@
+============================================================
+MODEL 1 | binder_seq TEYAKKQMYDYMLNDLEMLTGCVPAGFFFGGFFGGG | n_target 316 n_binder 36
+contactos_le5A 48 | binder_res comprometidos 26 de 36
+solape_residuos_nativos52: {'ECD': 10, 'TM/ECL': 23} | no_tocados: [36, 39, 43, 67, 68, 69, 88, 89, 91, 121, 123, 145, 152, 211, 214, 215, 221, 309, 391]
+fuera_nativo52: 15
+   resseq 1 = U29 THR 3.44A ECD
+   resseq 210 = U238 ALA 4.86A TM/ECL
+   resseq 256 = U284 TRP 4.88A TM/ECL
+   resseq 267 = U295 GLY 4.73A TM/ECL
+   resseq 269 = U297 TRP 4.19A TM/ECL
+   resseq 286 = U314 LEU 3.22A TM/ECL
+   resseq 289 = U317 ILE 2.87A TM/ECL
+   resseq 294 = U322 LEU 4.10A TM/ECL
+   resseq 336 = U364 GLU 2.97A TM/ECL
+   resseq 339 = U367 PHE 1.97A TM/ECL
+   resseq 340 = U368 ALA 0.71A TM/ECL
+   resseq 341 = U369 PHE 1.69A TM/ECL
+   resseq 342 = U370 VAL 3.31A TM/ECL
+   resseq 343 = U371 MET 2.22A TM/ECL
+   resseq 355 = U383 LYS 3.61A TM/ECL
+pares_<2.0A: 15 | min_global_A: 0.71 (24, 'CB', 340, 'C')
+   choque 0.71A B24(PRO)-CB vs A340/U368(ALA)-C
+   choque 0.82A B24(PRO)-CB vs A340/U368(ALA)-O
+   choque 0.93A B24(PRO)-CA vs A340/U368(ALA)-O
+   choque 1.45A B18(MET)-CE vs A205/U233(MET)-CE
+   choque 1.58A B24(PRO)-CB vs A340/U368(ALA)-CA
+   choque 1.66A B11(TYR)-CD2 vs A177/U205(TYR)-OH
+   choque 1.69A B26(GLY)-N vs A341/U369(PHE)-CD1
+   choque 1.70A B24(PRO)-C vs A340/U368(ALA)-O
+   choque 1.76A B24(PRO)-CG vs A340/U368(ALA)-C
+   choque 1.83A B11(TYR)-CG vs A177/U205(TYR)-OH
+   choque 1.87A B24(PRO)-CG vs A340/U368(ALA)-O
+   choque 1.92A B11(TYR)-CE2 vs A177/U205(TYR)-OH
+   choque 1.93A B24(PRO)-CG vs A340/U368(ALA)-CA
+   choque 1.94A B24(PRO)-CB vs A341/U369(PHE)-N
+   choque 1.97A B24(PRO)-CG vs A339/U367(PHE)-O
+============================================================
+MODEL 2 | binder_seq TEYAKKQMYDYMLNDLEMLTGCVPAGFFFGGFFGGG | n_target 316 n_binder 36
+contactos_le5A 49 | binder_res comprometidos 25 de 36
+solape_residuos_nativos52: {'ECD': 11, 'TM/ECL': 22} | no_tocados: [36, 39, 43, 67, 68, 69, 88, 89, 121, 123, 145, 152, 211, 214, 215, 221, 237, 309, 310]
+fuera_nativo52: 16
+   resseq 1 = U29 THR 4.33A ECD
+   resseq 170 = U198 ASP 4.74A TM/ECL
+   resseq 174 = U202 LYS 4.03A TM/ECL
+   resseq 256 = U284 TRP 4.39A TM/ECL
+   resseq 269 = U297 TRP 4.21A TM/ECL
+   resseq 286 = U314 LEU 3.03A TM/ECL
+   resseq 289 = U317 ILE 3.09A TM/ECL
+   resseq 336 = U364 GLU 2.69A TM/ECL
+   resseq 337 = U365 VAL 2.70A TM/ECL
+   resseq 338 = U366 ILE 2.82A TM/ECL
+   resseq 339 = U367 PHE 0.49A TM/ECL
+   resseq 340 = U368 ALA 0.88A TM/ECL
+   resseq 341 = U369 PHE 0.55A TM/ECL
+   resseq 342 = U370 VAL 1.55A TM/ECL
+   resseq 343 = U371 MET 3.41A TM/ECL
+   resseq 355 = U383 LYS 4.20A TM/ECL
+pares_<2.0A: 54 | min_global_A: 0.49 (24, 'CD', 339, 'C')
+   choque 0.49A B24(PRO)-CD vs A339/U367(PHE)-C
+   choque 0.55A B25(ALA)-CB vs A341/U369(PHE)-O
+   choque 0.87A B25(ALA)-N vs A341/U369(PHE)-CA
+   choque 0.88A B24(PRO)-CG vs A340/U368(ALA)-N
+   choque 0.88A B25(ALA)-N vs A341/U369(PHE)-C
+   choque 0.93A B25(ALA)-C vs A341/U369(PHE)-CB
+   choque 1.02A B24(PRO)-CA vs A340/U368(ALA)-C
+   choque 1.04A B23(VAL)-CG1 vs A340/U368(ALA)-CB
+   choque 1.06A B25(ALA)-CA vs A341/U369(PHE)-C
+   choque 1.09A B22(CYS)-O vs A359/U387(GLU)-CD
+   choque 1.15A B26(GLY)-N vs A341/U369(PHE)-CB
+   choque 1.18A B23(VAL)-CG1 vs A340/U368(ALA)-CA
+   choque 1.20A B24(PRO)-N vs A339/U367(PHE)-O
+   choque 1.22A B24(PRO)-CD vs A340/U368(ALA)-N
+   choque 1.24A B17(GLU)-OE1 vs A352/U380(ARG)-NH2
+   choque 1.26A B22(CYS)-O vs A359/U387(GLU)-OE2
+   choque 1.27A B24(PRO)-CB vs A340/U368(ALA)-CA
+   choque 1.31A B25(ALA)-CA vs A341/U369(PHE)-O
+   choque 1.32A B24(PRO)-C vs A341/U369(PHE)-N
+   choque 1.33A B24(PRO)-CB vs A340/U368(ALA)-N
