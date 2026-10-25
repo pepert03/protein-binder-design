@@ -1,0 +1,152 @@
+$ /kaggle/working/boltzenv/bin/boltz predict --help
+rc=0 t=16s
+STDOUT
+is False.
+  --msa_server_url TEXT           MSA server url. Used only if
+                                  --use_msa_server is set.
+  --msa_pairing_strategy TEXT     Pairing strategy to use. Used only if
+                                  --use_msa_server is set. Options are
+                                  'greedy' and 'complete'
+  --msa_server_username TEXT      MSA server username for basic auth. Used
+                                  only if --use_msa_server is set. Can also be
+                                  set via BOLTZ_MSA_USERNAME environment
+                                  variable.
+  --msa_server_password TEXT      MSA server password for basic auth. Used
+                                  only if --use_msa_server is set. Can also be
+                                  set via BOLTZ_MSA_PASSWORD environment
+                                  variable.
+  --api_key_header TEXT           Custom header key for API key authentication
+                                  (default: X-API-Key).
+  --api_key_value TEXT            Custom header value for API key
+                                  authentication.
+  --use_potentials                Whether to use potentials for steering.
+                                  Default is False.
+  --model [boltz1|boltz2]         The model to use for prediction. Default is
+                                  boltz2.
+  --method TEXT                   The method to use for prediction. Default is
+                                  None.
+  --preprocessing-threads INTEGER
+                                  The number of threads to use for
+                                  preprocessing. Default is 1.
+  --affinity_mw_correction        Whether to add the Molecular Weight
+                                  correction to the affinity value head.
+  --sampling_steps_affinity INTEGER
+                                  The number of sampling steps to use for
+                                  affinity prediction. Default is 200.
+  --diffusion_samples_affinity INTEGER
+                                  The number of diffusion samples to use for
+                                  affinity prediction. Default is 5.
+  --affinity_checkpoint PATH      An optional checkpoint, will use the
+                                  provided Boltz-1 model by default.
+  --max_msa_seqs INTEGER          The maximum number of MSA sequences to use
+                                  for prediction. Default is 8192.
+  --subsample_msa                 Whether to subsample the MSA. Default is
+                                  True.
+  --num_subsampled_msa INTEGER    The number of MSA sequences to subsample.
+                                  Default is 1024.
+  --no_kernels                    Whether to disable the kernels. Default
+                                  False
+  --write_embeddings              to dump the s and z embeddings into a npz
+                                  file. Default is False.
+  --help                          Show this message and exit.
+
+STDERR
+
+
+$ /kaggle/working/boltzenv/bin/boltz predict /kaggle/working/inputs/glp1r_top02.yaml --out_dir /kaggle/working/out/top02 --recycling_steps 3 --sampling_steps 200 --diffusion_samples 1 --devices 1
+rc=0 t=324s
+STDOUT
+Downloading the CCD data to /root/.boltz/mols.tar. This may take a bit of time. You may change the cache directory with the --cache flag.
+Extracting the CCD data to /root/.boltz/mols. This may take a bit of time. You may change the cache directory with the --cache flag.
+Downloading the Boltz-2 weights to /root/.boltz/boltz2_conf.ckpt. You may change the cache directory with the --cache flag.
+Downloading the Boltz-2 affinity weights to /root/.boltz/boltz2_aff.ckpt. You may change the cache directory with the --cache flag.
+Checking input data.
+Processing 1 inputs with 1 threads.
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+Running structure prediction for 1 input.
+
+Predicting: |          | 0/? [00:00<?, ?it/s]
+Predicting:   0%|          | 0/1 [00:00<?, ?it/s]
+Predicting DataLoader 0:   0%|          | 0/1 [00:00<?, ?it/s]
+Predicting DataLoader 0: 100%|██████████| 1/1 [02:45<00:00,  0.01it/s]Number of failed examples: 0
+
+Predicting DataLoader 0: 100%|██████████| 1/1 [02:45<00:00,  0.01it/s]
+
+STDERR
+
+  0%|          | 0/1 [00:00<?, ?it/s]
+100%|██████████| 1/1 [00:00<00:00,  9.61it/s]
+100%|██████████| 1/1 [00:00<00:00,  9.59it/s]
+Using bfloat16 Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+/kaggle/working/boltzenv/lib/python3.12/site-packages/pytorch_lightning/trainer/connectors/logger_connector/logger_connector.py:76: Starting from v1.9.0, `tensorboardX` has been removed as a dependency of the `pytorch_lightning` package, due to potential conflicts with other packages in the ML ecosystem. For this reason, `logger=True` will use `CSVLogger` as the default logger, unless the `tensorboard` or `tensorboardX` packages are found. Please `pip install lightning[extra]` or one of them to enable TensorBoard support by default
+/kaggle/working/boltzenv/lib/python3.12/site-packages/pytorch_lightning/utilities/migration/utils.py:56: The loaded checkpoint was produced with Lightning v2.5.0.post0, which is newer than your current Lightning version: v2.5.0
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+/kaggle/working/boltzenv/lib/python3.12/site-packages/pytorch_lightning/utilities/_pytree.py:21: `isinstance(treespec, LeafSpec)` is deprecated, use `isinstance(treespec, TreeSpec) and treespec.is_leaf()` instead.
+
+
+$ /kaggle/working/boltzenv/bin/boltz predict /kaggle/working/inputs/glp1r_nativo.yaml --out_dir /kaggle/working/out/nativo --recycling_steps 3 --sampling_steps 200 --diffusion_samples 1 --devices 1
+rc=0 t=215s
+STDOUT
+Checking input data.
+Processing 1 inputs with 1 threads.
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+Running structure prediction for 1 input.
+
+Predicting: |          | 0/? [00:00<?, ?it/s]
+Predicting:   0%|          | 0/1 [00:00<?, ?it/s]
+Predicting DataLoader 0:   0%|          | 0/1 [00:00<?, ?it/s]
+Predicting DataLoader 0: 100%|██████████| 1/1 [02:53<00:00,  0.01it/s]Number of failed examples: 0
+
+Predicting DataLoader 0: 100%|██████████| 1/1 [02:53<00:00,  0.01it/s]
+
+STDERR
+
+  0%|          | 0/1 [00:00<?, ?it/s]
+100%|██████████| 1/1 [00:00<00:00,  9.96it/s]
+100%|██████████| 1/1 [00:00<00:00,  9.94it/s]
+Using bfloat16 Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+/kaggle/working/boltzenv/lib/python3.12/site-packages/pytorch_lightning/trainer/connectors/logger_connector/logger_connector.py:76: Starting from v1.9.0, `tensorboardX` has been removed as a dependency of the `pytorch_lightning` package, due to potential conflicts with other packages in the ML ecosystem. For this reason, `logger=True` will use `CSVLogger` as the default logger, unless the `tensorboard` or `tensorboardX` packages are found. Please `pip install lightning[extra]` or one of them to enable TensorBoard support by default
+/kaggle/working/boltzenv/lib/python3.12/site-packages/pytorch_lightning/utilities/migration/utils.py:56: The loaded checkpoint was produced with Lightning v2.5.0.post0, which is newer than your current Lightning version: v2.5.0
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+/kaggle/working/boltzenv/lib/python3.12/site-packages/pytorch_lightning/utilities/_pytree.py:21: `isinstance(treespec, LeafSpec)` is deprecated, use `isinstance(treespec, TreeSpec) and treespec.is_leaf()` instead.
+
+
+$ /kaggle/working/boltzenv/bin/boltz predict /kaggle/working/inputs/glp1r_aleatorio36.yaml --out_dir /kaggle/working/out/aleatorio36 --recycling_steps 3 --sampling_steps 200 --diffusion_samples 1 --devices 1
+rc=0 t=219s
+STDOUT
+Checking input data.
+Processing 1 inputs with 1 threads.
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+Running structure prediction for 1 input.
+
+Predicting: |          | 0/? [00:00<?, ?it/s]
+Predicting:   0%|          | 0/1 [00:00<?, ?it/s]
+Predicting DataLoader 0:   0%|          | 0/1 [00:00<?, ?it/s]
+Predicting DataLoader 0: 100%|██████████| 1/1 [02:57<00:00,  0.01it/s]Number of failed examples: 0
+
+Predicting DataLoader 0: 100%|██████████| 1/1 [02:57<00:00,  0.01it/s]
+
+STDERR
+
+  0%|          | 0/1 [00:00<?, ?it/s]
+100%|██████████| 1/1 [00:00<00:00,  9.65it/s]
+100%|██████████| 1/1 [00:00<00:00,  9.64it/s]
+Using bfloat16 Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+/kaggle/working/boltzenv/lib/python3.12/site-packages/pytorch_lightning/trainer/connectors/logger_connector/logger_connector.py:76: Starting from v1.9.0, `tensorboardX` has been removed as a dependency of the `pytorch_lightning` package, due to potential conflicts with other packages in the ML ecosystem. For this reason, `logger=True` will use `CSVLogger` as the default logger, unless the `tensorboard` or `tensorboardX` packages are found. Please `pip install lightning[extra]` or one of them to enable TensorBoard support by default
+/kaggle/working/boltzenv/lib/python3.12/site-packages/pytorch_lightning/utilities/migration/utils.py:56: The loaded checkpoint was produced with Lightning v2.5.0.post0, which is newer than your current Lightning version: v2.5.0
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+/kaggle/working/boltzenv/lib/python3.12/site-packages/pytorch_lightning/utilities/_pytree.py:21: `isinstance(treespec, LeafSpec)` is deprecated, use `isinstance(treespec, TreeSpec) and treespec.is_leaf()` instead.
+
+
