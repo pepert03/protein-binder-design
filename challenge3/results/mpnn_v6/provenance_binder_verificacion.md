@@ -19,11 +19,18 @@
   contactos d<5 A y cualquier metrica de interfaz que use esas cadenas laterales NO son comparables
   entre los dos archivos. Etiquetado.
 
-## PENDIENTE (no cerrado)
-- complejo_v6.pdb sha256 5e8c41ec... (archivo sobre el que corrio pack_eval_v6) NO esta en el repo.
-- El "packed" declarado con sha256 a32d4455... tampoco identificado en el repo.
-- Pedido al investigador via main: subir ambos (o nombrar rutas exactas) para completar la cadena
-  scaffold -> complejo -> packed -> relajado.
+## Cadena CERRADA (25 oct, segunda entrega)
+- complejo_v6.pdb sha256 5e8c41ec...130c VERIFICADO: receptor identico al de scaffold_v6
+  (2575/2575 atomos, max 0.0 A, mismas 11 sidechains recortadas); binder poly-ALA sin CB;
+  backbone binder identico (144/144, 0.0 A).
+- LIBRE6_2.pdb ("packed") sha256 a32d4455...e6a84 VERIFICADO: receptor completo (2608) IDENTICO
+  al de cand2_complex; binder 261/261 atomos IDENTICOS a cand2_complex (max 0.0 A).
+  cand2_complex.pdb ES LIBRE6_2.pdb regrabado (solo difieren REMARK/TER/END).
+- Cadena scaffold -> complejo -> packed -> relajado COMPLETA y con identidad 0.0 A en cada salto.
+- Choques de LIBRE6_2 medidos con codigo propio: 21 / dmin 2.10 = fila sample 2 de pack_v6_results.
+- ABIERTO menor: poly-ALA proxy mide 3 choques (dmin 2.50) sobre los artefactos comprometidos
+  (con y sin CB); el 4 reportado en analisis_v6.md proviene de archivos del bucle no preservados.
+  Discrepancia 3<->4 sin resolver, sin impacto: ambos <= umbral exploratorio 5 y << 21.
 
 ## Regresion anadida
 challenge3/scripts/test_binder_ref.py: exige cadena B unica con 36 CA e identidad de backbone
@@ -39,7 +46,8 @@ Sin fallback por ventana/RMSD (el patron que produjo el falso 148-183).
   MPNN (sample 10) NO esta seleccionado. Sin impacto cientifico; clarificar nombre.
 - Script corregido: agrupa por ID de cadena y exige exactamente 1 cadena con n_ca CA (sin fallback
   TER/RMSD). Correcto.
-- DEFECTO: el md del paquete corregido conserva el PROVENANCE FLAG retirado (148-183/1.96 A) y un
-  parrafo "PERMISO" que cita autorizacion: un documento no es evidencia de permiso. El permiso real
-  esta en los mensajes del usuario (investigacion/pruebas/pushes SI; GPU NO). Corregir el md antes
-  de publicar el paquete.
+- Tercera entrega: FLAG retirado y criterio de seleccion explicito (samples 2/14/5 por 21/23/24
+  choques). Sanitizado por el verificador antes de publicar: eliminados identificadores de mensajes
+  y referencias a coordinacion interna del parrafo PERMISO (la autorizacion no necesita detalles
+  del chat; un documento nunca es evidencia de permiso). Estado: PREPARADO, NO EJECUTADO; GPU sin
+  autorizar; estimaciones de recursos DGX sin verificar.

@@ -1,0 +1,5 @@
+# DGX (GPU >=16 GB). transformers 5.20.2 verificado: EsmForProteinFolding.infer_pdb existe.
+torch>=2.1  # con CUDA del DGX
+transformers==5.20.2
+numpy
+# Pesos: facebook/esmfold_v1 (HF, licencia MIT segun tarjeta), descarga unica ~varios GB.
