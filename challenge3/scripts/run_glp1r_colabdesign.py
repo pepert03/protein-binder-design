@@ -30,14 +30,14 @@ import os, subprocess, sys, time
 # ---- config -----------------------------------------------------------------
 WORK       = os.environ.get('GLP1R_WORK', os.path.expanduser('~/glp1r'))
 TARGET_PDB = os.path.join(WORK, 'target', '6X18_R.pdb')   # chain R, auth==UniProt numbering
-OUT_PREFIX = 'g3'
+OUT_PREFIX = os.environ.get('G3_PREFIX', 'g3')   # batch tag; g3b for the continuation run
 BINDER_LEN = 36          # microbinder class (<40 aa). Sizing evidence (crop_review.py on 6X18):
                          # GLP-1 spans 40.6 A over 30 aa (helical, ~1.4 A/aa); the most extreme
                          # ECD<->TM hotspot pair is 51.7 A. 32 aa reaches ~43 A in the same
                          # geometry - marginal for dual engagement; 36 aa buys margin (~52 A)
                          # while staying in the microbinder class.
 CROP_RADIUS = 18.0       # Angstrom from hotspot CAs (20.0 in ch2; 18 keeps the 7TM crop smaller)
-BUDGET_MIN  = 80         # wall-clock minutes of design (8h session cap -> several runs per session)
+BUDGET_MIN = int(os.environ.get('G3_BUDGET_MIN', '80'))   # wall-clock minutes; checked BETWEEN trajectories
 # Hotspots: strongest computed GLP-1 contacts (min dist <= ~3.4 A) spanning the ECD
 # groove AND the TM pocket, from docs/epitope_contacts.tsv (auth == UniProt numbering).
 # HYPOTHESIS, not a guarantee: dual-site engagement is the agonist geometry GLP-1
@@ -175,10 +175,13 @@ def main():
                    i_pae=round(lg['i_pae'], 3), i_ptm=round(lg['i_ptm'], 3))
         rows.append(rec)
         log('TRAJ', rec, 'elapsed', int(time.time() - t0))
+        json.dump(rows, open(f'{OUT_PREFIX}_results.json', 'w'), indent=1)   # incremental: survives a mid-batch crash
         if k == 1:
             sh("nvidia-smi --query-gpu=memory.used,memory.total --format=csv")  # real VRAM footprint of one trajectory
         if DRY: break
-        clear_mem()
+        # NO clear_mem(): it frees arrays still referenced by the model's grad_fn and
+        # kills the NEXT trajectory's first step (RuntimeError: Array has been deleted).
+        # Measured footprint is stable (12,798 MiB of 16 GiB across trajectory 1).
 
     rows.sort(key=lambda r: r['i_pae'])
     json.dump(rows, open(f'{OUT_PREFIX}_results.json', 'w'), indent=1)
