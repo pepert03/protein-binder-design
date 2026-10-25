@@ -75,3 +75,14 @@ reported so far (12,798 MiB for traj1; 33,746 MiB in this log, of
 this process. Slice/process memory use is currently unmeasured; "runs
 without OOM" is the only supported claim. Two consecutive trajectories
 without OOM do not prove the clear_mem fix is stable.
+
+## Orientation analysis (25 Oct 2026)
+
+`../docs/orientacion_gate.md` (observed orientation, reproduced with
+`../scripts/orient.py`; per-run outputs in `traj1/orient_g3_1.txt` and
+`traj2/orient_g3b_1.txt`): in 2/2 trajectories the geometry is INVERSE to the
+native class-B1 binding mode (N-terminus sits on ECD/ECL, C-terminus in the
+TM core). This is an observed geometry plus an UNPROVEN causal hypothesis,
+not evidence about activation. `../docs/propuesta_end_conditioning.md` lists
+candidate design changes (end-conditioning); none has been executed and no
+agonism is claimed or proven for anything in this repository.
