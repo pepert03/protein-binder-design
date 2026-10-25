@@ -1,0 +1,34 @@
+>scaffold_v5, score=2.1821, global_score=1.9558, fixed_chains=['A'], designed_chains=['B'], model_name=v_48_020, git_hash=8907e6671bfbfc92303b5f79c4b5e6ce47cdef57, seed=42
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+>T=0.1, sample=1, score=1.4581, global_score=1.8752, seq_recovery=0.1667
+SGVLEGQVEAGLRAGFAEIRKRIEARYEERGARRLA
+>T=0.1, sample=2, score=1.4519, global_score=1.8821, seq_recovery=0.1944
+DGVLDGQIEAGERRGFEQIRQLIEQRYAARGAALAA
+>T=0.1, sample=3, score=1.3973, global_score=1.8846, seq_recovery=0.2778
+SGALDGAVEAGERRGFEELRRRIRAAYEARGAALAA
+>T=0.1, sample=4, score=1.4162, global_score=1.8649, seq_recovery=0.3056
+SGVLDGAVDAGERRGFAQMRARIEAAYAARGAALLA
+>T=0.1, sample=5, score=1.4453, global_score=1.8986, seq_recovery=0.3611
+SGALDGAVEAGERRGFAERRARIEAAAAARGALAAL
+>T=0.1, sample=6, score=1.4686, global_score=1.8921, seq_recovery=0.2222
+SGALEGAVEAGERAGFAEIRRRIEEREALRGALARL
+>T=0.1, sample=7, score=1.4260, global_score=1.8811, seq_recovery=0.1944
+SGVLEGQVAAGERRGFELLRQRIAQREAERGAALLA
+>T=0.1, sample=8, score=1.4473, global_score=1.8814, seq_recovery=0.3056
+SGALEGAVEAGERRGFAALRARIEARYAARGALARL
+>T=0.1, sample=9, score=1.3996, global_score=1.8904, seq_recovery=0.3333
+SGALDGAVEAGERRGFEQLRARIEAAYAARGAAALA
+>T=0.1, sample=10, score=1.3525, global_score=1.8899, seq_recovery=0.3889
+SGALEGAVDAGERAGFAQRRALIAAREAARGAAALA
+>T=0.1, sample=11, score=1.3879, global_score=1.8828, seq_recovery=0.3056
+SGVLEGQVDAGERRGFAQRRALIAQREAARGAAAAA
+>T=0.1, sample=12, score=1.4434, global_score=1.9120, seq_recovery=0.2500
+SGVLDGQVEAGLRAGFRQLRERIRARLAARGAALAA
+>T=0.1, sample=13, score=1.4843, global_score=1.8993, seq_recovery=0.1944
+SGVLEGANEAGERRGFEEIRRRIEAEYAARGALEAL
+>T=0.1, sample=14, score=1.4620, global_score=1.8981, seq_recovery=0.1667
+SGALDGAVEAGERRGFEQIRARIREEYERRGAELLA
+>T=0.1, sample=15, score=1.4958, global_score=1.9031, seq_recovery=0.1111
+SGVLDGAVEAGERRGFEEIRKRIEELERERGALLAS
+>T=0.1, sample=16, score=1.4432, global_score=1.8970, seq_recovery=0.2222
+SGALEGAVEAGERRGFEERRQRIEALAAERGARELA
