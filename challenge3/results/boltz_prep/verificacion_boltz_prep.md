@@ -38,9 +38,13 @@
 ## Constructo recomendado 24-463: base factual VERIFICADA (RCSB)
 - DBREF de la cabecera oficial 6X18 (files.rcsb.org/header/6X18.pdb): "DBREF 6X18 R 24 463 UNP
   P43220 GLP1R_HUMAN 24 463" — el constructo experimental de la estructura de referencia ES
-  UniProt 24-463. SEQADV cadena R: 0 conflictos. VERIFICADO.
-- Detalle menor NO verificado aqui: el tag de expresion N-terminal (residuos -8..0, REMARK 465
-  segun la prep) no se comprobo residuo a residuo; no afecta al constructo recomendado.
+  UniProt 24-463. VERIFICADO.
+- CORRECCION 25oct 20:05: mi frase anterior "SEQADV cadena R: 0 conflictos" era FALSA (patron de
+  busqueda mal construido). La cabecera oficial SI tiene SEQADV en R: tags de expresion N-term
+  (auth -8..23) y C-term His8 (auth 464-482), y un CONFLICT: "SEQADV 6X18 PHE R 260 UNP P43220
+  LEU 260 CONFLICT" — 6X18 porta la mutacion L260F respecto al canonico. Verificado tambien en
+  SEQRES/ATOM del archivo receptor-solo (auth 260 = PHE). Implicacion: la estructura de referencia
+  NO es 100% canonica; cualquier template derivado de 6X18 hereda F260.
 - Mapa formal: archivo = auth-28; auth = UniProt (+0); archivo->UniProt +28. La prep corrige su
   frase "offset +0" (confundia los dos mapeos); conforme con mi verificacion 316/316.
 - GLP-1 nativo: DBREF 6X18 P 7-36 -> UNP P01275 98-127, coherente con la cadena P usada.

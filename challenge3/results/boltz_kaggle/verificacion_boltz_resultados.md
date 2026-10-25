@@ -89,3 +89,17 @@ El investigador aporto un analisis regional propio (LEEME + analyze.py). Veredic
   cerca. 6X18 es estado ACTIVO (peptido+Gs+Nb35) y las predicciones no llevan Gs: parte del
   desplazamiento del ECD puede ser diferencia de estado, no solo error del modelo. Estas cifras
   describen geometria; no validan union ni explican el ipTM (ninguna causalidad probada).
+
+## 8. Discrepancia de constructo vs target oficial del challenge (25oct 20:05)
+VERIFICADO residuo a residuo contra la pagina oficial del challenge 3
+(proteinbase.com/competitions/anthropic-adaptyv-2026/challenges/glp1r, fetch 25oct ~20:00 CET):
+la secuencia oficial del target es UniProt P43220 posiciones 24-432 (409 aa, termina
+"...LEHLHIQRDSS"), y coincide exactamente con los primeros 409 residuos de nuestro constructo.
+La tanda Boltz de hoy se ejecuto con 24-463 (440 aa) = oficial + 31 residuos C-termales
+(UP 433-463, cola citoplasmica). La region de interfaz ECD/TM esta contenida en ambas, pero:
+- Los resultados publicados NO corresponden al constructo oficial del challenge.
+- El control aleatorio36 contacto la cola (408-463): parte de ese sitio (433-463) no existe en el
+  constructo oficial; la comparacion del control queda afectada.
+- Cualquier corrida futura deberia usar 409 aa (decision del usuario, no ejecutada).
+El constructo de ensayo oficial lleva ademas tags (FLAG N-term, polyHis C-term) que ninguna de
+las dos versiones de secuencia incluye.
