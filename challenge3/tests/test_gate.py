@@ -7,6 +7,7 @@ BASE = os.path.dirname(os.path.abspath(__file__))
 GATE = os.path.join(BASE, '..', 'scripts', 'orient_gate.py')
 G3_1 = os.path.join(BASE, '..', 'results', 'traj1', 'g3_1.pdb')
 SCAF2 = os.path.join(BASE, '..', 'scaffolds', 'scaffold_v2_DISCARDED.pdb')
+SCAF4 = os.path.join(BASE, '..', 'scaffolds', 'scaffold_v4.pdb')
 TMP = tempfile.mkdtemp(prefix='gate_tests_')
 
 def run(path):
@@ -48,6 +49,9 @@ rc, out = run(p); res.append(('T7 receptor incompleto -> ERROR claro', rc == 2 a
 lines = [l.rstrip('\n') for l in open(SCAF2) if not (l.startswith('ATOM') and l[21] == 'B' and int(l[22:26]) == 36)]
 p = mkpdb(lines, 't8.pdb')
 rc, out = run(p); res.append(('T8 binder incompleto -> ERROR claro', rc == 2 and 'binder incompleto' in out))
+
+# T9: scaffold_v4 real -> PASS (exit 0)
+rc, out = run(SCAF4); res.append(('T9 scaffold_v4 -> PASS exit 0', rc == 0 and 'GATE GLOBAL: PASS' in out))
 
 for nombre, ok in res: print(('OK ' if ok else 'FALLO '), nombre)
 print('TODOS PASS' if all(ok for _, ok in res) else 'HAY FALLOS')
