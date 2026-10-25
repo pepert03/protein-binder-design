@@ -37,7 +37,8 @@ BINDER_LEN = 36          # microbinder class (<40 aa). Sizing evidence (crop_rev
                          # geometry - marginal for dual engagement; 36 aa buys margin (~52 A)
                          # while staying in the microbinder class.
 CROP_RADIUS = 18.0       # Angstrom from hotspot CAs (20.0 in ch2; 18 keeps the 7TM crop smaller)
-BUDGET_MIN = int(os.environ.get('G3_BUDGET_MIN', '80'))   # wall-clock minutes; checked BETWEEN trajectories
+BUDGET_MIN = int(os.environ.get('G3_BUDGET_MIN', '80'))
+MAX_TRAJS = int(os.environ.get('G3_MAX_TRAJS', '0'))   # 0 = sin tope; 1 = una trayectoria por proceso (gate de revision entre trayectorias)   # wall-clock minutes; checked BETWEEN trajectories
 # Hotspots: strongest computed GLP-1 contacts (min dist <= ~3.4 A) spanning the ECD
 # groove AND the TM pocket, from docs/epitope_contacts.tsv (auth == UniProt numbering).
 # HYPOTHESIS, not a guarantee: dual-site engagement is the agonist geometry GLP-1
@@ -164,7 +165,7 @@ def main():
     # matching how ch2 passed hotspot letters from its cropped PDB.
 
     rows = []; k = 0
-    while time.time() - t0 < BUDGET:
+    while (time.time() - t0 < BUDGET) and (MAX_TRAJS <= 0 or k < MAX_TRAJS):   # v5: tope de trayectorias para review-gate
         k += 1
         af.restart(seed=k + 300)
         af.design_3stage(30 if DRY else 100, 30 if DRY else 100, 5 if DRY else 10)

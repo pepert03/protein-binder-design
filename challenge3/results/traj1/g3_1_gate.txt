@@ -1,0 +1,91 @@
+============================================================
+MODEL 1 | binder_seq PPSPKIWEAHEAQARYDYLRIAIEDHVSVGMFGGAM | n_target 316 n_binder 36
+contactos_le5A 64 | binder_res comprometidos 33 de 36
+solape_residuos_nativos52: {'ECD': 16, 'TM/ECL': 28} | no_tocados: [30, 31, 36, 43, 67, 128, 215, 221]
+fuera_nativo52: 20
+   resseq 1 = U29 THR 4.75A ECD
+   resseq 99 = U127 GLU 3.90A ECD
+   resseq 112 = U140 GLN 4.94A ECD
+   resseq 114 = U142 LEU 4.08A ECD
+   resseq 170 = U198 ASP 3.67A TM/ECL
+   resseq 174 = U202 LYS 2.78A TM/ECL
+   resseq 179 = U207 THR 4.04A TM/ECL
+   resseq 210 = U238 ALA 4.61A TM/ECL
+   resseq 269 = U297 TRP 4.64A TM/ECL
+   resseq 286 = U314 LEU 0.56A TM/ECL
+   resseq 289 = U317 ILE 4.01A TM/ECL
+   resseq 336 = U364 GLU 2.30A TM/ECL
+   resseq 337 = U365 VAL 3.07A TM/ECL
+   resseq 338 = U366 ILE 4.91A TM/ECL
+   resseq 339 = U367 PHE 4.24A TM/ECL
+   resseq 340 = U368 ALA 1.75A TM/ECL
+   resseq 341 = U369 PHE 1.06A TM/ECL
+   resseq 342 = U370 VAL 2.10A TM/ECL
+   resseq 343 = U371 MET 2.17A TM/ECL
+   resseq 355 = U383 LYS 1.83A TM/ECL
+pares_<2.0A: 27 | min_global_A: 0.56 (32, 'O', 286, 'CD2')
+   choque 0.56A B32(PHE)-O vs A286/U314(LEU)-CD2
+   choque 1.06A B34(GLY)-CA vs A341/U369(PHE)-CD2
+   choque 1.08A B34(GLY)-CA vs A341/U369(PHE)-CE2
+   choque 1.20A B34(GLY)-C vs A341/U369(PHE)-CD1
+   choque 1.24A B34(GLY)-O vs A341/U369(PHE)-CG
+   choque 1.24A B34(GLY)-C vs A341/U369(PHE)-CG
+   choque 1.42A B34(GLY)-O vs A341/U369(PHE)-CD1
+   choque 1.44A B34(GLY)-CA vs A341/U369(PHE)-CG
+   choque 1.46A B34(GLY)-CA vs A341/U369(PHE)-CZ
+   choque 1.49A B34(GLY)-O vs A341/U369(PHE)-CB
+   choque 1.57A B32(PHE)-C vs A286/U314(LEU)-CD2
+   choque 1.57A B28(SER)-CB vs A278/U306(TRP)-CZ2
+   choque 1.72A B34(GLY)-CA vs A341/U369(PHE)-CD1
+   choque 1.73A B34(GLY)-CA vs A341/U369(PHE)-CE1
+   choque 1.75A B33(GLY)-N vs A340/U368(ALA)-CB
+   choque 1.82A B34(GLY)-N vs A341/U369(PHE)-CG
+   choque 1.83A B34(GLY)-N vs A341/U369(PHE)-CD2
+   choque 1.83A B35(ALA)-N vs A341/U369(PHE)-CD1
+   choque 1.83A B31(MET)-SD vs A355/U383(LYS)-CE
+   choque 1.88A B31(MET)-CG vs A359/U387(GLU)-OE2
+============================================================
+MODEL 2 | binder_seq PPSPKIWEAHEAQARYDYLRIAIEDHVSVGMFGGAM | n_target 316 n_binder 36
+contactos_le5A 61 | binder_res comprometidos 32 de 36
+solape_residuos_nativos52: {'ECD': 15, 'TM/ECL': 27} | no_tocados: [30, 31, 36, 43, 67, 88, 123, 215, 221, 309]
+fuera_nativo52: 19
+   resseq 99 = U127 GLU 4.46A ECD
+   resseq 114 = U142 LEU 4.27A ECD
+   resseq 170 = U198 ASP 3.07A TM/ECL
+   resseq 174 = U202 LYS 2.37A TM/ECL
+   resseq 179 = U207 THR 4.26A TM/ECL
+   resseq 210 = U238 ALA 4.67A TM/ECL
+   resseq 269 = U297 TRP 4.88A TM/ECL
+   resseq 279 = U307 LEU 4.94A TM/ECL
+   resseq 286 = U314 LEU 2.21A TM/ECL
+   resseq 289 = U317 ILE 3.75A TM/ECL
+   resseq 336 = U364 GLU 2.93A TM/ECL
+   resseq 337 = U365 VAL 4.36A TM/ECL
+   resseq 339 = U367 PHE 3.93A TM/ECL
+   resseq 340 = U368 ALA 1.45A TM/ECL
+   resseq 341 = U369 PHE 0.93A TM/ECL
+   resseq 342 = U370 VAL 3.67A TM/ECL
+   resseq 343 = U371 MET 1.55A TM/ECL
+   resseq 345 = U373 GLU 4.52A TM/ECL
+   resseq 355 = U383 LYS 2.17A TM/ECL
+pares_<2.0A: 24 | min_global_A: 0.93 (34, 'N', 341, 'CG')
+   choque 0.93A B34(GLY)-N vs A341/U369(PHE)-CG
+   choque 1.09A B34(GLY)-N vs A341/U369(PHE)-CD1
+   choque 1.27A B33(GLY)-C vs A341/U369(PHE)-CG
+   choque 1.40A B34(GLY)-CA vs A341/U369(PHE)-CD1
+   choque 1.45A B33(GLY)-N vs A340/U368(ALA)-C
+   choque 1.47A B34(GLY)-N vs A341/U369(PHE)-CB
+   choque 1.54A B33(GLY)-N vs A340/U368(ALA)-CB
+   choque 1.55A B32(PHE)-CE1 vs A343/U371(MET)-CE
+   choque 1.55A B32(PHE)-CE1 vs A343/U371(MET)-SD
+   choque 1.57A B33(GLY)-O vs A341/U369(PHE)-N
+   choque 1.59A B26(HIS)-ND1 vs A360/U388(LEU)-CD2
+   choque 1.62A B28(SER)-CB vs A278/U306(TRP)-CZ2
+   choque 1.63A B34(GLY)-CA vs A341/U369(PHE)-CG
+   choque 1.66A B33(GLY)-N vs A340/U368(ALA)-CA
+   choque 1.67A B33(GLY)-O vs A341/U369(PHE)-CB
+   choque 1.69A B33(GLY)-C vs A341/U369(PHE)-CD2
+   choque 1.73A B33(GLY)-O vs A341/U369(PHE)-CG
+   choque 1.75A B32(PHE)-CD1 vs A343/U371(MET)-SD
+   choque 1.79A B27(VAL)-CG2 vs A356/U384(LEU)-CD2
+   choque 1.86A B33(GLY)-O vs A341/U369(PHE)-CD2
