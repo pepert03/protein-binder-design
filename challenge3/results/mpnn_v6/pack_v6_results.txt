@@ -1,0 +1,34 @@
+LIBRE6         1: choques= 35 dmin=1.41 (SD B3-SD A205) pos=[1, 3, 4, 5, 6, 7, 9, 10, 14, 18]
+LIBRE6         2: choques= 21 dmin=2.10 (CD1 B6-CE2 A120) pos=[1, 3, 4, 5, 6, 7, 9, 10]
+LIBRE6         3: choques= 27 dmin=2.10 (CD1 B6-CE2 A120) pos=[1, 3, 4, 5, 6, 7, 9, 10, 18, 22]
+LIBRE6         4: choques= 29 dmin=1.51 (OD2 B3-SD A205) pos=[1, 3, 4, 5, 6, 7, 9, 10, 15, 18, 22]
+LIBRE6         5: choques= 24 dmin=1.51 (OD2 B3-SD A205) pos=[1, 3, 4, 5, 6, 7, 9, 10, 17, 22]
+LIBRE6         6: choques= 31 dmin=1.04 (CD2 B18-NE2 A182) pos=[1, 3, 4, 5, 6, 7, 9, 10, 18, 22]
+LIBRE6         7: choques= 37 dmin=1.04 (CD2 B18-NE2 A182) pos=[1, 3, 4, 5, 6, 7, 9, 10, 15, 18, 22]
+LIBRE6         8: choques= 28 dmin=1.60 (OD2 B3-SD A205) pos=[1, 3, 4, 5, 6, 7, 9, 10, 17, 18, 22]
+LIBRE6         9: choques= 36 dmin=1.04 (CD2 B18-NE2 A182) pos=[1, 3, 4, 5, 6, 7, 9, 10, 18, 22]
+LIBRE6        10: choques= 32 dmin=1.04 (CD2 B18-NE2 A182) pos=[1, 3, 4, 5, 6, 7, 9, 10, 18, 22]
+LIBRE6        11: choques= 49 dmin=1.41 (SD B3-SD A205) pos=[1, 2, 3, 4, 5, 6, 7, 9, 10, 18, 22]
+LIBRE6        12: choques= 29 dmin=1.04 (CD2 B18-NE2 A182) pos=[1, 3, 4, 5, 6, 9, 10, 18, 22]
+LIBRE6        13: choques= 33 dmin=1.04 (CD2 B18-NE2 A182) pos=[1, 3, 4, 5, 6, 7, 9, 10, 18, 22]
+LIBRE6        14: choques= 23 dmin=2.10 (CD1 B6-CE2 A120) pos=[1, 3, 4, 5, 6, 9, 10, 18]
+LIBRE6        15: choques= 29 dmin=1.53 (NH2 B15-OH A177) pos=[1, 3, 4, 5, 6, 7, 9, 10, 15, 18]
+LIBRE6        16: choques= 27 dmin=2.10 (CD1 B6-CE2 A120) pos=[1, 3, 4, 5, 6, 7, 9, 10, 18, 22]
+
+RESUMEN (nativo=3 choques, dmin 2.46):
+  LIBRE6         2 choques= 21 dmin=2.10
+  LIBRE6        14 choques= 23 dmin=2.10
+  LIBRE6         5 choques= 24 dmin=1.51
+  LIBRE6         3 choques= 27 dmin=2.10
+  LIBRE6        16 choques= 27 dmin=2.10
+  LIBRE6         8 choques= 28 dmin=1.60
+  LIBRE6         4 choques= 29 dmin=1.51
+  LIBRE6        12 choques= 29 dmin=1.04
+  LIBRE6        15 choques= 29 dmin=1.53
+  LIBRE6         6 choques= 31 dmin=1.04
+  LIBRE6        10 choques= 32 dmin=1.04
+  LIBRE6        13 choques= 33 dmin=1.04
+  LIBRE6         1 choques= 35 dmin=1.41
+  LIBRE6         9 choques= 36 dmin=1.04
+  LIBRE6         7 choques= 37 dmin=1.04
+  LIBRE6        11 choques= 49 dmin=1.41

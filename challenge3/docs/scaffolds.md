@@ -110,3 +110,13 @@ el scaffold fijo; NO produce una pose predicha independiente. Gates y RMSD medid
 contra el scaffold son metricas condicionadas al scaffold: NO validan la secuencia ni
 su plegado. Esa validacion requiere una estructura nueva (re-plegado independiente,
 p. ej. AF2), que requeriria autorizacion de GPU.
+
+## scaffold_v6.pdb - pose muestreada con packing poly-ALA en bucle (25 oct)
+Verificada: reproduccion atomo-identica y trayectoria determinista reproducida
+(refine_wide 23/9 -> refine2 306/4, PARAMS exactos). Quimica nominal, 0 choques bb,
+0 conflictos CB validados, packing poly-ALA 4 vs 44 (v5). ATENCION: seleccion
+post-hoc con gate RELAJADO durante la busqueda (n_bols>=2, d_ecd<=8); su d_ecd=6.02
+INCUMPLE el corte original 6.0 por 0.02 A - documentado sin relajar criterios.
+Gate del repo (orient_gate v2, metrica distinta) PASS. MPNN v6: 16 secuencias
+candidatas (packing 21-49 vs nativo 3): cribado, no validacion. Sin plegado, sin
+funcion, sin GPU. Detalle: results/mpnn_v6/analisis_v6.md
