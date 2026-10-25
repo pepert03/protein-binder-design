@@ -1,0 +1,288 @@
+nohup: ignoring input
+EXTEND mid-helix cuts to helix ends: ['29-51', '61-129', '136-163', '179-247', '270-321', '357-404'] -> ['29-51', '61-129', '136-164', '176-251', '266-328', '349-404']
+CROP /home/<dgx-user>/glp1r/glp1r_crop.pdb | residues 316 | fragments 6 | dropped(<4) []
+  frag1: UniProt 29-51 (23 res)
+  frag2: UniProt 61-129 (69 res)
+  frag3: UniProt 136-164 (29 res)
+  frag4: UniProt 176-251 (76 res)
+  frag5: UniProt 266-328 (63 res)
+  frag6: UniProt 349-404 (56 res)
+mkdir -p params && ls params | head -3 -> 0 
+curl -fsSL https://storage.googleapis.com/alphafold/alphafold_params_2022-12-06. -> 0 
+jax 0.6.2 [CudaDevice(id=0)]
+GPU budget_s 4800
+Stage 1: running (logits → soft)
+2026-10-25 01:10:51.034996: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2026-10-25 01:10:51.035677: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2026-10-25 01:10:51.035695: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2026-10-25 01:10:51.035708: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2026-10-25 01:10:51.035723: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2026-10-25 01:10:51.035735: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2026-10-25 01:10:51.035956: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2026-10-25 01:10:51.036174: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2026-10-25 01:10:51.036200: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2026-10-25 01:10:51.036224: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2026-10-25 01:10:51.036280: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2026-10-25 01:10:51.036344: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2026-10-25 01:10:51.036700: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2026-10-25 01:10:51.037126: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2026-10-25 01:10:51.037188: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2026-10-25 01:10:51.037208: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2026-10-25 01:10:51.037255: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2026-10-25 01:10:51.037564: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2026-10-25 01:10:51.037642: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2026-10-25 01:10:51.037687: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2026-10-25 01:10:51.037731: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2026-10-25 01:10:51.037782: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2026-10-25 01:10:51.037794: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2026-10-25 01:10:51.037961: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2026-10-25 01:10:51.038934: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2026-10-25 01:10:51.038956: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2026-10-25 01:10:51.039345: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2026-10-25 01:10:51.039444: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2026-10-25 01:10:51.039518: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+1 models [1] recycles 0 hard 0 soft 0.01 temp 1 loss 8.38 i_con 8.34 plddt 0.52 ptm 0.80 i_ptm 0.09
+2 models [1] recycles 0 hard 0 soft 0.02 temp 1 loss 8.30 i_con 8.27 plddt 0.76 ptm 0.80 i_ptm 0.13
+3 models [1] recycles 0 hard 0 soft 0.03 temp 1 loss 8.16 i_con 8.11 plddt 0.49 ptm 0.80 i_ptm 0.09
+4 models [0] recycles 0 hard 0 soft 0.04 temp 1 loss 6.02 i_con 5.97 plddt 0.51 ptm 0.76 i_ptm 0.14
+5 models [1] recycles 0 hard 0 soft 0.05 temp 1 loss 7.77 i_con 7.72 plddt 0.50 ptm 0.79 i_ptm 0.09
+6 models [1] recycles 0 hard 0 soft 0.06 temp 1 loss 7.57 i_con 7.52 plddt 0.50 ptm 0.79 i_ptm 0.09
+7 models [1] recycles 0 hard 0 soft 0.07 temp 1 loss 7.69 i_con 7.64 plddt 0.50 ptm 0.80 i_ptm 0.12
+8 models [1] recycles 0 hard 0 soft 0.08 temp 1 loss 7.20 i_con 7.15 plddt 0.53 ptm 0.80 i_ptm 0.13
+9 models [0] recycles 0 hard 0 soft 0.09 temp 1 loss 7.01 i_con 6.97 plddt 0.64 ptm 0.77 i_ptm 0.19
+10 models [0] recycles 0 hard 0 soft 0.10 temp 1 loss 5.80 i_con 5.75 plddt 0.44 ptm 0.76 i_ptm 0.14
+11 models [0] recycles 0 hard 0 soft 0.11 temp 1 loss 6.81 i_con 6.77 plddt 0.55 ptm 0.75 i_ptm 0.14
+12 models [0] recycles 0 hard 0 soft 0.12 temp 1 loss 4.99 i_con 4.93 plddt 0.41 ptm 0.76 i_ptm 0.17
+13 models [1] recycles 0 hard 0 soft 0.13 temp 1 loss 6.77 i_con 6.72 plddt 0.47 ptm 0.79 i_ptm 0.10
+14 models [0] recycles 0 hard 0 soft 0.14 temp 1 loss 4.80 i_con 4.74 plddt 0.46 ptm 0.76 i_ptm 0.18
+15 models [0] recycles 0 hard 0 soft 0.15 temp 1 loss 4.49 i_con 4.42 plddt 0.37 ptm 0.76 i_ptm 0.22
+16 models [0] recycles 0 hard 0 soft 0.16 temp 1 loss 4.41 i_con 4.35 plddt 0.36 ptm 0.76 i_ptm 0.21
+17 models [1] recycles 0 hard 0 soft 0.17 temp 1 loss 6.73 i_con 6.68 plddt 0.44 ptm 0.79 i_ptm 0.11
+18 models [1] recycles 0 hard 0 soft 0.18 temp 1 loss 4.83 i_con 4.77 plddt 0.40 ptm 0.79 i_ptm 0.13
+19 models [0] recycles 0 hard 0 soft 0.19 temp 1 loss 4.04 i_con 3.98 plddt 0.37 ptm 0.77 i_ptm 0.31
+20 models [0] recycles 0 hard 0 soft 0.20 temp 1 loss 4.17 i_con 4.11 plddt 0.40 ptm 0.78 i_ptm 0.28
+21 models [1] recycles 0 hard 0 soft 0.21 temp 1 loss 4.51 i_con 4.44 plddt 0.38 ptm 0.80 i_ptm 0.17
+22 models [1] recycles 0 hard 0 soft 0.22 temp 1 loss 4.27 i_con 4.21 plddt 0.39 ptm 0.81 i_ptm 0.26
+23 models [1] recycles 0 hard 0 soft 0.23 temp 1 loss 4.55 i_con 4.49 plddt 0.41 ptm 0.80 i_ptm 0.19
+24 models [1] recycles 0 hard 0 soft 0.24 temp 1 loss 4.25 i_con 4.19 plddt 0.40 ptm 0.81 i_ptm 0.24
+25 models [1] recycles 0 hard 0 soft 0.25 temp 1 loss 4.03 i_con 3.98 plddt 0.46 ptm 0.82 i_ptm 0.31
+26 models [1] recycles 0 hard 0 soft 0.26 temp 1 loss 3.91 i_con 3.85 plddt 0.45 ptm 0.81 i_ptm 0.35
+27 models [1] recycles 0 hard 0 soft 0.27 temp 1 loss 3.95 i_con 3.89 plddt 0.45 ptm 0.82 i_ptm 0.34
+28 models [0] recycles 0 hard 0 soft 0.28 temp 1 loss 3.84 i_con 3.78 plddt 0.43 ptm 0.78 i_ptm 0.36
+29 models [0] recycles 0 hard 0 soft 0.29 temp 1 loss 3.54 i_con 3.49 plddt 0.48 ptm 0.79 i_ptm 0.47
+30 models [0] recycles 0 hard 0 soft 0.30 temp 1 loss 3.67 i_con 3.61 plddt 0.45 ptm 0.79 i_ptm 0.40
+31 models [0] recycles 0 hard 0 soft 0.31 temp 1 loss 3.48 i_con 3.42 plddt 0.46 ptm 0.79 i_ptm 0.45
+32 models [1] recycles 0 hard 0 soft 0.32 temp 1 loss 3.87 i_con 3.81 plddt 0.43 ptm 0.81 i_ptm 0.33
+33 models [0] recycles 0 hard 0 soft 0.33 temp 1 loss 3.46 i_con 3.41 plddt 0.45 ptm 0.79 i_ptm 0.44
+34 models [0] recycles 0 hard 0 soft 0.34 temp 1 loss 3.42 i_con 3.37 plddt 0.48 ptm 0.80 i_ptm 0.48
+35 models [1] recycles 0 hard 0 soft 0.35 temp 1 loss 3.57 i_con 3.52 plddt 0.47 ptm 0.83 i_ptm 0.42
+36 models [1] recycles 0 hard 0 soft 0.36 temp 1 loss 3.32 i_con 3.27 plddt 0.51 ptm 0.83 i_ptm 0.51
+37 models [1] recycles 0 hard 0 soft 0.37 temp 1 loss 3.15 i_con 3.11 plddt 0.52 ptm 0.83 i_ptm 0.52
+38 models [0] recycles 0 hard 0 soft 0.38 temp 1 loss 3.14 i_con 3.10 plddt 0.53 ptm 0.79 i_ptm 0.53
+39 models [1] recycles 0 hard 0 soft 0.39 temp 1 loss 3.07 i_con 3.02 plddt 0.52 ptm 0.84 i_ptm 0.53
+40 models [0] recycles 0 hard 0 soft 0.40 temp 1 loss 2.91 i_con 2.86 plddt 0.57 ptm 0.80 i_ptm 0.60
+41 models [1] recycles 0 hard 0 soft 0.41 temp 1 loss 3.12 i_con 3.08 plddt 0.54 ptm 0.84 i_ptm 0.53
+42 models [0] recycles 0 hard 0 soft 0.42 temp 1 loss 2.94 i_con 2.90 plddt 0.56 ptm 0.80 i_ptm 0.58
+43 models [1] recycles 0 hard 0 soft 0.43 temp 1 loss 3.00 i_con 2.95 plddt 0.54 ptm 0.84 i_ptm 0.56
+44 models [1] recycles 0 hard 0 soft 0.44 temp 1 loss 2.81 i_con 2.76 plddt 0.57 ptm 0.85 i_ptm 0.60
+45 models [1] recycles 0 hard 0 soft 0.45 temp 1 loss 3.00 i_con 2.96 plddt 0.56 ptm 0.84 i_ptm 0.56
+46 models [1] recycles 0 hard 0 soft 0.46 temp 1 loss 2.56 i_con 2.53 plddt 0.61 ptm 0.85 i_ptm 0.66
+47 models [1] recycles 0 hard 0 soft 0.47 temp 1 loss 2.50 i_con 2.47 plddt 0.63 ptm 0.85 i_ptm 0.69
+48 models [0] recycles 0 hard 0 soft 0.48 temp 1 loss 2.84 i_con 2.80 plddt 0.56 ptm 0.81 i_ptm 0.60
+49 models [0] recycles 0 hard 0 soft 0.49 temp 1 loss 2.85 i_con 2.81 plddt 0.59 ptm 0.81 i_ptm 0.62
+50 models [1] recycles 0 hard 0 soft 0.50 temp 1 loss 2.53 i_con 2.49 plddt 0.64 ptm 0.85 i_ptm 0.68
+51 models [1] recycles 0 hard 0 soft 0.51 temp 1 loss 2.57 i_con 2.53 plddt 0.64 ptm 0.85 i_ptm 0.67
+52 models [1] recycles 0 hard 0 soft 0.52 temp 1 loss 2.34 i_con 2.30 plddt 0.67 ptm 0.86 i_ptm 0.72
+53 models [0] recycles 0 hard 0 soft 0.53 temp 1 loss 2.70 i_con 2.66 plddt 0.61 ptm 0.81 i_ptm 0.64
+54 models [1] recycles 0 hard 0 soft 0.54 temp 1 loss 2.38 i_con 2.35 plddt 0.68 ptm 0.86 i_ptm 0.70
+55 models [1] recycles 0 hard 0 soft 0.55 temp 1 loss 2.40 i_con 2.36 plddt 0.68 ptm 0.86 i_ptm 0.70
+56 models [1] recycles 0 hard 0 soft 0.56 temp 1 loss 2.28 i_con 2.25 plddt 0.69 ptm 0.87 i_ptm 0.73
+57 models [0] recycles 0 hard 0 soft 0.57 temp 1 loss 2.64 i_con 2.60 plddt 0.67 ptm 0.82 i_ptm 0.67
+58 models [0] recycles 0 hard 0 soft 0.58 temp 1 loss 2.58 i_con 2.54 plddt 0.67 ptm 0.82 i_ptm 0.68
+59 models [1] recycles 0 hard 0 soft 0.59 temp 1 loss 2.39 i_con 2.36 plddt 0.69 ptm 0.85 i_ptm 0.70
+60 models [1] recycles 0 hard 0 soft 0.60 temp 1 loss 2.30 i_con 2.27 plddt 0.69 ptm 0.86 i_ptm 0.75
+61 models [1] recycles 0 hard 0 soft 0.61 temp 1 loss 2.50 i_con 2.47 plddt 0.70 ptm 0.86 i_ptm 0.69
+62 models [1] recycles 0 hard 0 soft 0.62 temp 1 loss 2.24 i_con 2.21 plddt 0.70 ptm 0.86 i_ptm 0.75
+63 models [1] recycles 0 hard 0 soft 0.63 temp 1 loss 2.15 i_con 2.13 plddt 0.73 ptm 0.86 i_ptm 0.76
+64 models [1] recycles 0 hard 0 soft 0.64 temp 1 loss 2.23 i_con 2.21 plddt 0.72 ptm 0.86 i_ptm 0.76
+65 models [0] recycles 0 hard 0 soft 0.65 temp 1 loss 2.76 i_con 2.72 plddt 0.63 ptm 0.81 i_ptm 0.65
+66 models [1] recycles 0 hard 0 soft 0.66 temp 1 loss 2.26 i_con 2.23 plddt 0.70 ptm 0.86 i_ptm 0.75
+67 models [1] recycles 0 hard 0 soft 0.67 temp 1 loss 2.14 i_con 2.11 plddt 0.73 ptm 0.86 i_ptm 0.78
+68 models [1] recycles 0 hard 0 soft 0.68 temp 1 loss 2.17 i_con 2.14 plddt 0.73 ptm 0.86 i_ptm 0.76
+69 models [1] recycles 0 hard 0 soft 0.69 temp 1 loss 2.19 i_con 2.17 plddt 0.73 ptm 0.86 i_ptm 0.75
+70 models [1] recycles 0 hard 0 soft 0.70 temp 1 loss 2.22 i_con 2.19 plddt 0.72 ptm 0.86 i_ptm 0.76
+71 models [1] recycles 0 hard 0 soft 0.71 temp 1 loss 2.15 i_con 2.12 plddt 0.74 ptm 0.86 i_ptm 0.77
+72 models [1] recycles 0 hard 0 soft 0.72 temp 1 loss 2.22 i_con 2.19 plddt 0.74 ptm 0.86 i_ptm 0.74
+73 models [0] recycles 0 hard 0 soft 0.73 temp 1 loss 2.49 i_con 2.46 plddt 0.70 ptm 0.82 i_ptm 0.68
+74 models [1] recycles 0 hard 0 soft 0.74 temp 1 loss 2.34 i_con 2.31 plddt 0.71 ptm 0.85 i_ptm 0.71
+75 models [0] recycles 0 hard 0 soft 0.75 temp 1 loss 2.47 i_con 2.44 plddt 0.69 ptm 0.81 i_ptm 0.68
+76 models [1] recycles 0 hard 0 soft 0.76 temp 1 loss 2.17 i_con 2.15 plddt 0.74 ptm 0.87 i_ptm 0.74
+77 models [0] recycles 0 hard 0 soft 0.77 temp 1 loss 2.61 i_con 2.57 plddt 0.68 ptm 0.81 i_ptm 0.68
+78 models [0] recycles 0 hard 0 soft 0.78 temp 1 loss 2.43 i_con 2.40 plddt 0.68 ptm 0.82 i_ptm 0.69
+79 models [0] recycles 0 hard 0 soft 0.79 temp 1 loss 2.47 i_con 2.44 plddt 0.70 ptm 0.82 i_ptm 0.70
+80 models [0] recycles 0 hard 0 soft 0.80 temp 1 loss 2.50 i_con 2.47 plddt 0.69 ptm 0.81 i_ptm 0.68
+81 models [0] recycles 0 hard 0 soft 0.81 temp 1 loss 2.52 i_con 2.49 plddt 0.68 ptm 0.81 i_ptm 0.68
+82 models [1] recycles 0 hard 0 soft 0.82 temp 1 loss 2.54 i_con 2.51 plddt 0.69 ptm 0.86 i_ptm 0.68
+83 models [1] recycles 0 hard 0 soft 0.83 temp 1 loss 2.38 i_con 2.35 plddt 0.69 ptm 0.86 i_ptm 0.71
+84 models [1] recycles 0 hard 0 soft 0.84 temp 1 loss 2.73 i_con 2.70 plddt 0.64 ptm 0.84 i_ptm 0.63
+85 models [0] recycles 0 hard 0 soft 0.85 temp 1 loss 2.45 i_con 2.42 plddt 0.70 ptm 0.82 i_ptm 0.71
+86 models [0] recycles 0 hard 0 soft 0.86 temp 1 loss 2.51 i_con 2.48 plddt 0.70 ptm 0.82 i_ptm 0.71
+87 models [0] recycles 0 hard 0 soft 0.87 temp 1 loss 2.63 i_con 2.60 plddt 0.68 ptm 0.81 i_ptm 0.69
+88 models [1] recycles 0 hard 0 soft 0.88 temp 1 loss 2.45 i_con 2.42 plddt 0.70 ptm 0.86 i_ptm 0.70
+89 models [1] recycles 0 hard 0 soft 0.89 temp 1 loss 2.53 i_con 2.50 plddt 0.68 ptm 0.86 i_ptm 0.69
+90 models [1] recycles 0 hard 0 soft 0.90 temp 1 loss 2.75 i_con 2.71 plddt 0.65 ptm 0.85 i_ptm 0.63
+91 models [0] recycles 0 hard 0 soft 0.91 temp 1 loss 2.59 i_con 2.56 plddt 0.68 ptm 0.81 i_ptm 0.69
+92 models [0] recycles 0 hard 0 soft 0.92 temp 1 loss 2.67 i_con 2.64 plddt 0.68 ptm 0.82 i_ptm 0.68
+93 models [0] recycles 0 hard 0 soft 0.93 temp 1 loss 2.58 i_con 2.55 plddt 0.68 ptm 0.82 i_ptm 0.68
+94 models [0] recycles 0 hard 0 soft 0.94 temp 1 loss 2.58 i_con 2.55 plddt 0.69 ptm 0.82 i_ptm 0.70
+95 models [0] recycles 0 hard 0 soft 0.95 temp 1 loss 2.62 i_con 2.59 plddt 0.69 ptm 0.82 i_ptm 0.69
+96 models [0] recycles 0 hard 0 soft 0.96 temp 1 loss 2.58 i_con 2.55 plddt 0.69 ptm 0.82 i_ptm 0.69
+97 models [0] recycles 0 hard 0 soft 0.97 temp 1 loss 2.63 i_con 2.60 plddt 0.69 ptm 0.81 i_ptm 0.68
+98 models [0] recycles 0 hard 0 soft 0.98 temp 1 loss 2.60 i_con 2.57 plddt 0.69 ptm 0.82 i_ptm 0.68
+99 models [1] recycles 0 hard 0 soft 0.99 temp 1 loss 4.12 i_con 4.06 plddt 0.41 ptm 0.82 i_ptm 0.28
+100 models [0] recycles 0 hard 0 soft 1 temp 1 loss 2.66 i_con 2.63 plddt 0.69 ptm 0.82 i_ptm 0.68
+Stage 2: running (soft → hard)
+101 models [1] recycles 0 hard 0 soft 1 temp 0.98 loss 3.83 i_con 3.78 plddt 0.48 ptm 0.82 i_ptm 0.37
+102 models [1] recycles 0 hard 0 soft 1 temp 0.96 loss 4.10 i_con 4.04 plddt 0.47 ptm 0.82 i_ptm 0.29
+103 models [0] recycles 0 hard 0 soft 1 temp 0.94 loss 2.73 i_con 2.70 plddt 0.66 ptm 0.82 i_ptm 0.66
+104 models [1] recycles 0 hard 0 soft 1 temp 0.92 loss 4.68 i_con 4.63 plddt 0.50 ptm 0.80 i_ptm 0.19
+105 models [1] recycles 0 hard 0 soft 1 temp 0.90 loss 3.49 i_con 3.44 plddt 0.55 ptm 0.84 i_ptm 0.47
+106 models [0] recycles 0 hard 0 soft 1 temp 0.88 loss 2.96 i_con 2.93 plddt 0.62 ptm 0.81 i_ptm 0.61
+107 models [1] recycles 0 hard 0 soft 1 temp 0.87 loss 4.24 i_con 4.19 plddt 0.47 ptm 0.81 i_ptm 0.26
+108 models [1] recycles 0 hard 0 soft 1 temp 0.85 loss 3.76 i_con 3.71 plddt 0.51 ptm 0.83 i_ptm 0.39
+109 models [0] recycles 0 hard 0 soft 1 temp 0.83 loss 2.77 i_con 2.74 plddt 0.66 ptm 0.81 i_ptm 0.66
+110 models [0] recycles 0 hard 0 soft 1 temp 0.81 loss 2.64 i_con 2.60 plddt 0.68 ptm 0.82 i_ptm 0.70
+111 models [1] recycles 0 hard 0 soft 1 temp 0.79 loss 2.93 i_con 2.89 plddt 0.63 ptm 0.84 i_ptm 0.62
+112 models [0] recycles 0 hard 0 soft 1 temp 0.78 loss 2.62 i_con 2.59 plddt 0.69 ptm 0.82 i_ptm 0.68
+113 models [0] recycles 0 hard 0 soft 1 temp 0.76 loss 2.59 i_con 2.56 plddt 0.68 ptm 0.82 i_ptm 0.69
+114 models [0] recycles 0 hard 0 soft 1 temp 0.74 loss 2.65 i_con 2.62 plddt 0.69 ptm 0.82 i_ptm 0.69
+115 models [1] recycles 0 hard 0 soft 1 temp 0.73 loss 3.78 i_con 3.73 plddt 0.50 ptm 0.83 i_ptm 0.39
+116 models [1] recycles 0 hard 0 soft 1 temp 0.71 loss 3.79 i_con 3.74 plddt 0.51 ptm 0.83 i_ptm 0.40
+117 models [0] recycles 0 hard 0 soft 1 temp 0.69 loss 2.79 i_con 2.76 plddt 0.65 ptm 0.81 i_ptm 0.64
+118 models [1] recycles 0 hard 0 soft 1 temp 0.68 loss 3.26 i_con 3.22 plddt 0.57 ptm 0.84 i_ptm 0.55
+119 models [0] recycles 0 hard 0 soft 1 temp 0.66 loss 2.66 i_con 2.63 plddt 0.68 ptm 0.82 i_ptm 0.68
+120 models [1] recycles 0 hard 0 soft 1 temp 0.64 loss 3.18 i_con 3.14 plddt 0.58 ptm 0.84 i_ptm 0.56
+121 models [0] recycles 0 hard 0 soft 1 temp 0.63 loss 2.57 i_con 2.54 plddt 0.67 ptm 0.82 i_ptm 0.70
+122 models [1] recycles 0 hard 0 soft 1 temp 0.61 loss 3.09 i_con 3.05 plddt 0.60 ptm 0.84 i_ptm 0.59
+123 models [1] recycles 0 hard 0 soft 1 temp 0.60 loss 3.03 i_con 2.99 plddt 0.59 ptm 0.85 i_ptm 0.60
+124 models [0] recycles 0 hard 0 soft 1 temp 0.58 loss 2.58 i_con 2.55 plddt 0.68 ptm 0.82 i_ptm 0.70
+125 models [1] recycles 0 hard 0 soft 1 temp 0.57 loss 3.30 i_con 3.26 plddt 0.55 ptm 0.84 i_ptm 0.50
+126 models [0] recycles 0 hard 0 soft 1 temp 0.55 loss 2.59 i_con 2.55 plddt 0.68 ptm 0.81 i_ptm 0.68
+127 models [1] recycles 0 hard 0 soft 1 temp 0.54 loss 3.33 i_con 3.28 plddt 0.53 ptm 0.84 i_ptm 0.52
+128 models [0] recycles 0 hard 0 soft 1 temp 0.52 loss 2.63 i_con 2.59 plddt 0.67 ptm 0.82 i_ptm 0.69
+129 models [0] recycles 0 hard 0 soft 1 temp 0.51 loss 2.54 i_con 2.51 plddt 0.68 ptm 0.82 i_ptm 0.70
+130 models [0] recycles 0 hard 0 soft 1 temp 0.50 loss 2.58 i_con 2.55 plddt 0.68 ptm 0.81 i_ptm 0.69
+131 models [0] recycles 0 hard 0 soft 1 temp 0.48 loss 2.68 i_con 2.64 plddt 0.66 ptm 0.81 i_ptm 0.66
+132 models [1] recycles 0 hard 0 soft 1 temp 0.47 loss 3.59 i_con 3.54 plddt 0.50 ptm 0.83 i_ptm 0.45
+133 models [0] recycles 0 hard 0 soft 1 temp 0.45 loss 2.64 i_con 2.61 plddt 0.68 ptm 0.82 i_ptm 0.69
+134 models [1] recycles 0 hard 0 soft 1 temp 0.44 loss 3.01 i_con 2.97 plddt 0.58 ptm 0.84 i_ptm 0.56
+135 models [0] recycles 0 hard 0 soft 1 temp 0.43 loss 2.58 i_con 2.55 plddt 0.69 ptm 0.82 i_ptm 0.69
+136 models [1] recycles 0 hard 0 soft 1 temp 0.42 loss 2.87 i_con 2.83 plddt 0.63 ptm 0.85 i_ptm 0.62
+137 models [0] recycles 0 hard 0 soft 1 temp 0.40 loss 2.66 i_con 2.62 plddt 0.67 ptm 0.82 i_ptm 0.68
+138 models [1] recycles 0 hard 0 soft 1 temp 0.39 loss 2.88 i_con 2.84 plddt 0.62 ptm 0.85 i_ptm 0.63
+139 models [0] recycles 0 hard 0 soft 1 temp 0.38 loss 2.71 i_con 2.67 plddt 0.66 ptm 0.81 i_ptm 0.66
+140 models [1] recycles 0 hard 0 soft 1 temp 0.37 loss 3.24 i_con 3.20 plddt 0.57 ptm 0.84 i_ptm 0.54
+141 models [1] recycles 0 hard 0 soft 1 temp 0.35 loss 2.82 i_con 2.78 plddt 0.61 ptm 0.85 i_ptm 0.62
+142 models [1] recycles 0 hard 0 soft 1 temp 0.34 loss 3.14 i_con 3.10 plddt 0.54 ptm 0.84 i_ptm 0.54
+143 models [0] recycles 0 hard 0 soft 1 temp 0.33 loss 2.73 i_con 2.69 plddt 0.66 ptm 0.82 i_ptm 0.67
+144 models [1] recycles 0 hard 0 soft 1 temp 0.32 loss 3.18 i_con 3.14 plddt 0.59 ptm 0.84 i_ptm 0.56
+145 models [1] recycles 0 hard 0 soft 1 temp 0.31 loss 3.01 i_con 2.97 plddt 0.61 ptm 0.85 i_ptm 0.61
+146 models [1] recycles 0 hard 0 soft 1 temp 0.30 loss 3.26 i_con 3.22 plddt 0.56 ptm 0.84 i_ptm 0.53
+147 models [1] recycles 0 hard 0 soft 1 temp 0.29 loss 3.00 i_con 2.97 plddt 0.63 ptm 0.85 i_ptm 0.61
+148 models [1] recycles 0 hard 0 soft 1 temp 0.28 loss 2.99 i_con 2.95 plddt 0.62 ptm 0.85 i_ptm 0.59
+149 models [0] recycles 0 hard 0 soft 1 temp 0.27 loss 2.62 i_con 2.59 plddt 0.67 ptm 0.82 i_ptm 0.69
+150 models [0] recycles 0 hard 0 soft 1 temp 0.26 loss 2.69 i_con 2.66 plddt 0.67 ptm 0.81 i_ptm 0.66
+151 models [1] recycles 0 hard 0 soft 1 temp 0.25 loss 2.75 i_con 2.72 plddt 0.65 ptm 0.85 i_ptm 0.65
+152 models [1] recycles 0 hard 0 soft 1 temp 0.24 loss 3.37 i_con 3.32 plddt 0.55 ptm 0.84 i_ptm 0.52
+153 models [0] recycles 0 hard 0 soft 1 temp 0.23 loss 2.84 i_con 2.81 plddt 0.65 ptm 0.80 i_ptm 0.65
+154 models [1] recycles 0 hard 0 soft 1 temp 0.22 loss 3.29 i_con 3.24 plddt 0.56 ptm 0.84 i_ptm 0.53
+155 models [1] recycles 0 hard 0 soft 1 temp 0.21 loss 2.86 i_con 2.83 plddt 0.64 ptm 0.85 i_ptm 0.62
+156 models [1] recycles 0 hard 0 soft 1 temp 0.20 loss 3.10 i_con 3.05 plddt 0.59 ptm 0.85 i_ptm 0.58
+157 models [0] recycles 0 hard 0 soft 1 temp 0.19 loss 2.69 i_con 2.66 plddt 0.67 ptm 0.81 i_ptm 0.68
+158 models [0] recycles 0 hard 0 soft 1 temp 0.18 loss 2.72 i_con 2.69 plddt 0.66 ptm 0.81 i_ptm 0.66
+159 models [1] recycles 0 hard 0 soft 1 temp 0.18 loss 3.32 i_con 3.28 plddt 0.56 ptm 0.84 i_ptm 0.53
+160 models [1] recycles 0 hard 0 soft 1 temp 0.17 loss 2.88 i_con 2.84 plddt 0.63 ptm 0.85 i_ptm 0.65
+161 models [0] recycles 0 hard 0 soft 1 temp 0.16 loss 2.64 i_con 2.61 plddt 0.67 ptm 0.82 i_ptm 0.69
+162 models [0] recycles 0 hard 0 soft 1 temp 0.15 loss 2.66 i_con 2.63 plddt 0.68 ptm 0.81 i_ptm 0.69
+163 models [0] recycles 0 hard 0 soft 1 temp 0.15 loss 2.79 i_con 2.75 plddt 0.65 ptm 0.81 i_ptm 0.64
+164 models [0] recycles 0 hard 0 soft 1 temp 0.14 loss 2.79 i_con 2.75 plddt 0.65 ptm 0.81 i_ptm 0.65
+165 models [1] recycles 0 hard 0 soft 1 temp 0.13 loss 3.15 i_con 3.11 plddt 0.58 ptm 0.84 i_ptm 0.57
+166 models [1] recycles 0 hard 0 soft 1 temp 0.12 loss 3.67 i_con 3.62 plddt 0.52 ptm 0.83 i_ptm 0.45
+167 models [1] recycles 0 hard 0 soft 1 temp 0.12 loss 3.14 i_con 3.10 plddt 0.58 ptm 0.85 i_ptm 0.55
+168 models [0] recycles 0 hard 0 soft 1 temp 0.11 loss 2.77 i_con 2.73 plddt 0.64 ptm 0.81 i_ptm 0.65
+169 models [1] recycles 0 hard 0 soft 1 temp 0.11 loss 2.79 i_con 2.76 plddt 0.64 ptm 0.85 i_ptm 0.64
+170 models [0] recycles 0 hard 0 soft 1 temp 0.10 loss 2.70 i_con 2.67 plddt 0.67 ptm 0.81 i_ptm 0.68
+171 models [1] recycles 0 hard 0 soft 1 temp 0.09 loss 3.23 i_con 3.19 plddt 0.58 ptm 0.85 i_ptm 0.57
+172 models [0] recycles 0 hard 0 soft 1 temp 0.09 loss 2.62 i_con 2.59 plddt 0.67 ptm 0.82 i_ptm 0.69
+173 models [1] recycles 0 hard 0 soft 1 temp 0.08 loss 4.78 i_con 4.73 plddt 0.48 ptm 0.80 i_ptm 0.18
+174 models [1] recycles 0 hard 0 soft 1 temp 0.08 loss 3.67 i_con 3.63 plddt 0.54 ptm 0.83 i_ptm 0.43
+175 models [0] recycles 0 hard 0 soft 1 temp 0.07 loss 2.64 i_con 2.61 plddt 0.67 ptm 0.81 i_ptm 0.68
+176 models [0] recycles 0 hard 0 soft 1 temp 0.07 loss 2.78 i_con 2.74 plddt 0.65 ptm 0.81 i_ptm 0.66
+177 models [1] recycles 0 hard 0 soft 1 temp 0.06 loss 3.47 i_con 3.42 plddt 0.55 ptm 0.84 i_ptm 0.50
+178 models [0] recycles 0 hard 0 soft 1 temp 0.06 loss 2.60 i_con 2.56 plddt 0.67 ptm 0.82 i_ptm 0.69
+179 models [0] recycles 0 hard 0 soft 1 temp 0.05 loss 2.68 i_con 2.64 plddt 0.66 ptm 0.81 i_ptm 0.67
+180 models [1] recycles 0 hard 0 soft 1 temp 0.05 loss 2.88 i_con 2.85 plddt 0.62 ptm 0.85 i_ptm 0.62
+181 models [1] recycles 0 hard 0 soft 1 temp 0.05 loss 3.16 i_con 3.12 plddt 0.58 ptm 0.84 i_ptm 0.56
+182 models [0] recycles 0 hard 0 soft 1 temp 0.04 loss 2.63 i_con 2.60 plddt 0.67 ptm 0.81 i_ptm 0.68
+183 models [0] recycles 0 hard 0 soft 1 temp 0.04 loss 2.64 i_con 2.61 plddt 0.67 ptm 0.82 i_ptm 0.69
+184 models [0] recycles 0 hard 0 soft 1 temp 0.04 loss 2.68 i_con 2.65 plddt 0.67 ptm 0.81 i_ptm 0.67
+185 models [0] recycles 0 hard 0 soft 1 temp 0.03 loss 2.65 i_con 2.61 plddt 0.67 ptm 0.81 i_ptm 0.67
+186 models [1] recycles 0 hard 0 soft 1 temp 0.03 loss 3.08 i_con 3.04 plddt 0.60 ptm 0.85 i_ptm 0.58
+187 models [1] recycles 0 hard 0 soft 1 temp 0.03 loss 3.49 i_con 3.44 plddt 0.54 ptm 0.83 i_ptm 0.49
+188 models [0] recycles 0 hard 0 soft 1 temp 0.02 loss 2.75 i_con 2.72 plddt 0.65 ptm 0.81 i_ptm 0.67
+189 models [0] recycles 0 hard 0 soft 1 temp 0.02 loss 2.70 i_con 2.66 plddt 0.65 ptm 0.81 i_ptm 0.67
+190 models [0] recycles 0 hard 0 soft 1 temp 0.02 loss 2.72 i_con 2.68 plddt 0.65 ptm 0.81 i_ptm 0.65
+191 models [0] recycles 0 hard 0 soft 1 temp 0.02 loss 2.67 i_con 2.64 plddt 0.66 ptm 0.82 i_ptm 0.68
+192 models [0] recycles 0 hard 0 soft 1 temp 0.02 loss 2.74 i_con 2.70 plddt 0.65 ptm 0.81 i_ptm 0.67
+193 models [1] recycles 0 hard 0 soft 1 temp 0.01 loss 3.46 i_con 3.42 plddt 0.55 ptm 0.84 i_ptm 0.50
+194 models [0] recycles 0 hard 0 soft 1 temp 0.01 loss 2.86 i_con 2.82 plddt 0.63 ptm 0.81 i_ptm 0.64
+195 models [0] recycles 0 hard 0 soft 1 temp 0.01 loss 2.70 i_con 2.66 plddt 0.64 ptm 0.81 i_ptm 0.66
+196 models [1] recycles 0 hard 0 soft 1 temp 0.01 loss 3.24 i_con 3.20 plddt 0.56 ptm 0.84 i_ptm 0.54
+197 models [1] recycles 0 hard 0 soft 1 temp 0.01 loss 2.86 i_con 2.82 plddt 0.63 ptm 0.85 i_ptm 0.62
+198 models [1] recycles 0 hard 0 soft 1 temp 0.01 loss 3.35 i_con 3.31 plddt 0.54 ptm 0.84 i_ptm 0.51
+199 models [1] recycles 0 hard 0 soft 1 temp 0.01 loss 3.12 i_con 3.07 plddt 0.58 ptm 0.84 i_ptm 0.56
+200 models [1] recycles 0 hard 0 soft 1 temp 0.01 loss 2.86 i_con 2.82 plddt 0.63 ptm 0.85 i_ptm 0.61
+Stage 3: running (hard)
+201 models [0, 1] recycles 0 hard 1 soft 1 temp 0.01 loss 2.89 i_con 2.84 plddt 0.56 ptm 0.83 i_ptm 0.61
+202 models [0, 1] recycles 0 hard 1 soft 1 temp 0.01 loss 2.73 i_con 2.69 plddt 0.60 ptm 0.84 i_ptm 0.65
+203 models [0, 1] recycles 0 hard 1 soft 1 temp 0.01 loss 2.62 i_con 2.58 plddt 0.64 ptm 0.84 i_ptm 0.69
+204 models [0, 1] recycles 0 hard 1 soft 1 temp 0.01 loss 2.61 i_con 2.57 plddt 0.64 ptm 0.84 i_ptm 0.69
+205 models [0, 1] recycles 0 hard 1 soft 1 temp 0.01 loss 2.73 i_con 2.69 plddt 0.60 ptm 0.84 i_ptm 0.65
+206 models [0, 1] recycles 0 hard 1 soft 1 temp 0.01 loss 2.55 i_con 2.51 plddt 0.65 ptm 0.84 i_ptm 0.69
+207 models [0, 1] recycles 0 hard 1 soft 1 temp 0.01 loss 2.91 i_con 2.87 plddt 0.59 ptm 0.84 i_ptm 0.64
+208 models [0, 1] recycles 0 hard 1 soft 1 temp 0.01 loss 2.62 i_con 2.58 plddt 0.64 ptm 0.84 i_ptm 0.69
+209 models [0, 1] recycles 0 hard 1 soft 1 temp 0.01 loss 2.91 i_con 2.87 plddt 0.59 ptm 0.84 i_ptm 0.64
+210 models [0, 1] recycles 0 hard 1 soft 1 temp 0.01 loss 2.62 i_con 2.58 plddt 0.64 ptm 0.84 i_ptm 0.69
+TRAJ {'traj': 1, 'seq': 'PPSPKIWEAHEAQARYDYLRIAIEDHVSVGMFGGAM', 'len': 36, 'plddt': 0.651, 'i_pae': 0.312, 'i_ptm': 0.693} elapsed 4637
+nvidia-smi --query-gpu=memory.used,memory.total --format=csv -> 0 memory.used [MiB], memory.total [MiB]
+33746 MiB, 143771 MiB
+
+Stage 1: running (logits → soft)
+jax.errors.SimplifiedTraceback: For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/<dgx-user>/glp1r/scripts/run_glp1r_colabdesign.py", line 192, in <module>
+    main()
+  File "/home/<dgx-user>/glp1r/scripts/run_glp1r_colabdesign.py", line 170, in main
+    af.design_3stage(30 if DRY else 100, 30 if DRY else 100, 5 if DRY else 10)
+  File "/home/<dgx-user>/tnf/venv/lib/python3.10/site-packages/colabdesign/af/design.py", line 376, in design_3stage
+    self.design_logits(soft_iters, e_soft=1,
+  File "/home/<dgx-user>/tnf/venv/lib/python3.10/site-packages/colabdesign/af/design.py", line 354, in design_logits
+    self.design(iters, **kwargs)
+  File "/home/<dgx-user>/tnf/venv/lib/python3.10/site-packages/colabdesign/af/design.py", line 348, in design
+    self.step(lr_scale=lr_scale, num_recycles=num_recycles,
+  File "/home/<dgx-user>/tnf/venv/lib/python3.10/site-packages/colabdesign/af/design.py", line 214, in step
+    self.run(num_recycles=num_recycles, num_models=num_models, sample_models=sample_models,
+  File "/home/<dgx-user>/tnf/venv/lib/python3.10/site-packages/colabdesign/af/design.py", line 96, in run
+    auxs.append(self._recycle(p, num_recycles=num_recycles, backprop=backprop))
+  File "/home/<dgx-user>/tnf/venv/lib/python3.10/site-packages/colabdesign/af/design.py", line 197, in _recycle
+    aux = self._single(model_params, backprop)
+  File "/home/<dgx-user>/tnf/venv/lib/python3.10/site-packages/colabdesign/af/design.py", line 140, in _single
+    (loss, aux), grad = self._model["grad_fn"](*flags)
+  File "/home/<dgx-user>/tnf/venv/lib/python3.10/site-packages/jax/_src/array.py", line 1200, in _array_shard_arg
+    x._check_if_deleted()
+  File "/home/<dgx-user>/tnf/venv/lib/python3.10/site-packages/jax/_src/array.py", line 608, in _check_if_deleted
+    raise RuntimeError(
+RuntimeError: Array has been deleted with shape=float32[64].
