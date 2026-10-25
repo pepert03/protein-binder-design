@@ -26,3 +26,10 @@
   control no generaliza. Nativo aislado RMSD 6.43 A: prediccion de este protocolo, no prueba de
   dependencia de contexto.
 - Boltz-2 u otro modelo complejo: disponibilidad/capacidad NO verificadas; no presentado como listo.
+
+## Incidentes de la corrida (post-publicacion, reporte del investigador)
+Intento 1 (fp32 con .half() posterior) murio con pico ~18 GB observado en vivo; intento 2 (fp16)
+NaN en compute_tm; intento 3 (fp32 + low_cpu_mem_usage) completo las 5 predicciones auditadas.
+Logs de intentos 1-2 NO preservados (sesion borrada); env.txt registra la configuracion final.
+Reportados, NO reproducibles por el verificador; el pico ~18 GB no acota el cap cgroup (desconocido;
+2 TB del nodo NO es el limite del contenedor). No invalida hashes ni metricas auditados.
