@@ -1,3 +1,11 @@
+> Challenge 3 (GLP1R agonist): see [challenge3/README.md](challenge3/README.md).
+> Closed 26 Oct 2026: de novo campaign on the official 409 aa target; 3 of 5
+> designs pass the two-seed Boltz filter on metrics, with documented caveats
+> (no reproducible pose between seeds, native control scores equal or better).
+> Predictions only, no experimental validation. Submission (if any) was done by
+> the user from his own account; what was uploaded is unconfirmed
+> (see [submissions/README.md](submissions/README.md)).
+
 > Challenge 2 (TNF-alpha, bind pH 7.4 / release pH 6.0): see [challenge2/README.md](challenge2/README.md).
 
 > Current results: see [latest EGFR summary](docs/LATEST_EGFR_2026-10-06.md). Human20 and mouse9 completed; Lightning robustness dropped. Historical rankings and target statements below may be superseded. No validated binding or final submission.
@@ -28,8 +36,9 @@ submitted.
 - `data/` - inputs: receptor structures, reference complexes, configs.
 - `results/` - batch outputs: metrics, structures, diagnostics.
 - `notebooks/` - exploration notebooks.
-- `submissions/` - final submission CSVs (name, sequence, molecule_class).
-  Empty: nothing submitted yet.
+- `submissions/` - submission CSVs (name, sequence, molecule_class) and their
+  status. Challenge 3: a 10-design CSV was PREPARED; what the user actually
+  uploaded from his own account is unconfirmed. Challenges 1-2: never submitted.
 - `docs/` - STATUS.md and notes.
 
 ## Rules

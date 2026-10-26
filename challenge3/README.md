@@ -72,3 +72,36 @@ Full receptor (440 total) remains a later experiment, measured against the real 
 the driver logs on its first trajectory. Boundary residues with artificial exposure
 (crop_review.py section 4) are a discard list: any design whose interface touches
 them is rejected in post-analysis.
+
+## Final state (26 Oct 2026)
+
+Campaign closed. Everything below is computational prediction: no experimental
+validation, no evidence of binding or agonism. Each batch carries its own
+independent verification note with exact definitions and limitations.
+
+- Official target: UniProt P43220 24-432 (409 aa), confirmed residue by residue
+  against the live challenge page. An earlier batch ran on a 440 aa construct
+  (24-463) and is kept as historical reference only (`results/boltz_kaggle/`,
+  see its section 8).
+- Boltz batch on the official target (`results/boltz_kaggle_409/`): the previous
+  candidate top02, the native peptide and a random control, audited
+  independently end to end. The native control recovers high ipTM (0.934) but
+  stays ~14 A from its experimental pose.
+- De novo campaign, final v2 (`results/zeroshot_409_v2/`): 5 designs generated
+  from scratch with ColabDesign (AF2 binder protocol, 32 aa, no starting
+  binder), filtered with Boltz 2 on the official 409 aa target under two seeds.
+  Three pass the filter on metrics: gA_3 (ipTM 0.931/0.923, 30/35 epitope
+  contacts), gB_2 (0.915/0.924, 48/37), gB_1 (0.834/0.907, 40/38).
+  Documented caveats: no candidate has a reproducible pose between seeds
+  (7-12 A CA RMSD); the native control scores equal or better than every
+  candidate (0.934/0.944, 44 epitope contacts in seed 2); gB_1 and gB_2 carry
+  low complexity Gly tails (gA_3 is sequence clean); metrics are model internal
+  (single diffusion sample, no MSA, no templates, no membrane/Gs context).
+- Epitope note: this folder's `docs/epitope_contacts.tsv` lists the 52 receptor
+  residues contacting the GLP-1 peptide in 6X18. The campaign's filter used its
+  own copy extended with 4 water-mediated contact residues plus the water row
+  itself (57 rows); both files ship with their analyses and say which is which.
+- Submission: the user submitted through the official form with his own login
+  before the deadline (26 Oct 12:59 CET). The CSV prepared for that upload is
+  `submissions/challenge3_glp1r_designs_PREPARED.csv`; which designs were
+  actually uploaded is not confirmed from this side (see `submissions/README.md`).
