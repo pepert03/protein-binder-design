@@ -1,0 +1,56 @@
+04:29:25 seed-repeat targets: ['gB_2', 'gB_1', 'gA_2', 'nativo', 'aleatorio36']
+04:32:18 PRED out_seed2 gB_2 t 173 {'confidence_score': 0.8250160217285156, 'ptm': 0.9034837484359741, 'iptm': 0.9237468242645264, 'complex_plddt': 0.8003333806991577}
+04:35:16 PRED out_seed2 gB_1 t 177 {'confidence_score': 0.8016352653503418, 'ptm': 0.8823263049125671, 'iptm': 0.9068170785903931, 'complex_plddt': 0.7753397822380066}
+04:38:16 PRED out_seed2 gA_2 t 180 {'confidence_score': 0.7641622424125671, 'ptm': 0.9077355861663818, 'iptm': 0.8783925771713257, 'complex_plddt': 0.7356047034263611}
+04:41:15 PRED out_seed2 nativo t 178 {'confidence_score': 0.8543550372123718, 'ptm': 0.9085717797279358, 'iptm': 0.9441297650337219, 'complex_plddt': 0.8319113254547119}
+04:44:18 PRED out_seed2 aleatorio36 t 183 {'confidence_score': 0.6835715174674988, 'ptm': 0.8197327256202698, 'iptm': 0.24463064968585968, 'complex_plddt': 0.7933067083358765}
+04:44:18 seed-repeat done
+04:44:18 idle; waiting 300s
+04:49:18 idle; waiting 300s
+04:54:18 idle; waiting 300s
+04:59:18 idle; waiting 300s
+05:04:18 idle; waiting 300s
+05:09:18 idle; waiting 300s
+05:14:18 idle; waiting 300s
+05:19:18 idle; waiting 300s
+05:24:18 idle; waiting 300s
+05:29:18 idle; waiting 300s
+05:34:18 idle; waiting 300s
+Traceback (most recent call last):
+  File "/kaggle/working/filter409/boltz_filter409b.py", line 52, in <module>
+    time.sleep(300)
+KeyboardInterrupt
+05:35:15 seed-repeat targets: ['gB_2', 'gB_1', 'gA_2', 'nativo', 'aleatorio36']
+05:35:15 seed-repeat done
+05:35:15 idle; waiting 300s
+05:40:15 idle; waiting 300s
+05:45:15 idle; waiting 300s
+05:50:15 idle; waiting 300s
+05:55:15 idle; waiting 300s
+06:00:15 idle; waiting 300s
+06:05:15 idle; waiting 300s
+06:10:15 idle; waiting 300s
+06:15:15 idle; waiting 300s
+06:20:15 idle; waiting 300s
+06:25:15 idle; waiting 300s
+06:30:15 idle; waiting 300s
+06:35:15 idle; waiting 300s
+06:40:15 idle; waiting 300s
+06:45:15 idle; waiting 300s
+06:50:15 idle; waiting 300s
+06:55:15 idle; waiting 300s
+07:00:15 idle; waiting 300s
+07:05:15 idle; waiting 300s
+07:10:15 idle; waiting 300s
+07:15:15 idle; waiting 300s
+07:20:15 idle; waiting 300s
+07:25:15 idle; waiting 300s
+07:30:15 idle; waiting 300s
+07:35:15 idle; waiting 300s
+07:43:11 PRED out gA_3 t 175 {'confidence_score': 0.7922425270080566, 'ptm': 0.9134118556976318, 'iptm': 0.9309797286987305, 'complex_plddt': 0.7575582265853882}
+07:43:11 idle; waiting 300s
+07:48:11 idle; waiting 300s
+07:53:11 idle; waiting 300s
+07:58:11 idle; waiting 300s
+08:03:11 idle; waiting 300s
+08:08:11 idle; waiting 300s

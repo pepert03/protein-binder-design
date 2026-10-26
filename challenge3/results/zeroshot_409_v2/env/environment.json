@@ -1,0 +1,5 @@
+{
+ "cdenv": "",
+ "boltzenv": "",
+ "system": "name, driver_version, memory.total [MiB]\nTesla T4, 580.178.04, 15360 MiB\nTesla T4, 580.178.04, 15360 MiB\nPython 3.13.15\nLinux 045f75c405f8 6.18.55+ #1 SMP Thu Oct 22 16:37:21 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux\n"
+}
