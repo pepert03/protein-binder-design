@@ -97,11 +97,14 @@ def main():
     emR = pdb_ca(EM, 'R')
     emP = pdb_ca(EM, 'P')
     rec_keys = sorted(emR)
-    rec_mesh = pack_mesh(*tube([emR[k] for k in rec_keys], radius=1.3))
+    # recentre: the renderer orbits and measures radius from the origin,
+    # so the receptor CA mean must sit at (0,0,0) in the encoded frame
+    C = np.array([emR[k] for k in rec_keys]).mean(0)
+    rec_mesh = pack_mesh(*tube([emR[k] - C for k in rec_keys], radius=1.3))
     designs = []
     pep_keys = sorted(emP)
     designs.append({'name': 'GLP-1 (native)', 'tag': 'experimental pose in 6X18 (cryo-EM)',
-                    'mesh': pack_mesh(*tube([emP[k] for k in pep_keys], radius=1.7))})
+                    'mesh': pack_mesh(*tube([emP[k] - C for k in pep_keys], radius=1.7))})
     emR_arr = {k: emR[k] for k in rec_keys}
     for name, (iptm, cif) in CANDS.items():
         pR = cif_ca(cif, 'A', off=23)
@@ -110,7 +113,7 @@ def main():
         assert len(common) == 166, (name, len(common))
         R, t = kabsch(np.array([pR[k] for k in common]), np.array([emR_arr[k] for k in common]))
         bk = sorted(pB)
-        B = (R @ np.array([pB[k] for k in bk]).T).T + t
+        B = (R @ np.array([pB[k] for k in bk]).T).T + t - C
         designs.append({'name': name,
                         'tag': f'Boltz 2 prediction (seed 1), ipTM {iptm}, aligned on the 6X18 TM core; not reproducible between seeds; not validated',
                         'mesh': pack_mesh(*tube(list(B), radius=1.7))})
