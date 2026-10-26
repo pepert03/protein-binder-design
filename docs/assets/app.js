@@ -14,6 +14,7 @@ document.addEventListener('pointerdown',e=>{if(!dd.contains(e.target))closeMenu(
 function onDesign(d,i,n){
   if(!d)return;
   if(current==='egfr')cap.textContent='EGFR · design '+(i+1)+' of '+n+' · '+d.name+' · Boltz-2 ipTM '+d.ipTM.toFixed(2);
+  else if(current==='glp1r')cap.textContent='GLP1R · '+d.name+' · '+d.tag;
   else if(d.name==='tnf_01')cap.textContent='TNF α · tnf_01 · submitted candidate · predicted crop complex (AF2-Multimer)';
   else cap.textContent='TNF α · '+d.name+' · '+d.tag+' · failed screening gate';
 }
@@ -23,6 +24,9 @@ function update(){
   if(current==='egfr'){
     $('#caveat').textContent='Predicted complexes of the 20 draft sequences, ranked by ipTM. Binders drawn as ribbon cartoons from the predicted backbone. Not experimentally validated.';
     $('#source').href='https://github.com/pepert03/protein-binder-design';
+  }else if(current==='glp1r'){
+    $('#caveat').textContent='6X18 cryo-EM structure: receptor in grey, native GLP-1 and the three de novo candidates cycling in blue, all as CA traces. Candidate poses are Boltz 2 predictions (seed 1) rigidly aligned on the 6X18 TM core; they are not reproducible between seeds (7-12 A) and the native control scores equal or better in the filter. Predictions only; no evidence of binding or agonism.';
+    $('#source').href='https://www.rcsb.org/structure/6X18';
   }else{
     $('#caveat').textContent='Predicted AF2-Multimer crop complexes, rigidly aligned onto the 1TNF trimer for context (not intact-trimer predictions). tnf_01 is the submitted candidate; its intact-trimer re-prediction had a severe steric clash (minimum heavy-atom distance 0.27 A) and is not shown. The 24 session-3 redesigns did not pass the screening gate (best norm-iPAE 0.597). Submitted ranks 2-20 (65-aa family) showed no real interface in the intact audit and are not shown. Not experimentally validated.';
     $('#source').href='https://www.rcsb.org/structure/1TNF';
