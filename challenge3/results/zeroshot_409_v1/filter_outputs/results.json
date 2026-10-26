@@ -1,0 +1,50 @@
+{
+ "gA_1": {
+  "seq": "SPATRNYWRDYEAWLDSQSCVVVFCGGGGGGM",
+  "t_s": 178,
+  "confidence_score": 0.6868079304695129,
+  "ptm": 0.8669936060905457,
+  "iptm": 0.3560493588447571,
+  "complex_plddt": 0.7694975733757019
+ },
+ "gA_2": {
+  "seq": "ILCLMDIPDYYKVKYHPGGPGGGWHGGGGGFM",
+  "t_s": 183,
+  "confidence_score": 0.7657800912857056,
+  "ptm": 0.8952444195747375,
+  "iptm": 0.816209614276886,
+  "complex_plddt": 0.7531726956367493
+ },
+ "gB_1": {
+  "seq": "MTSPYLDYMYDSIMMVTSCSTGCGFFFGGGGM",
+  "t_s": 181,
+  "confidence_score": 0.7799600958824158,
+  "ptm": 0.8516398668289185,
+  "iptm": 0.8335644602775574,
+  "complex_plddt": 0.7665590047836304
+ },
+ "gB_2": {
+  "seq": "MGGGGDQQGWEKAGQKVLERNYYDAYVDCLCM",
+  "t_s": 180,
+  "confidence_score": 0.7973838448524475,
+  "ptm": 0.844904899597168,
+  "iptm": 0.914518415927887,
+  "complex_plddt": 0.7681002020835876
+ },
+ "nativo": {
+  "seq": "HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR",
+  "t_s": 179,
+  "confidence_score": 0.8621709942817688,
+  "ptm": 0.8850577473640442,
+  "iptm": 0.9335508346557617,
+  "complex_plddt": 0.8443260788917542
+ },
+ "aleatorio36": {
+  "seq": "LLASLENEEAARTRELAAELRSAARAAREGAELGAA",
+  "t_s": 183,
+  "confidence_score": 0.6868432760238647,
+  "ptm": 0.8406772017478943,
+  "iptm": 0.2918355464935303,
+  "complex_plddt": 0.785595178604126
+ }
+}

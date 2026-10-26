@@ -1,0 +1,13 @@
+03:40:26 PRED gA_1 t 178 {'confidence_score': 0.6868079304695129, 'ptm': 0.8669936060905457, 'iptm': 0.3560493588447571, 'complex_plddt': 0.7694975733757019}
+03:43:30 PRED gA_2 t 183 {'confidence_score': 0.7657800912857056, 'ptm': 0.8952444195747375, 'iptm': 0.816209614276886, 'complex_plddt': 0.7531726956367493}
+03:46:32 PRED gB_1 t 181 {'confidence_score': 0.7799600958824158, 'ptm': 0.8516398668289185, 'iptm': 0.8335644602775574, 'complex_plddt': 0.7665590047836304}
+03:49:32 PRED gB_2 t 180 {'confidence_score': 0.7973838448524475, 'ptm': 0.844904899597168, 'iptm': 0.914518415927887, 'complex_plddt': 0.7681002020835876}
+03:52:32 PRED nativo t 179 {'confidence_score': 0.8621709942817688, 'ptm': 0.8850577473640442, 'iptm': 0.9335508346557617, 'complex_plddt': 0.8443260788917542}
+03:55:36 PRED aleatorio36 t 183 {'confidence_score': 0.6868432760238647, 'ptm': 0.8406772017478943, 'iptm': 0.2918355464935303, 'complex_plddt': 0.785595178604126}
+03:55:36 idle; waiting 300s for new designs
+04:00:36 idle; waiting 300s for new designs
+04:05:36 idle; waiting 300s for new designs
+04:10:36 idle; waiting 300s for new designs
+04:15:36 idle; waiting 300s for new designs
+04:20:36 idle; waiting 300s for new designs
+04:25:36 idle; waiting 300s for new designs

@@ -1,0 +1,16 @@
+05:30:46 CONTACTS out/aleatorio36 n 27 hotE 0 hotTM 0 epi 0
+05:30:47 CONTACTS out/gA_1 n 15 hotE 0 hotTM 0 epi 0
+05:30:47 CONTACTS out/gA_2 n 30 hotE 0 hotTM 0 epi 0
+05:30:47 CONTACTS out/gB_1 n 66 hotE 6 hotTM 8 epi 40
+05:30:47 CONTACTS out/gB_2 n 72 hotE 6 hotTM 12 epi 48
+05:30:47 CONTACTS out/nativo n 42 hotE 7 hotTM 2 epi 22
+05:30:47 CONTACTS out_seed2/aleatorio36 n 28 hotE 0 hotTM 0 epi 0
+05:30:47 CONTACTS out_seed2/gA_2 n 46 hotE 0 hotTM 0 epi 0
+05:30:47 CONTACTS out_seed2/gB_1 n 71 hotE 5 hotTM 10 epi 38
+05:30:48 CONTACTS out_seed2/gB_2 n 60 hotE 4 hotTM 10 epi 37
+05:30:48 CONTACTS out_seed2/nativo n 61 hotE 7 hotTM 10 epi 44
+05:30:48 CONTACTS DONE 11
+Traceback (most recent call last):
+  File "<string>", line 4, in <module>
+KeyboardInterrupt
+05:35:16 CONTACTS DONE 11

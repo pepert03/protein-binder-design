@@ -1,0 +1,52 @@
+{
+ "gB_2": {
+  "seq": "MGGGGDQQGWEKAGQKVLERNYYDAYVDCLCM",
+  "seed": 1234,
+  "rc": 0,
+  "t": 173,
+  "confidence_score": 0.8250160217285156,
+  "ptm": 0.9034837484359741,
+  "iptm": 0.9237468242645264,
+  "complex_plddt": 0.8003333806991577
+ },
+ "gB_1": {
+  "seq": "MTSPYLDYMYDSIMMVTSCSTGCGFFFGGGGM",
+  "seed": 1234,
+  "rc": 0,
+  "t": 177,
+  "confidence_score": 0.8016352653503418,
+  "ptm": 0.8823263049125671,
+  "iptm": 0.9068170785903931,
+  "complex_plddt": 0.7753397822380066
+ },
+ "gA_2": {
+  "seq": "ILCLMDIPDYYKVKYHPGGPGGGWHGGGGGFM",
+  "seed": 1234,
+  "rc": 0,
+  "t": 180,
+  "confidence_score": 0.7641622424125671,
+  "ptm": 0.9077355861663818,
+  "iptm": 0.8783925771713257,
+  "complex_plddt": 0.7356047034263611
+ },
+ "nativo": {
+  "seq": "HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR",
+  "seed": 1234,
+  "rc": 0,
+  "t": 178,
+  "confidence_score": 0.8543550372123718,
+  "ptm": 0.9085717797279358,
+  "iptm": 0.9441297650337219,
+  "complex_plddt": 0.8319113254547119
+ },
+ "aleatorio36": {
+  "seq": "LLASLENEEAARTRELAAELRSAARAAREGAELGAA",
+  "seed": 1234,
+  "rc": 0,
+  "t": 183,
+  "confidence_score": 0.6835715174674988,
+  "ptm": 0.8197327256202698,
+  "iptm": 0.24463064968585968,
+  "complex_plddt": 0.7933067083358765
+ }
+}
